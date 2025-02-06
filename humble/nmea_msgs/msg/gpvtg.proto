@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nmea_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Gpvtg {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string message_id = 3;
+     float track_t = 4;
+     string track_t_ref = 5;
+     float track_m = 6;
+     string track_m_ref = 7;
+     float speed_n = 8;
+     string speed_n_unit = 9;
+     float speed_k = 10;
+     string speed_k_unit = 11;
+     string mode_indicator = 12;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.map_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/map_msgs/msg/projected_map_info.proto";
+
+message ProjectedMapsInfoRequest {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.map_msgs.msg.ProjectedMapInfo projected_maps_info = 2;
+}
+
+message ProjectedMapsInfoResponse {
+    make87_messages.core.Header header = 1;
+}

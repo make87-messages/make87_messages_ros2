@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EnhancedPositionRpt {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     double shaft_extension = 3;
+     bool motor_overload_error = 4;
+     bool clutch_overload_error = 5;
+     bool motor_open_load_error = 6;
+     bool clutch_open_load_error = 7;
+     bool position_reach_error = 8;
+     bool hardware_warning_1_error = 9;
+     bool hardware_warning_2_error = 10;
+     uint32 motor_current = 11;
+}

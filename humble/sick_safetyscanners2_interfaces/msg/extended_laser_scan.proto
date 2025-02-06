@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safetyscanners2_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/laser_scan.proto";
+
+message ExtendedLaserScan {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.sensor_msgs.msg.LaserScan laser_scan = 2;
+    repeated bool reflektor_status = 3;
+    repeated bool reflektor_median = 4;
+    repeated bool intrusion = 5;
+}

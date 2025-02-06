@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+
+message CostSource {
+    make87_messages.core.Header header = 1;
+     double cost_density = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 aabb_min = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 aabb_max = 4;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rcl_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message ParameterValue {
+    make87_messages.core.Header header = 1;
+     uint32 type = 2;
+     bool bool_value = 3;
+     int64 integer_value = 4;
+     double double_value = 5;
+     string string_value = 6;
+    repeated uint32 byte_array_value = 7;
+    repeated bool bool_array_value = 8;
+    repeated int64 integer_array_value = 9;
+    repeated double double_array_value = 10;
+    repeated string string_array_value = 11;
+}

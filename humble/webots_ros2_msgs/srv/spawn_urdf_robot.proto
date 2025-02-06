@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.webots_ros2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/webots_ros2_msgs/msg/urdf_robot.proto";
+
+message SpawnUrdfRobotRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.webots_ros2_msgs.msg.UrdfRobot robot = 2;
+}
+
+message SpawnUrdfRobotResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

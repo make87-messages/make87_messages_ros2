@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_srr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SrrStatus2 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_tx_alignment_status = 3;
+     bool can_tx_comm_error = 4;
+     bool can_tx_steering_angle_sign = 5;
+     float can_tx_yaw_rate_bias = 6;
+     float can_tx_veh_spd_comp_factor = 7;
+     uint32 can_tx_sw_version_dsp = 8;
+     int32 can_tx_temperature = 9;
+     bool can_tx_range_perf_error = 10;
+     bool can_tx_overheat_error = 11;
+     bool can_tx_internal_error = 12;
+     bool can_tx_xcvr_operational = 13;
+     uint32 can_tx_steering_angle = 14;
+     uint32 can_tx_rolling_count_2 = 15;
+}

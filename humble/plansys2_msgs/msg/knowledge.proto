@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Knowledge {
+    make87_messages.core.Header header = 1;
+    repeated string instances = 2;
+    repeated string predicates = 3;
+    repeated string functions = 4;
+     string goal = 5;
+}

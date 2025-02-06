@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/compartment.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/item.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/item_model.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/load_carrier.proto";
+
+message DetectItemsRequest {
+    make87_messages.core.Header header = 1;
+     string pose_frame = 2;
+     string region_of_interest_id = 3;
+     string load_carrier_id = 4;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Compartment load_carrier_compartment = 5;
+    repeated make87_messages_ros2.humble.rc_reason_msgs.msg.ItemModel item_models = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose robot_pose = 7;
+}
+
+message DetectItemsResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 2;
+    repeated make87_messages_ros2.humble.rc_reason_msgs.msg.Item items = 3;
+    repeated make87_messages_ros2.humble.rc_reason_msgs.msg.LoadCarrier load_carriers = 4;
+     make87_messages_ros2.humble.rc_common_msgs.msg.ReturnCode return_code = 5;
+}

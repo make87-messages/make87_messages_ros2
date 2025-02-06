@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.automotive_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UserInputMedia {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool btn_vol_up = 3;
+     bool btn_vol_down = 4;
+     bool btn_mute = 5;
+     bool btn_next = 6;
+     bool btn_prev = 7;
+     bool btn_next_hang_up = 8;
+     bool btn_prev_answer = 9;
+     bool btn_hang_up = 10;
+     bool btn_answer = 11;
+     bool btn_play = 12;
+     bool btn_pause = 13;
+     bool btn_play_pause = 14;
+     bool btn_mode = 15;
+}

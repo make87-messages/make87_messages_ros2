@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_perception_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/accel_with_covariance.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist_with_covariance.proto";
+
+message TrackedObjectKinematics {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovariance pose_with_covariance = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.TwistWithCovariance twist_with_covariance = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.AccelWithCovariance acceleration_with_covariance = 4;
+     uint32 orientation_availability = 5;
+     bool is_stationary = 6;
+}

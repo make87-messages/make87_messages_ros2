@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message CfgPRT {
+    make87_messages.core.Header header = 1;
+     uint32 port_id = 2;
+     uint32 reserved0 = 3;
+     uint32 tx_ready = 4;
+     uint32 mode = 5;
+     uint32 baud_rate = 6;
+     uint32 in_proto_mask = 7;
+     uint32 out_proto_mask = 8;
+     uint32 flags = 9;
+     uint32 reserved1 = 10;
+}

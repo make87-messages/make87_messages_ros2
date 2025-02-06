@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.flexbe_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/flexbe_msgs/msg/userdata_info.proto";
+
+message GetUserdataRequest {
+    make87_messages.core.Header header = 1;
+     string userdata_key = 2;
+}
+
+message GetUserdataResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string message = 3;
+    repeated make87_messages_ros2.humble.flexbe_msgs.msg.UserdataInfo userdata = 4;
+}

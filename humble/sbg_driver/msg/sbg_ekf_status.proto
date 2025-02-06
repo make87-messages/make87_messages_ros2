@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgEkfStatus {
+    make87_messages.core.Header header = 1;
+     uint32 solution_mode = 2;
+     bool attitude_valid = 3;
+     bool heading_valid = 4;
+     bool velocity_valid = 5;
+     bool position_valid = 6;
+     bool vert_ref_used = 7;
+     bool mag_ref_used = 8;
+     bool gps1_vel_used = 9;
+     bool gps1_pos_used = 10;
+     bool gps1_hdt_used = 11;
+     bool gps2_vel_used = 12;
+     bool gps2_pos_used = 13;
+     bool gps2_hdt_used = 14;
+     bool odo_used = 15;
+     bool dvl_bt_used = 16;
+     bool dvl_wt_used = 17;
+     bool user_pos_used = 18;
+     bool user_vel_used = 19;
+     bool user_heading_used = 20;
+     bool usbl_used = 21;
+     bool air_data_used = 22;
+     bool zupt_used = 23;
+     bool align_valid = 24;
+     bool depth_used = 25;
+}

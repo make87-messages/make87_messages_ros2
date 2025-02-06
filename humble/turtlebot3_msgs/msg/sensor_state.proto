@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.turtlebot3_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SensorState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 bumper = 3;
+     float cliff = 4;
+     float sonar = 5;
+     float illumination = 6;
+     uint32 led = 7;
+     uint32 button = 8;
+     bool torque = 9;
+     int32 left_encoder = 10;
+     int32 right_encoder = 11;
+     float battery = 12;
+}

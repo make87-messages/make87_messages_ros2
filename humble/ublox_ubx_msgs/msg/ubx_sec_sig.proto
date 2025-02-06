@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/jam_state_cent_freq.proto";
+
+message UBXSecSig {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 version = 3;
+     uint32 jam_det_enabled = 4;
+     uint32 jamming_state = 5;
+     uint32 spf_det_enabled = 6;
+     uint32 spoofing_state = 7;
+     uint32 jam_num_cent_freqs = 8;
+    repeated make87_messages_ros2.humble.ublox_ubx_msgs.msg.JamStateCentFreq jam_state_cent_freqs = 9;
+}

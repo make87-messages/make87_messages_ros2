@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/gazebo_msgs/msg/link_state.proto";
+
+message SetLinkStateRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.gazebo_msgs.msg.LinkState link_state = 2;
+}
+
+message SetLinkStateResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string status_message = 3;
+}

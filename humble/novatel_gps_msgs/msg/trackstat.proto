@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/trackstat_channel.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Trackstat {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string solution_status = 3;
+     string position_type = 4;
+     float cutoff = 5;
+    repeated make87_messages_ros2.humble.novatel_gps_msgs.msg.TrackstatChannel channels = 6;
+}

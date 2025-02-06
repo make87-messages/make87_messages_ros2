@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetObstacleAvoidanceRequest {
+    make87_messages.core.Header header = 1;
+     bool obstacle_avoidance_on = 2;
+}
+
+message SetObstacleAvoidanceResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

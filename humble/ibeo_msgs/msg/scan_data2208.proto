@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/scan_point2208.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ScanData2208 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 3;
+     uint32 scan_number = 4;
+     uint32 scanner_type = 5;
+     bool motor_on = 6;
+     bool laser_on = 7;
+     bool frequency_locked = 8;
+     uint32 motor_rotating_direction = 9;
+     uint32 angle_ticks_per_rotation = 10;
+     uint32 scan_flags = 11;
+     int32 mounting_yaw_angle_ticks = 12;
+     int32 mounting_pitch_angle_ticks = 13;
+     int32 mounting_roll_angle_ticks = 14;
+     int32 mounting_position_x = 15;
+     int32 mounting_position_y = 16;
+     int32 mounting_position_z = 17;
+     uint32 device_id = 18;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time scan_start_time = 19;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time scan_end_time = 20;
+     int32 start_angle_ticks = 21;
+     int32 end_angle_ticks = 22;
+     uint32 mirror_side = 23;
+     int32 mirror_tilt = 24;
+    repeated make87_messages_ros2.humble.ibeo_msgs.msg.ScanPoint2208 scan_point_list = 25;
+}

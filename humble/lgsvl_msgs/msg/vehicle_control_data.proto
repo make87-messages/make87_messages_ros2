@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.lgsvl_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VehicleControlData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float acceleration_pct = 3;
+     float braking_pct = 4;
+     float target_wheel_angle = 5;
+     float target_wheel_angular_rate = 6;
+     uint32 target_gear = 7;
+}

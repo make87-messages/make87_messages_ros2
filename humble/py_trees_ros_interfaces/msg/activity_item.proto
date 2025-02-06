@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.py_trees_ros_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message ActivityItem {
+    make87_messages.core.Header header = 1;
+     string key = 2;
+     string client_name = 3;
+     string activity_type = 4;
+     string previous_value = 5;
+     string current_value = 6;
+}

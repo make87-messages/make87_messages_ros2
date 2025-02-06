@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sbg_driver/msg/sbg_utc_time_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgUtcTime {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     make87_messages_ros2.humble.sbg_driver.msg.SbgUtcTimeStatus clock_status = 4;
+     uint32 year = 5;
+     uint32 month = 6;
+     uint32 day = 7;
+     uint32 hour = 8;
+     uint32 min = 9;
+     uint32 sec = 10;
+     uint32 nanosec = 11;
+     uint32 gps_tow = 12;
+     float clk_bias_std = 13;
+     float clk_sf_error_std = 14;
+     float clk_residual_error = 15;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safevisionary_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/io_configured.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/io_direction.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/io_input_values.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/io_output_values.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/ioossds_state.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message CameraIO {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.IOConfigured configured = 3;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.IODirection direction = 4;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.IOInputValues input_values = 5;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.IOOutputValues output_values = 6;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.IOOSSDSState ossds_state = 7;
+     uint32 ossds_dyn_count = 8;
+     uint32 ossds_crc = 9;
+     uint32 ossds_io_status = 10;
+     uint32 dynamic_speed_a = 11;
+     uint32 dynamic_speed_b = 12;
+     uint32 dynamic_valid_flags = 13;
+}

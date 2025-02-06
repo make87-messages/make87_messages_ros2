@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.robot_controllers_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message DiffDriveLimiterParams {
+    make87_messages.core.Header header = 1;
+     double max_linear_velocity = 2;
+     double max_linear_acceleration = 3;
+     double max_angular_velocity = 4;
+     double max_angular_acceleration = 5;
+     double max_wheel_velocity = 6;
+     double track_width = 7;
+     bool angular_velocity_limits_linear_velocity = 8;
+     bool scale_to_wheel_velocity_limits = 9;
+}

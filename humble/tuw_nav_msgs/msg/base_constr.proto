@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_nav_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message BaseConstr {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     double v_max = 3;
+     double av_max = 4;
+     double w_max = 5;
+     double aw_max = 6;
+     double omg_wh_max = 7;
+}

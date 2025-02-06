@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgGpsVelStatus {
+    make87_messages.core.Header header = 1;
+     uint32 vel_status = 2;
+     uint32 vel_type = 3;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TestMessage {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool b = 3;
+     uint32 ui8 = 4;
+     uint32 ui16 = 5;
+     uint32 ui32 = 6;
+     uint64 ui64 = 7;
+     int32 i8 = 8;
+     int32 i16 = 9;
+     int32 i32 = 10;
+     int64 i64 = 11;
+     float f32 = 12;
+     double f64 = 13;
+     string str = 14;
+     string bounded_str = 15;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time t = 16;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration d = 17;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Point point_arr = 18;
+}

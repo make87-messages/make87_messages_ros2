@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.hri_actions_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Intent {
+    make87_messages.core.Header header = 1;
+     string intent = 2;
+     string data = 3;
+     string source = 4;
+     string modality = 5;
+     uint32 priority = 6;
+     float confidence = 7;
+}

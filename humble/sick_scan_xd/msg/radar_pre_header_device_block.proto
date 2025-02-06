@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.msg;
+
+import "make87_messages/core/header.proto";
+
+message RadarPreHeaderDeviceBlock {
+    make87_messages.core.Header header = 1;
+     uint32 uiident = 2;
+     uint32 udiserialno = 3;
+     bool bdeviceerror = 4;
+     bool bcontaminationwarning = 5;
+     bool bcontaminationerror = 6;
+}

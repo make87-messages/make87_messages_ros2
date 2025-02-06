@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.diagnostic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/diagnostic_msgs/msg/key_value.proto";
+
+message DiagnosticStatus {
+    make87_messages.core.Header header = 1;
+     uint32 level = 2;
+     string name = 3;
+     string message = 4;
+     string hardware_id = 5;
+    repeated make87_messages_ros2.humble.diagnostic_msgs.msg.KeyValue values = 6;
+}

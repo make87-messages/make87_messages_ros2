@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.composition_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message ListNodesRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message ListNodesResponse {
+    make87_messages.core.Header header = 1;
+    repeated string full_node_names = 2;
+    repeated uint64 unique_ids = 3;
+}

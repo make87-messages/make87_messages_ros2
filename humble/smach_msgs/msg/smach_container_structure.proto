@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.smach_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SmachContainerStructure {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string path = 3;
+    repeated string children = 4;
+    repeated string internal_outcomes = 5;
+    repeated string outcomes_from = 6;
+    repeated string outcomes_to = 7;
+    repeated string container_outcomes = 8;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.leo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message Imu {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time stamp = 2;
+     float temperature = 3;
+     float gyro_x = 4;
+     float gyro_y = 5;
+     float gyro_z = 6;
+     float accel_x = 7;
+     float accel_y = 8;
+     float accel_z = 9;
+}

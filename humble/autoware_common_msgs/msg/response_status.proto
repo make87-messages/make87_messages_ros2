@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_common_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ResponseStatus {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 code = 3;
+     string message = 4;
+}

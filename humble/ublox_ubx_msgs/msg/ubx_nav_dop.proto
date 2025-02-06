@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UBXNavDOP {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 itow = 3;
+     uint32 g_dop = 4;
+     uint32 p_dop = 5;
+     uint32 t_dop = 6;
+     uint32 v_dop = 7;
+     uint32 h_dop = 8;
+     uint32 n_dop = 9;
+     uint32 e_dop = 10;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.udp_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message UdpSendRequest {
+    make87_messages.core.Header header = 1;
+     string local_address = 2;
+     uint32 local_port = 3;
+     string remote_address = 4;
+     uint32 remote_port = 5;
+    repeated uint32 data = 6;
+}
+
+message UdpSendResponse {
+    make87_messages.core.Header header = 1;
+     bool sent = 2;
+}

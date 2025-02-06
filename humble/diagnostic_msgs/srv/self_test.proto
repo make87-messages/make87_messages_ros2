@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.diagnostic_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/diagnostic_msgs/msg/diagnostic_status.proto";
+
+message SelfTestRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message SelfTestResponse {
+    make87_messages.core.Header header = 1;
+     string id = 2;
+     uint32 passed = 3;
+    repeated make87_messages_ros2.humble.diagnostic_msgs.msg.DiagnosticStatus status = 4;
+}

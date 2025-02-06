@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.raspimouse_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message LightSensors {
+    make87_messages.core.Header header = 1;
+     int32 forward_r = 2;
+     int32 forward_l = 3;
+     int32 left = 4;
+     int32 right = 5;
+}

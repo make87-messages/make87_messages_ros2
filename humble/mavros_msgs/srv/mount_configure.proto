@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MountConfigureRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 mode = 3;
+     bool stabilize_roll = 4;
+     bool stabilize_pitch = 5;
+     bool stabilize_yaw = 6;
+     uint32 roll_input = 7;
+     uint32 pitch_input = 8;
+     uint32 yaw_input = 9;
+}
+
+message MountConfigureResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

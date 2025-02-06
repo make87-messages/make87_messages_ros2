@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/sbg_driver/msg/sbg_gps_pos_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgGpsPos {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     make87_messages_ros2.humble.sbg_driver.msg.SbgGpsPosStatus status = 4;
+     uint32 gps_tow = 5;
+     double latitude = 6;
+     double longitude = 7;
+     double altitude = 8;
+     float undulation = 9;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 position_accuracy = 10;
+     uint32 num_sv_tracked = 11;
+     uint32 num_sv_used = 12;
+     uint32 base_station_id = 13;
+     uint32 diff_age = 14;
+}

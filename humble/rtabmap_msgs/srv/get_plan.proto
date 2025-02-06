@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/path.proto";
+
+message GetPlanRequest {
+    make87_messages.core.Header header = 1;
+     int32 goal_node = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped goal = 3;
+     float tolerance = 4;
+}
+
+message GetPlanResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.rtabmap_msgs.msg.Path plan = 2;
+}

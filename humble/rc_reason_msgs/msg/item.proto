@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/rectangle.proto";
+
+message Item {
+    make87_messages.core.Header header = 1;
+     string uuid = 2;
+    repeated string grasp_uuids = 3;
+     string type = 4;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Rectangle rectangle = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose = 6;
+}

@@ -2,9 +2,11 @@ syntax = "proto3";
 
 package make87_messages_ros2.humble.std_msgs.msg;
 
+import "make87_messages/core/header.proto";
 import "make87_messages_ros2/humble/std_msgs/msg/multi_array_dimension.proto";
 
 message MultiArrayLayout {
-    repeated make87_messages_ros2.humble.std_msgs.msg.MultiArrayDimension dim = 1;
-     uint32 data_offset = 2;
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.std_msgs.msg.MultiArrayDimension dim = 2;
+     uint32 data_offset = 3;
 }

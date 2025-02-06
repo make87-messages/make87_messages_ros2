@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VehicleInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 available_info = 3;
+     uint32 sysid = 4;
+     uint32 compid = 5;
+     uint32 autopilot = 6;
+     uint32 type = 7;
+     uint32 system_status = 8;
+     uint32 base_mode = 9;
+     uint32 custom_mode = 10;
+     string mode = 11;
+     uint32 mode_id = 12;
+     uint64 capabilities = 13;
+     uint32 flight_sw_version = 14;
+     uint32 middleware_sw_version = 15;
+     uint32 os_sw_version = 16;
+     uint32 board_version = 17;
+     string flight_custom_version = 18;
+     uint32 vendor_id = 19;
+     uint32 product_id = 20;
+     uint64 uid = 21;
+}

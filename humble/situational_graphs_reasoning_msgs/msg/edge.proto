@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/humble/situational_graphs_reasoning_msgs/msg/attribute.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/float64_multi_array.proto";
+
+message Edge {
+    make87_messages.core.Header header = 1;
+     int64 origin_node = 2;
+     int64 target_node = 3;
+     int64 edge_id = 4;
+    repeated double plane_coefficients = 5;
+    repeated double plane_information_matrix = 6;
+     make87_messages_ros2.humble.std_msgs.msg.Float64MultiArray information_matrix = 7;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform measurement_transform = 8;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Attribute attributes = 9;
+}

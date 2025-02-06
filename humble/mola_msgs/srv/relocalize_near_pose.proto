@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mola_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance_stamped.proto";
+
+message RelocalizeNearPoseRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovarianceStamped pose = 2;
+}
+
+message RelocalizeNearPoseResponse {
+    make87_messages.core.Header header = 1;
+     bool accepted = 2;
+}

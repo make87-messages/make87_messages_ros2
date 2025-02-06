@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_nav_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message PathPlanning {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     int32 segment_type = 3;
+     float length = 4;
+     float start_speed = 5;
+     float end_speed = 6;
+     float startx = 7;
+     float starty = 8;
+     float endx = 9;
+     float endy = 10;
+     float theta0 = 11;
+     float a1 = 12;
+     float a2 = 13;
+     float k0 = 14;
+     float c1 = 15;
+     float c2 = 16;
+     int32 behavior = 17;
+     int32 creep = 18;
+     int32 acc = 19;
+     int32 reverse = 20;
+     int32 vehicle_track = 21;
+     bool transmitted = 22;
+     bool aux_transmitted = 23;
+     float theta_end = 24;
+     float k_end = 25;
+     int32 seg_len = 26;
+     float speed_limit = 27;
+     float max_error = 28;
+     float max_smooth = 29;
+     float max_curv = 30;
+     int32 possible_points = 31;
+     bool exit_segment = 32;
+}

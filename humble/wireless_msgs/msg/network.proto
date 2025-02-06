@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.wireless_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Network {
+    make87_messages.core.Header header = 1;
+     string type = 2;
+     string essid = 3;
+     string mac = 4;
+     string mode = 5;
+     string frequency = 6;
+     bool encryption = 7;
+}

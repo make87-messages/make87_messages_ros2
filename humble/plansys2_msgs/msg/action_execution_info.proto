@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message ActionExecutionInfo {
+    make87_messages.core.Header header = 1;
+     int32 status = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time start_stamp = 3;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time status_stamp = 4;
+     string action_full_name = 5;
+     string action = 6;
+    repeated string arguments = 7;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration duration = 8;
+     float completion = 9;
+     string message_status = 10;
+}

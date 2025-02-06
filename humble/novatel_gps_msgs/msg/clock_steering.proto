@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ClockSteering {
+    make87_messages.core.Header header = 1;
+     string source = 2;
+     string steering_state = 3;
+     uint32 period = 4;
+     double pulse_width = 5;
+     double bandwidth = 6;
+     float slope = 7;
+     double offset = 8;
+     double drift_rate = 9;
+}

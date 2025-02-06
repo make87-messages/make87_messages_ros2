@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_uss_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Object {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 id = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point position_first = 4;
+     double exist_probability = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point position_second = 6;
+     uint32 object_type = 7;
+}

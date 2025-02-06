@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tf2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message FrameGraphRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message FrameGraphResponse {
+    make87_messages.core.Header header = 1;
+     string frame_yaml = 2;
+}

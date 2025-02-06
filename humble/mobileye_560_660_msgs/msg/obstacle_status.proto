@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mobileye_560_660_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ObstacleStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 num_obstacles = 3;
+     uint32 timestamp = 4;
+     uint32 application_version = 5;
+     uint32 active_version_number_section = 6;
+     bool left_close_range_cut_in = 7;
+     bool right_close_range_cut_in = 8;
+     uint32 stop_go = 9;
+     uint32 protocol_version = 10;
+     bool close_car = 11;
+     uint32 failsafe = 12;
+}

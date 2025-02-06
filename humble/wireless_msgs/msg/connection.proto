@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.wireless_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Connection {
+    make87_messages.core.Header header = 1;
+     float bitrate = 2;
+     int32 txpower = 3;
+     string link_quality_raw = 4;
+     float link_quality = 5;
+     int32 signal_level = 6;
+     int32 noise_level = 7;
+     string essid = 8;
+     string bssid = 9;
+     double frequency = 10;
+}

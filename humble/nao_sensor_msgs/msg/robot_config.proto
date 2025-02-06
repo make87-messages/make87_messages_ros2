@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nao_sensor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message RobotConfig {
+    make87_messages.core.Header header = 1;
+     string body_id = 2;
+     string body_version = 3;
+     string head_id = 4;
+     string head_version = 5;
+}

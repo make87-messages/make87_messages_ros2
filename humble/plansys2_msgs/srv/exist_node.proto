@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/plansys2_msgs/msg/node.proto";
+
+message ExistNodeRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.plansys2_msgs.msg.Node node = 2;
+}
+
+message ExistNodeResponse {
+    make87_messages.core.Header header = 1;
+     bool exist = 2;
+}

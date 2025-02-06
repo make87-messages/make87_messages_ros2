@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MountControl {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 mode = 3;
+     float pitch = 4;
+     float roll = 5;
+     float yaw = 6;
+     float altitude = 7;
+     float latitude = 8;
+     float longitude = 9;
+}

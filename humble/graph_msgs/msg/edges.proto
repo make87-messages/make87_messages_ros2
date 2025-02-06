@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.graph_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Edges {
+    make87_messages.core.Header header = 1;
+    repeated uint32 node_ids = 2;
+    repeated double weights = 3;
+}

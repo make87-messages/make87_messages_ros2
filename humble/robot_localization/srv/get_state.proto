@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.robot_localization.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message GetStateRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time time_stamp = 2;
+     string frame_id = 3;
+}
+
+message GetStateResponse {
+    make87_messages.core.Header header = 1;
+    repeated double state = 2;
+    repeated double covariance = 3;
+}

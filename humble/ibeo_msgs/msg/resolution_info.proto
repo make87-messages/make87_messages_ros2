@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ResolutionInfo {
+    make87_messages.core.Header header = 1;
+     float resolution_start_angle = 2;
+     float resolution = 3;
+}

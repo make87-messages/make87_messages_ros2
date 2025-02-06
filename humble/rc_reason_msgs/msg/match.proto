@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+
+message Match {
+    make87_messages.core.Header header = 1;
+     string template_id = 2;
+     string uuid = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose = 4;
+    repeated string grasp_uuids = 5;
+     double score = 6;
+}

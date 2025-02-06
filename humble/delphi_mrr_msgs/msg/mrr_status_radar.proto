@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MrrStatusRadar {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_interference_type = 3;
+     bool can_recommend_unconverge = 4;
+     uint32 can_blockage_sidelobe_filter_val = 5;
+     bool can_radar_align_incomplete = 6;
+     bool can_blockage_sidelobe = 7;
+     bool can_blockage_mnr = 8;
+     bool can_radar_ext_cond_nok = 9;
+     bool can_radar_align_out_range = 10;
+     bool can_radar_align_not_start = 11;
+     bool can_radar_overheat_error = 12;
+     bool can_radar_not_op = 13;
+     bool can_xcvr_operational = 14;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.stereo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/region_of_interest.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message DisparityImage {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.sensor_msgs.msg.Image image = 3;
+     float f = 4;
+     float t = 5;
+     make87_messages_ros2.humble.sensor_msgs.msg.RegionOfInterest valid_window = 6;
+     float min_disparity = 7;
+     float max_disparity = 8;
+     float delta_d = 9;
+}

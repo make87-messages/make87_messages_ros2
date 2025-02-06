@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.pal_statistics_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Statistic {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     double value = 3;
+}

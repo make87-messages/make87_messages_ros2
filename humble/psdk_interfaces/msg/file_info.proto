@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/psdk_interfaces/msg/file_attributes.proto";
+import "make87_messages_ros2/humble/psdk_interfaces/msg/sub_file_info.proto";
+
+message FileInfo {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     uint32 type = 3;
+     uint32 size = 4;
+     uint32 index = 5;
+     int64 create_time_unix = 6;
+     make87_messages_ros2.humble.psdk_interfaces.msg.FileAttributes attributes = 7;
+     uint32 number_sub_files = 8;
+    repeated make87_messages_ros2.humble.psdk_interfaces.msg.SubFileInfo sub_files = 9;
+}

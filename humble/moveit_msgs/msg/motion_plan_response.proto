@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_trajectory.proto";
+
+message MotionPlanResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotState trajectory_start = 2;
+     string group_name = 3;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotTrajectory trajectory = 4;
+     double planning_time = 5;
+     make87_messages_ros2.humble.moveit_msgs.msg.MoveItErrorCodes error_code = 6;
+}

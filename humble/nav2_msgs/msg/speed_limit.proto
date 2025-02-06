@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nav2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SpeedLimit {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool percentage = 3;
+     double speed_limit = 4;
+}

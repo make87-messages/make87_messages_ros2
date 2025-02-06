@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message BidProposal {
+    make87_messages.core.Header header = 1;
+     string fleet_name = 2;
+     string expected_robot_name = 3;
+     double prev_cost = 4;
+     double new_cost = 5;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time finish_time = 6;
+}

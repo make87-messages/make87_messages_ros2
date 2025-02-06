@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_di.proto";
+
+message Object2270 {
+    make87_messages.core.Header header = 1;
+     uint32 id = 2;
+     uint32 age = 3;
+     uint32 prediction_age = 4;
+     uint32 relative_moment_of_measurement = 5;
+     uint32 reference_point_location = 6;
+     int32 reference_point_position_x = 7;
+     int32 reference_point_position_y = 8;
+     uint32 reference_point_position_sigma_x = 9;
+     uint32 reference_point_position_sigma_y = 10;
+     int32 contour_points_cog_x = 11;
+     int32 contour_points_cog_y = 12;
+     uint32 object_box_length = 13;
+     uint32 object_box_width = 14;
+     int32 object_box_orientation_angle = 15;
+     int32 object_box_orientation_angle_sigma = 16;
+     int32 absolute_velocity_x = 17;
+     int32 absolute_velocity_y = 18;
+     uint32 absolute_velocity_sigma_x = 19;
+     uint32 absolute_velocity_sigma_y = 20;
+     int32 relative_velocity_x = 21;
+     int32 relative_velocity_y = 22;
+     uint32 relative_velocity_sigma_x = 23;
+     uint32 relative_velocity_sigma_y = 24;
+     uint32 classification = 25;
+     uint32 tracking_model = 26;
+     bool mobile_detected = 27;
+     bool track_valid = 28;
+     uint32 classification_age = 29;
+     uint32 classification_confidence = 30;
+     uint32 number_of_contour_points = 31;
+    repeated make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di contour_point_list = 32;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/wrench.proto";
+
+message SetForceModeRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped task_frame = 2;
+     bool selection_vector_x = 3;
+     bool selection_vector_y = 4;
+     bool selection_vector_z = 5;
+     bool selection_vector_rx = 6;
+     bool selection_vector_ry = 7;
+     bool selection_vector_rz = 8;
+     make87_messages_ros2.humble.geometry_msgs.msg.Wrench wrench = 9;
+     uint32 type = 10;
+     make87_messages_ros2.humble.geometry_msgs.msg.Twist speed_limits = 11;
+    repeated float deviation_limits = 12;
+     float damping_factor = 13;
+     float gain_scaling = 14;
+}
+
+message SetForceModeResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

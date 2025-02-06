@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GetModelStateRequest {
+    make87_messages.core.Header header = 1;
+     string model_name = 2;
+     string relative_entity_name = 3;
+}
+
+message GetModelStateResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Twist twist = 4;
+     bool success = 5;
+     string status_message = 6;
+}

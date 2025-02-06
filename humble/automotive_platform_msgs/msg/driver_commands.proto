@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.automotive_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message DriverCommands {
+    make87_messages.core.Header header = 1;
+     uint32 msg_counter = 2;
+     uint32 engage = 3;
+     uint32 disengage = 4;
+     uint32 speed_up = 5;
+     uint32 slow_down = 6;
+     uint32 further = 7;
+     uint32 closer = 8;
+     uint32 right_turn = 9;
+     uint32 left_turn = 10;
+}

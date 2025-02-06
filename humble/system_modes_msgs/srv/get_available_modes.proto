@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.system_modes_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message GetAvailableModesRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message GetAvailableModesResponse {
+    make87_messages.core.Header header = 1;
+    repeated string available_modes = 2;
+}

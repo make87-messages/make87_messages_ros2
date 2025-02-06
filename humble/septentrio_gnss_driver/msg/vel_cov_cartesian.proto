@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VelCovCartesian {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     uint32 mode = 4;
+     uint32 error = 5;
+     float cov_vxvx = 6;
+     float cov_vyvy = 7;
+     float cov_vzvz = 8;
+     float cov_dtdt = 9;
+     float cov_vxvy = 10;
+     float cov_vxvz = 11;
+     float cov_vxdt = 12;
+     float cov_vyvz = 13;
+     float cov_vydt = 14;
+     float cov_vzdt = 15;
+}

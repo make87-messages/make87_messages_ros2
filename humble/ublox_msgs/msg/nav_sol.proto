@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavSOL {
+    make87_messages.core.Header header = 1;
+     uint32 i_tow = 2;
+     int32 f_tow = 3;
+     int32 week = 4;
+     uint32 gps_fix = 5;
+     uint32 flags = 6;
+     int32 ecef_x = 7;
+     int32 ecef_y = 8;
+     int32 ecef_z = 9;
+     uint32 p_acc = 10;
+     int32 ecef_vx = 11;
+     int32 ecef_vy = 12;
+     int32 ecef_vz = 13;
+     uint32 s_acc = 14;
+     uint32 p_dop = 15;
+     uint32 reserved1 = 16;
+     uint32 num_sv = 17;
+     uint32 reserved2 = 18;
+}

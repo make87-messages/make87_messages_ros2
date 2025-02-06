@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.srv;
+
+import "make87_messages/core/header.proto";
+
+message SickScanExitSrvRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message SickScanExitSrvResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.situational_graphs_reasoning_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/situational_graphs_reasoning_msgs/msg/graph.proto";
+
+message SubgraphMatchRequest {
+    make87_messages.core.Header header = 1;
+     string base_graph = 2;
+     string target_graph = 3;
+}
+
+message SubgraphMatchResponse {
+    make87_messages.core.Header header = 1;
+     int32 success = 2;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Graph matches = 3;
+    repeated float score = 4;
+}

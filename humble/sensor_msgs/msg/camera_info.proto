@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sensor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/region_of_interest.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message CameraInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 height = 3;
+     uint32 width = 4;
+     string distortion_model = 5;
+    repeated double d = 6;
+    repeated double k = 7;
+    repeated double r = 8;
+    repeated double p = 9;
+     uint32 binning_x = 10;
+     uint32 binning_y = 11;
+     make87_messages_ros2.humble.sensor_msgs.msg.RegionOfInterest roi = 12;
+}

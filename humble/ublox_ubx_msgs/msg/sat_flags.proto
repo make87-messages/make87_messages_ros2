@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message SatFlags {
+    make87_messages.core.Header header = 1;
+     uint32 quality_ind = 2;
+     bool sv_used = 3;
+     uint32 health = 4;
+     bool diff_corr = 5;
+     bool smoothed = 6;
+     uint32 orbit_source = 7;
+     bool eph_avail = 8;
+     bool alm_avail = 9;
+     bool ano_avail = 10;
+     bool aop_avail = 11;
+     bool sbas_corr_used = 12;
+     bool rtcm_corr_used = 13;
+     bool slas_corr_used = 14;
+     bool spartn_corr_used = 15;
+     bool pr_corr_used = 16;
+     bool cr_corr_used = 17;
+     bool do_corr_used = 18;
+     bool clas_corr_used = 19;
+}

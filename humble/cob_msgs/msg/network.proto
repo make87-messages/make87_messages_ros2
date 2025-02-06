@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.cob_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Network {
+    make87_messages.core.Header header = 1;
+     string macattr = 2;
+     string essid = 3;
+     int32 channel = 4;
+     int32 rssi = 5;
+     int32 noise = 6;
+     int32 beacon = 7;
+}

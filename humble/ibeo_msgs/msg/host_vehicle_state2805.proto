@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message HostVehicleState2805 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 3;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 4;
+     uint32 scan_number = 5;
+     uint32 error_flags = 6;
+     double longitudinal_velocity = 7;
+     double steering_wheel_angle = 8;
+     double front_wheel_angle = 9;
+     int32 x_position = 10;
+     int32 y_position = 11;
+     int32 course_angle = 12;
+     uint32 time_difference = 13;
+     int32 x_difference = 14;
+     int32 y_difference = 15;
+     int32 heading_difference = 16;
+     int32 current_yaw_rate = 17;
+}

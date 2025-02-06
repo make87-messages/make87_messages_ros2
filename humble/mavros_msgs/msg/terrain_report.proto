@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TerrainReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     double latitude = 3;
+     double longitude = 4;
+     uint32 spacing = 5;
+     float terrain_height = 6;
+     float current_height = 7;
+     uint32 pending = 8;
+     uint32 loaded = 9;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message JointConstraint {
+    make87_messages.core.Header header = 1;
+     string joint_name = 2;
+     double position = 3;
+     double tolerance_above = 4;
+     double tolerance_below = 5;
+     double weight = 6;
+}

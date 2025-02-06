@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_lift_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message LiftRequest {
+    make87_messages.core.Header header = 1;
+     string lift_name = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time request_time = 3;
+     string session_id = 4;
+     uint32 request_type = 5;
+     string destination_floor = 6;
+     uint32 door_state = 7;
+}

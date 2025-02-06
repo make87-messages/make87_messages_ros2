@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_fleet_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/location.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/robot_mode.proto";
+
+message RobotState {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string model = 3;
+     string task_id = 4;
+     uint64 seq = 5;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.RobotMode mode = 6;
+     float battery_percent = 7;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.Location location = 8;
+    repeated make87_messages_ros2.humble.rmf_fleet_msgs.msg.Location path = 9;
+}

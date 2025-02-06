@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.canopen_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message COReadIDRequest {
+    make87_messages.core.Header header = 1;
+     uint32 nodeid = 2;
+     uint32 index = 3;
+     uint32 subindex = 4;
+     uint32 canopen_datatype = 5;
+}
+
+message COReadIDResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 data = 3;
+}

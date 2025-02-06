@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MrrControlMsgFR {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_sensitivity_profile_select = 3;
+     uint32 can_stop_frequency_frml = 4;
+     uint32 can_stop_frequency_frll = 5;
+     float can_prp_factor_frml = 6;
+     float can_prp_factor_frll = 7;
+     uint32 can_desired_sweep_bw_frml = 8;
+     uint32 can_desired_sweep_bw_frll = 9;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SysStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 sensors_present = 3;
+     uint32 sensors_enabled = 4;
+     uint32 sensors_health = 5;
+     uint32 load = 6;
+     uint32 voltage_battery = 7;
+     int32 current_battery = 8;
+     int32 battery_remaining = 9;
+     uint32 drop_rate_comm = 10;
+     uint32 errors_comm = 11;
+     uint32 errors_count1 = 12;
+     uint32 errors_count2 = 13;
+     uint32 errors_count3 = 14;
+     uint32 errors_count4 = 15;
+}

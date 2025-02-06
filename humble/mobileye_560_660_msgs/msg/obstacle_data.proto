@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mobileye_560_660_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ObstacleData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 obstacle_id = 3;
+     double obstacle_pos_x = 4;
+     double obstacle_pos_y = 5;
+     uint32 blinker_info = 6;
+     uint32 cut_in_and_out = 7;
+     double obstacle_rel_vel_x = 8;
+     uint32 obstacle_type = 9;
+     uint32 obstacle_status = 10;
+     bool obstacle_brake_lights = 11;
+     uint32 obstacle_valid = 12;
+     float obstacle_length = 13;
+     float obstacle_width = 14;
+     uint32 obstacle_age = 15;
+     uint32 obstacle_lane = 16;
+     bool cipv_flag = 17;
+     float radar_pos_x = 18;
+     float radar_vel_x = 19;
+     uint32 radar_match_confidence = 20;
+     uint32 matched_radar_id = 21;
+     float obstacle_angle_rate = 22;
+     double obstacle_scale_change = 23;
+     float object_accel_x = 24;
+     bool obstacle_replaced = 25;
+     float obstacle_angle = 26;
+}

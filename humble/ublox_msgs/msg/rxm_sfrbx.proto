@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message RxmSFRBX {
+    make87_messages.core.Header header = 1;
+     uint32 gnss_id = 2;
+     uint32 sv_id = 3;
+     uint32 reserved0 = 4;
+     uint32 freq_id = 5;
+     uint32 num_words = 6;
+     uint32 chn = 7;
+     uint32 version = 8;
+     uint32 reserved1 = 9;
+    repeated uint32 dwrd = 10;
+}

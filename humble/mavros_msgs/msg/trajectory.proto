@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/mavros_msgs/msg/position_target.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Trajectory {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 type = 3;
+     make87_messages_ros2.humble.mavros_msgs.msg.PositionTarget point_1 = 4;
+     make87_messages_ros2.humble.mavros_msgs.msg.PositionTarget point_2 = 5;
+     make87_messages_ros2.humble.mavros_msgs.msg.PositionTarget point_3 = 6;
+     make87_messages_ros2.humble.mavros_msgs.msg.PositionTarget point_4 = 7;
+     make87_messages_ros2.humble.mavros_msgs.msg.PositionTarget point_5 = 8;
+    repeated uint32 point_valid = 9;
+    repeated uint32 command = 10;
+    repeated float time_horizon = 11;
+}

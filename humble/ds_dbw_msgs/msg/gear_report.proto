@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/cmd_src.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/gear.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/gear_reject.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GearReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.Gear gear = 3;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.Gear cmd = 4;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.Gear driver = 5;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.GearReject reject = 6;
+     bool power_latched = 7;
+     bool external_control = 8;
+     bool ready = 9;
+     bool override_active = 10;
+     bool override_other = 11;
+     bool fault = 12;
+     bool bad_crc = 13;
+     bool degraded = 14;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.CmdSrc cmd_src = 15;
+}

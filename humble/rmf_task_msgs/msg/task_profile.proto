@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/task_description.proto";
+
+message TaskProfile {
+    make87_messages.core.Header header = 1;
+     string task_id = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time submission_time = 3;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.TaskDescription description = 4;
+}

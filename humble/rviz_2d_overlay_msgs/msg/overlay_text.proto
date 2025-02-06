@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rviz_2d_overlay_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/color_rgba.proto";
+
+message OverlayText {
+    make87_messages.core.Header header = 1;
+     uint32 action = 2;
+     int32 width = 3;
+     int32 height = 4;
+     int32 horizontal_distance = 5;
+     int32 vertical_distance = 6;
+     uint32 horizontal_alignment = 7;
+     uint32 vertical_alignment = 8;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA bg_color = 9;
+     int32 line_width = 10;
+     float text_size = 11;
+     string font = 12;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA fg_color = 13;
+     string text = 14;
+}

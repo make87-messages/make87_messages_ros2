@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_lift_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message LiftState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time lift_time = 2;
+     string lift_name = 3;
+    repeated string available_floors = 4;
+     string current_floor = 5;
+     string destination_floor = 6;
+     uint32 door_state = 7;
+     uint32 motion_state = 8;
+    repeated uint32 available_modes = 9;
+     uint32 current_mode = 10;
+     string session_id = 11;
+}

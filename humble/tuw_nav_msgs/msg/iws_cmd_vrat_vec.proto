@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_nav_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message IwsCmdVRATVec {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated double v = 3;
+    repeated double rho = 4;
+    repeated double phi = 5;
+    repeated double delta_t = 6;
+    repeated double state0 = 7;
+}

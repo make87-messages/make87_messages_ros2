@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marker_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+
+message Marker {
+    make87_messages.core.Header header = 1;
+    repeated int32 ids = 2;
+    repeated double ids_confidence = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 4;
+}

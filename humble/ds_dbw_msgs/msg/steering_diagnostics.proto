@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SteeringDiagnostics {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool degraded = 3;
+     bool degraded_cmd_type = 4;
+     bool degraded_comms = 5;
+     bool degraded_comms_dbw = 6;
+     bool degraded_comms_dbw_gateway = 7;
+     bool degraded_comms_dbw_brake = 8;
+     bool degraded_comms_dbw_thrtl = 9;
+     bool degraded_comms_dbw_gear = 10;
+     bool degraded_comms_vehicle = 11;
+     bool degraded_comms_actuator = 12;
+     bool degraded_internal = 13;
+     bool degraded_control_performance = 14;
+     bool degraded_param_mismatch = 15;
+     bool degraded_vehicle = 16;
+     bool degraded_actuator = 17;
+     bool degraded_vehicle_speed = 18;
+     bool degraded_calibration = 19;
+     bool fault = 20;
+     bool fault_power = 21;
+     bool fault_comms = 22;
+     bool fault_comms_dbw = 23;
+     bool fault_comms_dbw_gateway = 24;
+     bool fault_comms_dbw_brake = 25;
+     bool fault_comms_dbw_thrtl = 26;
+     bool fault_comms_dbw_gear = 27;
+     bool fault_comms_vehicle = 28;
+     bool fault_comms_actuator = 29;
+     bool fault_internal = 30;
+     bool fault_vehicle = 31;
+     bool fault_vehicle_speed = 32;
+     bool fault_angle_sensor = 33;
+     bool fault_torque_sensor_1 = 34;
+     bool fault_torque_sensor_2 = 35;
+     bool fault_torque_sensor_mismatch = 36;
+     bool fault_actuator = 37;
+     bool fault_actuator_torque_sensor = 38;
+     bool fault_actuator_config = 39;
+     bool fault_actuator_assist = 40;
+     bool fault_control_performance = 41;
+     bool fault_param_mismatch = 42;
+     bool fault_param_limits = 43;
+     bool fault_calibration = 44;
+}

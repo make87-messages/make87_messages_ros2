@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgStatusCom {
+    make87_messages.core.Header header = 1;
+     bool port_a = 2;
+     bool port_b = 3;
+     bool port_c = 4;
+     bool port_d = 5;
+     bool port_e = 6;
+     bool port_a_rx = 7;
+     bool port_a_tx = 8;
+     bool port_b_rx = 9;
+     bool port_b_tx = 10;
+     bool port_c_rx = 11;
+     bool port_c_tx = 12;
+     bool port_d_rx = 13;
+     bool port_d_tx = 14;
+     bool port_e_rx = 15;
+     bool port_e_tx = 16;
+     bool eth_0 = 17;
+     bool eth_1 = 18;
+     bool eth_2 = 19;
+     bool eth_3 = 20;
+     bool eth_4 = 21;
+     bool eth_0_rx = 22;
+     bool eth_0_tx = 23;
+     bool eth_1_rx = 24;
+     bool eth_1_tx = 25;
+     bool eth_2_rx = 26;
+     bool eth_2_tx = 27;
+     bool eth_3_rx = 28;
+     bool eth_3_tx = 29;
+     bool eth_4_rx = 30;
+     bool eth_4_tx = 31;
+     bool can_rx = 32;
+     bool can_tx = 33;
+     uint32 can_status = 34;
+}

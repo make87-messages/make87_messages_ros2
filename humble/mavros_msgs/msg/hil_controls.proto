@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message HilControls {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float roll_ailerons = 3;
+     float pitch_elevator = 4;
+     float yaw_rudder = 5;
+     float throttle = 6;
+     float aux1 = 7;
+     float aux2 = 8;
+     float aux3 = 9;
+     float aux4 = 10;
+     uint32 mode = 11;
+     uint32 nav_mode = 12;
+}

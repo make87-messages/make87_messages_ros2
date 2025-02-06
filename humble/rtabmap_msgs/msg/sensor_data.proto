@@ -1,0 +1,52 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/env_sensor.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/global_descriptor.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/gps.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/key_point.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/landmark_detection.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/point3f.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/camera_info.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/imu.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SensorData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.sensor_msgs.msg.Image left = 3;
+     make87_messages_ros2.humble.sensor_msgs.msg.Image right = 4;
+    repeated uint32 left_compressed = 5;
+    repeated uint32 right_compressed = 6;
+    repeated make87_messages_ros2.humble.sensor_msgs.msg.CameraInfo left_camera_info = 7;
+    repeated make87_messages_ros2.humble.sensor_msgs.msg.CameraInfo right_camera_info = 8;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Transform local_transform = 9;
+     make87_messages_ros2.humble.sensor_msgs.msg.PointCloud2 laser_scan = 10;
+    repeated uint32 laser_scan_compressed = 11;
+     int32 laser_scan_max_pts = 12;
+     float laser_scan_max_range = 13;
+     int32 laser_scan_format = 14;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform laser_scan_local_transform = 15;
+    repeated uint32 user_data = 16;
+    repeated uint32 grid_ground = 17;
+    repeated uint32 grid_obstacles = 18;
+    repeated uint32 grid_empty_cells = 19;
+     float grid_cell_size = 20;
+     make87_messages_ros2.humble.rtabmap_msgs.msg.Point3f grid_view_point = 21;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.KeyPoint key_points = 22;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.Point3f points = 23;
+    repeated uint32 descriptors = 24;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.GlobalDescriptor global_descriptors = 25;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.EnvSensor env_sensors = 26;
+     make87_messages_ros2.humble.sensor_msgs.msg.Imu imu = 27;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform imu_local_transform = 28;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.LandmarkDetection landmarks = 29;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose ground_truth_pose = 30;
+     make87_messages_ros2.humble.rtabmap_msgs.msg.GPS gps = 31;
+}

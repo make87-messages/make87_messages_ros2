@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.test_interface_files.msg;
+
+import "make87_messages/core/header.proto";
+
+message WStrings {
+    make87_messages.core.Header header = 1;
+     string wstring_value = 2;
+     string wstring_value_default1 = 3;
+     string wstring_value_default2 = 4;
+     string wstring_value_default3 = 5;
+    repeated string array_of_wstrings = 6;
+    repeated string bounded_sequence_of_wstrings = 7;
+    repeated string unbounded_sequence_of_wstrings = 8;
+}

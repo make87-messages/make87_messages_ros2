@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.webots_ros2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message UrdfRobot {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string urdf_path = 3;
+     string robot_description = 4;
+     string relative_path_prefix = 5;
+     string translation = 6;
+     string rotation = 7;
+     bool normal = 8;
+     bool box_collision = 9;
+     string init_pos = 10;
+}

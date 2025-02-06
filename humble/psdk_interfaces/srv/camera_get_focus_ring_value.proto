@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message CameraGetFocusRingValueRequest {
+    make87_messages.core.Header header = 1;
+     uint32 payload_index = 2;
+}
+
+message CameraGetFocusRingValueResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     int32 focus_ring_value = 3;
+}

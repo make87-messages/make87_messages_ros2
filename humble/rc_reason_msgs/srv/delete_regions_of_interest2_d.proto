@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rc_common_msgs/msg/return_code.proto";
+
+message DeleteRegionsOfInterest2DRequest {
+    make87_messages.core.Header header = 1;
+    repeated string region_of_interest_2d_ids = 2;
+}
+
+message DeleteRegionsOfInterest2DResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.rc_common_msgs.msg.ReturnCode return_code = 2;
+}

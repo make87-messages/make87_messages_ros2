@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/cmd_src.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message BrakeReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 cmd_type = 3;
+     float pressure_input = 4;
+     float pressure_cmd = 5;
+     float pressure_output = 6;
+     float torque_input = 7;
+     float torque_cmd = 8;
+     float torque_output = 9;
+     float accel_cmd = 10;
+     float accel_output = 11;
+     float percent_input = 12;
+     float percent_cmd = 13;
+     float percent_output = 14;
+     bool btsi_cmd = 15;
+     bool yield_request = 16;
+     bool limiting_value = 17;
+     bool limiting_rate = 18;
+     bool external_control = 19;
+     bool ready = 20;
+     bool enabled = 21;
+     bool override_active = 22;
+     bool override_other = 23;
+     bool override_latched = 24;
+     bool timeout = 25;
+     bool fault = 26;
+     bool bad_crc = 27;
+     bool bad_rc = 28;
+     bool degraded = 29;
+     float limit_value = 30;
+     float brake_available_duration = 31;
+     bool brake_available_full = 32;
+     bool req_shift_park = 33;
+     bool req_park_brake = 34;
+     bool external_button = 35;
+     bool comms_loss_armed = 36;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.CmdSrc cmd_src = 37;
+}

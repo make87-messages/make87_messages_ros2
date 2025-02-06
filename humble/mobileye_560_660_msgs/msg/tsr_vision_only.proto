@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mobileye_560_660_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TsrVisionOnly {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 vision_only_sign_type_display1 = 3;
+     uint32 vision_only_supplementary_sign_type_display1 = 4;
+     uint32 vision_only_sign_type_display2 = 5;
+     uint32 vision_only_supplementary_sign_type_display2 = 6;
+     uint32 vision_only_sign_type_display3 = 7;
+     uint32 vision_only_supplementary_sign_type_display3 = 8;
+     uint32 vision_only_sign_type_display4 = 9;
+     uint32 vision_only_supplementary_sign_type_display4 = 10;
+}

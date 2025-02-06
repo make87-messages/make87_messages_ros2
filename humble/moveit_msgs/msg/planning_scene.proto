@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform_stamped.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/allowed_collision_matrix.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/link_padding.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/link_scale.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/object_color.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/planning_scene_world.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_state.proto";
+
+message PlanningScene {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotState robot_state = 3;
+     string robot_model_name = 4;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.TransformStamped fixed_frame_transforms = 5;
+     make87_messages_ros2.humble.moveit_msgs.msg.AllowedCollisionMatrix allowed_collision_matrix = 6;
+    repeated make87_messages_ros2.humble.moveit_msgs.msg.LinkPadding link_padding = 7;
+    repeated make87_messages_ros2.humble.moveit_msgs.msg.LinkScale link_scale = 8;
+    repeated make87_messages_ros2.humble.moveit_msgs.msg.ObjectColor object_colors = 9;
+     make87_messages_ros2.humble.moveit_msgs.msg.PlanningSceneWorld world = 10;
+     bool is_diff = 11;
+}

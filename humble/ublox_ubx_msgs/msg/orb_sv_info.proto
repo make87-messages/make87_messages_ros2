@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/orb_alm_info.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/orb_eph_info.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/orb_sv_flag.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/other_orb_info.proto";
+
+message OrbSVInfo {
+    make87_messages.core.Header header = 1;
+     uint32 gnss_id = 2;
+     uint32 sv_id = 3;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.OrbSVFlag sv_flag = 4;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.OrbEphInfo eph = 5;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.OrbAlmInfo alm = 6;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.OtherOrbInfo other_orb = 7;
+}

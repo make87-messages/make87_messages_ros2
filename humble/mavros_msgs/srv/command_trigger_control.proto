@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message CommandTriggerControlRequest {
+    make87_messages.core.Header header = 1;
+     bool trigger_enable = 2;
+     bool sequence_reset = 3;
+     bool trigger_pause = 4;
+}
+
+message CommandTriggerControlResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

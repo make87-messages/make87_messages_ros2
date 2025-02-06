@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message MeasEpochChannelType2 {
+    make87_messages.core.Header header = 1;
+     uint32 type = 2;
+     uint32 lock_time = 3;
+     uint32 cn0 = 4;
+     uint32 offsets_msb = 5;
+     int32 carrier_msb = 6;
+     uint32 obs_info = 7;
+     uint32 code_offset_lsb = 8;
+     uint32 carrier_lsb = 9;
+     uint32 doppler_offset_lsb = 10;
+}

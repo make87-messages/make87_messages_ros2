@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_extended_solution_status.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Insstdev {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 3;
+     float latitude_dev = 4;
+     float longitude_dev = 5;
+     float height_dev = 6;
+     float north_velocity_dev = 7;
+     float east_velocity_dev = 8;
+     float up_velocity_dev = 9;
+     float roll_dev = 10;
+     float pitch_dev = 11;
+     float azimuth_dev = 12;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelExtendedSolutionStatus extended_solution_status = 13;
+     uint32 time_since_update = 14;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosbag2_storage_mcap_testdata.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rosbag2_storage_mcap_testdata/msg/basic_msg.proto";
+
+message ComplexMsg {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.rosbag2_storage_mcap_testdata.msg.BasicMsg b = 2;
+}

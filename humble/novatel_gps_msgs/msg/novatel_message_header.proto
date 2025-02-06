@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_receiver_status.proto";
+
+message NovatelMessageHeader {
+    make87_messages.core.Header header = 1;
+     string message_name = 2;
+     string port = 3;
+     uint32 sequence_num = 4;
+     float percent_idle_time = 5;
+     string gps_time_status = 6;
+     uint32 gps_week_num = 7;
+     double gps_seconds = 8;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelReceiverStatus receiver_status = 9;
+     uint32 receiver_software_version = 10;
+}

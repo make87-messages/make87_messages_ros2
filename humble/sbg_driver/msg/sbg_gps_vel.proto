@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/sbg_driver/msg/sbg_gps_vel_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgGpsVel {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     make87_messages_ros2.humble.sbg_driver.msg.SbgGpsVelStatus status = 4;
+     uint32 gps_tow = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 velocity = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 velocity_accuracy = 7;
+     float course = 8;
+     float course_acc = 9;
+}

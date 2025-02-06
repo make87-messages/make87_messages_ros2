@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message MountingPositionF {
+    make87_messages.core.Header header = 1;
+     float yaw_angle = 2;
+     float pitch_angle = 3;
+     float roll_angle = 4;
+     float x_position = 5;
+     float y_position = 6;
+     float z_position = 7;
+}

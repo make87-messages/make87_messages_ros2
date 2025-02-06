@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosapi_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rosapi_msgs/msg/type_def.proto";
+
+message MessageDetailsRequest {
+    make87_messages.core.Header header = 1;
+     string type = 2;
+}
+
+message MessageDetailsResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rosapi_msgs.msg.TypeDef typedefs = 2;
+}

@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavPVT7 {
+    make87_messages.core.Header header = 1;
+     uint32 i_tow = 2;
+     uint32 year = 3;
+     uint32 month = 4;
+     uint32 day = 5;
+     uint32 hour = 6;
+     uint32 min = 7;
+     uint32 sec = 8;
+     uint32 valid = 9;
+     uint32 t_acc = 10;
+     int32 nano = 11;
+     uint32 fix_type = 12;
+     uint32 flags = 13;
+     uint32 flags2 = 14;
+     uint32 num_sv = 15;
+     int32 lon = 16;
+     int32 lat = 17;
+     int32 height = 18;
+     int32 h_msl = 19;
+     uint32 h_acc = 20;
+     uint32 v_acc = 21;
+     int32 vel_n = 22;
+     int32 vel_e = 23;
+     int32 vel_d = 24;
+     int32 g_speed = 25;
+     int32 heading = 26;
+     uint32 s_acc = 27;
+     uint32 head_acc = 28;
+     uint32 p_dop = 29;
+    repeated uint32 reserved1 = 30;
+}

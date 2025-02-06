@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safevisionary_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message GeneralStatus {
+    make87_messages.core.Header header = 1;
+     uint32 run_mode_active = 2;
+     uint32 device_error = 3;
+     uint32 application_error = 4;
+     uint32 sleep_mode = 5;
+     uint32 wait_for_input = 6;
+     uint32 wait_for_cluster = 7;
+     uint32 contamination_warning = 8;
+     uint32 contamination_error = 9;
+     uint32 dead_zone_detection = 10;
+     uint32 temperature_warning = 11;
+}

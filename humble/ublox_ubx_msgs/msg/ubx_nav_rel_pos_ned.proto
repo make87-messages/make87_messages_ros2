@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/carr_soln.proto";
+
+message UBXNavRelPosNED {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 version = 3;
+     uint32 ref_station_id = 4;
+     uint32 itow = 5;
+     int32 rel_pos_n = 6;
+     int32 rel_pos_e = 7;
+     int32 rel_pos_d = 8;
+     int32 rel_pos_length = 9;
+     int32 rel_pos_heading = 10;
+     int32 rel_pos_hp_n = 11;
+     int32 rel_pos_hp_e = 12;
+     int32 rel_pos_hp_d = 13;
+     int32 rel_pos_hp_length = 14;
+     uint32 acc_n = 15;
+     uint32 acc_e = 16;
+     uint32 acc_d = 17;
+     uint32 acc_length = 18;
+     uint32 acc_heading = 19;
+     bool gnss_fix_ok = 20;
+     bool diff_soln = 21;
+     bool rel_pos_valid = 22;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.CarrSoln carr_soln = 23;
+     bool is_moving = 24;
+     bool ref_pos_miss = 25;
+     bool ref_obs_miss = 26;
+     bool rel_pos_heading_valid = 27;
+     bool rel_pos_normalized = 28;
+}

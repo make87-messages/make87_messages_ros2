@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_srr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SrrTrack {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_tx_detect_valid_level = 3;
+     bool can_tx_detect_status = 4;
+     float can_tx_detect_range_rate = 5;
+     float can_tx_detect_range = 6;
+     float can_tx_detect_angle = 7;
+     float can_tx_detect_amplitude = 8;
+}

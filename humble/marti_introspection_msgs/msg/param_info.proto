@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_introspection_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ParamInfo {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string resolved_name = 3;
+     string description = 4;
+     string group = 5;
+     uint32 type = 6;
+     bool dynamic = 7;
+     int32 default_int = 8;
+     float default_float = 9;
+     double default_double = 10;
+     string default_string = 11;
+     bool default_bool = 12;
+     double max_value = 13;
+     double min_value = 14;
+}

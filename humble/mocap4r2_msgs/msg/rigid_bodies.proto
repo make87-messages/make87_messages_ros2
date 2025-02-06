@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mocap4r2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/mocap4r2_msgs/msg/rigid_body.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message RigidBodies {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 frame_number = 3;
+    repeated make87_messages_ros2.humble.mocap4r2_msgs.msg.RigidBody rigidbodies = 4;
+}

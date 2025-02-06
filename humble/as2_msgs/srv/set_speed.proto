@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.as2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/as2_msgs/msg/speed.proto";
+
+message SetSpeedRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.as2_msgs.msg.Speed speed = 2;
+}
+
+message SetSpeedResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

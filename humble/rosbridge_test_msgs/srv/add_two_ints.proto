@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosbridge_test_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message AddTwoIntsRequest {
+    make87_messages.core.Header header = 1;
+     int64 a = 2;
+     int64 b = 3;
+}
+
+message AddTwoIntsResponse {
+    make87_messages.core.Header header = 1;
+     int64 sum = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.data_tamer_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Snapshot {
+    make87_messages.core.Header header = 1;
+     uint64 timestamp_nsec = 2;
+     uint64 schema_hash = 3;
+    repeated uint32 active_mask = 4;
+    repeated uint32 payload = 5;
+}

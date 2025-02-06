@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.py_trees_ros_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message Statistics {
+    make87_messages.core.Header header = 1;
+     int64 count = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time stamp = 3;
+     float tick_duration = 4;
+     float tick_duration_average = 5;
+     float tick_duration_variance = 6;
+     float tick_interval = 7;
+     float tick_interval_average = 8;
+     float tick_interval_variance = 9;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mobileye_560_660_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message LkaLane {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 lane_type = 3;
+     uint32 quality = 4;
+     uint32 model_degree = 5;
+     double position_parameter_c0 = 6;
+     double curvature_parameter_c2 = 7;
+     double curvature_derivative_parameter_c3 = 8;
+     float marking_width = 9;
+     double heading_angle_parameter_c1 = 10;
+     float view_range = 11;
+     bool view_range_availability = 12;
+}

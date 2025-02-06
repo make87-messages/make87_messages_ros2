@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rcss3d_agent_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Hear {
+    make87_messages.core.Header header = 1;
+     string team = 2;
+     float time = 3;
+     bool self = 4;
+    repeated float direction = 5;
+     string message = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mocap4r2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message CreateRigidBodyRequest {
+    make87_messages.core.Header header = 1;
+     string rigid_body_name = 2;
+     string link_parent = 3;
+    repeated int32 markers = 4;
+}
+
+message CreateRigidBodyResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

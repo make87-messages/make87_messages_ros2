@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_dashboard_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message PopupRequest {
+    make87_messages.core.Header header = 1;
+     string message = 2;
+}
+
+message PopupResponse {
+    make87_messages.core.Header header = 1;
+     string answer = 2;
+     bool success = 3;
+}

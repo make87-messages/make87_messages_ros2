@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.geographic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message GeoPoint {
+    make87_messages.core.Header header = 1;
+     double latitude = 2;
+     double longitude = 3;
+     double altitude = 4;
+}

@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ErrorWarning {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 3;
+     bool err_internal_error = 4;
+     bool err_motor_1_fault = 5;
+     bool err_buffer_error_xmt_incomplete = 6;
+     bool err_buffer_error_overflow = 7;
+     bool err_apd_over_temperature = 8;
+     bool err_apd_under_temperature = 9;
+     bool err_apd_temperature_sensor_defect = 10;
+     bool err_motor_2_fault = 11;
+     bool err_motor_3_fault = 12;
+     bool err_motor_4_fault = 13;
+     bool err_motor_5_fault = 14;
+     bool err_int_no_scan_data = 15;
+     bool err_int_communication_error = 16;
+     bool err_int_incorrect_scan_data = 17;
+     bool err_config_fpga_not_configurable = 18;
+     bool err_config_incorrect_config_data = 19;
+     bool err_config_contains_incorrect_params = 20;
+     bool err_timeout_data_processing = 21;
+     bool err_timeout_env_model_computation_reset = 22;
+     bool wrn_int_communication_error = 23;
+     bool wrn_low_temperature = 24;
+     bool wrn_high_temperature = 25;
+     bool wrn_int_motor_1 = 26;
+     bool wrn_sync_error = 27;
+     bool wrn_laser_1_start_pulse_missing = 28;
+     bool wrn_laser_2_start_pulse_missing = 29;
+     bool wrn_can_interface_blocked = 30;
+     bool wrn_eth_interface_blocked = 31;
+     bool wrn_incorrect_can_data_rcvd = 32;
+     bool wrn_int_incorrect_scan_data = 33;
+     bool wrn_eth_unkwn_incomplete_data = 34;
+     bool wrn_incorrect_or_forbidden_cmd_rcvd = 35;
+     bool wrn_memory_access_failure = 36;
+     bool wrn_int_overflow = 37;
+     bool wrn_ego_motion_data_missing = 38;
+     bool wrn_incorrect_mounting_params = 39;
+     bool wrn_no_obj_comp_due_to_scan_freq = 40;
+}

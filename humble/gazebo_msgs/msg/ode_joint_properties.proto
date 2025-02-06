@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ODEJointProperties {
+    make87_messages.core.Header header = 1;
+    repeated double damping = 2;
+    repeated double hi_stop = 3;
+    repeated double lo_stop = 4;
+    repeated double erp = 5;
+    repeated double cfm = 6;
+    repeated double stop_erp = 7;
+    repeated double stop_cfm = 8;
+    repeated double fudge_factor = 9;
+    repeated double fmax = 10;
+    repeated double vel = 11;
+}

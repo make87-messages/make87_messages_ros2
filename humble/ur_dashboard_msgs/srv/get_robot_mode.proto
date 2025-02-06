@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_dashboard_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ur_dashboard_msgs/msg/robot_mode.proto";
+
+message GetRobotModeRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message GetRobotModeResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.ur_dashboard_msgs.msg.RobotMode robot_mode = 2;
+     string answer = 3;
+     bool success = 4;
+}

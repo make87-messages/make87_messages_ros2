@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_status_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ChronyTrackingStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string reference = 3;
+     int32 stratum = 4;
+     double system_time_offset = 5;
+     double last_offset = 6;
+     double rms_offset = 7;
+     float frequency_offset = 8;
+     float residual_frequency = 9;
+     float skew = 10;
+     double root_delay = 11;
+     double root_dispersion = 12;
+     float update_interval = 13;
+     string leap_status = 14;
+}

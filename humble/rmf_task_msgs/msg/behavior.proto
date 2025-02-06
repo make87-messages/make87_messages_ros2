@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/behavior_parameter.proto";
+
+message Behavior {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+    repeated make87_messages_ros2.humble.rmf_task_msgs.msg.BehaviorParameter parameters = 3;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message LinkRequestRequest {
+    make87_messages.core.Header header = 1;
+     string link_name = 2;
+}
+
+message LinkRequestResponse {
+    make87_messages.core.Header header = 1;
+}

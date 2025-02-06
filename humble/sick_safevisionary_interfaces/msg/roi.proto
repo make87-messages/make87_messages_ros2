@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safevisionary_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/roi_observation_result_data.proto";
+import "make87_messages_ros2/humble/sick_safevisionary_interfaces/msg/roi_observation_safety_data.proto";
+
+message ROI {
+    make87_messages.core.Header header = 1;
+     uint32 id = 2;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.ROIObservationResultData result_data = 3;
+     make87_messages_ros2.humble.sick_safevisionary_interfaces.msg.ROIObservationSafetyData safety_data = 4;
+     uint32 distance_value = 5;
+}

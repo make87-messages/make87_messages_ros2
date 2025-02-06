@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_gz_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ros_gz_interfaces/msg/entity.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MaterialColor {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ros_gz_interfaces.msg.Entity entity = 3;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA ambient = 4;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA diffuse = 5;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA specular = 6;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA emissive = 7;
+     double shininess = 8;
+     uint32 entity_match = 9;
+}

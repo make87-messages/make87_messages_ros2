@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_general_purpose_radar_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Information {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 sensor_type = 3;
+     double hw_temperature = 4;
+     bool sensor_blind = 5;
+     bool sw_fail = 6;
+     bool hw_fail = 7;
+     bool can_fail = 8;
+     bool config_fail = 9;
+     bool diag_mode = 10;
+     uint32 dtc = 11;
+     uint32 dtc_order_id = 12;
+     bool sensor_not_safe = 13;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/interference_indicator.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/misalignment_packet.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/sensor_field_of_view.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/sensor_modulation_performance.proto";
+
+message LocationAttributesPacket {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.SensorModulationPerformance sensor_modulation_performance = 2;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.MisalignmentPacket misalignment = 3;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.InterferenceIndicator interference_indicator = 4;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.SensorFieldOfView sensor_field_of_view = 5;
+}

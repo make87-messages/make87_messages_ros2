@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/object_recognition_msgs/msg/object_type.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/plane.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/solid_primitive.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message CollisionObject {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 3;
+     string id = 4;
+     make87_messages_ros2.humble.object_recognition_msgs.msg.ObjectType type = 5;
+    repeated make87_messages_ros2.humble.shape_msgs.msg.SolidPrimitive primitives = 6;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose primitive_poses = 7;
+    repeated make87_messages_ros2.humble.shape_msgs.msg.Mesh meshes = 8;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose mesh_poses = 9;
+    repeated make87_messages_ros2.humble.shape_msgs.msg.Plane planes = 10;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose plane_poses = 11;
+    repeated string subframe_names = 12;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose subframe_poses = 13;
+     uint32 operation = 14;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message GimbalRotation {
+    make87_messages.core.Header header = 1;
+     uint32 payload_index = 2;
+     uint32 rotation_mode = 3;
+     float pitch = 4;
+     float roll = 5;
+     float yaw = 6;
+     float time = 7;
+}

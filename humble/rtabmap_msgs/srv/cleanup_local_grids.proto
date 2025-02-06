@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message CleanupLocalGridsRequest {
+    make87_messages.core.Header header = 1;
+     int32 radius = 2;
+     bool filter_scans = 3;
+}
+
+message CleanupLocalGridsResponse {
+    make87_messages.core.Header header = 1;
+     int32 modified = 2;
+}

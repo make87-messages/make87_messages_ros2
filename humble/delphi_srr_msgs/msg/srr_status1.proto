@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_srr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SrrStatus1 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool can_tx_look_type = 3;
+     uint32 can_tx_dsp_timestamp = 4;
+     float can_tx_yaw_rate_calc = 5;
+     float can_tx_vehicle_speed_calc = 6;
+     uint32 can_tx_scan_index = 7;
+     float can_tx_curvature = 8;
+}

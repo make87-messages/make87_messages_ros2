@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/trk_stat.proto";
+
+message RawxData {
+    make87_messages.core.Header header = 1;
+     double pr_mes = 2;
+     double cp_mes = 3;
+     float do_mes = 4;
+     uint32 gnss_id = 5;
+     uint32 sv_id = 6;
+     uint32 sig_id = 7;
+     uint32 freq_id = 8;
+     uint32 locktime = 9;
+     uint32 c_no = 10;
+     uint32 pr_stdev = 11;
+     uint32 cp_stdev = 12;
+     uint32 do_stdev = 13;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.TrkStat trk_stat = 14;
+}

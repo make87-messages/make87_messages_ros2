@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.object_recognition_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/mesh.proto";
+
+message ObjectInformation {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     make87_messages_ros2.humble.shape_msgs.msg.Mesh ground_truth_mesh = 3;
+     make87_messages_ros2.humble.sensor_msgs.msg.PointCloud2 ground_truth_point_cloud = 4;
+}

@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.wiimote_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/wiimote_msgs/msg/ir_source_info.proto";
+
+message State {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 angular_velocity_zeroed = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 angular_velocity_raw = 4;
+    repeated double angular_velocity_covariance = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 linear_acceleration_zeroed = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 linear_acceleration_raw = 7;
+    repeated double linear_acceleration_covariance = 8;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 nunchuk_acceleration_zeroed = 9;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 nunchuk_acceleration_raw = 10;
+    repeated float nunchuk_joystick_zeroed = 11;
+    repeated float nunchuk_joystick_raw = 12;
+    repeated bool buttons = 13;
+    repeated bool nunchuk_buttons = 14;
+    repeated bool leds = 15;
+     bool rumble = 16;
+    repeated make87_messages_ros2.humble.wiimote_msgs.msg.IrSourceInfo ir_tracking = 17;
+     float raw_battery = 18;
+     float percent_battery = 19;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time zeroing_time = 20;
+     uint64 errors = 21;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.srv;
+
+import "make87_messages/core/header.proto";
+
+message GetContaminationResultSrvRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message GetContaminationResultSrvResponse {
+    make87_messages.core.Header header = 1;
+     uint32 warning = 2;
+     uint32 error = 3;
+     bool success = 4;
+}

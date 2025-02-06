@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_status.proto";
+
+message NegotiationStatuses {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationStatus negotiations = 2;
+}

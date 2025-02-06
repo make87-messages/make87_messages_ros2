@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.robot_calibration_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point_stamped.proto";
+import "make87_messages_ros2/humble/robot_calibration_msgs/msg/extended_camera_info.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/point_cloud2.proto";
+
+message Observation {
+    make87_messages.core.Header header = 1;
+     string sensor_name = 2;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.PointStamped features = 3;
+     make87_messages_ros2.humble.robot_calibration_msgs.msg.ExtendedCameraInfo ext_camera_info = 4;
+     make87_messages_ros2.humble.sensor_msgs.msg.PointCloud2 cloud = 5;
+     make87_messages_ros2.humble.sensor_msgs.msg.Image image = 6;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.srv;
+
+import "make87_messages/core/header.proto";
+
+message FieldSetWriteSrvRequest {
+    make87_messages.core.Header header = 1;
+     int32 field_set_selection_method_in = 2;
+     int32 active_field_set_in = 3;
+}
+
+message FieldSetWriteSrvResponse {
+    make87_messages.core.Header header = 1;
+     int32 field_set_selection_method = 2;
+     int32 active_field_set = 3;
+     bool success = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rcss3d_agent_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ForceResistance {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     float px = 3;
+     float py = 4;
+     float pz = 5;
+     float fx = 6;
+     float fy = 7;
+     float fz = 8;
+}

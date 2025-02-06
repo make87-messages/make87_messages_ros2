@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.swri_roscpp.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/marti_common_msgs/msg/service_header.proto";
+
+message TestTopicServiceRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.marti_common_msgs.msg.ServiceHeader srv_header = 2;
+     int32 request_value = 3;
+}

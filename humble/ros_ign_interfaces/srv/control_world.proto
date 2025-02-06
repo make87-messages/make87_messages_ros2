@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_ign_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ros_gz_interfaces/msg/world_control.proto";
+
+message ControlWorldRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.ros_gz_interfaces.msg.WorldControl world_control = 2;
+}
+
+message ControlWorldResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

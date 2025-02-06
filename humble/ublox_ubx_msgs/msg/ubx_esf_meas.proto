@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/esf_meas_data_item.proto";
+
+message UBXEsfMeas {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_tag = 3;
+     uint32 time_mark_sent = 4;
+     bool time_mark_edge = 5;
+     bool calib_ttag_valid = 6;
+     uint32 num_meas = 7;
+     uint32 id = 8;
+    repeated make87_messages_ros2.humble.ublox_ubx_msgs.msg.ESFMeasDataItem data = 9;
+     uint32 calib_ttag = 10;
+}

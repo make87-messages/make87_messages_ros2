@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message GetModelPropertiesRequest {
+    make87_messages.core.Header header = 1;
+     string model_name = 2;
+}
+
+message GetModelPropertiesResponse {
+    make87_messages.core.Header header = 1;
+     string parent_model_name = 2;
+     string canonical_body_name = 3;
+    repeated string body_names = 4;
+    repeated string geom_names = 5;
+    repeated string joint_names = 6;
+    repeated string child_model_names = 7;
+     bool is_static = 8;
+     bool success = 9;
+     string status_message = 10;
+}

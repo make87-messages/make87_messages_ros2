@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_map_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message PointCloudMapCellMetaData {
+    make87_messages.core.Header header = 1;
+     float min_x = 2;
+     float min_y = 3;
+     float max_x = 4;
+     float max_y = 5;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message RadioStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 rssi = 3;
+     uint32 remrssi = 4;
+     uint32 txbuf = 5;
+     uint32 noise = 6;
+     uint32 remnoise = 7;
+     uint32 rxerrors = 8;
+     uint32 fixed = 9;
+     float rssi_dbm = 10;
+     float remrssi_dbm = 11;
+}

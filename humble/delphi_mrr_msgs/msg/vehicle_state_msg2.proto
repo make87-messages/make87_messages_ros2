@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VehicleStateMsg2 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool fsm_yaw_rate_valid = 3;
+     float fsm_yaw_rate = 4;
+     uint32 can_vehicle_index_4fa = 5;
+     float fsm_vehicle_velocity = 6;
+     bool can_steering_whl_angle_qf = 7;
+     bool fsm_vehicle_velocity_valid = 8;
+     float can_steering_whl_angle = 9;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_object_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist.proto";
+
+message Object {
+    make87_messages.core.Header header = 1;
+    repeated int32 ids = 2;
+     int32 shape = 3;
+    repeated double shape_variables = 4;
+    repeated double ids_confidence = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Twist twist = 7;
+}

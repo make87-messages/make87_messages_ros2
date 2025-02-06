@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_fleet_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/delivery_alert_action.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/delivery_alert_category.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/delivery_alert_tier.proto";
+
+message DeliveryAlert {
+    make87_messages.core.Header header = 1;
+     string id = 2;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.DeliveryAlertCategory category = 3;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.DeliveryAlertTier tier = 4;
+     string task_id = 5;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.DeliveryAlertAction action = 6;
+     string message = 7;
+}

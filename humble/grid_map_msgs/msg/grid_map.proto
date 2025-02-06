@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.grid_map_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/grid_map_msgs/msg/grid_map_info.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/float32_multi_array.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GridMap {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.grid_map_msgs.msg.GridMapInfo info = 3;
+    repeated string layers = 4;
+    repeated string basic_layers = 5;
+    repeated make87_messages_ros2.humble.std_msgs.msg.Float32MultiArray data = 6;
+     uint32 outer_start_index = 7;
+     uint32 inner_start_index = 8;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message DebugValue {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     int32 index = 3;
+     int32 array_id = 4;
+     string name = 5;
+     float value_float = 6;
+     int32 value_int = 7;
+    repeated float data = 8;
+     uint32 type = 9;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.automotive_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UserInputADAS {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool btn_cc_on = 3;
+     bool btn_cc_off = 4;
+     bool btn_cc_on_off = 5;
+     bool btn_cc_set_inc = 6;
+     bool btn_cc_set_dec = 7;
+     bool btn_cc_res = 8;
+     bool btn_cc_cncl = 9;
+     bool btn_cc_res_cncl = 10;
+     bool btn_acc_gap_inc = 11;
+     bool btn_acc_gap_dec = 12;
+     bool btn_lka_on = 13;
+     bool btn_lka_off = 14;
+     bool btn_lka_on_off = 15;
+}

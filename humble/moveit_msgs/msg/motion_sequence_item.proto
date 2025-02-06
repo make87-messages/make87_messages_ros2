@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/motion_plan_request.proto";
+
+message MotionSequenceItem {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.MotionPlanRequest req = 2;
+     double blend_radius = 3;
+}

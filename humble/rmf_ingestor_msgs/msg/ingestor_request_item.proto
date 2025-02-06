@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_ingestor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message IngestorRequestItem {
+    make87_messages.core.Header header = 1;
+     string type_guid = 2;
+     int32 quantity = 3;
+     string compartment_name = 4;
+}

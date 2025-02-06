@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message CancelTaskRequest {
+    make87_messages.core.Header header = 1;
+     string requester = 2;
+     string task_id = 3;
+}
+
+message CancelTaskResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string message = 3;
+}

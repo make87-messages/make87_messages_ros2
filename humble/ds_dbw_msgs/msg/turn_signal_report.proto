@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/turn_signal.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TurnSignalReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.TurnSignal input = 3;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.TurnSignal cmd = 4;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.TurnSignal output = 5;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.TurnSignal feedback = 6;
+     bool ready = 7;
+     bool override_active = 8;
+     bool override_other = 9;
+     bool timeout = 10;
+     bool bad_crc = 11;
+     bool bad_rc = 12;
+     bool degraded = 13;
+     bool degraded_cmd_type = 14;
+     bool degraded_comms_dbw_steer = 15;
+     bool degraded_comms_dbw_brake = 16;
+     bool degraded_comms_dbw_thrtl = 17;
+     bool degraded_comms_vehicle = 18;
+     bool degraded_control_performance = 19;
+     bool fault = 20;
+     bool fault_comms_vehicle = 21;
+}

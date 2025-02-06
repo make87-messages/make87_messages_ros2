@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message JointLimits {
+    make87_messages.core.Header header = 1;
+     string joint_name = 2;
+     bool has_position_limits = 3;
+     double min_position = 4;
+     double max_position = 5;
+     bool has_velocity_limits = 6;
+     double max_velocity = 7;
+     bool has_acceleration_limits = 8;
+     double max_acceleration = 9;
+     bool has_jerk_limits = 10;
+     double max_jerk = 11;
+}

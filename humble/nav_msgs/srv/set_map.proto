@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nav_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance_stamped.proto";
+import "make87_messages_ros2/humble/nav_msgs/msg/occupancy_grid.proto";
+
+message SetMapRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.nav_msgs.msg.OccupancyGrid map = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovarianceStamped initial_pose = 3;
+}
+
+message SetMapResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

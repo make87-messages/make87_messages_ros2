@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message NegotiationStatus {
+    make87_messages.core.Header header = 1;
+     uint64 conflict_version = 2;
+    repeated uint64 participants = 3;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time start_time = 4;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time last_response_time = 5;
+}

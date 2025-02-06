@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.base2d_kinematics_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Base2DKinematics {
+    make87_messages.core.Header header = 1;
+     double min_vel_x = 2;
+     double max_vel_x = 3;
+     double min_vel_y = 4;
+     double max_vel_y = 5;
+     double max_vel_theta = 6;
+     double acc_lim_x = 7;
+     double decel_lim_x = 8;
+     double acc_lim_y = 9;
+     double decel_lim_y = 10;
+     double acc_lim_theta = 11;
+     double decel_lim_theta = 12;
+     double min_speed_xy = 13;
+     double max_speed_xy = 14;
+     double min_speed_theta = 15;
+}

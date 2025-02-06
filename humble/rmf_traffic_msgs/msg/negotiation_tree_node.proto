@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_key.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/route.proto";
+
+message NegotiationTreeNode {
+    make87_messages.core.Header header = 1;
+     int64 parent = 2;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationKey key = 3;
+     bool rejected = 4;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.Route itinerary = 5;
+}

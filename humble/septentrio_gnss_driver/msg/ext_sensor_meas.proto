@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ExtSensorMeas {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     uint32 n = 4;
+     uint32 sb_length = 5;
+    repeated uint32 source = 6;
+    repeated uint32 sensor_model = 7;
+    repeated uint32 type = 8;
+    repeated uint32 obs_info = 9;
+     double acceleration_x = 10;
+     double acceleration_y = 11;
+     double acceleration_z = 12;
+     double angular_rate_x = 13;
+     double angular_rate_y = 14;
+     double angular_rate_z = 15;
+     float velocity_x = 16;
+     float velocity_y = 17;
+     float velocity_z = 18;
+     float std_dev_x = 19;
+     float std_dev_y = 20;
+     float std_dev_z = 21;
+     float sensor_temperature = 22;
+     double zero_velocity_flag = 23;
+}

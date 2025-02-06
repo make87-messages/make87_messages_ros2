@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MrrHeaderSensorCoverage {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_sensor_fov_hor = 3;
+     int32 can_doppler_coverage = 4;
+     uint32 can_range_coverage = 5;
+}

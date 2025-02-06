@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rcss3d_agent_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message UniversalJointVel {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     float ax1 = 3;
+     float ax2 = 4;
+}

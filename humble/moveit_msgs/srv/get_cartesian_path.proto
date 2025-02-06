@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/constraints.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_trajectory.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GetCartesianPathRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotState start_state = 3;
+     string group_name = 4;
+     string link_name = 5;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose waypoints = 6;
+     double max_step = 7;
+     double jump_threshold = 8;
+     double prismatic_jump_threshold = 9;
+     double revolute_jump_threshold = 10;
+     bool avoid_collisions = 11;
+     make87_messages_ros2.humble.moveit_msgs.msg.Constraints path_constraints = 12;
+     double max_velocity_scaling_factor = 13;
+     double max_acceleration_scaling_factor = 14;
+     string cartesian_speed_limited_link = 15;
+     double max_cartesian_speed = 16;
+}
+
+message GetCartesianPathResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotState start_state = 2;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotTrajectory solution = 3;
+     double fraction = 4;
+     make87_messages_ros2.humble.moveit_msgs.msg.MoveItErrorCodes error_code = 5;
+}

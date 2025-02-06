@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.map_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/nav_msgs/msg/occupancy_grid.proto";
+
+message GetMapROIRequest {
+    make87_messages.core.Header header = 1;
+     double x = 2;
+     double y = 3;
+     double l_x = 4;
+     double l_y = 5;
+}
+
+message GetMapROIResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.nav_msgs.msg.OccupancyGrid sub_map = 2;
+}

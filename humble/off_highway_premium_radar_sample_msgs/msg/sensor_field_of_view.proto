@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message SensorFieldOfView {
+    make87_messages.core.Header header = 1;
+    repeated float fov = 2;
+    repeated float azimuth = 3;
+    repeated float elevation_range_scaling = 4;
+    repeated float elevation = 5;
+}

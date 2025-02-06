@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message GimbalManagerSetRoiRequest {
+    make87_messages.core.Header header = 1;
+     uint32 mode = 2;
+     uint32 gimbal_device_id = 3;
+     float latitude = 4;
+     float longitude = 5;
+     float altitude = 6;
+     float pitch_offset = 7;
+     float roll_offset = 8;
+     float yaw_offset = 9;
+     uint32 sysid = 10;
+}
+
+message GimbalManagerSetRoiResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

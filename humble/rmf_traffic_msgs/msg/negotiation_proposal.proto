@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_key.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/route.proto";
+
+message NegotiationProposal {
+    make87_messages.core.Header header = 1;
+     uint64 conflict_version = 2;
+     uint64 proposal_version = 3;
+     uint64 for_participant = 4;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationKey to_accommodate = 5;
+     uint64 plan_id = 6;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.Route itinerary = 7;
+}

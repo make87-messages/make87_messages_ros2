@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message PublishMapRequest {
+    make87_messages.core.Header header = 1;
+     bool global_map = 2;
+     bool optimized = 3;
+     bool graph_only = 4;
+}
+
+message PublishMapResponse {
+    make87_messages.core.Header header = 1;
+}

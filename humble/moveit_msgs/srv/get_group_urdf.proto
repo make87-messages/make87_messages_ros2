@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/move_it_error_codes.proto";
+
+message GetGroupUrdfRequest {
+    make87_messages.core.Header header = 1;
+     string group_name = 2;
+}
+
+message GetGroupUrdfResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.MoveItErrorCodes error_code = 2;
+     string urdf_string = 3;
+}

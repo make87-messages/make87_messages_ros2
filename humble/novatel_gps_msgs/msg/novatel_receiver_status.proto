@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NovatelReceiverStatus {
+    make87_messages.core.Header header = 1;
+     uint32 original_status_code = 2;
+     bool error_flag = 3;
+     bool temperature_flag = 4;
+     bool voltage_supply_flag = 5;
+     bool antenna_powered = 6;
+     bool antenna_is_open = 7;
+     bool antenna_is_shorted = 8;
+     bool cpu_overload_flag = 9;
+     bool com1_buffer_overrun = 10;
+     bool com2_buffer_overrun = 11;
+     bool com3_buffer_overrun = 12;
+     bool usb_buffer_overrun = 13;
+     bool rf1_agc_flag = 14;
+     bool rf2_agc_flag = 15;
+     bool almanac_flag = 16;
+     bool position_solution_flag = 17;
+     bool position_fixed_flag = 18;
+     bool clock_steering_status_enabled = 19;
+     bool clock_model_flag = 20;
+     bool oemv_external_oscillator_flag = 21;
+     bool software_resource_flag = 22;
+     bool aux1_status_event_flag = 23;
+     bool aux2_status_event_flag = 24;
+     bool aux3_status_event_flag = 25;
+}

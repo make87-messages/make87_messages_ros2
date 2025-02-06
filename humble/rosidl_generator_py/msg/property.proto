@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosidl_generator_py.msg;
+
+import "make87_messages/core/header.proto";
+
+message Property {
+    make87_messages.core.Header header = 1;
+     string property = 2;
+     string anything = 3;
+}

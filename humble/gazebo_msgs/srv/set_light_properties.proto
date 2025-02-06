@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/color_rgba.proto";
+
+message SetLightPropertiesRequest {
+    make87_messages.core.Header header = 1;
+     string light_name = 2;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA diffuse = 3;
+     double attenuation_constant = 4;
+     double attenuation_linear = 5;
+     double attenuation_quadratic = 6;
+}
+
+message SetLightPropertiesResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string status_message = 3;
+}

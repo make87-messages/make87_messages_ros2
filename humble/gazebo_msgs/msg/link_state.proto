@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist.proto";
+
+message LinkState {
+    make87_messages.core.Header header = 1;
+     string link_name = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Twist twist = 4;
+     string reference_frame = 5;
+}

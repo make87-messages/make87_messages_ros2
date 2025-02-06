@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_multi_robot_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/tuw_multi_robot_msgs/msg/route_precondition.proto";
+
+message RouteSegment {
+    make87_messages.core.Header header = 1;
+     int32 segment_id = 2;
+    repeated make87_messages_ros2.humble.tuw_multi_robot_msgs.msg.RoutePrecondition preconditions = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose start = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose end = 5;
+     float width = 6;
+}

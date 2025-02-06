@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/gps_msgs/msg/gps_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GPSFix {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.gps_msgs.msg.GPSStatus status = 3;
+     double latitude = 4;
+     double longitude = 5;
+     double altitude = 6;
+     double track = 7;
+     double speed = 8;
+     double climb = 9;
+     double pitch = 10;
+     double roll = 11;
+     double dip = 12;
+     double time = 13;
+     double gdop = 14;
+     double pdop = 15;
+     double hdop = 16;
+     double vdop = 17;
+     double tdop = 18;
+     double err = 19;
+     double err_horz = 20;
+     double err_vert = 21;
+     double err_track = 22;
+     double err_speed = 23;
+     double err_climb = 24;
+     double err_time = 25;
+     double err_pitch = 26;
+     double err_roll = 27;
+     double err_dip = 28;
+    repeated double position_covariance = 29;
+     uint32 position_covariance_type = 30;
+}

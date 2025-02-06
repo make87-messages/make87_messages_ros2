@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+
+message CommandTOLLocalRequest {
+    make87_messages.core.Header header = 1;
+     float min_pitch = 2;
+     float offset = 3;
+     float rate = 4;
+     float yaw = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 position = 6;
+}
+
+message CommandTOLLocalResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

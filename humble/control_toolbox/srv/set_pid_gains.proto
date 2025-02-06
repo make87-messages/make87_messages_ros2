@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.control_toolbox.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetPidGainsRequest {
+    make87_messages.core.Header header = 1;
+     double p = 2;
+     double i = 3;
+     double d = 4;
+     double i_clamp = 5;
+     bool antiwindup = 6;
+}
+
+message SetPidGainsResponse {
+    make87_messages.core.Header header = 1;
+}

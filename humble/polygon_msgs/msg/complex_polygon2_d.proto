@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.polygon_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/polygon_msgs/msg/polygon2_d.proto";
+
+message ComplexPolygon2D {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.polygon_msgs.msg.Polygon2D outer = 2;
+    repeated make87_messages_ros2.humble.polygon_msgs.msg.Polygon2D inner = 3;
+}

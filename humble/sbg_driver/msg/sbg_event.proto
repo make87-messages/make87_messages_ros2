@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgEvent {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     bool overflow = 4;
+     bool offset_0_valid = 5;
+     bool offset_1_valid = 6;
+     bool offset_2_valid = 7;
+     bool offset_3_valid = 8;
+     uint32 time_offset_0 = 9;
+     uint32 time_offset_1 = 10;
+     uint32 time_offset_2 = 11;
+     uint32 time_offset_3 = 12;
+}

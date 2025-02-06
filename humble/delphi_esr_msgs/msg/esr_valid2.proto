@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrValid2 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 mr_sn = 4;
+     float mr_range = 5;
+     float mr_range_rate = 6;
+     float mr_angle = 7;
+     int32 mr_power = 8;
+}

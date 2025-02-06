@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/psdk_interfaces/msg/esc_status_individual.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EscData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.psdk_interfaces.msg.EscStatusIndividual esc = 3;
+}

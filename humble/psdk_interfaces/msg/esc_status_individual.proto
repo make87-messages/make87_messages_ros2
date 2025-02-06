@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message EscStatusIndividual {
+    make87_messages.core.Header header = 1;
+     int32 current = 2;
+     int32 speed = 3;
+     uint32 voltage = 4;
+     int32 temperature = 5;
+     int32 stall = 6;
+     int32 empty = 7;
+     int32 unbalanced = 8;
+     int32 esc_disconnected = 9;
+     int32 temperature_high = 10;
+}

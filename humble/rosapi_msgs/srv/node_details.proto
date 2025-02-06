@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosapi_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message NodeDetailsRequest {
+    make87_messages.core.Header header = 1;
+     string node = 2;
+}
+
+message NodeDetailsResponse {
+    make87_messages.core.Header header = 1;
+    repeated string subscribing = 2;
+    repeated string publishing = 3;
+    repeated string services = 4;
+}

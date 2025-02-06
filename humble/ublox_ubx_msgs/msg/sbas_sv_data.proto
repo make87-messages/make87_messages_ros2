@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message SBASSvData {
+    make87_messages.core.Header header = 1;
+     uint32 svid = 2;
+     uint32 reserved_1 = 3;
+     uint32 udre = 4;
+     uint32 sv_sys = 5;
+     uint32 sv_service = 6;
+     uint32 reserved_2 = 7;
+     int32 prc = 8;
+    repeated uint32 reserved_3 = 9;
+     int32 ic = 10;
+}

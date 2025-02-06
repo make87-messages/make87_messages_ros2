@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_airskin_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message AirskinInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated uint32 ids = 3;
+    repeated string names = 4;
+    repeated uint32 min = 5;
+    repeated uint32 max = 6;
+}

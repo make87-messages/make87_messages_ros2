@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mocap4r2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+
+message Marker {
+    make87_messages.core.Header header = 1;
+     int32 id_type = 2;
+     int32 marker_index = 3;
+     string marker_name = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point translation = 5;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.object_recognition_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/object_recognition_msgs/msg/object_information.proto";
+import "make87_messages_ros2/humble/object_recognition_msgs/msg/object_type.proto";
+
+message GetObjectInformationRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.object_recognition_msgs.msg.ObjectType type = 2;
+}
+
+message GetObjectInformationResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.object_recognition_msgs.msg.ObjectInformation information = 2;
+}

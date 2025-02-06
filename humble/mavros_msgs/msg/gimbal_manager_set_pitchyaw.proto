@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message GimbalManagerSetPitchyaw {
+    make87_messages.core.Header header = 1;
+     uint32 target_system = 2;
+     uint32 target_component = 3;
+     uint32 flags = 4;
+     uint32 gimbal_device_id = 5;
+     float pitch = 6;
+     float yaw = 7;
+     float pitch_rate = 8;
+     float yaw_rate = 9;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nav2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point32.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VoxelGrid {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated uint32 data = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point32 origin = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 resolutions = 5;
+     uint32 size_x = 6;
+     uint32 size_y = 7;
+     uint32 size_z = 8;
+}

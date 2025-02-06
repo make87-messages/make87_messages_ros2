@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.cartographer_ros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/cartographer_ros_msgs/msg/status_response.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+
+message StartTrajectoryRequest {
+    make87_messages.core.Header header = 1;
+     string configuration_directory = 2;
+     string configuration_basename = 3;
+     bool use_initial_pose = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose initial_pose = 5;
+     int32 relative_to_trajectory_id = 6;
+}
+
+message StartTrajectoryResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.cartographer_ros_msgs.msg.StatusResponse status = 2;
+     int32 trajectory_id = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.clearpath_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/clearpath_platform_msgs/msg/drive_feedback.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Feedback {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.clearpath_platform_msgs.msg.DriveFeedback drivers = 3;
+     int32 commanded_mode = 4;
+     int32 actual_mode = 5;
+}

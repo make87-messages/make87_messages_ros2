@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.qb_device_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetCommandsRequest {
+    make87_messages.core.Header header = 1;
+     int32 id = 2;
+     int32 max_repeats = 3;
+     bool set_commands = 4;
+     bool set_commands_async = 5;
+    repeated int32 commands = 6;
+}
+
+message SetCommandsResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     int32 failures = 3;
+}

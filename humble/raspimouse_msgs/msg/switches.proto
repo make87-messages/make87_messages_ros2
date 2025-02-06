@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.raspimouse_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Switches {
+    make87_messages.core.Header header = 1;
+     bool switch0 = 2;
+     bool switch1 = 3;
+     bool switch2 = 4;
+}

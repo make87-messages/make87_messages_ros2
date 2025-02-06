@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ThrottleDiagnostics {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool degraded = 3;
+     bool degraded_cmd_type = 4;
+     bool degraded_comms = 5;
+     bool degraded_comms_dbw = 6;
+     bool degraded_comms_dbw_gateway = 7;
+     bool degraded_comms_dbw_steer = 8;
+     bool degraded_comms_dbw_brake = 9;
+     bool degraded_comms_dbw_gear = 10;
+     bool degraded_internal = 11;
+     bool degraded_control_performance = 12;
+     bool degraded_param_mismatch = 13;
+     bool degraded_vehicle = 14;
+     bool degraded_vehicle_speed = 15;
+     bool degraded_aped_feedback = 16;
+     bool degraded_actuator_pedal_sensor = 17;
+     bool degraded_sensor = 18;
+     bool degraded_calibration = 19;
+     bool fault = 20;
+     bool fault_power = 21;
+     bool fault_comms = 22;
+     bool fault_comms_dbw = 23;
+     bool fault_comms_dbw_gateway = 24;
+     bool fault_comms_dbw_steer = 25;
+     bool fault_comms_dbw_brake = 26;
+     bool fault_comms_dbw_gear = 27;
+     bool fault_internal = 28;
+     bool fault_vehicle = 29;
+     bool fault_vehicle_speed = 30;
+     bool fault_sensor = 31;
+     bool fault_aped_sensor_1 = 32;
+     bool fault_aped_sensor_2 = 33;
+     bool fault_aped_sensor_mismatch = 34;
+     bool fault_actuator_pedal_sensor = 35;
+     bool fault_control_performance = 36;
+     bool fault_param_mismatch = 37;
+     bool fault_param_limits = 38;
+     bool fault_calibration = 39;
+}

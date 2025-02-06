@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message RxmRTCM {
+    make87_messages.core.Header header = 1;
+     uint32 version = 2;
+     uint32 flags = 3;
+    repeated uint32 reserved0 = 4;
+     uint32 ref_station = 5;
+     uint32 msg_type = 6;
+}

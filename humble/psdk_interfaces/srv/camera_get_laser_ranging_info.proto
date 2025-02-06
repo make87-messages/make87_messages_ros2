@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message CameraGetLaserRangingInfoRequest {
+    make87_messages.core.Header header = 1;
+     uint32 payload_index = 2;
+}
+
+message CameraGetLaserRangingInfoResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     double longitude = 3;
+     double latitude = 4;
+     int32 altitude = 5;
+     int32 distance = 6;
+     int32 screen_x = 7;
+     int32 screen_y = 8;
+     bool enable_lidar = 9;
+     uint32 exception = 10;
+}

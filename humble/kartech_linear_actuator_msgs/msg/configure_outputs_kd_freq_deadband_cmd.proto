@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ConfigureOutputsKdFreqDeadbandCmd {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool confirm = 3;
+     uint32 kd = 4;
+     uint32 closed_loop_freq = 5;
+     double error_dead_band = 6;
+}

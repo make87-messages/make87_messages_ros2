@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrVehicle2 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 scan_index_ack = 3;
+     bool use_angle_misalignment = 4;
+     bool clear_faults = 5;
+     int32 high_yaw_angle = 6;
+     bool mr_only_transmit = 7;
+     bool lr_only_transmit = 8;
+     float angle_misalignment = 9;
+     float lateral_mounting_offset = 10;
+     bool radar_cmd_radiate = 11;
+     bool blockage_disable = 12;
+     uint32 maximum_tracks = 13;
+     uint32 turn_signal_status = 14;
+     bool vehicle_speed_validity = 15;
+     bool mmr_upside_down = 16;
+     uint32 grouping_mode = 17;
+     bool wiper_status = 18;
+     bool raw_data_enable = 19;
+}

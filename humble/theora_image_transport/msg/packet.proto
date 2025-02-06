@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.theora_image_transport.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Packet {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated uint32 data = 3;
+     int32 b_o_s = 4;
+     int32 e_o_s = 5;
+     int64 granulepos = 6;
+     int64 packetno = 7;
+}

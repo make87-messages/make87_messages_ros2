@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.cob_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SafetyControllerState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool has_wireless_emstop = 3;
+     bool has_fall_sensors = 4;
+     bool has_magnetic_safety_switch = 5;
+     bool ack_needed = 6;
+     bool emergency_button_stop = 7;
+     bool brake_button_stop = 8;
+     bool laser_stop = 9;
+     bool wireless_stop = 10;
+     bool fall_sensor_stop = 11;
+     bool external_stop = 12;
+     bool laser_bridged = 13;
+     bool wireless_bridged = 14;
+     bool magnetic_safety_switch = 15;
+     bool laser_front_ok = 16;
+     bool laser_left_ok = 17;
+     bool laser_right_ok = 18;
+     bool fall_sensor_front = 19;
+     bool fall_sensor_left = 20;
+     bool fall_sensor_right = 21;
+     bool fall_sensor_released = 22;
+     bool base_active = 23;
+     bool torso_active = 24;
+     bool base_enabled = 25;
+     bool torso_enabled = 26;
+}

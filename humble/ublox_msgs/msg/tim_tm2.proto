@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message TimTM2 {
+    make87_messages.core.Header header = 1;
+     uint32 ch = 2;
+     uint32 flags = 3;
+     uint32 rising_edge_count = 4;
+     uint32 wn_r = 5;
+     uint32 wn_f = 6;
+     uint32 tow_ms_r = 7;
+     uint32 tow_sub_ms_r = 8;
+     uint32 tow_ms_f = 9;
+     uint32 tow_sub_ms_f = 10;
+     uint32 acc_est = 11;
+}

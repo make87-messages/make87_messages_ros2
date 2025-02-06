@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/plansys2_msgs/msg/durative_action.proto";
+
+message GetDomainDurativeActionDetailsRequest {
+    make87_messages.core.Header header = 1;
+     string durative_action = 2;
+    repeated string parameters = 3;
+}
+
+message GetDomainDurativeActionDetailsResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     make87_messages_ros2.humble.plansys2_msgs.msg.DurativeAction durative_action = 3;
+     string error_info = 4;
+}

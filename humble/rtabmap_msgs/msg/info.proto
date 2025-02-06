@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/map_graph.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Info {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     int32 ref_id = 3;
+     int32 loop_closure_id = 4;
+     int32 proximity_detection_id = 5;
+     int32 landmark_id = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform loop_closure_transform = 7;
+    repeated int32 wm_state = 8;
+    repeated int32 posterior_keys = 9;
+    repeated float posterior_values = 10;
+    repeated int32 likelihood_keys = 11;
+    repeated float likelihood_values = 12;
+    repeated int32 raw_likelihood_keys = 13;
+    repeated float raw_likelihood_values = 14;
+    repeated int32 weights_keys = 15;
+    repeated int32 weights_values = 16;
+    repeated int32 labels_keys = 17;
+    repeated string labels_values = 18;
+    repeated string stats_keys = 19;
+    repeated float stats_values = 20;
+    repeated int32 local_path = 21;
+     int32 current_goal_id = 22;
+     make87_messages_ros2.humble.rtabmap_msgs.msg.MapGraph odom_cache = 23;
+}

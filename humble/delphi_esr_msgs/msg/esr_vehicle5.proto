@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrVehicle5 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     int32 oversteer_understeer = 3;
+     bool yaw_rate_bias_shift = 4;
+     float beamwidth_vert = 5;
+     float funnel_offset_left = 6;
+     float funnel_offset_right = 7;
+     float cw_blockage_threshold = 8;
+     uint32 distance_rear_axle = 9;
+     uint32 wheelbase = 10;
+     float steering_gear_ratio = 11;
+}

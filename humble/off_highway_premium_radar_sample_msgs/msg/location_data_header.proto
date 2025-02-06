@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/operation_mode.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/time.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message LocationDataHeader {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.Time start_measurement = 3;
+     uint32 lgp_version = 4;
+     uint32 block_counter = 5;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.OperationMode operation_mode = 6;
+     bool data_measured = 7;
+     uint32 num_locations = 8;
+}

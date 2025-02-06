@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.unitree_ros.msg;
+
+import "make87_messages/core/header.proto";
+
+message BmsState {
+    make87_messages.core.Header header = 1;
+     uint32 version_h = 2;
+     uint32 version_l = 3;
+     uint32 bms_status = 4;
+     uint32 soc = 5;
+     int32 current = 6;
+     uint32 cycle = 7;
+    repeated int32 bq_ntc = 8;
+    repeated int32 mcu_ntc = 9;
+    repeated uint32 cell_vol = 10;
+}

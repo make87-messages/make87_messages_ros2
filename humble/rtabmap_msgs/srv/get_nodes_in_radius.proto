@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+
+message GetNodesInRadiusRequest {
+    make87_messages.core.Header header = 1;
+     int32 node_id = 2;
+     float x = 3;
+     float y = 4;
+     float z = 5;
+     float radius = 6;
+     int32 k = 7;
+}
+
+message GetNodesInRadiusResponse {
+    make87_messages.core.Header header = 1;
+    repeated int32 ids = 2;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose poses = 3;
+    repeated float dists_sqr = 4;
+}

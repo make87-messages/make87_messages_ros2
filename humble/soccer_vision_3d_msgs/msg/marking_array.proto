@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.soccer_vision_3d_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/soccer_vision_3d_msgs/msg/marking_ellipse.proto";
+import "make87_messages_ros2/humble/soccer_vision_3d_msgs/msg/marking_intersection.proto";
+import "make87_messages_ros2/humble/soccer_vision_3d_msgs/msg/marking_segment.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MarkingArray {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.soccer_vision_3d_msgs.msg.MarkingEllipse ellipses = 3;
+    repeated make87_messages_ros2.humble.soccer_vision_3d_msgs.msg.MarkingIntersection intersections = 4;
+    repeated make87_messages_ros2.humble.soccer_vision_3d_msgs.msg.MarkingSegment segments = 5;
+}

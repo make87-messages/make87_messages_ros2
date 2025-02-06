@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.puma_motor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Status {
+    make87_messages.core.Header header = 1;
+     uint32 device_number = 2;
+     string device_name = 3;
+     float bus_voltage = 4;
+     float temperature = 5;
+     float output_voltage = 6;
+     float analog_input = 7;
+     uint32 mode = 8;
+     uint32 fault = 9;
+}

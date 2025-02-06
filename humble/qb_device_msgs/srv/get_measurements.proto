@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.qb_device_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message GetMeasurementsRequest {
+    make87_messages.core.Header header = 1;
+     int32 id = 2;
+     int32 max_repeats = 3;
+     bool get_positions = 4;
+     bool get_currents = 5;
+     bool get_commands = 6;
+}
+
+message GetMeasurementsResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     int32 failures = 3;
+    repeated int32 positions = 4;
+    repeated int32 currents = 5;
+    repeated int32 commands = 6;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time stamp = 7;
+}

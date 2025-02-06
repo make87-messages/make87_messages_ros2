@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nmea_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/nmea_msgs/msg/gpgsv_satellite.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Gpgsv {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string message_id = 3;
+     uint32 n_msgs = 4;
+     uint32 msg_number = 5;
+     uint32 n_satellites = 6;
+    repeated make87_messages_ros2.humble.nmea_msgs.msg.GpgsvSatellite satellites = 7;
+}

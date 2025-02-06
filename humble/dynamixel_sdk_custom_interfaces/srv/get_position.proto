@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.dynamixel_sdk_custom_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message GetPositionRequest {
+    make87_messages.core.Header header = 1;
+     uint32 id = 2;
+}
+
+message GetPositionResponse {
+    make87_messages.core.Header header = 1;
+     int32 position = 2;
+}

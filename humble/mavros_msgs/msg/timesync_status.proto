@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TimesyncStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint64 remote_timestamp_ns = 3;
+     int64 observed_offset_ns = 4;
+     int64 estimated_offset_ns = 5;
+     float round_trip_time_ms = 6;
+}

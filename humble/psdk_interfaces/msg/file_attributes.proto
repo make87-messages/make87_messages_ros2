@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message FileAttributes {
+    make87_messages.core.Header header = 1;
+     uint32 photo_ratio = 2;
+     uint32 photo_rotation = 3;
+     uint32 video_duration = 4;
+     uint32 video_frame_rate = 5;
+     uint32 video_rotation = 6;
+     uint32 video_resolution = 7;
+}

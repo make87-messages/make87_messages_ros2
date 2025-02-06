@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrTrack {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 id = 4;
+     float lat_rate = 5;
+     bool grouping_changed = 6;
+     bool oncoming = 7;
+     uint32 status = 8;
+     float angle = 9;
+     float range = 10;
+     bool bridge_object = 11;
+     bool rolling_count = 12;
+     float width = 13;
+     float range_accel = 14;
+     uint32 med_range_mode = 15;
+     float range_rate = 16;
+}

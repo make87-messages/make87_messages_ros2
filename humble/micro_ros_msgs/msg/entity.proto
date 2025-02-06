@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.micro_ros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Entity {
+    make87_messages.core.Header header = 1;
+     uint32 entity_type = 2;
+     string name = 3;
+    repeated string types = 4;
+}

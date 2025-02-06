@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.geometry_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+
+message Inertia {
+    make87_messages.core.Header header = 1;
+     double m = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 com = 3;
+     double ixx = 4;
+     double ixy = 5;
+     double ixz = 6;
+     double iyy = 7;
+     double iyz = 8;
+     double izz = 9;
+}

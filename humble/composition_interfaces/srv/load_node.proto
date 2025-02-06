@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.composition_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rcl_interfaces/msg/parameter.proto";
+
+message LoadNodeRequest {
+    make87_messages.core.Header header = 1;
+     string package_name = 2;
+     string plugin_name = 3;
+     string node_name = 4;
+     string node_namespace = 5;
+     uint32 log_level = 6;
+    repeated string remap_rules = 7;
+    repeated make87_messages_ros2.humble.rcl_interfaces.msg.Parameter parameters = 8;
+    repeated make87_messages_ros2.humble.rcl_interfaces.msg.Parameter extra_arguments = 9;
+}
+
+message LoadNodeResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string error_message = 3;
+     string full_node_name = 4;
+     uint64 unique_id = 5;
+}

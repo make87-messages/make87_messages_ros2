@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/ego_vehicle_data.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/measurement_cycle_sync_data.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/time.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SensorFeedback {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 lgp_version = 3;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.Time vehicle_time = 4;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.MeasurementCycleSyncData measurement_cycle_sync_data = 5;
+     uint32 time_sync_status = 6;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.EgoVehicleData ego_vehicle_data = 7;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/gripper_translation.proto";
+import "make87_messages_ros2/humble/trajectory_msgs/msg/joint_trajectory.proto";
+
+message PlaceLocation {
+    make87_messages.core.Header header = 1;
+     string id = 2;
+     make87_messages_ros2.humble.trajectory_msgs.msg.JointTrajectory post_place_posture = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped place_pose = 4;
+     double quality = 5;
+     make87_messages_ros2.humble.moveit_msgs.msg.GripperTranslation pre_place_approach = 6;
+     make87_messages_ros2.humble.moveit_msgs.msg.GripperTranslation post_place_retreat = 7;
+    repeated string allowed_touch_objects = 8;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrStatus6 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 supply_1p8v_a2d = 4;
+     uint32 supply_n5v_a2d = 5;
+     uint32 wave_diff_a2d = 6;
+     uint32 sw_version_dsp_3rd_byte = 7;
+     bool vertical_align_updated = 8;
+     uint32 system_power_mode = 9;
+     bool found_target = 10;
+     bool recommend_unconverge = 11;
+     uint32 factory_align_status_1 = 12;
+     uint32 factory_align_status_2 = 13;
+     float factory_misalignment = 14;
+     uint32 serv_align_updates_done = 15;
+     float vertical_misalignment = 16;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/planning_scene.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/planning_scene_components.proto";
+
+message GetPlanningSceneRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.PlanningSceneComponents components = 2;
+}
+
+message GetPlanningSceneResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.PlanningScene scene = 2;
+}

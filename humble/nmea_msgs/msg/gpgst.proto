@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nmea_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Gpgst {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string message_id = 3;
+     double utc_seconds = 4;
+     float rms = 5;
+     float semi_major_dev = 6;
+     float semi_minor_dev = 7;
+     float orientation = 8;
+     float lat_dev = 9;
+     float lon_dev = 10;
+     float alt_dev = 11;
+}

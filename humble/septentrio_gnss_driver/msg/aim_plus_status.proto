@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message AIMPlusStatus {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 tow = 3;
+     uint32 wnc = 4;
+     uint32 interference = 5;
+     uint32 spoofing = 6;
+     bool osnma_authenticating = 7;
+     uint32 galileo_authentic = 8;
+     uint32 galileo_spoofed = 9;
+     uint32 gps_authentic = 10;
+     uint32 gps_spoofed = 11;
+}

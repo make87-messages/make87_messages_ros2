@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_ign_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/ros_gz_interfaces/msg/entity.proto";
+import "make87_messages_ros2/humble/ros_gz_interfaces/msg/joint_wrench.proto";
+
+message Contact {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.ros_gz_interfaces.msg.Entity collision1 = 2;
+     make87_messages_ros2.humble.ros_gz_interfaces.msg.Entity collision2 = 3;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Vector3 positions = 4;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Vector3 normals = 5;
+    repeated double depths = 6;
+    repeated make87_messages_ros2.humble.ros_gz_interfaces.msg.JointWrench wrenches = 7;
+}

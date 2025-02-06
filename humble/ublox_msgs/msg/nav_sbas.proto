@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ublox_msgs/msg/nav_sbassv.proto";
+
+message NavSBAS {
+    make87_messages.core.Header header = 1;
+     uint32 i_tow = 2;
+     uint32 geo = 3;
+     uint32 mode = 4;
+     int32 sys = 5;
+     uint32 service = 6;
+     uint32 cnt = 7;
+    repeated uint32 reserved0 = 8;
+    repeated make87_messages_ros2.humble.ublox_msgs.msg.NavSBASSV sv = 9;
+}

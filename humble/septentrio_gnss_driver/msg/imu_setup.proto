@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message IMUSetup {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     uint32 serial_port = 4;
+     float ant_lever_arm_x = 5;
+     float ant_lever_arm_y = 6;
+     float ant_lever_arm_z = 7;
+     float theta_x = 8;
+     float theta_y = 9;
+     float theta_z = 10;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nav2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/nav2_msgs/msg/behavior_tree_status_change.proto";
+
+message BehaviorTreeLog {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 2;
+    repeated make87_messages_ros2.humble.nav2_msgs.msg.BehaviorTreeStatusChange event_log = 3;
+}

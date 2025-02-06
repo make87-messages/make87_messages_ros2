@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/solid_primitive.proto";
+
+message BoundingVolume {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.shape_msgs.msg.SolidPrimitive primitives = 2;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose primitive_poses = 3;
+    repeated make87_messages_ros2.humble.shape_msgs.msg.Mesh meshes = 4;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose mesh_poses = 5;
+}

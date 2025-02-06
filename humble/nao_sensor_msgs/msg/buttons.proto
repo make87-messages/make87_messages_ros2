@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nao_sensor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Buttons {
+    make87_messages.core.Header header = 1;
+     bool chest = 2;
+     bool l_foot_bumper_left = 3;
+     bool l_foot_bumper_right = 4;
+     bool r_foot_bumper_left = 5;
+     bool r_foot_bumper_right = 6;
+}

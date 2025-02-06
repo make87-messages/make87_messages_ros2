@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform.proto";
+
+message Link {
+    make87_messages.core.Header header = 1;
+     int32 from_id = 2;
+     int32 to_id = 3;
+     int32 type = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform transform = 5;
+    repeated double information = 6;
+}

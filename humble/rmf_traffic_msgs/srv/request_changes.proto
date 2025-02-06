@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/schedule_identity.proto";
+
+message RequestChangesRequest {
+    make87_messages.core.Header header = 1;
+     uint64 query_id = 2;
+     uint64 version = 3;
+     bool full_update = 4;
+}
+
+message RequestChangesResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.ScheduleIdentity node_id = 2;
+     uint32 result = 3;
+     string error = 4;
+}

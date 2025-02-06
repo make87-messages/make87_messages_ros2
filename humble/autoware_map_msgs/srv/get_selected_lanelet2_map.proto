@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_map_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/autoware_map_msgs/msg/lanelet_map_bin.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GetSelectedLanelet2MapRequest {
+    make87_messages.core.Header header = 1;
+    repeated string cell_ids = 2;
+}
+
+message GetSelectedLanelet2MapResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.autoware_map_msgs.msg.LaneletMapBin lanelet2_cells = 3;
+}

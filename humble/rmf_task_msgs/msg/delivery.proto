@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_dispenser_msgs/msg/dispenser_request_item.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/behavior.proto";
+
+message Delivery {
+    make87_messages.core.Header header = 1;
+     string task_id = 2;
+    repeated make87_messages_ros2.humble.rmf_dispenser_msgs.msg.DispenserRequestItem items = 3;
+     string pickup_place_name = 4;
+     string pickup_dispenser = 5;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Behavior pickup_behavior = 6;
+     string dropoff_place_name = 7;
+     string dropoff_ingestor = 8;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Behavior dropoff_behavior = 9;
+}

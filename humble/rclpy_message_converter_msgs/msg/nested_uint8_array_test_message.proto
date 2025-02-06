@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rclpy_message_converter_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rclpy_message_converter_msgs/msg/uint8_array_test_message.proto";
+
+message NestedUint8ArrayTestMessage {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rclpy_message_converter_msgs.msg.Uint8ArrayTestMessage arrays = 2;
+}

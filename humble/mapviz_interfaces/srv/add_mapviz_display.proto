@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mapviz_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/marti_common_msgs/msg/key_value.proto";
+
+message AddMapvizDisplayRequest {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string type = 3;
+     int32 draw_order = 4;
+     bool visible = 5;
+    repeated make87_messages_ros2.humble.marti_common_msgs.msg.KeyValue properties = 6;
+}
+
+message AddMapvizDisplayResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string message = 3;
+}

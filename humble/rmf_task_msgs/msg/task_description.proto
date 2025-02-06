@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/clean.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/delivery.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/loop.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/priority.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/station.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/task_type.proto";
+
+message TaskDescription {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time start_time = 2;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Priority priority = 3;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.TaskType task_type = 4;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Station station = 5;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Loop loop = 6;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Delivery delivery = 7;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.Clean clean = 8;
+}

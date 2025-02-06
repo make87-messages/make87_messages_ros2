@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavRELPOSNED {
+    make87_messages.core.Header header = 1;
+     uint32 version = 2;
+     uint32 reserved0 = 3;
+     uint32 ref_station_id = 4;
+     uint32 i_tow = 5;
+     int32 rel_pos_n = 6;
+     int32 rel_pos_e = 7;
+     int32 rel_pos_d = 8;
+     int32 rel_pos_hpn = 9;
+     int32 rel_pos_hpe = 10;
+     int32 rel_pos_hpd = 11;
+     uint32 reserved1 = 12;
+     uint32 acc_n = 13;
+     uint32 acc_e = 14;
+     uint32 acc_d = 15;
+     uint32 flags = 16;
+}

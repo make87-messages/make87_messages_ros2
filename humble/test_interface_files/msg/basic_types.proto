@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.test_interface_files.msg;
+
+import "make87_messages/core/header.proto";
+
+message BasicTypes {
+    make87_messages.core.Header header = 1;
+     bool bool_value = 2;
+     uint32 byte_value = 3;
+     int32 char_value = 4;
+     float float32_value = 5;
+     double float64_value = 6;
+     int32 int8_value = 7;
+     uint32 uint8_value = 8;
+     int32 int16_value = 9;
+     uint32 uint16_value = 10;
+     int32 int32_value = 11;
+     uint32 uint32_value = 12;
+     int64 int64_value = 13;
+     uint64 uint64_value = 14;
+}

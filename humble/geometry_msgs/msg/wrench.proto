@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.geometry_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+
+message Wrench {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 force = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 torque = 3;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.test_interface_files.msg;
+
+import "make87_messages/core/header.proto";
+
+message Strings {
+    make87_messages.core.Header header = 1;
+     string string_value = 2;
+     string string_value_default1 = 3;
+     string string_value_default2 = 4;
+     string string_value_default3 = 5;
+     string string_value_default4 = 6;
+     string string_value_default5 = 7;
+     string bounded_string_value = 8;
+     string bounded_string_value_default1 = 9;
+     string bounded_string_value_default2 = 10;
+     string bounded_string_value_default3 = 11;
+     string bounded_string_value_default4 = 12;
+     string bounded_string_value_default5 = 13;
+}

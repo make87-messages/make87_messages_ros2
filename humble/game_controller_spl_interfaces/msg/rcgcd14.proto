@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.game_controller_spl_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/game_controller_spl_interfaces/msg/team_info14.proto";
+
+message RCGCD14 {
+    make87_messages.core.Header header = 1;
+     uint32 packet_number = 2;
+     uint32 players_per_team = 3;
+     uint32 competition_phase = 4;
+     uint32 competition_type = 5;
+     uint32 game_phase = 6;
+     uint32 state = 7;
+     uint32 set_play = 8;
+     uint32 first_half = 9;
+     uint32 kicking_team = 10;
+     int32 secs_remaining = 11;
+     int32 secondary_time = 12;
+    repeated make87_messages_ros2.humble.game_controller_spl_interfaces.msg.TeamInfo14 teams = 13;
+}

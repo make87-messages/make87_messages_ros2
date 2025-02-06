@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/cmd_src.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SteeringReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float steering_wheel_angle = 3;
+     float steering_column_torque = 4;
+     float cmd = 5;
+     uint32 cmd_type = 6;
+     bool limiting_value = 7;
+     bool limiting_rate = 8;
+     bool external_control = 9;
+     bool ready = 10;
+     bool enabled = 11;
+     bool override_active = 12;
+     bool override_other = 13;
+     bool override_latched = 14;
+     bool timeout = 15;
+     bool fault = 16;
+     bool bad_crc = 17;
+     bool bad_rc = 18;
+     bool degraded = 19;
+     float limit_rate = 20;
+     float limit_value = 21;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.CmdSrc cmd_src = 22;
+}

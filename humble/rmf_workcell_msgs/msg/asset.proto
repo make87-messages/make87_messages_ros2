@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_workcell_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Asset {
+    make87_messages.core.Header header = 1;
+     string guid = 2;
+     string type = 3;
+}

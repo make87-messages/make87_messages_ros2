@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.kobuki_ros_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message DigitalOutput {
+    make87_messages.core.Header header = 1;
+    repeated bool values = 2;
+    repeated bool mask = 3;
+}

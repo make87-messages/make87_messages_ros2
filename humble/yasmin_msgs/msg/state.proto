@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.yasmin_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/yasmin_msgs/msg/transition.proto";
+
+message State {
+    make87_messages.core.Header header = 1;
+     int32 id = 2;
+     int32 parent = 3;
+     string name = 4;
+    repeated make87_messages_ros2.humble.yasmin_msgs.msg.Transition transitions = 5;
+    repeated string outcomes = 6;
+     bool is_fsm = 7;
+     int32 current_state = 8;
+}

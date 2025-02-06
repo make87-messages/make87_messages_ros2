@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/humble/shape_msgs/msg/plane.proto";
+
+message GetBasePlaneCalibrationRequest {
+    make87_messages.core.Header header = 1;
+     string pose_frame = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose robot_pose = 3;
+}
+
+message GetBasePlaneCalibrationResponse {
+    make87_messages.core.Header header = 1;
+     string pose_frame = 2;
+     make87_messages_ros2.humble.shape_msgs.msg.Plane plane = 3;
+     make87_messages_ros2.humble.rc_common_msgs.msg.ReturnCode return_code = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.flexbe_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/flexbe_msgs/msg/behavior_modification.proto";
+
+message BehaviorSelection {
+    make87_messages.core.Header header = 1;
+     int32 behavior_key = 2;
+     int32 behavior_id = 3;
+     uint32 autonomy_level = 4;
+    repeated string arg_keys = 5;
+    repeated string arg_values = 6;
+    repeated string input_keys = 7;
+    repeated string input_values = 8;
+    repeated make87_messages_ros2.humble.flexbe_msgs.msg.BehaviorModification modifications = 9;
+}

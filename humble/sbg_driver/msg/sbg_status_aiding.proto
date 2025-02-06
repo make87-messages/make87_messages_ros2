@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgStatusAiding {
+    make87_messages.core.Header header = 1;
+     bool gps1_pos_recv = 2;
+     bool gps1_vel_recv = 3;
+     bool gps1_hdt_recv = 4;
+     bool gps1_utc_recv = 5;
+     bool gps2_pos_recv = 6;
+     bool gps2_vel_recv = 7;
+     bool gps2_hdt_recv = 8;
+     bool gps2_utc_recv = 9;
+     bool mag_recv = 10;
+     bool odo_recv = 11;
+     bool dvl_recv = 12;
+     bool usbl_recv = 13;
+     bool depth_recv = 14;
+     bool air_data_recv = 15;
+     bool user_pos_recv = 16;
+     bool user_vel_recv = 17;
+     bool user_heading_recv = 18;
+}

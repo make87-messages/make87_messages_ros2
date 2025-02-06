@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/decel_src.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message DriverAssist {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float decel = 3;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.DecelSrc decel_src = 4;
+     bool fcw_active = 5;
+     bool fcw_enabled = 6;
+     bool aeb_active = 7;
+     bool aeb_precharge = 8;
+     bool aeb_enabled = 9;
+     bool acc_braking = 10;
+     bool acc_enabled = 11;
+     bool blis_l_alert = 12;
+     bool blis_l_enabled = 13;
+     bool blis_r_alert = 14;
+     bool blis_r_enabled = 15;
+     bool cta_l_alert = 16;
+     bool cta_l_enabled = 17;
+     bool cta_r_alert = 18;
+     bool cta_r_enabled = 19;
+}

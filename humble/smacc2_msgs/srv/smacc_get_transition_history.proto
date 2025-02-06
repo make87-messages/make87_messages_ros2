@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.smacc2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_transition_log_entry.proto";
+
+message SmaccGetTransitionHistoryRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message SmaccGetTransitionHistoryResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.smacc2_msgs.msg.SmaccTransitionLogEntry history = 2;
+}

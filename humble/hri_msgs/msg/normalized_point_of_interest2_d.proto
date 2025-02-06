@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.hri_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NormalizedPointOfInterest2D {
+    make87_messages.core.Header header = 1;
+     float x = 2;
+     float y = 3;
+     float c = 4;
+}

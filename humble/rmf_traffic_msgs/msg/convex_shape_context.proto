@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/circle.proto";
+
+message ConvexShapeContext {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.Circle circles = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/global_descriptor.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/laser_scan.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ScanDescriptor {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.sensor_msgs.msg.LaserScan scan = 3;
+     make87_messages_ros2.humble.sensor_msgs.msg.PointCloud2 scan_cloud = 4;
+     make87_messages_ros2.humble.rtabmap_msgs.msg.GlobalDescriptor global_descriptor = 5;
+}

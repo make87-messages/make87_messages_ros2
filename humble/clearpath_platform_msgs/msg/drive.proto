@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.clearpath_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Drive {
+    make87_messages.core.Header header = 1;
+     int32 mode = 2;
+    repeated float drivers = 3;
+}

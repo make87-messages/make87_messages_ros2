@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosbridge_test_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message TestRequestOnlyRequest {
+    make87_messages.core.Header header = 1;
+     int32 data = 2;
+}
+
+message TestRequestOnlyResponse {
+    make87_messages.core.Header header = 1;
+}

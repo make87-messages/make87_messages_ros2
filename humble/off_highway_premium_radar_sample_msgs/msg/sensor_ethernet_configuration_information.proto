@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message SensorEthernetConfigurationInformation {
+    make87_messages.core.Header header = 1;
+     string sensor_ip_address = 2;
+     string destination_ip_address = 3;
+     string netmask = 4;
+     uint32 vlan = 5;
+     uint32 source_port = 6;
+     uint32 destination_port = 7;
+}

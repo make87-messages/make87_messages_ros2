@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/diagnostics_ethernet_configuration_information.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/do_ip_information.proto";
+import "make87_messages_ros2/humble/off_highway_premium_radar_sample_msgs/msg/sensor_ethernet_configuration_information.proto";
+
+message SensorBroadcastData {
+    make87_messages.core.Header header = 1;
+     uint32 customer_version = 2;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.SensorEthernetConfigurationInformation sensor_ethernet_configuration_information = 3;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.DiagnosticsEthernetConfigurationInformation diagnostics_ethernet_configuration_information = 4;
+     uint64 sensor_mac_address = 5;
+     make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg.DoIpInformation doip_information = 6;
+}

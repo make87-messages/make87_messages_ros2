@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/sig_data.proto";
+
+message UBXNavSig {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 itow = 3;
+     uint32 version = 4;
+     uint32 num_sigs = 5;
+    repeated uint32 reserved_0 = 6;
+    repeated make87_messages_ros2.humble.ublox_ubx_msgs.msg.SigData sig_data = 7;
+}

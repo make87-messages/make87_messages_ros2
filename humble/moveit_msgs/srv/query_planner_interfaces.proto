@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/planner_interface_description.proto";
+
+message QueryPlannerInterfacesRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message QueryPlannerInterfacesResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.moveit_msgs.msg.PlannerInterfaceDescription planner_interfaces = 2;
+}

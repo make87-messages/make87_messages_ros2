@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.find_object_2d.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/float32_multi_array.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ObjectsStamped {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.std_msgs.msg.Float32MultiArray objects = 3;
+}

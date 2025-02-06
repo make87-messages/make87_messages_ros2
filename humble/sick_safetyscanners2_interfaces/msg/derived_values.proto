@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safetyscanners2_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message DerivedValues {
+    make87_messages.core.Header header = 1;
+     uint32 multiplication_factor = 2;
+     uint32 number_of_beams = 3;
+     uint32 scan_time = 4;
+     float start_angle = 5;
+     float angular_beam_resolution = 6;
+     uint32 interbeam_period = 7;
+}

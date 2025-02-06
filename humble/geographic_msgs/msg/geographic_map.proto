@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.geographic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/bounding_box.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/key_value.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/map_feature.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/way_point.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/unique_identifier_msgs/msg/uuid.proto";
+
+message GeographicMap {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.unique_identifier_msgs.msg.UUID id = 3;
+     make87_messages_ros2.humble.geographic_msgs.msg.BoundingBox bounds = 4;
+    repeated make87_messages_ros2.humble.geographic_msgs.msg.WayPoint points = 5;
+    repeated make87_messages_ros2.humble.geographic_msgs.msg.MapFeature features = 6;
+    repeated make87_messages_ros2.humble.geographic_msgs.msg.KeyValue props = 7;
+}

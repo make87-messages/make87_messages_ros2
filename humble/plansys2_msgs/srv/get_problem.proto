@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/empty.proto";
+
+message GetProblemRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Empty request = 2;
+}
+
+message GetProblemResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string problem = 3;
+     string error_info = 4;
+}

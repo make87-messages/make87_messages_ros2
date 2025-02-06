@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message HilSensor {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 acc = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 gyro = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 mag = 5;
+     float abs_pressure = 6;
+     float diff_pressure = 7;
+     float pressure_alt = 8;
+     float temperature = 9;
+     uint32 fields_updated = 10;
+}

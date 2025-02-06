@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.as2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message MissionUpdate {
+    make87_messages.core.Header header = 1;
+     string drone_id = 2;
+     int32 mission_id = 3;
+     int32 item_id = 4;
+     uint32 action = 5;
+     string mission = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_srr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SrrStatus3 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_tx_alignment_state = 3;
+     uint32 can_tx_interface_ver_minor = 4;
+     uint32 can_tx_sw_version_arm = 5;
+     uint32 can_tx_hw_version = 6;
+     uint32 can_tx_interface_version = 7;
+     uint32 can_tx_serial_num = 8;
+}

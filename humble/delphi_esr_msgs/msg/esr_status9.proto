@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrStatus9 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 avg_pwr_cwblkg = 4;
+     float sideslip_angle = 5;
+     uint32 serial_num_3rd_byte = 6;
+     uint32 water_spray_target_id = 7;
+     float filtered_xohp_acc_cipv = 8;
+     uint32 path_id_acc_2 = 9;
+     uint32 path_id_acc_3 = 10;
+}

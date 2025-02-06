@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrVehicle3 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool long_accel_validity = 3;
+     bool lat_accel_validity = 4;
+     float lat_accel = 5;
+     float long_accel = 6;
+     uint32 radar_fov_lr = 7;
+     uint32 radar_fov_mr = 8;
+     bool auto_align_disable = 9;
+     uint32 radar_height = 10;
+     bool serv_align_type = 11;
+     bool serv_align_enable = 12;
+     uint32 aalign_avg_ctr_total = 13;
+     bool auto_align_converged = 14;
+     uint32 wheel_slip = 15;
+     uint32 serv_align_updates_need = 16;
+     int32 angle_mounting_offset = 17;
+}

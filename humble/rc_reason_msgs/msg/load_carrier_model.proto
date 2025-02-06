@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/box.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/rectangle.proto";
+
+message LoadCarrierModel {
+    make87_messages.core.Header header = 1;
+     string id = 2;
+     string type = 3;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Box outer_dimensions = 4;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Box inner_dimensions = 5;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Rectangle rim_thickness = 6;
+     double rim_step_height = 7;
+     make87_messages_ros2.humble.rc_reason_msgs.msg.Rectangle rim_ledge = 8;
+     double height_open_side = 9;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose = 10;
+     string pose_type = 11;
+}

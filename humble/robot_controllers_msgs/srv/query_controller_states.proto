@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.robot_controllers_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/robot_controllers_msgs/msg/controller_state.proto";
+
+message QueryControllerStatesRequest {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.robot_controllers_msgs.msg.ControllerState updates = 2;
+}
+
+message QueryControllerStatesResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.robot_controllers_msgs.msg.ControllerState state = 2;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.grid_map_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/grid_map_msgs/msg/grid_map.proto";
+
+message GetGridMapRequest {
+    make87_messages.core.Header header = 1;
+     string frame_id = 2;
+     double position_x = 3;
+     double position_y = 4;
+     double length_x = 5;
+     double length_y = 6;
+    repeated string layers = 7;
+}
+
+message GetGridMapResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.grid_map_msgs.msg.GridMap map = 2;
+}

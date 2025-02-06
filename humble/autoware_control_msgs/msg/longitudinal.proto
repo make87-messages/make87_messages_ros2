@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_control_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message Longitudinal {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time stamp = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time control_time = 3;
+     float velocity = 4;
+     float acceleration = 5;
+     float jerk = 6;
+     bool is_defined_acceleration = 7;
+     bool is_defined_jerk = 8;
+}

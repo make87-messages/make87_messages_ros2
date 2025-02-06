@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.qb_device_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/qb_device_msgs/msg/resource_data.proto";
+
+message State {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.qb_device_msgs.msg.ResourceData actuators = 2;
+    repeated make87_messages_ros2.humble.qb_device_msgs.msg.ResourceData joints = 3;
+     bool is_reliable = 4;
+     int32 consecutive_failures = 5;
+}

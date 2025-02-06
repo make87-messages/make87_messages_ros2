@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ublox_msgs/msg/rxm_svsisv.proto";
+
+message RxmSVSI {
+    make87_messages.core.Header header = 1;
+     int32 i_tow = 2;
+     int32 week = 3;
+     uint32 num_vis = 4;
+     uint32 num_sv = 5;
+    repeated make87_messages_ros2.humble.ublox_msgs.msg.RxmSVSISV sv = 6;
+}

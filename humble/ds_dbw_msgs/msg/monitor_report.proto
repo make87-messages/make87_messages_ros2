@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MonitorReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool fault = 3;
+     bool shutoff = 4;
+     bool shutoff_on_motion = 5;
+     bool stationary = 6;
+     uint32 fault_test = 7;
+     uint32 fault_system = 8;
+     uint32 fault_steer = 9;
+     uint32 fault_brake = 10;
+     uint32 fault_thrtl = 11;
+     uint32 fault_gear = 12;
+     uint32 fault_ulc = 13;
+     uint32 fault_vehicle_velocity = 14;
+     uint32 fault_steer_feedback = 15;
+     uint32 fault_steer_input = 16;
+     uint32 fault_steer_param = 17;
+     uint32 fault_steer_limit = 18;
+     uint32 fault_steer_override = 19;
+     uint32 fault_steer_cmd = 20;
+     uint32 fault_steer_cmd_rate = 21;
+     uint32 fault_steer_cmd_en = 22;
+     uint32 fault_steer_cmd_sys = 23;
+     uint32 fault_steer_cmd_ovr = 24;
+     uint32 fault_brake_feedback = 25;
+     uint32 fault_brake_input = 26;
+     uint32 fault_brake_param = 27;
+     uint32 fault_brake_limit = 28;
+     uint32 fault_brake_override = 29;
+     uint32 fault_brake_cmd = 30;
+     uint32 fault_brake_cmd_ulc = 31;
+     uint32 fault_brake_cmd_en = 32;
+     uint32 fault_brake_cmd_sys = 33;
+     uint32 fault_brake_cmd_ovr = 34;
+     uint32 fault_thrtl_feedback = 35;
+     uint32 fault_thrtl_input = 36;
+     uint32 fault_thrtl_param = 37;
+     uint32 fault_thrtl_limit = 38;
+     uint32 fault_thrtl_override = 39;
+     uint32 fault_thrtl_cmd = 40;
+     uint32 fault_thrtl_cmd_ulc = 41;
+     uint32 fault_thrtl_cmd_en = 42;
+     uint32 fault_thrtl_cmd_sys = 43;
+     uint32 fault_thrtl_cmd_ovr = 44;
+     uint32 fault_gear_feedback = 45;
+     uint32 fault_gear_input = 46;
+     uint32 fault_gear_param = 47;
+     uint32 fault_gear_override = 48;
+     uint32 fault_gear_cmd = 49;
+     uint32 fault_gear_cmd_ulc = 50;
+     uint32 fault_system_param = 51;
+     bool steer_cmd_match_oem = 52;
+     bool steer_cmd_match_dbw = 53;
+     bool brake_cmd_match_oem = 54;
+     bool brake_cmd_match_dbw = 55;
+     bool thrtl_cmd_match_oem = 56;
+     bool thrtl_cmd_match_dbw = 57;
+     bool gear_cmd_match_oem = 58;
+     bool gear_cmd_match_dbw = 59;
+}

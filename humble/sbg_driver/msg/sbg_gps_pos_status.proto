@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgGpsPosStatus {
+    make87_messages.core.Header header = 1;
+     uint32 status = 2;
+     uint32 type = 3;
+     uint32 ifm = 4;
+     uint32 spoofing = 5;
+     uint32 osnma = 6;
+     bool gps_l1_used = 7;
+     bool gps_l2_used = 8;
+     bool gps_l5_used = 9;
+     bool glo_l1_used = 10;
+     bool glo_l2_used = 11;
+     bool glo_l3_used = 12;
+     bool gal_e1_used = 13;
+     bool gal_e5a_used = 14;
+     bool gal_e5b_used = 15;
+     bool gal_e5alt_used = 16;
+     bool gal_e6_used = 17;
+     bool bds_b1_used = 18;
+     bool bds_b2_used = 19;
+     bool bds_b3_used = 20;
+     bool qzss_l1_used = 21;
+     bool qzss_l2_used = 22;
+     bool qzss_l5_used = 23;
+}

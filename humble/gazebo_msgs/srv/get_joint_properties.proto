@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message GetJointPropertiesRequest {
+    make87_messages.core.Header header = 1;
+     string joint_name = 2;
+}
+
+message GetJointPropertiesResponse {
+    make87_messages.core.Header header = 1;
+     uint32 type = 2;
+    repeated double damping = 3;
+    repeated double position = 4;
+    repeated double rate = 5;
+     bool success = 6;
+     string status_message = 7;
+}

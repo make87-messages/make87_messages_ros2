@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message SensorModulationPerformance {
+    make87_messages.core.Header header = 1;
+     uint32 detection_of_measurement_program = 2;
+     uint32 modulation_id = 3;
+     float distance_range_scaling = 4;
+     float separability_distance = 5;
+     float separability_relative_velocity = 6;
+     float precision_distance = 7;
+     float precision_relative_velocity = 8;
+     float covariance_of_distance_and_relative_velocity = 9;
+     float minimum_measurable_distance = 10;
+     float maximum_measurable_distance = 11;
+     float minimum_measurable_relative_velocity = 12;
+     float maximum_measurable_relative_velocity = 13;
+}

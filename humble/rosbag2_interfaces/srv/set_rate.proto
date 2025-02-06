@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosbag2_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetRateRequest {
+    make87_messages.core.Header header = 1;
+     double rate = 2;
+}
+
+message SetRateResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

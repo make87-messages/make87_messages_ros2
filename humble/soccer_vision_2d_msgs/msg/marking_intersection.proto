@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.soccer_vision_2d_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/soccer_vision_attribute_msgs/msg/confidence.proto";
+import "make87_messages_ros2/humble/vision_msgs/msg/point2_d.proto";
+
+message MarkingIntersection {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.vision_msgs.msg.Point2D center = 2;
+     int32 num_rays = 3;
+    repeated double heading_rays = 4;
+     make87_messages_ros2.humble.soccer_vision_attribute_msgs.msg.Confidence confidence = 5;
+}

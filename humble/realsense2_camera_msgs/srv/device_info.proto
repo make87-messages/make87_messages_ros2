@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.realsense2_camera_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message DeviceInfoRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message DeviceInfoResponse {
+    make87_messages.core.Header header = 1;
+     string device_name = 2;
+     string serial_number = 3;
+     string firmware_version = 4;
+     string usb_type_descriptor = 5;
+     string firmware_update_id = 6;
+     string sensors = 7;
+     string physical_port = 8;
+}

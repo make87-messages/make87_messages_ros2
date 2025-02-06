@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UBXNavHPPosECEF {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 version = 3;
+     uint32 itow = 4;
+     int32 ecef_x = 5;
+     int32 ecef_y = 6;
+     int32 ecef_z = 7;
+     int32 ecef_x_hp = 8;
+     int32 ecef_y_hp = 9;
+     int32 ecef_z_hp = 10;
+     bool invalid_ecef_x = 11;
+     bool invalid_ecef_y = 12;
+     bool invalid_ecef_z = 13;
+     bool invalid_ecef_x_hp = 14;
+     bool invalid_ecef_y_hp = 15;
+     bool invalid_ecef_z_hp = 16;
+     uint32 p_acc = 17;
+}

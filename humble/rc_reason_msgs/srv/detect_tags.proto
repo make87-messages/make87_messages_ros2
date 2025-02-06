@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/detected_tag.proto";
+import "make87_messages_ros2/humble/rc_reason_msgs/msg/tag.proto";
+
+message DetectTagsRequest {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rc_reason_msgs.msg.Tag tags = 2;
+     string pose_frame = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose robot_pose = 4;
+}
+
+message DetectTagsResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rc_reason_msgs.msg.DetectedTag tags = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 3;
+     make87_messages_ros2.humble.rc_common_msgs.msg.ReturnCode return_code = 4;
+}

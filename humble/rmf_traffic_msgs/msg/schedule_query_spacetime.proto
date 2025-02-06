@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/region.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/shape_context.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/timespan.proto";
+
+message ScheduleQuerySpacetime {
+    make87_messages.core.Header header = 1;
+     uint32 type = 2;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.Region regions = 3;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.ShapeContext shape_context = 4;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.Timespan timespan = 5;
+}

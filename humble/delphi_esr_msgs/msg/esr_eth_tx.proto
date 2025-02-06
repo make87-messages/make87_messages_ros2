@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrEthTx {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 xcp_format_version = 3;
+     uint32 scan_index = 4;
+     uint32 tcp_size = 5;
+     uint32 xcp_scan_type = 6;
+     uint32 look_index = 7;
+     uint32 mmr_scan_index = 8;
+     float target_report_host_speed = 9;
+     float target_report_host_yaw_rate = 10;
+     uint32 xcp_timestamp = 11;
+     uint32 release_revision = 12;
+     uint32 promote_revision = 13;
+     uint32 field_revision = 14;
+     uint32 target_report_count = 15;
+    repeated float target_report_range = 16;
+    repeated float target_report_range_rate = 17;
+    repeated float target_report_theta = 18;
+    repeated float target_report_amplitude = 19;
+}

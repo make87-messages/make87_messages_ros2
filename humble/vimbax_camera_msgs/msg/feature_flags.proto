@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.vimbax_camera_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message FeatureFlags {
+    make87_messages.core.Header header = 1;
+     bool flag_none = 2;
+     bool flag_read = 3;
+     bool flag_write = 4;
+     bool flag_volatile = 5;
+     bool flag_modify_write = 6;
+}

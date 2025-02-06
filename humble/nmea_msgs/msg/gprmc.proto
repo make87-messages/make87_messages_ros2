@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nmea_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Gprmc {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string message_id = 3;
+     double utc_seconds = 4;
+     string position_status = 5;
+     double lat = 6;
+     double lon = 7;
+     string lat_dir = 8;
+     string lon_dir = 9;
+     float speed = 10;
+     float track = 11;
+     string date = 12;
+     float mag_var = 13;
+     string mag_var_direction = 14;
+     string mode_indicator = 15;
+}

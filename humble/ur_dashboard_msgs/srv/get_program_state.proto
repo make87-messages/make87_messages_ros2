@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_dashboard_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ur_dashboard_msgs/msg/program_state.proto";
+
+message GetProgramStateRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message GetProgramStateResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.ur_dashboard_msgs.msg.ProgramState state = 2;
+     string program_name = 3;
+     string answer = 4;
+     bool success = 5;
+}

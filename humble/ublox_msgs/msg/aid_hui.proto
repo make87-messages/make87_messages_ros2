@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message AidHUI {
+    make87_messages.core.Header header = 1;
+     uint32 health = 2;
+     double utc_a0 = 3;
+     double utc_a1 = 4;
+     int32 utc_tow = 5;
+     int32 utc_wnt = 6;
+     int32 utc_ls = 7;
+     int32 utc_wnf = 8;
+     int32 utc_dn = 9;
+     int32 utc_lsf = 10;
+     int32 utc_spare = 11;
+     float klob_a0 = 12;
+     float klob_a1 = 13;
+     float klob_a2 = 14;
+     float klob_a3 = 15;
+     float klob_b0 = 16;
+     float klob_b1 = 17;
+     float klob_b2 = 18;
+     float klob_b3 = 19;
+     uint32 flags = 20;
+}

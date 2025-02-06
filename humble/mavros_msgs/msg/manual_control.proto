@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ManualControl {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float x = 3;
+     float y = 4;
+     float z = 5;
+     float r = 6;
+     uint32 buttons = 7;
+     uint32 buttons2 = 8;
+     uint32 enabled_extensions = 9;
+     float s = 10;
+     float t = 11;
+     float aux1 = 12;
+     float aux2 = 13;
+     float aux3 = 14;
+     float aux4 = 15;
+     float aux5 = 16;
+     float aux6 = 17;
+}

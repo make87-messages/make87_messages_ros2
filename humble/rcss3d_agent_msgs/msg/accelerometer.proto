@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rcss3d_agent_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Accelerometer {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     float x = 3;
+     float y = 4;
+     float z = 5;
+}

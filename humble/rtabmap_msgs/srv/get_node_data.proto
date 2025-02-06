@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/node.proto";
+
+message GetNodeDataRequest {
+    make87_messages.core.Header header = 1;
+    repeated int32 ids = 2;
+     bool images = 3;
+     bool scan = 4;
+     bool grid = 5;
+     bool user_data = 6;
+}
+
+message GetNodeDataResponse {
+    make87_messages.core.Header header = 1;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.Node data = 2;
+}

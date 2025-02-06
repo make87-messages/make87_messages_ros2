@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.vision_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/humble/vision_msgs/msg/object_hypothesis.proto";
+
+message ObjectHypothesisWithPose {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.vision_msgs.msg.ObjectHypothesis hypothesis = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovariance pose = 3;
+}

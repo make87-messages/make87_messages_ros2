@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.puma_motor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Feedback {
+    make87_messages.core.Header header = 1;
+     uint32 device_number = 2;
+     string device_name = 3;
+     float duty_cycle = 4;
+     float current = 5;
+     double travel = 6;
+     double speed = 7;
+     double setpoint = 8;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_sensor_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetExposureRequest {
+    make87_messages.core.Header header = 1;
+     bool auto_exposure = 2;
+     int64 time = 3;
+}
+
+message SetExposureResponse {
+    make87_messages.core.Header header = 1;
+     bool auto_exposure = 2;
+     int64 time = 3;
+}

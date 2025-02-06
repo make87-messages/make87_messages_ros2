@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message CfgUSB {
+    make87_messages.core.Header header = 1;
+     uint32 vendor_id = 2;
+     uint32 product_id = 3;
+    repeated uint32 reserved1 = 4;
+    repeated uint32 reserved2 = 5;
+     uint32 power_consumption = 6;
+     uint32 flags = 7;
+    repeated int32 vendor_string = 8;
+    repeated int32 product_string = 9;
+    repeated int32 serial_number = 10;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.smacc2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_event_generator.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_orthogonal.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_state_reactor.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_transition.proto";
+
+message SmaccState {
+    make87_messages.core.Header header = 1;
+     int32 index = 2;
+     string name = 3;
+    repeated string children_states = 4;
+     int32 level = 5;
+    repeated make87_messages_ros2.humble.smacc2_msgs.msg.SmaccTransition transitions = 6;
+    repeated make87_messages_ros2.humble.smacc2_msgs.msg.SmaccOrthogonal orthogonals = 7;
+    repeated make87_messages_ros2.humble.smacc2_msgs.msg.SmaccStateReactor state_reactors = 8;
+    repeated make87_messages_ros2.humble.smacc2_msgs.msg.SmaccEventGenerator event_generators = 9;
+}

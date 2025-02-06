@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.as2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/polygon.proto";
+
+message Geozone {
+    make87_messages.core.Header header = 1;
+     int32 id = 2;
+     int32 alert = 3;
+     string type = 4;
+     string data_type = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Polygon polygon = 6;
+     float z_up = 7;
+     float z_down = 8;
+}

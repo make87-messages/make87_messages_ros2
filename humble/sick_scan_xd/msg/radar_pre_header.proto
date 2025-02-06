@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sick_scan_xd/msg/radar_pre_header_device_block.proto";
+import "make87_messages_ros2/humble/sick_scan_xd/msg/radar_pre_header_encoder_block.proto";
+import "make87_messages_ros2/humble/sick_scan_xd/msg/radar_pre_header_measurement_param1_block.proto";
+import "make87_messages_ros2/humble/sick_scan_xd/msg/radar_pre_header_status_block.proto";
+
+message RadarPreHeader {
+    make87_messages.core.Header header = 1;
+     uint32 uiversionno = 2;
+     make87_messages_ros2.humble.sick_scan_xd.msg.RadarPreHeaderDeviceBlock radarpreheaderdeviceblock = 3;
+     make87_messages_ros2.humble.sick_scan_xd.msg.RadarPreHeaderStatusBlock radarpreheaderstatusblock = 4;
+     make87_messages_ros2.humble.sick_scan_xd.msg.RadarPreHeaderMeasurementParam1Block radarpreheadermeasurementparam1block = 5;
+    repeated make87_messages_ros2.humble.sick_scan_xd.msg.RadarPreHeaderEncoderBlock radarpreheaderarrayencoderblock = 6;
+}

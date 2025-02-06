@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/sbg_driver/msg/sbg_air_data_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgAirData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     make87_messages_ros2.humble.sbg_driver.msg.SbgAirDataStatus status = 4;
+     double pressure_abs = 5;
+     double altitude = 6;
+     double pressure_diff = 7;
+     double true_air_speed = 8;
+     double air_temperature = 9;
+}

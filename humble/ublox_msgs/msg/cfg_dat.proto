@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message CfgDAT {
+    make87_messages.core.Header header = 1;
+     uint32 datum_num = 2;
+    repeated uint32 datum_name = 3;
+     double maj_a = 4;
+     double flat = 5;
+     float d_x = 6;
+     float d_y = 7;
+     float d_z = 8;
+     float rot_x = 9;
+     float rot_y = 10;
+     float rot_z = 11;
+     float scale = 12;
+}

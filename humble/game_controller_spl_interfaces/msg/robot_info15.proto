@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.game_controller_spl_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message RobotInfo15 {
+    make87_messages.core.Header header = 1;
+     uint32 penalty = 2;
+     uint32 secs_till_unpenalised = 3;
+}

@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/contour_point_sigma.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_di.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_dui.proto";
+
+message TrackedProperties {
+    make87_messages.core.Header header = 1;
+     uint32 object_age = 2;
+     uint32 hidden_status_age = 3;
+     uint32 object_phase = 4;
+     uint32 dynamic_property = 5;
+     uint32 relative_time_of_measure = 6;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di position_closest_point = 7;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di relative_velocity = 8;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui relative_velocity_sigma = 9;
+     uint32 classification = 10;
+     uint32 classification_age = 11;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di object_box_size = 12;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui object_box_size_sigma = 13;
+     int32 object_box_orientation = 14;
+     uint32 object_box_orientation_sigma = 15;
+     uint32 tracking_point_location = 16;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di tracking_point_coordinate = 17;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui tracking_point_coordinate_sigma = 18;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di velocity = 19;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui velocity_sigma = 20;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di acceleration = 21;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui acceleration_sigma = 22;
+     int32 yaw_rate = 23;
+     uint32 yaw_rate_sigma = 24;
+     uint32 number_of_contour_points = 25;
+    repeated make87_messages_ros2.humble.ibeo_msgs.msg.ContourPointSigma contour_point_list = 26;
+}

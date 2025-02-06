@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_introspection_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/marti_introspection_msgs/msg/param_info.proto";
+import "make87_messages_ros2/humble/marti_introspection_msgs/msg/service_info.proto";
+import "make87_messages_ros2/humble/marti_introspection_msgs/msg/topic_info.proto";
+
+message NodeInfo {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string location = 3;
+     string nodelet_manager = 4;
+     string description = 5;
+    repeated make87_messages_ros2.humble.marti_introspection_msgs.msg.TopicInfo topics = 6;
+    repeated make87_messages_ros2.humble.marti_introspection_msgs.msg.ParamInfo parameters = 7;
+    repeated make87_messages_ros2.humble.marti_introspection_msgs.msg.ServiceInfo services = 8;
+}

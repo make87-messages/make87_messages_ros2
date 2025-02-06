@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_dashboard_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message RawRequestRequest {
+    make87_messages.core.Header header = 1;
+     string query = 2;
+}
+
+message RawRequestResponse {
+    make87_messages.core.Header header = 1;
+     string answer = 2;
+}

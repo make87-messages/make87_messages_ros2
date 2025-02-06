@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/trajectory_msgs/msg/joint_trajectory.proto";
+
+message SetJointTrajectoryRequest {
+    make87_messages.core.Header header = 1;
+     string model_name = 2;
+     make87_messages_ros2.humble.trajectory_msgs.msg.JointTrajectory joint_trajectory = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose model_pose = 4;
+     bool set_model_pose = 5;
+     bool disable_physics_updates = 6;
+}
+
+message SetJointTrajectoryResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string status_message = 3;
+}

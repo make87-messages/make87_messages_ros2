@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/mounting_position_f.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message CameraImage {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 3;
+     uint32 image_format = 4;
+     uint32 us_since_power_on = 5;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 6;
+     uint32 device_id = 7;
+     make87_messages_ros2.humble.ibeo_msgs.msg.MountingPositionF mounting_position = 8;
+     double horizontal_opening_angle = 9;
+     double vertical_opening_angle = 10;
+     uint32 image_width = 11;
+     uint32 image_height = 12;
+     uint32 compressed_size = 13;
+    repeated uint32 image_buffer = 14;
+}

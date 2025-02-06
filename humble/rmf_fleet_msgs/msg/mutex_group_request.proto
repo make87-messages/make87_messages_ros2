@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_fleet_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message MutexGroupRequest {
+    make87_messages.core.Header header = 1;
+     string group = 2;
+     uint64 claimant = 3;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time claim_time = 4;
+     uint32 mode = 5;
+}

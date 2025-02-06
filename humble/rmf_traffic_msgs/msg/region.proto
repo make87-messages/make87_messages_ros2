@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/space.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/timespan.proto";
+
+message Region {
+    make87_messages.core.Header header = 1;
+     string map = 2;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.Space spaces = 3;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.Timespan timespan = 4;
+}

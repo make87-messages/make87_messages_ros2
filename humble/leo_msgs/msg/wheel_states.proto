@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.leo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message WheelStates {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time stamp = 2;
+    repeated float position = 3;
+    repeated float velocity = 4;
+    repeated float torque = 5;
+    repeated float pwm_duty_cycle = 6;
+}

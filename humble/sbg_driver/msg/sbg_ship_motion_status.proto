@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgShipMotionStatus {
+    make87_messages.core.Header header = 1;
+     bool heave_valid = 2;
+     bool heave_vel_aided = 3;
+     bool surge_sway_included = 4;
+     bool period_available = 5;
+     bool period_valid = 6;
+     bool swell_mode = 7;
+}

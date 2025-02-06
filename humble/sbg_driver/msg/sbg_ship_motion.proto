@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/sbg_driver/msg/sbg_ship_motion_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message SbgShipMotion {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 time_stamp = 3;
+     uint32 heave_period = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 ship_motion = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 acceleration = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 velocity = 7;
+     make87_messages_ros2.humble.sbg_driver.msg.SbgShipMotionStatus status = 8;
+}

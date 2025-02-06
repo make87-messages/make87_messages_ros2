@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.soccer_vision_3d_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/soccer_vision_attribute_msgs/msg/confidence.proto";
+import "make87_messages_ros2/humble/soccer_vision_attribute_msgs/msg/robot.proto";
+import "make87_messages_ros2/humble/vision_msgs/msg/bounding_box3_d.proto";
+
+message Robot {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.vision_msgs.msg.BoundingBox3D bb = 2;
+     make87_messages_ros2.humble.soccer_vision_attribute_msgs.msg.Robot attributes = 3;
+     make87_messages_ros2.humble.soccer_vision_attribute_msgs.msg.Confidence confidence = 4;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message MeasxData {
+    make87_messages.core.Header header = 1;
+     uint32 gnss_id = 2;
+     uint32 sv_id = 3;
+     uint32 c_no = 4;
+     uint32 mpath_indic = 5;
+     int32 doppler_ms = 6;
+     int32 doppler_hz = 7;
+     uint32 whole_chips = 8;
+     uint32 frac_chips = 9;
+     uint32 code_phase = 10;
+     uint32 int_code_phase = 11;
+     uint32 pseu_range_rms_err = 12;
+}

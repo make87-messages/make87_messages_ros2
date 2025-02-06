@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.depthai_ros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TrackedFeature {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point position = 3;
+     uint32 id = 4;
+     uint32 age = 5;
+     float harris_score = 6;
+     float tracking_error = 7;
+}

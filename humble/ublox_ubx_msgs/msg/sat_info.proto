@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/sat_flags.proto";
+
+message SatInfo {
+    make87_messages.core.Header header = 1;
+     uint32 gnss_id = 2;
+     uint32 sv_id = 3;
+     uint32 cno = 4;
+     int32 elev = 5;
+     int32 azim = 6;
+     int32 pr_res = 7;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.SatFlags flags = 8;
+}

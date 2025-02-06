@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.bosch_locator_bridge.srv;
+
+import "make87_messages/core/header.proto";
+
+message ClientConfigGetEntryRequest {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+}
+
+message ClientConfigGetEntryResponse {
+    make87_messages.core.Header header = 1;
+     string value = 2;
+}

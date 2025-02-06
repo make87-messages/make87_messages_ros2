@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message INSNavCart {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     uint32 gnss_mode = 4;
+     uint32 error = 5;
+     uint32 info = 6;
+     uint32 gnss_age = 7;
+     double x = 8;
+     double y = 9;
+     double z = 10;
+     uint32 accuracy = 11;
+     uint32 latency = 12;
+     uint32 datum = 13;
+     uint32 sb_list = 14;
+     float x_std_dev = 15;
+     float y_std_dev = 16;
+     float z_std_dev = 17;
+     float xy_cov = 18;
+     float xz_cov = 19;
+     float yz_cov = 20;
+     float heading = 21;
+     float pitch = 22;
+     float roll = 23;
+     float heading_std_dev = 24;
+     float pitch_std_dev = 25;
+     float roll_std_dev = 26;
+     float heading_pitch_cov = 27;
+     float heading_roll_cov = 28;
+     float pitch_roll_cov = 29;
+     float vx = 30;
+     float vy = 31;
+     float vz = 32;
+     float vx_std_dev = 33;
+     float vy_std_dev = 34;
+     float vz_std_dev = 35;
+     float vx_vy_cov = 36;
+     float vx_vz_cov = 37;
+     float vy_vz_cov = 38;
+}

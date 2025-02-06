@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.vision_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message VisionClass {
+    make87_messages.core.Header header = 1;
+     uint32 class_id = 2;
+     string class_name = 3;
+}

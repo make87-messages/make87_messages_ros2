@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.vimbax_camera_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/vimbax_camera_msgs/msg/error.proto";
+import "make87_messages_ros2/humble/vimbax_camera_msgs/msg/feature_module.proto";
+
+message FeatureCommandIsDoneRequest {
+    make87_messages.core.Header header = 1;
+     string feature_name = 2;
+     make87_messages_ros2.humble.vimbax_camera_msgs.msg.FeatureModule feature_module = 3;
+}
+
+message FeatureCommandIsDoneResponse {
+    make87_messages.core.Header header = 1;
+     bool is_done = 2;
+     make87_messages_ros2.humble.vimbax_camera_msgs.msg.Error error = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.statistics_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message StatisticDataPoint {
+    make87_messages.core.Header header = 1;
+     uint32 data_type = 2;
+     double data = 3;
+}

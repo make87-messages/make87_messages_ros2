@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.foros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message RequestVoteRequest {
+    make87_messages.core.Header header = 1;
+     uint64 term = 2;
+     uint32 candidate_id = 3;
+     uint64 last_data_index = 4;
+     uint64 loat_data_term = 5;
+}
+
+message RequestVoteResponse {
+    make87_messages.core.Header header = 1;
+     uint64 term = 2;
+     bool vote_granted = 3;
+}

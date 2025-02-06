@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rc_reason_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+
+message SuctionGrasp {
+    make87_messages.core.Header header = 1;
+     string uuid = 2;
+     string item_uuid = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose = 4;
+     double quality = 5;
+     double max_suction_surface_length = 6;
+     double max_suction_surface_width = 7;
+}

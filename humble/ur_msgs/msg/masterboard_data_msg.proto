@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message MasterboardDataMsg {
+    make87_messages.core.Header header = 1;
+     uint32 digital_input_bits = 2;
+     uint32 digital_output_bits = 3;
+     int32 analog_input_range0 = 4;
+     int32 analog_input_range1 = 5;
+     double analog_input0 = 6;
+     double analog_input1 = 7;
+     int32 analog_output_domain0 = 8;
+     int32 analog_output_domain1 = 9;
+     double analog_output0 = 10;
+     double analog_output1 = 11;
+     float masterboard_temperature = 12;
+     float robot_voltage_48v = 13;
+     float robot_current = 14;
+     float master_io_current = 15;
+     uint32 master_safety_state = 16;
+     uint32 master_onoff_state = 17;
+}

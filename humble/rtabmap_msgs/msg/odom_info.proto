@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rtabmap_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/camera_models.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/key_point.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/point2f.proto";
+import "make87_messages_ros2/humble/rtabmap_msgs/msg/point3f.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message OdomInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool lost = 3;
+     int32 matches = 4;
+     int32 inliers = 5;
+     float icp_inliers_ratio = 6;
+     float icp_rotation = 7;
+     float icp_translation = 8;
+     float icp_structural_complexity = 9;
+     float icp_structural_distribution = 10;
+     int32 icp_correspondences = 11;
+    repeated double covariance = 12;
+     int32 features = 13;
+     int32 local_map_size = 14;
+     int32 local_scan_map_size = 15;
+     int32 local_key_frames = 16;
+     int32 local_bundle_outliers = 17;
+     int32 local_bundle_constraints = 18;
+     float local_bundle_time = 19;
+     bool key_frame_added = 20;
+     float time_estimation = 21;
+     float time_particle_filtering = 22;
+     float stamp = 23;
+     float interval = 24;
+     float distance_travelled = 25;
+     int32 memory_usage = 26;
+     float gravity_roll_error = 27;
+     float gravity_pitch_error = 28;
+    repeated int32 local_bundle_ids = 29;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.CameraModels local_bundle_models = 30;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose local_bundle_poses = 31;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform transform = 32;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform transform_filtered = 33;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform transform_ground_truth = 34;
+     make87_messages_ros2.humble.geometry_msgs.msg.Transform guess = 35;
+     int32 type = 36;
+    repeated int32 words_keys = 37;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.KeyPoint words_values = 38;
+    repeated int32 word_matches = 39;
+    repeated int32 word_inliers = 40;
+    repeated int32 local_map_keys = 41;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.Point3f local_map_values = 42;
+     make87_messages_ros2.humble.sensor_msgs.msg.PointCloud2 local_scan_map = 43;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.Point2f ref_corners = 44;
+    repeated make87_messages_ros2.humble.rtabmap_msgs.msg.Point2f new_corners = 45;
+    repeated int32 corner_inliers = 46;
+}

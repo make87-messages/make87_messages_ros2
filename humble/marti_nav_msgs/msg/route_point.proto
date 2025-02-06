@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_nav_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/marti_common_msgs/msg/key_value.proto";
+
+message RoutePoint {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 2;
+     string id = 3;
+    repeated make87_messages_ros2.humble.marti_common_msgs.msg.KeyValue properties = 4;
+}

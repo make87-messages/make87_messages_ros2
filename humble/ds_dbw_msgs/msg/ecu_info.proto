@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EcuInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string name = 3;
+     string version = 4;
+     string mac_addr = 5;
+     string config_hash = 6;
+     uint32 config_count_modified = 7;
+     uint32 config_count_configured = 8;
+     bool config_nvm_blank = 9;
+     bool config_nvm_write_pending = 10;
+     string build_date = 11;
+     string license_date = 12;
+     bool control_licensed = 13;
+     string log_filename = 14;
+     bool log_filesystem_present = 15;
+     bool log_fault = 16;
+}

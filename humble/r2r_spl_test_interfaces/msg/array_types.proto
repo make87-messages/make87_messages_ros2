@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.r2r_spl_test_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message ArrayTypes {
+    make87_messages.core.Header header = 1;
+    repeated int32 data_int8_static = 2;
+    repeated bool data_bool_static = 3;
+    repeated int32 data_int8_unbounded_dynamic = 4;
+    repeated bool data_bool_unbounded_dynamic = 5;
+    repeated int32 data_int8_bounded_dynamic = 6;
+    repeated bool data_bool_bounded_dynamic = 7;
+     string data_string = 8;
+     string data_string_bounded = 9;
+     string data_wstring = 10;
+     string data_wstring_bounded = 11;
+}

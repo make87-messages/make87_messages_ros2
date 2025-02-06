@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GimbalManagerInformation {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 cap_flags = 3;
+     uint32 gimbal_device_id = 4;
+     float roll_min = 5;
+     float roll_max = 6;
+     float pitch_min = 7;
+     float pitch_max = 8;
+     float yaw_min = 9;
+     float yaw_max = 10;
+}

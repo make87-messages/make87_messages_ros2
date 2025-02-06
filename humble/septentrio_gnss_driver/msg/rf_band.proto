@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message RFBand {
+    make87_messages.core.Header header = 1;
+     uint32 frequency = 2;
+     uint32 bandwidth = 3;
+     uint32 info = 4;
+}

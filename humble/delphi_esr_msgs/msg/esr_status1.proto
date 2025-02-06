@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrStatus1 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 rolling_count_1 = 4;
+     uint32 dsp_timestamp = 5;
+     bool comm_error = 6;
+     int32 radius_curvature_calc = 7;
+     uint32 scan_index = 8;
+     float yaw_rate_calc = 9;
+     float vehicle_speed_calc = 10;
+}

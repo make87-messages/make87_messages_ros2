@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ros_babel_fish_test_msgs/msg/test_sub_array.proto";
+
+message TestArray {
+    make87_messages.core.Header header = 1;
+    repeated bool bools = 2;
+    repeated uint32 uint8s = 3;
+    repeated uint32 uint16s = 4;
+    repeated uint32 uint32s = 5;
+    repeated uint64 uint64s = 6;
+    repeated int32 int8s = 7;
+    repeated int32 int16s = 8;
+    repeated int32 int32s = 9;
+    repeated int64 int64s = 10;
+    repeated float float32s = 11;
+    repeated double float64s = 12;
+    repeated make87_messages_ros2.humble.builtin_interfaces.msg.Time times = 13;
+    repeated make87_messages_ros2.humble.builtin_interfaces.msg.Duration durations = 14;
+    repeated string strings = 15;
+    repeated make87_messages_ros2.humble.ros_babel_fish_test_msgs.msg.TestSubArray subarrays_fixed = 16;
+    repeated make87_messages_ros2.humble.ros_babel_fish_test_msgs.msg.TestSubArray subarrays = 17;
+}

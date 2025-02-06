@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message HmsInfoMsg {
+    make87_messages.core.Header header = 1;
+     uint32 error_code = 2;
+     uint32 component_index = 3;
+     uint32 error_level = 4;
+     string ground_info = 5;
+     string fly_info = 6;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavVELNED {
+    make87_messages.core.Header header = 1;
+     uint32 i_tow = 2;
+     int32 vel_n = 3;
+     int32 vel_e = 4;
+     int32 vel_d = 5;
+     uint32 speed = 6;
+     uint32 g_speed = 7;
+     int32 heading = 8;
+     uint32 s_acc = 9;
+     uint32 c_acc = 10;
+}

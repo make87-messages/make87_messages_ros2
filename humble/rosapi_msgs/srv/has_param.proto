@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosapi_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message HasParamRequest {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+}
+
+message HasParamResponse {
+    make87_messages.core.Header header = 1;
+     bool exists = 2;
+}

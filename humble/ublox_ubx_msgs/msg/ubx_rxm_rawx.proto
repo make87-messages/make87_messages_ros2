@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/rawx_data.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/rec_stat.proto";
+
+message UBXRxmRawx {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     double rcv_tow = 3;
+     uint32 week = 4;
+     int32 leap_s = 5;
+     uint32 num_meas = 6;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.RecStat rec_stat = 7;
+     uint32 version = 8;
+    repeated make87_messages_ros2.humble.ublox_ubx_msgs.msg.RawxData rawx_data = 9;
+}

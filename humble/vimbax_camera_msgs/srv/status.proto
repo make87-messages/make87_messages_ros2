@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.vimbax_camera_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/vimbax_camera_msgs/msg/error.proto";
+import "make87_messages_ros2/humble/vimbax_camera_msgs/msg/trigger_info.proto";
+
+message StatusRequest {
+    make87_messages.core.Header header = 1;
+}
+
+message StatusResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.vimbax_camera_msgs.msg.Error error = 2;
+     string display_name = 3;
+     string model_name = 4;
+     string device_firmware_version = 5;
+     string device_id = 6;
+     string device_user_id = 7;
+     string device_serial_number = 8;
+     string interface_id = 9;
+     string transport_layer_id = 10;
+     bool streaming = 11;
+     uint32 width = 12;
+     uint32 height = 13;
+     double frame_rate = 14;
+     string pixel_format = 15;
+    repeated make87_messages_ros2.humble.vimbax_camera_msgs.msg.TriggerInfo trigger_info = 16;
+     string ip_address = 17;
+     string mac_address = 18;
+}

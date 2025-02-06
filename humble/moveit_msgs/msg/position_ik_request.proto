@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/constraints.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/robot_state.proto";
+
+message PositionIKRequest {
+    make87_messages.core.Header header = 1;
+     string group_name = 2;
+     make87_messages_ros2.humble.moveit_msgs.msg.RobotState robot_state = 3;
+     make87_messages_ros2.humble.moveit_msgs.msg.Constraints constraints = 4;
+     bool avoid_collisions = 5;
+     string ik_link_name = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose_stamped = 7;
+    repeated string ik_link_names = 8;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.PoseStamped pose_stamped_vector = 9;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration timeout = 10;
+}

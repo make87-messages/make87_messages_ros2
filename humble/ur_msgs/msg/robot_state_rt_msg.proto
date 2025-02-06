@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ur_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message RobotStateRTMsg {
+    make87_messages.core.Header header = 1;
+     double time = 2;
+    repeated double q_target = 3;
+    repeated double qd_target = 4;
+    repeated double qdd_target = 5;
+    repeated double i_target = 6;
+    repeated double m_target = 7;
+    repeated double q_actual = 8;
+    repeated double qd_actual = 9;
+    repeated double i_actual = 10;
+    repeated double tool_acc_values = 11;
+    repeated double tcp_force = 12;
+    repeated double tool_vector = 13;
+    repeated double tcp_speed = 14;
+     double digital_input_bits = 15;
+    repeated double motor_temperatures = 16;
+     double controller_timer = 17;
+     double test_value = 18;
+     double robot_mode = 19;
+    repeated double joint_modes = 20;
+}

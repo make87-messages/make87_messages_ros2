@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_scan_xd.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message NAVPoseData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     int32 x = 3;
+     int32 y = 4;
+     uint32 phi = 5;
+     uint32 opt_pose_data_valid = 6;
+     uint32 output_mode = 7;
+     uint32 timestamp = 8;
+     int32 mean_dev = 9;
+     uint32 nav_mode = 10;
+     uint32 info_state = 11;
+     uint32 quant_used_reflectors = 12;
+     int32 pose_valid = 13;
+     float pose_x = 14;
+     float pose_y = 15;
+     float pose_yaw = 16;
+}

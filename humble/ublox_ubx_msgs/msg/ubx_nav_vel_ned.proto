@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UBXNavVelNED {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 itow = 3;
+     int32 vel_n = 4;
+     int32 vel_e = 5;
+     int32 vel_d = 6;
+     uint32 speed = 7;
+     uint32 g_speed = 8;
+     int32 heading = 9;
+     uint32 s_acc = 10;
+     uint32 c_acc = 11;
+}

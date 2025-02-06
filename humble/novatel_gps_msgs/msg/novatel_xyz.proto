@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_extended_solution_status.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_signal_mask.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message NovatelXYZ {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 3;
+     string solution_status = 4;
+     string position_type = 5;
+     double x = 6;
+     double y = 7;
+     double z = 8;
+     float x_sigma = 9;
+     float y_sigma = 10;
+     float z_sigma = 11;
+     string velocity_solution_status = 12;
+     string velocity_type = 13;
+     double x_vel = 14;
+     double y_vel = 15;
+     double z_vel = 16;
+     float x_vel_sigma = 17;
+     float y_vel_sigma = 18;
+     float z_vel_sigma = 19;
+     string base_station_id = 20;
+     float velocity_latency = 21;
+     float diff_age = 22;
+     float solution_age = 23;
+     uint32 num_satellites_tracked = 24;
+     uint32 num_satellites_used_in_solution = 25;
+     uint32 num_gps_and_glonass_l1_used_in_solution = 26;
+     uint32 num_gps_and_glonass_l1_and_l2_used_in_solution = 27;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelExtendedSolutionStatus extended_solution_status = 28;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelSignalMask signal_mask = 29;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/situational_graphs_reasoning_msgs/msg/keyframe.proto";
+
+message GraphKeyframes {
+    make87_messages.core.Header header = 1;
+     string type = 2;
+     string robot = 3;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Keyframe keyframes = 4;
+}

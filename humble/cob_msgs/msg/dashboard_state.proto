@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.cob_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/cob_msgs/msg/emergency_stop_state.proto";
+import "make87_messages_ros2/humble/cob_msgs/msg/power_state.proto";
+import "make87_messages_ros2/humble/diagnostic_msgs/msg/diagnostic_status.proto";
+
+message DashboardState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.diagnostic_msgs.msg.DiagnosticStatus diagnostics_toplevel_state = 2;
+     make87_messages_ros2.humble.cob_msgs.msg.PowerState power_state = 3;
+     make87_messages_ros2.humble.cob_msgs.msg.EmergencyStopState emergency_stop_state = 4;
+}

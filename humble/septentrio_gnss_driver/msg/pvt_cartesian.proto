@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message PVTCartesian {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     uint32 mode = 4;
+     uint32 error = 5;
+     double x = 6;
+     double y = 7;
+     double z = 8;
+     float undulation = 9;
+     float vx = 10;
+     float vy = 11;
+     float vz = 12;
+     float cog = 13;
+     double rx_clk_bias = 14;
+     float rx_clk_drift = 15;
+     uint32 time_system = 16;
+     uint32 datum = 17;
+     uint32 nr_sv = 18;
+     uint32 wa_corr_info = 19;
+     uint32 reference_id = 20;
+     uint32 mean_corr_age = 21;
+     uint32 signal_info = 22;
+     uint32 alert_flag = 23;
+     uint32 nr_bases = 24;
+     uint32 ppp_info = 25;
+     uint32 latency = 26;
+     uint32 h_accuracy = 27;
+     uint32 v_accuracy = 28;
+     uint32 misc = 29;
+}

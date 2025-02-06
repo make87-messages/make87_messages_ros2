@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.map_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ProjectedMapInfo {
+    make87_messages.core.Header header = 1;
+     string frame_id = 2;
+     double x = 3;
+     double y = 4;
+     double width = 5;
+     double height = 6;
+     double min_z = 7;
+     double max_z = 8;
+}

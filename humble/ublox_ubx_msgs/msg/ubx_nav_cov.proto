@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UBXNavCov {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 itow = 3;
+     uint32 version = 4;
+     bool pos_cor_valid = 5;
+     bool vel_cor_valid = 6;
+     float pos_cov_nn = 7;
+     float pos_cov_ne = 8;
+     float pos_cov_nd = 9;
+     float pos_cov_ee = 10;
+     float pos_cov_ed = 11;
+     float pos_cov_dd = 12;
+     float vel_cov_nn = 13;
+     float vel_cov_ne = 14;
+     float vel_cov_nd = 15;
+     float vel_cov_ee = 16;
+     float vel_cov_ed = 17;
+     float vel_cov_dd = 18;
+}

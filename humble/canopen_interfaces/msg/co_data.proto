@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.canopen_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message COData {
+    make87_messages.core.Header header = 1;
+     uint32 index = 2;
+     uint32 subindex = 3;
+     uint32 data = 4;
+}

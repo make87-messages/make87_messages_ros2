@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MrrDetection {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 detection_id = 3;
+     uint32 confid_azimuth = 4;
+     bool super_res_target = 5;
+     bool nd_target = 6;
+     bool host_veh_clutter = 7;
+     bool valid_level = 8;
+     float azimuth = 9;
+     float range = 10;
+     float range_rate = 11;
+     int32 amplitude = 12;
+     uint32 index_2lsb = 13;
+}

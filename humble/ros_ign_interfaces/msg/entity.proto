@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_ign_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message Entity {
+    make87_messages.core.Header header = 1;
+     uint64 id = 2;
+     string name = 3;
+     uint32 type = 4;
+}

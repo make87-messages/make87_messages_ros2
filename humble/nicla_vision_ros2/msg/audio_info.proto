@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.nicla_vision_ros2.msg;
+
+import "make87_messages/core/header.proto";
+
+message AudioInfo {
+    make87_messages.core.Header header = 1;
+     uint32 channels = 2;
+     uint32 sample_rate = 3;
+     string sample_format = 4;
+     uint32 bitrate = 5;
+     string coding_format = 6;
+}

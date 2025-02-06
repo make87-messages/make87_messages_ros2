@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.example_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message String {
+    make87_messages.core.Header header = 1;
+     string data = 2;
+}

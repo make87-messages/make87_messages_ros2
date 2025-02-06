@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.scenario_execution_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/scenario_execution_interfaces/msg/scenario.proto";
+
+message ExecuteScenarioRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.scenario_execution_interfaces.msg.Scenario scenario = 2;
+}
+
+message ExecuteScenarioResponse {
+    make87_messages.core.Header header = 1;
+     bool result = 2;
+}

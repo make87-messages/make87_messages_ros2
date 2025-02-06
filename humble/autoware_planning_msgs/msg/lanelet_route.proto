@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_planning_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/autoware_planning_msgs/msg/lanelet_segment.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/unique_identifier_msgs/msg/uuid.proto";
+
+message LaneletRoute {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose start_pose = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose goal_pose = 4;
+    repeated make87_messages_ros2.humble.autoware_planning_msgs.msg.LaneletSegment segments = 5;
+     make87_messages_ros2.humble.unique_identifier_msgs.msg.UUID uuid = 6;
+     bool allow_modification = 7;
+}

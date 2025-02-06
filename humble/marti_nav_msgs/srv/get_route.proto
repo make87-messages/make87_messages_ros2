@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_nav_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/marti_nav_msgs/msg/route.proto";
+
+message GetRouteRequest {
+    make87_messages.core.Header header = 1;
+     string guid = 2;
+}
+
+message GetRouteResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.marti_nav_msgs.msg.Route route = 2;
+     bool success = 3;
+     string message = 4;
+}

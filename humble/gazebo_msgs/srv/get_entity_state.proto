@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/gazebo_msgs/msg/entity_state.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GetEntityStateRequest {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+     string reference_frame = 3;
+}
+
+message GetEntityStateResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.gazebo_msgs.msg.EntityState state = 3;
+     bool success = 4;
+}

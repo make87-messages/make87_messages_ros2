@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/cmd_src.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ThrottleReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 cmd_type = 3;
+     float percent_input = 4;
+     float percent_cmd = 5;
+     float percent_output = 6;
+     bool yield_request = 7;
+     bool limiting_value = 8;
+     bool limiting_rate = 9;
+     bool external_control = 10;
+     bool ready = 11;
+     bool enabled = 12;
+     bool override_active = 13;
+     bool override_other = 14;
+     bool override_latched = 15;
+     bool timeout = 16;
+     bool fault = 17;
+     bool bad_crc = 18;
+     bool bad_rc = 19;
+     bool degraded = 20;
+     float limit_value = 21;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.CmdSrc cmd_src = 22;
+}

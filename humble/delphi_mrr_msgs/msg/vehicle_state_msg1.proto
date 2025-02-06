@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_mrr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VehicleStateMsg1 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 can_fcw_sensitivity_level = 3;
+     bool can_vehicle_stationary = 4;
+     uint32 can_intf_minor_version = 5;
+     uint32 can_intf_major_version = 6;
+     uint32 can_brake_pedal = 7;
+     bool can_high_wheel_slip = 8;
+     uint32 can_turn_signal_status = 9;
+     bool can_washer_front_cmd = 10;
+     bool can_wiper_front_cmd = 11;
+     uint32 can_wiper_speed_info = 12;
+     bool can_reverse_gear = 13;
+     uint32 can_beam_shape_actual_right = 14;
+     uint32 can_beam_shape_actual_left = 15;
+     bool can_main_beam_indication = 16;
+     uint32 can_vehicle_index = 17;
+}

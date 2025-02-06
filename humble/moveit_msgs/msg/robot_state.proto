@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/attached_collision_object.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/joint_state.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/multi_dof_joint_state.proto";
+
+message RobotState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.sensor_msgs.msg.JointState joint_state = 2;
+     make87_messages_ros2.humble.sensor_msgs.msg.MultiDOFJointState multi_dof_joint_state = 3;
+    repeated make87_messages_ros2.humble.moveit_msgs.msg.AttachedCollisionObject attached_collision_objects = 4;
+     bool is_diff = 5;
+}

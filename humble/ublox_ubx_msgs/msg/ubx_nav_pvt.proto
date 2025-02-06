@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/carr_soln.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/gps_fix.proto";
+import "make87_messages_ros2/humble/ublox_ubx_msgs/msg/psmpvt.proto";
+
+message UBXNavPVT {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 itow = 3;
+     uint32 year = 4;
+     uint32 month = 5;
+     uint32 day = 6;
+     uint32 hour = 7;
+     uint32 min = 8;
+     uint32 sec = 9;
+     bool valid_date = 10;
+     bool valid_time = 11;
+     bool fully_resolved = 12;
+     bool valid_mag = 13;
+     uint32 t_acc = 14;
+     int32 nano = 15;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.GpsFix gps_fix = 16;
+     bool gnss_fix_ok = 17;
+     bool diff_soln = 18;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.PSMPVT psm = 19;
+     bool head_veh_valid = 20;
+     make87_messages_ros2.humble.ublox_ubx_msgs.msg.CarrSoln carr_soln = 21;
+     bool confirmed_avail = 22;
+     bool confirmed_date = 23;
+     bool confirmed_time = 24;
+     uint32 num_sv = 25;
+     int32 lon = 26;
+     int32 lat = 27;
+     int32 height = 28;
+     int32 hmsl = 29;
+     uint32 h_acc = 30;
+     uint32 v_acc = 31;
+     int32 vel_n = 32;
+     int32 vel_e = 33;
+     int32 vel_d = 34;
+     int32 g_speed = 35;
+     int32 head_mot = 36;
+     uint32 s_acc = 37;
+     uint32 head_acc = 38;
+     uint32 p_dop = 39;
+     bool invalid_llh = 40;
+     int32 head_veh = 41;
+     int32 mag_dec = 42;
+     uint32 mag_acc = 43;
+}

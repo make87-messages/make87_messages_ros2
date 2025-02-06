@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.system_modes_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/system_modes_msgs/msg/mode.proto";
+
+message ModeEvent {
+    make87_messages.core.Header header = 1;
+     uint64 timestamp = 2;
+     make87_messages_ros2.humble.system_modes_msgs.msg.Mode start_mode = 3;
+     make87_messages_ros2.humble.system_modes_msgs.msg.Mode goal_mode = 4;
+}

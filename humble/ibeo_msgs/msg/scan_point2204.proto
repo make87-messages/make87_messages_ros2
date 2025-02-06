@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ScanPoint2204 {
+    make87_messages.core.Header header = 1;
+     float x_position = 2;
+     float y_position = 3;
+     float z_position = 4;
+     float echo_width = 5;
+     uint32 device_id = 6;
+     uint32 layer = 7;
+     uint32 echo = 8;
+     uint32 time_offset = 9;
+     bool ground = 10;
+     bool dirt = 11;
+     bool precipitation = 12;
+}

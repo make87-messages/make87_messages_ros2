@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_traffic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_forfeit.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_proposal.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_rejection.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_status.proto";
+import "make87_messages_ros2/humble/rmf_traffic_msgs/msg/negotiation_tree_node.proto";
+
+message NegotiationState {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationStatus status = 2;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationTreeNode tree = 3;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationProposal orphan_proposals = 4;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationRejection orphan_rejections = 5;
+    repeated make87_messages_ros2.humble.rmf_traffic_msgs.msg.NegotiationForfeit orphan_forfeits = 6;
+}

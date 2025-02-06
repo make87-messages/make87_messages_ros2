@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mrpt_nav_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance.proto";
+
+message GeoreferencingMetadata {
+    make87_messages.core.Header header = 1;
+     bool valid = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovariance t_enu_to_map = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose t_enu_to_utm = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double height = 7;
+     int32 utm_zone = 8;
+     string utm_band = 9;
+}

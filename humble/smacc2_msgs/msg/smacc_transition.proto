@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.smacc2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/smacc2_msgs/msg/smacc_event.proto";
+
+message SmaccTransition {
+    make87_messages.core.Header header = 1;
+     int32 index = 2;
+     string transition_name = 3;
+     string transition_type = 4;
+     string destiny_state_name = 5;
+     string source_state_name = 6;
+     bool history_node = 7;
+     make87_messages_ros2.humble.smacc2_msgs.msg.SmaccEvent event = 8;
+}

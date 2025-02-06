@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_df.proto";
+
+message Object2280 {
+    make87_messages.core.Header header = 1;
+     uint32 id = 2;
+     uint32 tracking_model = 3;
+     bool mobility_of_dyn_object_detected = 4;
+     bool motion_model_validated = 5;
+     uint32 object_age = 6;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 7;
+     uint32 object_prediction_age = 8;
+     uint32 classification = 9;
+     uint32 classification_certainty = 10;
+     uint32 classification_age = 11;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df object_box_center = 12;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df object_box_center_sigma = 13;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df object_box_size = 14;
+     float object_box_orientation_angle = 15;
+     float object_box_orientation_angle_sigma = 16;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df relative_velocity = 17;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df relative_velocity_sigma = 18;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df absolute_velocity = 19;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df absolute_velocity_sigma = 20;
+     uint32 number_of_contour_points = 21;
+     uint32 closest_point_index = 22;
+     uint32 reference_point_location = 23;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df reference_point_coordinate = 24;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df reference_point_coordinate_sigma = 25;
+     float reference_point_position_correction_coefficient = 26;
+     uint32 object_priority = 27;
+     float object_existence_measurement = 28;
+    repeated make87_messages_ros2.humble.ibeo_msgs.msg.Point2Df contour_point_list = 29;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message TestSubArray {
+    make87_messages.core.Header header = 1;
+    repeated int32 ints = 2;
+    repeated string strings = 3;
+    repeated make87_messages_ros2.humble.builtin_interfaces.msg.Time times = 4;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.automotive_platform_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message CabinReport {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool door_open_front_right = 3;
+     bool door_open_front_left = 4;
+     bool door_open_rear_right = 5;
+     bool door_open_rear_left = 6;
+     bool hood_open = 7;
+     bool trunk_open = 8;
+     bool passenger_present = 9;
+     bool passenger_airbag_enabled = 10;
+     bool seatbelt_engaged_driver = 11;
+     bool seatbelt_engaged_passenger = 12;
+}

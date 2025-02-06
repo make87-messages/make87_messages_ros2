@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_task_msgs/msg/task_description.proto";
+
+message SubmitTaskRequest {
+    make87_messages.core.Header header = 1;
+     string requester = 2;
+     make87_messages_ros2.humble.rmf_task_msgs.msg.TaskDescription description = 3;
+}
+
+message SubmitTaskResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string task_id = 3;
+     string message = 4;
+}

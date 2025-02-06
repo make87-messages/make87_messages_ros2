@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message CommandLongRequest {
+    make87_messages.core.Header header = 1;
+     bool broadcast = 2;
+     uint32 command = 3;
+     uint32 confirmation = 4;
+     float param1 = 5;
+     float param2 = 6;
+     float param3 = 7;
+     float param4 = 8;
+     float param5 = 9;
+     float param6 = 10;
+     float param7 = 11;
+}
+
+message CommandLongResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

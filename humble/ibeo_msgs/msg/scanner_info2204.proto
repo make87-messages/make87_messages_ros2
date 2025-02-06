@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ScannerInfo2204 {
+    make87_messages.core.Header header = 1;
+     uint32 device_id = 2;
+     uint32 scanner_type = 3;
+     uint32 scan_number = 4;
+     float start_angle = 5;
+     float end_angle = 6;
+     float yaw_angle = 7;
+     float pitch_angle = 8;
+     float roll_angle = 9;
+     float offset_x = 10;
+     float offset_y = 11;
+     float offset_z = 12;
+}

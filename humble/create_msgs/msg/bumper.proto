@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.create_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Bumper {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool is_left_pressed = 3;
+     bool is_right_pressed = 4;
+     bool is_light_left = 5;
+     bool is_light_front_left = 6;
+     bool is_light_center_left = 7;
+     bool is_light_center_right = 8;
+     bool is_light_front_right = 9;
+     bool is_light_right = 10;
+     uint32 light_signal_left = 11;
+     uint32 light_signal_front_left = 12;
+     uint32 light_signal_center_left = 13;
+     uint32 light_signal_center_right = 14;
+     uint32 light_signal_front_right = 15;
+     uint32 light_signal_right = 16;
+}

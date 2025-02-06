@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sbg_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message SbgUtcTimeStatus {
+    make87_messages.core.Header header = 1;
+     bool clock_stable = 2;
+     uint32 clock_status = 3;
+     bool clock_utc_sync = 4;
+     uint32 clock_utc_status = 5;
+}

@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.visualization_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/compressed_image.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/visualization_msgs/msg/mesh_file.proto";
+import "make87_messages_ros2/humble/visualization_msgs/msg/uv_coordinate.proto";
+
+message Marker {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string ns = 3;
+     int32 id = 4;
+     int32 type = 5;
+     int32 action = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 7;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 scale = 8;
+     make87_messages_ros2.humble.std_msgs.msg.ColorRGBA color = 9;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration lifetime = 10;
+     bool frame_locked = 11;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Point points = 12;
+    repeated make87_messages_ros2.humble.std_msgs.msg.ColorRGBA colors = 13;
+     string texture_resource = 14;
+     make87_messages_ros2.humble.sensor_msgs.msg.CompressedImage texture = 15;
+    repeated make87_messages_ros2.humble.visualization_msgs.msg.UVCoordinate uv_coordinates = 16;
+     string text = 17;
+     string mesh_resource = 18;
+     make87_messages_ros2.humble.visualization_msgs.msg.MeshFile mesh_file = 19;
+     bool mesh_use_embedded_materials = 20;
+}

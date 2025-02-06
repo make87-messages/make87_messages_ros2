@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marine_acoustic_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Dvl {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 velocity_mode = 3;
+     uint32 dvl_type = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 velocity = 5;
+    repeated double velocity_covar = 6;
+     double altitude = 7;
+     double course_gnd = 8;
+     double speed_gnd = 9;
+     uint32 num_good_beams = 10;
+     float sound_speed = 11;
+     bool beam_ranges_valid = 12;
+     bool beam_velocities_valid = 13;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Vector3 beam_unit_vec = 14;
+    repeated double range = 15;
+    repeated float range_covar = 16;
+    repeated float beam_quality = 17;
+    repeated float beam_velocity = 18;
+    repeated float beam_velocity_covar = 19;
+}

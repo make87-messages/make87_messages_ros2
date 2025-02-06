@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.play_motion2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Motion {
+    make87_messages.core.Header header = 1;
+     string key = 2;
+     string name = 3;
+     string usage = 4;
+     string description = 5;
+    repeated string joints = 6;
+    repeated double positions = 7;
+    repeated double times_from_start = 8;
+}

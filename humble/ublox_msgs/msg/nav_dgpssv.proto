@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavDGPSSV {
+    make87_messages.core.Header header = 1;
+     uint32 svid = 2;
+     uint32 flags = 3;
+     uint32 age_c = 4;
+     float prc = 5;
+     float prrc = 6;
+}

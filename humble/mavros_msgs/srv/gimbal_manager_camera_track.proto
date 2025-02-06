@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+
+message GimbalManagerCameraTrackRequest {
+    make87_messages.core.Header header = 1;
+     uint32 mode = 2;
+     float x = 3;
+     float y = 4;
+     float radius = 5;
+     float top_left_x = 6;
+     float top_left_y = 7;
+     float bottom_right_x = 8;
+     float bottom_right_y = 9;
+}
+
+message GimbalManagerCameraTrackResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     uint32 result = 3;
+}

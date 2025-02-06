@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message NovatelVelocity {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 3;
+     string solution_status = 4;
+     string velocity_type = 5;
+     float latency = 6;
+     float age = 7;
+     double horizontal_speed = 8;
+     double track_ground = 9;
+     double vertical_speed = 10;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ReceiverTime {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.septentrio_gnss_driver.msg.BlockHeader block_header = 3;
+     int32 utc_year = 4;
+     int32 utc_month = 5;
+     int32 utc_day = 6;
+     int32 utc_hour = 7;
+     int32 utc_min = 8;
+     int32 utc_second = 9;
+     int32 delta_ls = 10;
+     uint32 sync_level = 11;
+}

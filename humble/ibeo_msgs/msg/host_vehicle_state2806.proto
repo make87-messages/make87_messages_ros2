@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message HostVehicleState2806 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 3;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 4;
+     int32 distance_x = 5;
+     int32 distance_y = 6;
+     float course_angle = 7;
+     float longitudinal_velocity = 8;
+     float yaw_rate = 9;
+     float steering_wheel_angle = 10;
+     float cross_acceleration = 11;
+     float front_wheel_angle = 12;
+     float vehicle_width = 13;
+     float vehicle_front_to_front_axle = 14;
+     float rear_axle_to_front_axle = 15;
+     float rear_axle_to_vehicle_rear = 16;
+     float steer_ratio_poly_0 = 17;
+     float steer_ratio_poly_1 = 18;
+     float steer_ratio_poly_2 = 19;
+     float steer_ratio_poly_3 = 20;
+}

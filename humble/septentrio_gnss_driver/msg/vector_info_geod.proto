@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.septentrio_gnss_driver.msg;
+
+import "make87_messages/core/header.proto";
+
+message VectorInfoGeod {
+    make87_messages.core.Header header = 1;
+     uint32 nr_sv = 2;
+     uint32 error = 3;
+     uint32 mode = 4;
+     uint32 misc = 5;
+     double delta_east = 6;
+     double delta_north = 7;
+     double delta_up = 8;
+     float delta_ve = 9;
+     float delta_vn = 10;
+     float delta_vu = 11;
+     uint32 azimuth = 12;
+     int32 elevation = 13;
+     uint32 reference_id = 14;
+     uint32 corr_age = 15;
+     uint32 signal_info = 16;
+}

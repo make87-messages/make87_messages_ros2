@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.off_highway_premium_radar_sample_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/accel.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/twist_with_covariance.proto";
+
+message EgoVehicleData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.TwistWithCovariance velocity = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Accel acceleration = 3;
+}

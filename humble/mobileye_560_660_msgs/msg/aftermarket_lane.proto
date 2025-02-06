@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mobileye_560_660_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message AftermarketLane {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 lane_confidence_left = 3;
+     bool ldw_available_left = 4;
+     uint32 lane_type_left = 5;
+     float distance_to_left_lane = 6;
+     uint32 lane_confidence_right = 7;
+     bool ldw_available_right = 8;
+     uint32 lane_type_right = 9;
+     float distance_to_right_lane = 10;
+}

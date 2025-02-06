@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.plansys2_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/plansys2_msgs/msg/action.proto";
+
+message GetDomainActionDetailsRequest {
+    make87_messages.core.Header header = 1;
+     string action = 2;
+    repeated string parameters = 3;
+}
+
+message GetDomainActionDetailsResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.plansys2_msgs.msg.Action action = 2;
+     bool success = 3;
+     string error_info = 4;
+}

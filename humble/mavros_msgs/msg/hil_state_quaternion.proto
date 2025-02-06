@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/geo_point.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message HilStateQuaternion {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Quaternion orientation = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 angular_velocity = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 linear_acceleration = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 linear_velocity = 6;
+     make87_messages_ros2.humble.geographic_msgs.msg.GeoPoint geo = 7;
+     float ind_airspeed = 8;
+     float true_airspeed = 9;
+}

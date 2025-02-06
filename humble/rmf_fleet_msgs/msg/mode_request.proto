@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_fleet_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/mode_parameter.proto";
+import "make87_messages_ros2/humble/rmf_fleet_msgs/msg/robot_mode.proto";
+
+message ModeRequest {
+    make87_messages.core.Header header = 1;
+     string fleet_name = 2;
+     string robot_name = 3;
+     make87_messages_ros2.humble.rmf_fleet_msgs.msg.RobotMode mode = 4;
+     string task_id = 5;
+    repeated make87_messages_ros2.humble.rmf_fleet_msgs.msg.ModeParameter parameters = 6;
+}

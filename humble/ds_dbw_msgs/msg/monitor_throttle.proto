@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ds_dbw_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ds_dbw_msgs/msg/quality.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message MonitorThrottle {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     float pedal_pc = 3;
+     make87_messages_ros2.humble.ds_dbw_msgs.msg.Quality pedal_qf = 4;
+}

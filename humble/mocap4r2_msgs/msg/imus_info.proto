@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mocap4r2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ImusInfo {
+    make87_messages.core.Header header = 1;
+    repeated string sensor_ids = 2;
+     float battery_level = 3;
+     float temperature = 4;
+}

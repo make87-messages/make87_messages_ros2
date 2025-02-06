@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.psdk_interfaces.srv;
+
+import "make87_messages/core/header.proto";
+
+message SetHomeFromGPSRequest {
+    make87_messages.core.Header header = 1;
+     double latitude = 2;
+     double longitude = 3;
+}
+
+message SetHomeFromGPSResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+}

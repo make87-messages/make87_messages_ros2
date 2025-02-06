@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rmf_task_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Tow {
+    make87_messages.core.Header header = 1;
+     string task_id = 2;
+     string object_type = 3;
+     bool is_object_id_known = 4;
+     string object_id = 5;
+     string pickup_place_name = 6;
+     bool is_dropoff_place_known = 7;
+     string dropoff_place_name = 8;
+}

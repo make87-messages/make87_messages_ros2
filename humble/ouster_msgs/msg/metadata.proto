@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ouster_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Metadata {
+    make87_messages.core.Header header = 1;
+     string hostname = 2;
+     string lidar_mode = 3;
+     string timestamp_mode = 4;
+    repeated double beam_azimuth_angles = 5;
+    repeated double beam_altitude_angles = 6;
+    repeated double imu_to_sensor_transform = 7;
+    repeated double lidar_to_sensor_transform = 8;
+     string serial_no = 9;
+     string firmware_rev = 10;
+     int32 imu_port = 11;
+     int32 lidar_port = 12;
+}

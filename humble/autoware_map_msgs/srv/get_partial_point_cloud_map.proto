@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.autoware_map_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/autoware_map_msgs/msg/area_info.proto";
+import "make87_messages_ros2/humble/autoware_map_msgs/msg/point_cloud_map_cell_with_id.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message GetPartialPointCloudMapRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.autoware_map_msgs.msg.AreaInfo area = 2;
+}
+
+message GetPartialPointCloudMapResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.autoware_map_msgs.msg.PointCloudMapCellWithID new_pointcloud_with_ids = 3;
+}

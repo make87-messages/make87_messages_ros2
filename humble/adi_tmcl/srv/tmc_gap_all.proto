@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.adi_tmcl.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/adi_tmcl/msg/tmc_param.proto";
+
+message TmcGapAllRequest {
+    make87_messages.core.Header header = 1;
+     uint32 motor_num = 2;
+}
+
+message TmcGapAllResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+    repeated make87_messages_ros2.humble.adi_tmcl.msg.TmcParam param = 3;
+}

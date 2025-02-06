@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message OrientationConstraint {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Quaternion orientation = 3;
+     string link_name = 4;
+     double absolute_x_axis_tolerance = 5;
+     double absolute_y_axis_tolerance = 6;
+     double absolute_z_axis_tolerance = 7;
+     uint32 parameterization = 8;
+     double weight = 9;
+}

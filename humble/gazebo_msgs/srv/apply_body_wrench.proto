@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.gazebo_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/wrench.proto";
+
+message ApplyBodyWrenchRequest {
+    make87_messages.core.Header header = 1;
+     string body_name = 2;
+     string reference_frame = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point reference_point = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Wrench wrench = 5;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time start_time = 6;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration duration = 7;
+}
+
+message ApplyBodyWrenchResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string status_message = 3;
+}

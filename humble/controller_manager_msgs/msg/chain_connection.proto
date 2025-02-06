@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.controller_manager_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message ChainConnection {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+    repeated string reference_interfaces = 3;
+}

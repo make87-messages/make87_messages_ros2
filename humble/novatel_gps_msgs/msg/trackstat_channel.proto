@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message TrackstatChannel {
+    make87_messages.core.Header header = 1;
+     int32 prn = 2;
+     int32 glofreq = 3;
+     uint32 ch_tr_status = 4;
+     double psr = 5;
+     float doppler = 6;
+     float c_no = 7;
+     float locktime = 8;
+     float psr_res = 9;
+     string reject = 10;
+     float psr_weight = 11;
+}

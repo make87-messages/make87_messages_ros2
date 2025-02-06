@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.depthai_ros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose2_d.proto";
+
+message NormalizedImageCropRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose2D top_left = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose2D bottom_right = 3;
+}
+
+message NormalizedImageCropResponse {
+    make87_messages.core.Header header = 1;
+     int64 status = 2;
+}

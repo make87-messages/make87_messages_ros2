@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.rosidl_generator_py.msg;
+
+import "make87_messages/core/header.proto";
+
+message StringArrays {
+    make87_messages.core.Header header = 1;
+    repeated string ub_string_static_array_value = 2;
+    repeated string ub_string_ub_array_value = 3;
+    repeated string ub_string_dynamic_array_value = 4;
+    repeated string string_dynamic_array_value = 5;
+    repeated string string_static_array_value = 6;
+    repeated string string_bounded_array_value = 7;
+    repeated string def_string_dynamic_array_value = 8;
+    repeated string def_string_static_array_value = 9;
+    repeated string def_string_bounded_array_value = 10;
+    repeated string def_various_quotes = 11;
+    repeated string def_various_commas = 12;
+}

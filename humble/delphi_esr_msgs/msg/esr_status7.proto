@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrStatus7 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string canmsg = 3;
+     uint32 active_fault_0 = 4;
+     uint32 active_fault_1 = 5;
+     uint32 active_fault_2 = 6;
+     uint32 active_fault_3 = 7;
+     uint32 active_fault_4 = 8;
+     uint32 active_fault_5 = 9;
+     uint32 active_fault_6 = 10;
+     uint32 active_fault_7 = 11;
+}

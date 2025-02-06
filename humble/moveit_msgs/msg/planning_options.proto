@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.moveit_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/moveit_msgs/msg/planning_scene.proto";
+
+message PlanningOptions {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.moveit_msgs.msg.PlanningScene planning_scene_diff = 2;
+     bool plan_only = 3;
+     bool look_around = 4;
+     int32 look_around_attempts = 5;
+     double max_safe_execution_cost = 6;
+     bool replan = 7;
+     int32 replan_attempts = 8;
+     double replan_delay = 9;
+}

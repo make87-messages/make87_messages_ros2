@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.as2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+
+message TrajectoryPoint {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 position = 2;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 twist = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 acceleration = 4;
+     float yaw_angle = 5;
+}

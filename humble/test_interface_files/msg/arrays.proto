@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.test_interface_files.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/test_interface_files/msg/basic_types.proto";
+import "make87_messages_ros2/humble/test_interface_files/msg/constants.proto";
+import "make87_messages_ros2/humble/test_interface_files/msg/defaults.proto";
+
+message Arrays {
+    make87_messages.core.Header header = 1;
+    repeated bool bool_values = 2;
+    repeated uint32 byte_values = 3;
+    repeated int32 char_values = 4;
+    repeated float float32_values = 5;
+    repeated double float64_values = 6;
+    repeated int32 int8_values = 7;
+    repeated uint32 uint8_values = 8;
+    repeated int32 int16_values = 9;
+    repeated uint32 uint16_values = 10;
+    repeated int32 int32_values = 11;
+    repeated uint32 uint32_values = 12;
+    repeated int64 int64_values = 13;
+    repeated uint64 uint64_values = 14;
+    repeated string string_values = 15;
+    repeated make87_messages_ros2.humble.test_interface_files.msg.BasicTypes basic_types_values = 16;
+    repeated make87_messages_ros2.humble.test_interface_files.msg.Constants constants_values = 17;
+    repeated make87_messages_ros2.humble.test_interface_files.msg.Defaults defaults_values = 18;
+    repeated bool bool_values_default = 19;
+    repeated uint32 byte_values_default = 20;
+    repeated int32 char_values_default = 21;
+    repeated float float32_values_default = 22;
+    repeated double float64_values_default = 23;
+    repeated int32 int8_values_default = 24;
+    repeated uint32 uint8_values_default = 25;
+    repeated int32 int16_values_default = 26;
+    repeated uint32 uint16_values_default = 27;
+    repeated int32 int32_values_default = 28;
+    repeated uint32 uint32_values_default = 29;
+    repeated int64 int64_values_default = 30;
+    repeated uint64 uint64_values_default = 31;
+    repeated string string_values_default = 32;
+     int32 alignment_check = 33;
+}

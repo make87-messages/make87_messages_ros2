@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/situational_graphs_reasoning_msgs/msg/edge.proto";
+import "make87_messages_ros2/humble/situational_graphs_reasoning_msgs/msg/node.proto";
+
+message Match {
+    make87_messages.core.Header header = 1;
+     string name = 2;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Node basis_nodes = 3;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Node target_nodes = 4;
+    repeated make87_messages_ros2.humble.situational_graphs_reasoning_msgs.msg.Edge edges = 5;
+}

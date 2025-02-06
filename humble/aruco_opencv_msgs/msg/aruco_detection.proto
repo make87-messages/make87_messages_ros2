@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.aruco_opencv_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/aruco_opencv_msgs/msg/board_pose.proto";
+import "make87_messages_ros2/humble/aruco_opencv_msgs/msg/marker_pose.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message ArucoDetection {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.aruco_opencv_msgs.msg.MarkerPose markers = 3;
+    repeated make87_messages_ros2.humble.aruco_opencv_msgs.msg.BoardPose boards = 4;
+}

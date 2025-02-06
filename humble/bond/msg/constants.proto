@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.bond.msg;
+
+import "make87_messages/core/header.proto";
+
+message Constants {
+    make87_messages.core.Header header = 1;
+}

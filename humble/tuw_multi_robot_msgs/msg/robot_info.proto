@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.tuw_multi_robot_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+import "make87_messages_ros2/humble/tuw_multi_robot_msgs/msg/route_precondition.proto";
+
+message RobotInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string robot_name = 3;
+     make87_messages_ros2.humble.geometry_msgs.msg.PoseWithCovariance pose = 4;
+     int32 shape = 5;
+    repeated float shape_variables = 6;
+     make87_messages_ros2.humble.tuw_multi_robot_msgs.msg.RoutePrecondition sync = 7;
+     int32 mode = 8;
+     int32 status = 9;
+     int32 good_id = 10;
+     int32 order_id = 11;
+     int32 order_status = 12;
+}

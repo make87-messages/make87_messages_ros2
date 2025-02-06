@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message Gpgsa {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string message_id = 3;
+     string auto_manual_mode = 4;
+     uint32 fix_mode = 5;
+    repeated uint32 sv_ids = 6;
+     float pdop = 7;
+     float hdop = 8;
+     float vdop = 9;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.kuka_driver_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message FriConfiguration {
+    make87_messages.core.Header header = 1;
+     int32 receive_multiplier = 2;
+     int32 send_period_ms = 3;
+}

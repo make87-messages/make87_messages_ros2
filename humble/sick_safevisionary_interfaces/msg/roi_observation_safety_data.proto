@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.sick_safevisionary_interfaces.msg;
+
+import "make87_messages/core/header.proto";
+
+message ROIObservationSafetyData {
+    make87_messages.core.Header header = 1;
+     uint32 invalid_due_to_invalid_pixels = 2;
+     uint32 invalid_due_to_variance = 3;
+     uint32 invalid_due_to_overexposure = 4;
+     uint32 invalid_due_to_underexposure = 5;
+     uint32 invalid_due_to_temporal_variance = 6;
+     uint32 invalid_due_to_outside_of_measurement_range = 7;
+     uint32 invalid_due_to_retro_reflector_interference = 8;
+     uint32 contamination_error = 9;
+     uint32 quality_class = 10;
+     uint32 slot_active = 11;
+}

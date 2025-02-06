@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.as2_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/as2_msgs/msg/control_mode.proto";
+import "make87_messages_ros2/humble/as2_msgs/msg/platform_status.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message PlatformInfo {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool connected = 3;
+     bool armed = 4;
+     bool offboard = 5;
+     make87_messages_ros2.humble.as2_msgs.msg.PlatformStatus status = 6;
+     make87_messages_ros2.humble.as2_msgs.msg.ControlMode current_control_mode = 7;
+}

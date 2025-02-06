@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_sensor_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message DifferentialMeasurement {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string base_frame_id = 3;
+     double baseline_length = 4;
+     double baseline_length_variance = 5;
+     double heading = 6;
+     double heading_variance = 7;
+     double pitch = 8;
+     double pitch_variance = 9;
+     double roll = 10;
+     double roll_variance = 11;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 position = 12;
+    repeated double position_covariance = 13;
+}

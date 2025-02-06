@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.mavros_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message PositionTarget {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 coordinate_frame = 3;
+     uint32 type_mask = 4;
+     make87_messages_ros2.humble.geometry_msgs.msg.Point position = 5;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 velocity = 6;
+     make87_messages_ros2.humble.geometry_msgs.msg.Vector3 acceleration_or_force = 7;
+     float yaw = 8;
+     float yaw_rate = 9;
+}

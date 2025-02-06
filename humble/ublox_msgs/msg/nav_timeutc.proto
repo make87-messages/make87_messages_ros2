@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message NavTIMEUTC {
+    make87_messages.core.Header header = 1;
+     uint32 i_tow = 2;
+     uint32 t_acc = 3;
+     int32 nano = 4;
+     uint32 year = 5;
+     uint32 month = 6;
+     uint32 day = 7;
+     uint32 hour = 8;
+     uint32 min = 9;
+     uint32 sec = 10;
+     uint32 valid = 11;
+}

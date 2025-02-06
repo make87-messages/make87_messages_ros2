@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.bosch_locator_bridge.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/time.proto";
+
+message ClientLocalizationPose {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration age = 2;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Time timestamp = 3;
+     uint64 unique_id = 4;
+     int32 state = 5;
+     uint64 epoch = 6;
+     uint64 error_flags = 7;
+     uint64 info_flags = 8;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.novatel_gps_msgs.msg;
+
+import "make87_messages/core/header.proto";
+
+message Satellite {
+    make87_messages.core.Header header = 1;
+     uint32 prn = 2;
+     uint32 elevation = 3;
+     uint32 azimuth = 4;
+     int32 snr = 5;
+}

@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ublox_ubx_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message UBXNavHPPosLLH {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 version = 3;
+     bool invalid_lon = 4;
+     bool invalid_lat = 5;
+     bool invalid_height = 6;
+     bool invalid_hmsl = 7;
+     bool invalid_lon_hp = 8;
+     bool invalid_lat_hp = 9;
+     bool invalid_height_hp = 10;
+     bool invalid_hmsl_hp = 11;
+     uint32 itow = 12;
+     int32 lon = 13;
+     int32 lat = 14;
+     int32 height = 15;
+     int32 hmsl = 16;
+     int32 lon_hp = 17;
+     int32 lat_hp = 18;
+     int32 height_hp = 19;
+     int32 hmsl_hp = 20;
+     uint32 h_acc = 21;
+     uint32 v_acc = 22;
+}

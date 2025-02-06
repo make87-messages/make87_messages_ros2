@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.geographic_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geographic_msgs/msg/route_path.proto";
+import "make87_messages_ros2/humble/unique_identifier_msgs/msg/uuid.proto";
+
+message GetRoutePlanRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.unique_identifier_msgs.msg.UUID network = 2;
+     make87_messages_ros2.humble.unique_identifier_msgs.msg.UUID start = 3;
+     make87_messages_ros2.humble.unique_identifier_msgs.msg.UUID goal = 4;
+}
+
+message GetRoutePlanResponse {
+    make87_messages.core.Header header = 1;
+     bool success = 2;
+     string status = 3;
+     make87_messages_ros2.humble.geographic_msgs.msg.RoutePath plan = 4;
+}

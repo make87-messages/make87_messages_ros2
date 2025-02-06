@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.delphi_esr_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message EsrVehicle4 {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     bool fac_align_cmd_1 = 3;
+     bool fac_align_cmd_2 = 4;
+     uint32 fac_align_max_nt = 5;
+     uint32 fac_align_samp_req = 6;
+     int32 fac_tgt_mtg_offset = 7;
+     int32 fac_tgt_mtg_space_hor = 8;
+     int32 fac_tgt_mtg_space_ver = 9;
+     float fac_tgt_range_1 = 10;
+     float fac_tgt_range_r2m = 11;
+     float fac_tgt_range_m2t = 12;
+}

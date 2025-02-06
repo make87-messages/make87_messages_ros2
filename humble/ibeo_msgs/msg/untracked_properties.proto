@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.ibeo_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/contour_point_sigma.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_di.proto";
+import "make87_messages_ros2/humble/ibeo_msgs/msg/point2_dui.proto";
+
+message UntrackedProperties {
+    make87_messages.core.Header header = 1;
+     uint32 relative_time_of_measurement = 2;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di position_closest_point = 3;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di object_box_size = 4;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui object_box_size_sigma = 5;
+     int32 object_box_orientation = 6;
+     uint32 object_box_orientation_sigma = 7;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Di tracking_point_coordinate = 8;
+     make87_messages_ros2.humble.ibeo_msgs.msg.Point2Dui tracking_point_coordinate_sigma = 9;
+     uint32 number_of_contour_points = 10;
+    repeated make87_messages_ros2.humble.ibeo_msgs.msg.ContourPointSigma contour_point_list = 11;
+}

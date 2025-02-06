@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_visualization_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message TexturedMarker {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     string ns = 3;
+     int32 id = 4;
+     int32 action = 5;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration lifetime = 6;
+     make87_messages_ros2.humble.sensor_msgs.msg.Image image = 7;
+     make87_messages_ros2.humble.geometry_msgs.msg.Pose pose = 8;
+     double resolution = 9;
+     float alpha = 10;
+}

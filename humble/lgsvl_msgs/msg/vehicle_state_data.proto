@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.lgsvl_msgs.msg;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message VehicleStateData {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+     uint32 blinker_state = 3;
+     uint32 headlight_state = 4;
+     uint32 wiper_state = 5;
+     uint32 current_gear = 6;
+     uint32 vehicle_mode = 7;
+     bool hand_brake_active = 8;
+     bool horn_active = 9;
+     bool autonomous_mode_active = 10;
+}

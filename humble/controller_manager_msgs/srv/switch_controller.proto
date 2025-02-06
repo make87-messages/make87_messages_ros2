@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.controller_manager_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/builtin_interfaces/msg/duration.proto";
+
+message SwitchControllerRequest {
+    make87_messages.core.Header header = 1;
+    repeated string activate_controllers = 2;
+    repeated string deactivate_controllers = 3;
+    repeated string start_controllers = 4;
+    repeated string stop_controllers = 5;
+     int32 strictness = 6;
+     bool start_asap = 7;
+     bool activate_asap = 8;
+     make87_messages_ros2.humble.builtin_interfaces.msg.Duration timeout = 9;
+}
+
+message SwitchControllerResponse {
+    make87_messages.core.Header header = 1;
+     bool ok = 2;
+}

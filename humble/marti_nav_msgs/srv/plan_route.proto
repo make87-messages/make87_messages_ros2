@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.marti_nav_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/humble/marti_nav_msgs/msg/route.proto";
+import "make87_messages_ros2/humble/std_msgs/msg/header.proto";
+
+message PlanRouteRequest {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.std_msgs.msg.Header ros2_header = 2;
+    repeated make87_messages_ros2.humble.geometry_msgs.msg.Pose waypoints = 3;
+     bool plan_from_vehicle = 4;
+}
+
+message PlanRouteResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.marti_nav_msgs.msg.Route route = 2;
+     bool success = 3;
+     string message = 4;
+     double cost = 5;
+}

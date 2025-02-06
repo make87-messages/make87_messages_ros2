@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.cartographer_ros_msgs.srv;
+
+import "make87_messages/core/header.proto";
+import "make87_messages_ros2/humble/cartographer_ros_msgs/msg/status_response.proto";
+
+message FinishTrajectoryRequest {
+    make87_messages.core.Header header = 1;
+     int32 trajectory_id = 2;
+}
+
+message FinishTrajectoryResponse {
+    make87_messages.core.Header header = 1;
+     make87_messages_ros2.humble.cartographer_ros_msgs.msg.StatusResponse status = 2;
+}
