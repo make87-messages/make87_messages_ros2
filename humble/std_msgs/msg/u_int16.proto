@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.std_msgs.msg;
+
+
+message UInt16 {
+     uint32 data = 1;
+}

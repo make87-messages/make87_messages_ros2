@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.builtin_interfaces.msg;
+
+
+message Duration {
+     int32 sec = 1;
+     uint32 nanosec = 2;
+}

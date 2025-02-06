@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.humble.std_msgs.msg;
+
+import "make87_messages_ros2/humble/std_msgs/msg/multi_array_layout.proto";
+
+message UInt64MultiArray {
+     make87_messages_ros2.humble.std_msgs.msg.MultiArrayLayout layout = 1;
+    repeated uint64 data = 2;
+}
