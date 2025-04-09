@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+
+message DeleteRobotStateFromWarehouseRequest {
+     string name = 1;
+     string robot = 2;
+}
+
+message DeleteRobotStateFromWarehouseResponse {
+}

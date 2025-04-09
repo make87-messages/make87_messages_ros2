@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/carr_soln.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/gps_fix.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/psmpvt.proto";
+
+message UBXNavPVT {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     uint32 year = 3;
+     uint32 month = 4;
+     uint32 day = 5;
+     uint32 hour = 6;
+     uint32 min = 7;
+     uint32 sec = 8;
+     bool valid_date = 9;
+     bool valid_time = 10;
+     bool fully_resolved = 11;
+     bool valid_mag = 12;
+     uint32 t_acc = 13;
+     int32 nano = 14;
+     make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.GpsFix gps_fix = 15;
+     bool gnss_fix_ok = 16;
+     bool diff_soln = 17;
+     make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.PSMPVT psm = 18;
+     bool head_veh_valid = 19;
+     make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.CarrSoln carr_soln = 20;
+     bool confirmed_avail = 21;
+     bool confirmed_date = 22;
+     bool confirmed_time = 23;
+     uint32 num_sv = 24;
+     int32 lon = 25;
+     int32 lat = 26;
+     int32 height = 27;
+     int32 hmsl = 28;
+     uint32 h_acc = 29;
+     uint32 v_acc = 30;
+     int32 vel_n = 31;
+     int32 vel_e = 32;
+     int32 vel_d = 33;
+     int32 g_speed = 34;
+     int32 head_mot = 35;
+     uint32 s_acc = 36;
+     uint32 head_acc = 37;
+     uint32 p_dop = 38;
+     bool invalid_llh = 39;
+     int32 head_veh = 40;
+     int32 mag_dec = 41;
+     uint32 mag_acc = 42;
+}

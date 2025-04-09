@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrStatus8 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 history_fault_0 = 3;
+     uint32 history_fault_1 = 4;
+     uint32 history_fault_2 = 5;
+     uint32 history_fault_3 = 6;
+     uint32 history_fault_4 = 7;
+     uint32 history_fault_5 = 8;
+     uint32 history_fault_6 = 9;
+     uint32 history_fault_7 = 10;
+}

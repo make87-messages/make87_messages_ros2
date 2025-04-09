@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.neobotix_usboard_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AnsParasetToEEPROM {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 command = 2;
+     uint32 paraset_cksum_low_byte = 3;
+     uint32 paraset_cksum_high_byte = 4;
+}

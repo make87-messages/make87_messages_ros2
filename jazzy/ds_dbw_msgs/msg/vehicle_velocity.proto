@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VehicleVelocity {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float vehicle_velocity_brake = 2;
+     float vehicle_velocity_propulsion = 3;
+     uint32 dir_src = 4;
+}

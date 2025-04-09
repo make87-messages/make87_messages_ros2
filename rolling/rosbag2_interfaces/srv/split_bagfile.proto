@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbag2_interfaces.srv;
+
+
+message SplitBagfileRequest {
+}
+
+message SplitBagfileResponse {
+}

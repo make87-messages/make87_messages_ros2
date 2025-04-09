@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/participant_description.proto";
+
+message RegisterParticipantRequest {
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ParticipantDescription description = 1;
+}
+
+message RegisterParticipantResponse {
+     uint64 participant_id = 1;
+     uint64 last_itinerary_version = 2;
+     uint64 last_plan_id = 3;
+     uint64 next_storage_base = 4;
+     string error = 5;
+}

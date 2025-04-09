@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/link.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MapGraph {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform map_to_odom = 2;
+    repeated int32 poses_id = 3;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose poses = 4;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Link links = 5;
+}

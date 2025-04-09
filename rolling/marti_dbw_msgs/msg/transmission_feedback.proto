@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_dbw_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message TransmissionFeedback {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string current_range = 2;
+     bool stable = 3;
+     bool reverse = 4;
+     bool forward = 5;
+}

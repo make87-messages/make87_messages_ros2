@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_perception_msgs.msg;
+
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/object_classification.proto";
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/shape.proto";
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/tracked_object_kinematics.proto";
+import "make87_messages_ros2/rolling/unique_identifier_msgs/msg/uuid.proto";
+
+message TrackedObject {
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID object_id = 1;
+     float existence_probability = 2;
+    repeated make87_messages_ros2.rolling.autoware_perception_msgs.msg.ObjectClassification classification = 3;
+     make87_messages_ros2.rolling.autoware_perception_msgs.msg.TrackedObjectKinematics kinematics = 4;
+     make87_messages_ros2.rolling.autoware_perception_msgs.msg.Shape shape = 5;
+}

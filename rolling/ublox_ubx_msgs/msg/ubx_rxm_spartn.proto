@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UBXRxmSpartn {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 version = 2;
+     uint32 msg_used = 3;
+     uint32 sub_type = 4;
+     uint32 msg_type = 5;
+}

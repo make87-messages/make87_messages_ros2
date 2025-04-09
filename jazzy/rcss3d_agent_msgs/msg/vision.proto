@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/ball.proto";
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/field_line.proto";
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/flag.proto";
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/goalpost.proto";
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/player.proto";
+
+message Vision {
+    repeated make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Ball ball = 1;
+    repeated make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.FieldLine field_lines = 2;
+    repeated make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Flag flags = 3;
+    repeated make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Goalpost goalposts = 4;
+    repeated make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Player players = 5;
+}

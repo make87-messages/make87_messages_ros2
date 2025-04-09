@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_extended_solution_status.proto";
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_signal_mask.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message NovatelXYZ {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 2;
+     string solution_status = 3;
+     string position_type = 4;
+     double x = 5;
+     double y = 6;
+     double z = 7;
+     float x_sigma = 8;
+     float y_sigma = 9;
+     float z_sigma = 10;
+     string velocity_solution_status = 11;
+     string velocity_type = 12;
+     double x_vel = 13;
+     double y_vel = 14;
+     double z_vel = 15;
+     float x_vel_sigma = 16;
+     float y_vel_sigma = 17;
+     float z_vel_sigma = 18;
+     string base_station_id = 19;
+     float velocity_latency = 20;
+     float diff_age = 21;
+     float solution_age = 22;
+     uint32 num_satellites_tracked = 23;
+     uint32 num_satellites_used_in_solution = 24;
+     uint32 num_gps_and_glonass_l1_used_in_solution = 25;
+     uint32 num_gps_and_glonass_l1_and_l2_used_in_solution = 26;
+     make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelExtendedSolutionStatus extended_solution_status = 27;
+     make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelSignalMask signal_mask = 28;
+}

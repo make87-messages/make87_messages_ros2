@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.topic_tools_interfaces.srv;
+
+
+message DemuxSelectRequest {
+     string topic = 1;
+}
+
+message DemuxSelectResponse {
+     string prev_topic = 1;
+     bool success = 2;
+}

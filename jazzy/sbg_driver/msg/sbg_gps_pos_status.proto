@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgGpsPosStatus {
+     uint32 status = 1;
+     uint32 type = 2;
+     uint32 ifm = 3;
+     uint32 spoofing = 4;
+     uint32 osnma = 5;
+     bool gps_l1_used = 6;
+     bool gps_l2_used = 7;
+     bool gps_l5_used = 8;
+     bool glo_l1_used = 9;
+     bool glo_l2_used = 10;
+     bool glo_l3_used = 11;
+     bool gal_e1_used = 12;
+     bool gal_e5a_used = 13;
+     bool gal_e5b_used = 14;
+     bool gal_e5alt_used = 15;
+     bool gal_e6_used = 16;
+     bool bds_b1_used = 17;
+     bool bds_b2_used = 18;
+     bool bds_b3_used = 19;
+     bool qzss_l1_used = 20;
+     bool qzss_l2_used = 21;
+     bool qzss_l5_used = 22;
+}

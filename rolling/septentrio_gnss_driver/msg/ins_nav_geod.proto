@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message INSNavGeod {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 gnss_mode = 3;
+     uint32 error = 4;
+     uint32 info = 5;
+     uint32 gnss_age = 6;
+     double latitude = 7;
+     double longitude = 8;
+     double height = 9;
+     float undulation = 10;
+     uint32 accuracy = 11;
+     uint32 latency = 12;
+     uint32 datum = 13;
+     uint32 sb_list = 14;
+     float latitude_std_dev = 15;
+     float longitude_std_dev = 16;
+     float height_std_dev = 17;
+     float latitude_longitude_cov = 18;
+     float latitude_height_cov = 19;
+     float longitude_height_cov = 20;
+     float heading = 21;
+     float pitch = 22;
+     float roll = 23;
+     float heading_std_dev = 24;
+     float pitch_std_dev = 25;
+     float roll_std_dev = 26;
+     float heading_pitch_cov = 27;
+     float heading_roll_cov = 28;
+     float pitch_roll_cov = 29;
+     float ve = 30;
+     float vn = 31;
+     float vu = 32;
+     float ve_std_dev = 33;
+     float vn_std_dev = 34;
+     float vu_std_dev = 35;
+     float ve_vn_cov = 36;
+     float ve_vu_cov = 37;
+     float vn_vu_cov = 38;
+}

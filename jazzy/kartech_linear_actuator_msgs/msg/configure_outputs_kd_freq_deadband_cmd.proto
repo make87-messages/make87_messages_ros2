@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ConfigureOutputsKdFreqDeadbandCmd {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool confirm = 2;
+     uint32 kd = 3;
+     uint32 closed_loop_freq = 4;
+     double error_dead_band = 5;
+}

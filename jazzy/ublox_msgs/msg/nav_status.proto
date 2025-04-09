@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message NavSTATUS {
+     uint32 i_tow = 1;
+     uint32 gps_fix = 2;
+     uint32 flags = 3;
+     uint32 fix_stat = 4;
+     uint32 flags2 = 5;
+     uint32 ttff = 6;
+     uint32 msss = 7;
+}

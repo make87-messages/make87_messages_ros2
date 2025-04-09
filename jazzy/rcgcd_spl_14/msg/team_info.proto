@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcgcd_spl_14.msg;
+
+import "make87_messages_ros2/jazzy/rcgcd_spl_14/msg/robot_info.proto";
+
+message TeamInfo {
+     uint32 team_number = 1;
+     uint32 team_colour = 2;
+     uint32 score = 3;
+     uint32 penalty_shot = 4;
+     uint32 single_shots = 5;
+     uint32 message_budget = 6;
+    repeated make87_messages_ros2.jazzy.rcgcd_spl_14.msg.RobotInfo players = 7;
+}

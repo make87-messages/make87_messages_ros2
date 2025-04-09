@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/polygon_vertex.proto";
+
+message Polygon {
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.PolygonVertex vertices = 1;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message SetLinkPropertiesRequest {
+     string link_name = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose com = 2;
+     bool gravity_mode = 3;
+     double mass = 4;
+     double ixx = 5;
+     double ixy = 6;
+     double ixz = 7;
+     double iyy = 8;
+     double iyz = 9;
+     double izz = 10;
+}
+
+message SetLinkPropertiesResponse {
+     bool success = 1;
+     string status_message = 2;
+}

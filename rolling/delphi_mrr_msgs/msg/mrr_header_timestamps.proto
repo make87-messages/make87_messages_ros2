@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MrrHeaderTimestamps {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float can_det_time_since_meas = 2;
+     float can_sensor_time_stamp = 3;
+}

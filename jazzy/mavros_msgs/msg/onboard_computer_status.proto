@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message OnboardComputerStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 component = 2;
+     uint32 uptime = 3;
+     uint32 type = 4;
+    repeated uint32 cpu_cores = 5;
+    repeated uint32 cpu_combined = 6;
+    repeated uint32 gpu_cores = 7;
+    repeated uint32 gpu_combined = 8;
+     int32 temperature_board = 9;
+    repeated int32 temperature_core = 10;
+    repeated int32 fan_speed = 11;
+     uint32 ram_usage = 12;
+     uint32 ram_total = 13;
+    repeated uint32 storage_type = 14;
+    repeated uint32 storage_usage = 15;
+    repeated uint32 storage_total = 16;
+    repeated uint32 link_type = 17;
+    repeated uint32 link_tx_rate = 18;
+    repeated uint32 link_rx_rate = 19;
+    repeated uint32 link_tx_max = 20;
+    repeated uint32 link_rx_max = 21;
+}

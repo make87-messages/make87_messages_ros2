@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.object_recognition_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_with_covariance_stamped.proto";
+import "make87_messages_ros2/rolling/object_recognition_msgs/msg/object_type.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RecognizedObject {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.object_recognition_msgs.msg.ObjectType type = 2;
+     float confidence = 3;
+    repeated make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 point_clouds = 4;
+     make87_messages_ros2.rolling.shape_msgs.msg.Mesh bounding_mesh = 5;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point bounding_contours = 6;
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseWithCovarianceStamped pose = 7;
+}

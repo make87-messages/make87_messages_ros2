@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ibeo_msgs.msg;
+
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message DeviceStatus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 2;
+     uint32 scanner_type = 3;
+     float sensor_temperature = 4;
+     float frequency = 5;
+}

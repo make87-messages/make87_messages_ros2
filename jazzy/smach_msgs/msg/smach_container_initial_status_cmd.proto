@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smach_msgs.msg;
+
+
+message SmachContainerInitialStatusCmd {
+     string path = 1;
+    repeated string initial_states = 2;
+    repeated uint32 local_data = 3;
+}

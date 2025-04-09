@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_dispenser_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/rmf_dispenser_msgs/msg/dispenser_request_item.proto";
+
+message DispenserRequest {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time time = 1;
+     string request_guid = 2;
+     string target_guid = 3;
+     string transporter_type = 4;
+    repeated make87_messages_ros2.rolling.rmf_dispenser_msgs.msg.DispenserRequestItem items = 5;
+}

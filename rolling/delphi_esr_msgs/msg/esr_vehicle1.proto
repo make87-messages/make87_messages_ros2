@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrVehicle1 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float vehicle_speed = 2;
+     bool vehicle_speed_direction = 3;
+     float yaw_rate = 4;
+     bool yaw_rate_validity = 5;
+     bool steering_angle_rate_sign = 6;
+     int32 radius_curvature = 7;
+     bool steering_angle_validity = 8;
+     bool steering_angle_sign = 9;
+     uint32 steering_angle = 10;
+     uint32 steering_angle_rate = 11;
+}

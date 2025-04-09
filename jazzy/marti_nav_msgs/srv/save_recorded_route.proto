@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.srv;
+
+
+message SaveRecordedRouteRequest {
+     string name = 1;
+     string thumbnail = 2;
+}
+
+message SaveRecordedRouteResponse {
+     bool success = 1;
+     string message = 2;
+}

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message HnrPVT {
+     uint32 i_tow = 1;
+     uint32 year = 2;
+     uint32 month = 3;
+     uint32 day = 4;
+     uint32 hour = 5;
+     uint32 min = 6;
+     uint32 sec = 7;
+     uint32 valid = 8;
+     int32 nano = 9;
+     uint32 gps_fix = 10;
+     uint32 flags = 11;
+    repeated uint32 reserved0 = 12;
+     int32 lon = 13;
+     int32 lat = 14;
+     int32 height = 15;
+     int32 h_msl = 16;
+     int32 g_speed = 17;
+     int32 speed = 18;
+     int32 head_mot = 19;
+     int32 head_veh = 20;
+     uint32 h_acc = 21;
+     uint32 v_acc = 22;
+     uint32 s_acc = 23;
+     uint32 head_acc = 24;
+    repeated uint32 reserved1 = 25;
+}

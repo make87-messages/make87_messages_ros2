@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_psrdop2_system.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message NovatelPsrdop2 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 2;
+     float gdop = 3;
+     float pdop = 4;
+     float hdop = 5;
+     float vdop = 6;
+    repeated make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelPsrdop2System systems = 7;
+}

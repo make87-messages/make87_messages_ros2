@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marine_acoustic_msgs.msg;
+
+
+message SonarImageData {
+     bool is_bigendian = 1;
+     uint32 dtype = 2;
+     uint32 beam_count = 3;
+    repeated uint32 data = 4;
+}

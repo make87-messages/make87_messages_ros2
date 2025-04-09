@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_workcell_msgs.msg;
+
+
+message Trait {
+     string key = 1;
+    repeated string value = 2;
+}

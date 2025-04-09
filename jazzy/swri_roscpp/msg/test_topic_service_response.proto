@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.swri_roscpp.msg;
+
+import "make87_messages_ros2/jazzy/marti_common_msgs/msg/service_header.proto";
+
+message TestTopicServiceResponse {
+     make87_messages_ros2.jazzy.marti_common_msgs.msg.ServiceHeader srv_header = 1;
+     int32 response_value = 2;
+}

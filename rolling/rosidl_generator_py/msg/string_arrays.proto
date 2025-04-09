@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosidl_generator_py.msg;
+
+
+message StringArrays {
+    repeated string ub_string_static_array_value = 1;
+    repeated string ub_string_ub_array_value = 2;
+    repeated string ub_string_dynamic_array_value = 3;
+    repeated string string_dynamic_array_value = 4;
+    repeated string string_static_array_value = 5;
+    repeated string string_bounded_array_value = 6;
+    repeated string def_string_dynamic_array_value = 7;
+    repeated string def_string_static_array_value = 8;
+    repeated string def_string_bounded_array_value = 9;
+    repeated string def_various_quotes = 10;
+    repeated string def_various_commas = 11;
+}

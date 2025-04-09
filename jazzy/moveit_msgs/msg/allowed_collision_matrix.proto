@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/allowed_collision_entry.proto";
+
+message AllowedCollisionMatrix {
+    repeated string entry_names = 1;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.AllowedCollisionEntry entry_values = 2;
+    repeated string default_entry_names = 3;
+    repeated bool default_entry_values = 4;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.type_description_interfaces.msg;
+
+
+message TypeSource {
+     string type_name = 1;
+     string encoding = 2;
+     string raw_file_contents = 3;
+}

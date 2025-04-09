@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/accelerometer.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/agent_state.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/force_resistance.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/game_state.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/gyro_rate.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/hear.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/hinge_joint_pos.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/universal_joint_pos.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/vision.proto";
+
+message Percept {
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.GyroRate gyro_rates = 1;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.HingeJointPos hinge_joints = 2;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.UniversalJointPos universal_joints = 3;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.ForceResistance force_resistances = 4;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Accelerometer accelerometers = 5;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Vision vision = 6;
+     make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.GameState game_state = 7;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.AgentState agent_state = 8;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Hear hears = 9;
+}

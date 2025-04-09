@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.object_recognition_msgs.msg;
+
+import "make87_messages_ros2/rolling/object_recognition_msgs/msg/recognized_object.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RecognizedObjectArray {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.object_recognition_msgs.msg.RecognizedObject objects = 2;
+    repeated float cooccurrence = 3;
+}

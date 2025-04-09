@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.py_trees_ros_interfaces.msg;
+
+
+message KeyValue {
+     string key = 1;
+     string value = 2;
+}

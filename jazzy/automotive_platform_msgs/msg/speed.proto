@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Speed {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string module_name = 2;
+     float speed = 3;
+     float acceleration_limit = 4;
+     float deceleration_limit = 5;
+}

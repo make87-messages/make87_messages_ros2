@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_task_msgs/msg/bid_proposal.proto";
+
+message BidResponse {
+     string task_id = 1;
+     bool has_proposal = 2;
+     make87_messages_ros2.jazzy.rmf_task_msgs.msg.BidProposal proposal = 3;
+    repeated string errors = 4;
+}

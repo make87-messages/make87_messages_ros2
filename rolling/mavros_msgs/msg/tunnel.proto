@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+
+message Tunnel {
+     uint32 target_system = 1;
+     uint32 target_component = 2;
+     uint32 payload_type = 3;
+     uint32 payload_length = 4;
+    repeated uint32 payload = 5;
+}

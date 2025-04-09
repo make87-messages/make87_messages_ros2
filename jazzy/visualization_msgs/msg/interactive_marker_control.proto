@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.visualization_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/jazzy/visualization_msgs/msg/marker.proto";
+
+message InteractiveMarkerControl {
+     string name = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Quaternion orientation = 2;
+     uint32 orientation_mode = 3;
+     uint32 interaction_mode = 4;
+     bool always_visible = 5;
+    repeated make87_messages_ros2.jazzy.visualization_msgs.msg.Marker markers = 6;
+     bool independent_marker_orientation = 7;
+     string description = 8;
+}

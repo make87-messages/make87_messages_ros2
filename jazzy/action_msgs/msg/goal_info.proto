@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.action_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/unique_identifier_msgs/msg/uuid.proto";
+
+message GoalInfo {
+     make87_messages_ros2.jazzy.unique_identifier_msgs.msg.UUID goal_id = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 2;
+}

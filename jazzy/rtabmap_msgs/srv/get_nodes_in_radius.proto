@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message GetNodesInRadiusRequest {
+     int32 node_id = 1;
+     float x = 2;
+     float y = 3;
+     float z = 4;
+     float radius = 5;
+     int32 k = 6;
+}
+
+message GetNodesInRadiusResponse {
+    repeated int32 ids = 1;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose poses = 2;
+    repeated float dists_sqr = 3;
+}

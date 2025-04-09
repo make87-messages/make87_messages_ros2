@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/path.proto";
+
+message GetPlanRequest {
+     int32 goal_node = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped goal = 2;
+     float tolerance = 3;
+}
+
+message GetPlanResponse {
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.Path plan = 1;
+}

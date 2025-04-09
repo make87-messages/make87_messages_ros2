@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/sensor_performance_metric.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message PerformanceMetrics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     double real_time_factor = 2;
+    repeated make87_messages_ros2.jazzy.gazebo_msgs.msg.SensorPerformanceMetric sensors = 3;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.turtlesim.msg;
+
+
+message Pose {
+     float x = 1;
+     float y = 2;
+     float theta = 3;
+     float linear_velocity = 4;
+     float angular_velocity = 5;
+}

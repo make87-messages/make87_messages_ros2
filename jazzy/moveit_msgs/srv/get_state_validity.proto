@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/constraint_eval_result.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/constraints.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/contact_information.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/cost_source.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/robot_state.proto";
+
+message GetStateValidityRequest {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotState robot_state = 1;
+     string group_name = 2;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.Constraints constraints = 3;
+}
+
+message GetStateValidityResponse {
+     bool valid = 1;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.ContactInformation contacts = 2;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.CostSource cost_sources = 3;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.ConstraintEvalResult constraint_result = 4;
+}

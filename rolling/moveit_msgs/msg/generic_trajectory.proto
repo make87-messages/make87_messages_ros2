@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/cartesian_trajectory.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/trajectory_msgs/msg/joint_trajectory.proto";
+
+message GenericTrajectory {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.trajectory_msgs.msg.JointTrajectory joint_trajectory = 2;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.CartesianTrajectory cartesian_trajectory = 3;
+}

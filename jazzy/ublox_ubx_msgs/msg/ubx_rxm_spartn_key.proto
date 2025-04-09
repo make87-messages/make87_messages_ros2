@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/spartn_key_info.proto";
+
+message UBXRxmSpartnKey {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 version = 2;
+     uint32 num_keys = 3;
+    repeated uint32 reserved0 = 4;
+    repeated make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.SpartnKeyInfo key_info = 5;
+    repeated uint32 key_payload = 6;
+}

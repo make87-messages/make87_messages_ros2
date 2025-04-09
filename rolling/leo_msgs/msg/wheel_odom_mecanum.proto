@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.leo_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message WheelOdomMecanum {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time stamp = 1;
+     float velocity_lin_x = 2;
+     float velocity_lin_y = 3;
+     float velocity_ang = 4;
+     float pose_x = 5;
+     float pose_y = 6;
+     float pose_yaw = 7;
+}

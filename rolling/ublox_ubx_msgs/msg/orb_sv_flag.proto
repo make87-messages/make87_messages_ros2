@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message OrbSVFlag {
+     uint32 health = 1;
+     uint32 visibility = 2;
+}

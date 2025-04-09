@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgEkfStatus {
+     uint32 solution_mode = 1;
+     bool attitude_valid = 2;
+     bool heading_valid = 3;
+     bool velocity_valid = 4;
+     bool position_valid = 5;
+     bool vert_ref_used = 6;
+     bool mag_ref_used = 7;
+     bool gps1_vel_used = 8;
+     bool gps1_pos_used = 9;
+     bool gps1_hdt_used = 10;
+     bool gps2_vel_used = 11;
+     bool gps2_pos_used = 12;
+     bool gps2_hdt_used = 13;
+     bool odo_used = 14;
+     bool dvl_bt_used = 15;
+     bool dvl_wt_used = 16;
+     bool user_pos_used = 17;
+     bool user_vel_used = 18;
+     bool user_heading_used = 19;
+     bool usbl_used = 20;
+     bool air_data_used = 21;
+     bool zupt_used = 22;
+     bool align_valid = 23;
+     bool depth_used = 24;
+}

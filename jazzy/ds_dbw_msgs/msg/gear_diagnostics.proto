@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GearDiagnostics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool degraded = 2;
+     bool degraded_cmd_type = 3;
+     bool degraded_comms = 4;
+     bool degraded_comms_dbw = 5;
+     bool degraded_comms_dbw_gateway = 6;
+     bool degraded_comms_dbw_steer = 7;
+     bool degraded_comms_dbw_brake = 8;
+     bool degraded_comms_dbw_thrtl = 9;
+     bool degraded_comms_vehicle = 10;
+     bool degraded_comms_vehicle_1 = 11;
+     bool degraded_comms_vehicle_2 = 12;
+     bool degraded_comms_actuator = 13;
+     bool degraded_comms_actuator_1 = 14;
+     bool degraded_comms_actuator_2 = 15;
+     bool degraded_internal = 16;
+     bool degraded_control_performance = 17;
+     bool degraded_param_mismatch = 18;
+     bool degraded_vehicle = 19;
+     bool degraded_vehicle_speed = 20;
+     bool degraded_actuator = 21;
+     bool degraded_gear_mismatch = 22;
+     bool degraded_power = 23;
+     bool degraded_calibration = 24;
+     bool fault = 25;
+     bool fault_power = 26;
+     bool fault_comms = 27;
+     bool fault_comms_dbw = 28;
+     bool fault_comms_dbw_gateway = 29;
+     bool fault_comms_dbw_steer = 30;
+     bool fault_comms_dbw_brake = 31;
+     bool fault_comms_dbw_thrtl = 32;
+     bool fault_comms_vehicle = 33;
+     bool fault_comms_vehicle_1 = 34;
+     bool fault_comms_vehicle_2 = 35;
+     bool fault_comms_actuator = 36;
+     bool fault_comms_actuator_1 = 37;
+     bool fault_comms_actuator_2 = 38;
+     bool fault_internal = 39;
+     bool fault_vehicle = 40;
+     bool fault_vehicle_speed = 41;
+     bool fault_actuator = 42;
+     bool fault_actuator_config = 43;
+     bool fault_param_mismatch = 44;
+     bool fault_calibration = 45;
+}

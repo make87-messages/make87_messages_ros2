@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/application_data.proto";
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/data_header.proto";
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/derived_values.proto";
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/general_system_state.proto";
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/intrusion_data.proto";
+import "make87_messages_ros2/jazzy/sick_safetyscanners2_interfaces/msg/measurement_data.proto";
+
+message RawMicroScanData {
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.DataHeader header = 1;
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.DerivedValues derived_values = 2;
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.GeneralSystemState general_system_state = 3;
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.MeasurementData measurement_data = 4;
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.IntrusionData intrusion_data = 5;
+     make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg.ApplicationData application_data = 6;
+}

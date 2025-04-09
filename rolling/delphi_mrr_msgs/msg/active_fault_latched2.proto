@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ActiveFaultLatched2 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool ipma_pcan_data_range_check = 2;
+     bool ipma_pcan_missing_msg = 3;
+     bool vin_signal_compare_failure = 4;
+     bool module_not_configured_error = 5;
+     bool car_cfg_not_configured_error = 6;
+}

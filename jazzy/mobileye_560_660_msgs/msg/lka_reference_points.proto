@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LkaReferencePoints {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     double ref_point_1_position = 2;
+     double ref_point_1_distance = 3;
+     bool ref_point_1_validity = 4;
+     double ref_point_2_position = 5;
+     double ref_point_2_distance = 6;
+     bool ref_point_2_validity = 7;
+}

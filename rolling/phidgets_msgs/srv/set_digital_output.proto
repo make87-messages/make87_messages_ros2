@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.phidgets_msgs.srv;
+
+
+message SetDigitalOutputRequest {
+     uint32 index = 1;
+     bool state = 2;
+}
+
+message SetDigitalOutputResponse {
+     bool success = 1;
+}

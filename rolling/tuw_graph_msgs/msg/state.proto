@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_graph_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+
+message State {
+     int64 step = 1;
+    repeated int32 list_node_open = 2;
+    repeated int32 list_edge_open = 3;
+    repeated make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA color_open = 4;
+    repeated int32 list_node_closed = 5;
+    repeated int32 list_edge_closed = 6;
+    repeated make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA color_closed = 7;
+}

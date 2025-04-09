@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message CfgANT {
+     uint32 flags = 1;
+     uint32 pins = 2;
+}

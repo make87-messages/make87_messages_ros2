@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.srv;
+
+
+message DeleteRouteRequest {
+     string guid = 1;
+}
+
+message DeleteRouteResponse {
+     bool success = 1;
+     string message = 2;
+}

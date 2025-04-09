@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_adapi_version_msgs.srv;
+
+
+message InterfaceVersionRequest {
+}
+
+message InterfaceVersionResponse {
+     uint32 major = 1;
+     uint32 minor = 2;
+     uint32 patch = 3;
+}

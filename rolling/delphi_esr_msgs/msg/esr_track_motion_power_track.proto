@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+
+message EsrTrackMotionPowerTrack {
+     uint32 id = 1;
+     bool movable_fast = 2;
+     bool movable_slow = 3;
+     bool moving = 4;
+     int32 power = 5;
+}

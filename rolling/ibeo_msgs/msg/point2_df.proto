@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ibeo_msgs.msg;
+
+
+message Point2Df {
+     float x = 1;
+     float y = 2;
+}

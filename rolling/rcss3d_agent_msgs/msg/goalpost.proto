@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/spherical.proto";
+
+message Goalpost {
+     string name = 1;
+     make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical top = 2;
+}

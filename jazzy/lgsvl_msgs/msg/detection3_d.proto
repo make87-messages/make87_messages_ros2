@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/jazzy/lgsvl_msgs/msg/bounding_box3_d.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Detection3D {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     string label = 3;
+     float score = 4;
+     make87_messages_ros2.jazzy.lgsvl_msgs.msg.BoundingBox3D bbox = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Twist velocity = 6;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.canopen_interfaces.srv;
+
+
+message CONodeRequest {
+     uint32 nodeid = 1;
+}
+
+message CONodeResponse {
+     bool success = 1;
+}

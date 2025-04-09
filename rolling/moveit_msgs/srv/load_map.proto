@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+
+message LoadMapRequest {
+     string filename = 1;
+}
+
+message LoadMapResponse {
+     bool success = 1;
+}

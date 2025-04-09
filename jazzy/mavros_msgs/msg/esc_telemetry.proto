@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/mavros_msgs/msg/esc_telemetry_item.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ESCTelemetry {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.mavros_msgs.msg.ESCTelemetryItem esc_telemetry = 2;
+}

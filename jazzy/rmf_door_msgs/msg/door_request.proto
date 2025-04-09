@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_door_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/rmf_door_msgs/msg/door_mode.proto";
+
+message DoorRequest {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time request_time = 1;
+     string requester_id = 2;
+     string door_name = 3;
+     make87_messages_ros2.jazzy.rmf_door_msgs.msg.DoorMode requested_mode = 4;
+}

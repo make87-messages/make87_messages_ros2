@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marine_acoustic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/detection_flag.proto";
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/ping_info.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SonarDetections {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.PingInfo ping_info = 2;
+    repeated make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.DetectionFlag flags = 3;
+    repeated float two_way_travel_times = 4;
+    repeated float tx_delays = 5;
+    repeated float intensities = 6;
+    repeated float tx_angles = 7;
+    repeated float rx_angles = 8;
+}

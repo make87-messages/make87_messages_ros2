@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ur_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ur_msgs/msg/analog.proto";
+import "make87_messages_ros2/jazzy/ur_msgs/msg/digital.proto";
+
+message IOStates {
+    repeated make87_messages_ros2.jazzy.ur_msgs.msg.Digital digital_in_states = 1;
+    repeated make87_messages_ros2.jazzy.ur_msgs.msg.Digital digital_out_states = 2;
+    repeated make87_messages_ros2.jazzy.ur_msgs.msg.Digital flag_states = 3;
+    repeated make87_messages_ros2.jazzy.ur_msgs.msg.Analog analog_in_states = 4;
+    repeated make87_messages_ros2.jazzy.ur_msgs.msg.Analog analog_out_states = 5;
+}

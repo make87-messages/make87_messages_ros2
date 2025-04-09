@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.soccer_vision_2d_msgs.msg;
+
+import "make87_messages_ros2/jazzy/soccer_vision_2d_msgs/msg/goalpost.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GoalpostArray {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.soccer_vision_2d_msgs.msg.Goalpost posts = 2;
+}

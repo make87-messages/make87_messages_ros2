@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.topic_tools_interfaces.srv;
+
+
+message MuxAddRequest {
+     string topic = 1;
+}
+
+message MuxAddResponse {
+     bool success = 1;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrStatus5 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 swbatt_a2d = 3;
+     uint32 ignp_a2d = 4;
+     uint32 temp1_a2d = 5;
+     uint32 temp2_a2d = 6;
+     uint32 supply_5va_a2d = 7;
+     uint32 supply_5vdx_a2d = 8;
+     uint32 supply_3p3v_a2d = 9;
+     uint32 supply_10v_a2d = 10;
+}

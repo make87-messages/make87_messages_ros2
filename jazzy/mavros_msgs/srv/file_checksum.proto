@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+
+message FileChecksumRequest {
+     string file_path = 1;
+}
+
+message FileChecksumResponse {
+     uint32 crc32 = 1;
+     bool success = 2;
+     int32 r_errno = 3;
+}

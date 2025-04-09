@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_scheduler_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_scheduler_msgs/msg/payload.proto";
+
+message Schedule {
+     string name = 1;
+     int64 created_at = 2;
+     string schedule = 3;
+     int64 start_at = 4;
+     int64 finish_at = 5;
+     string group = 6;
+     make87_messages_ros2.rolling.rmf_scheduler_msgs.msg.Payload payload = 7;
+}

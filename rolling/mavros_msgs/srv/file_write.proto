@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message FileWriteRequest {
+     string file_path = 1;
+     uint64 offset = 2;
+    repeated uint32 data = 3;
+}
+
+message FileWriteResponse {
+     bool success = 1;
+     int32 r_errno = 2;
+}

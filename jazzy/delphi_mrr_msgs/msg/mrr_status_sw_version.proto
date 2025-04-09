@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrStatusSwVersion {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_pbl_field_revision = 2;
+     uint32 can_pbl_promote_revision = 3;
+     uint32 can_sw_field_revision = 4;
+     uint32 can_sw_promote_revision = 5;
+     uint32 can_sw_release_revision = 6;
+     uint32 can_pbl_release_revision = 7;
+}

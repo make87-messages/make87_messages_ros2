@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.topic_tools_interfaces.srv;
+
+
+message DemuxAddRequest {
+     string topic = 1;
+}
+
+message DemuxAddResponse {
+     bool success = 1;
+}

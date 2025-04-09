@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/nav_msgs/msg/map_meta_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message OccupancyGrid {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.nav_msgs.msg.MapMetaData info = 2;
+    repeated int32 data = 3;
+}

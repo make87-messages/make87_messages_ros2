@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.raspimouse_msgs.msg;
+
+
+message LightSensors {
+     int32 forward_r = 1;
+     int32 forward_l = 2;
+     int32 left = 3;
+     int32 right = 4;
+}

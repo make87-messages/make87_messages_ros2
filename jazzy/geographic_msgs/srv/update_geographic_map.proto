@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geographic_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geographic_map_changes.proto";
+
+message UpdateGeographicMapRequest {
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeographicMapChanges updates = 1;
+}
+
+message UpdateGeographicMapResponse {
+     bool success = 1;
+     string status = 2;
+}

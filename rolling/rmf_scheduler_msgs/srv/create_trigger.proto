@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_scheduler_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_scheduler_msgs/msg/trigger.proto";
+
+message CreateTriggerRequest {
+     make87_messages_ros2.rolling.rmf_scheduler_msgs.msg.Trigger trigger = 1;
+}
+
+message CreateTriggerResponse {
+     bool success = 1;
+     string message = 2;
+}

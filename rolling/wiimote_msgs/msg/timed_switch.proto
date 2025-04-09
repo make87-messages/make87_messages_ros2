@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.wiimote_msgs.msg;
+
+
+message TimedSwitch {
+     int32 switch_mode = 1;
+     int32 num_cycles = 2;
+    repeated float pulse_pattern = 3;
+}

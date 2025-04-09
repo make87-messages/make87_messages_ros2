@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message RxmSVSI_SV {
+     uint32 svid = 1;
+     uint32 svFlag = 2;
+     int32 azim = 3;
+     int32 elev = 4;
+     uint32 age = 5;
+}

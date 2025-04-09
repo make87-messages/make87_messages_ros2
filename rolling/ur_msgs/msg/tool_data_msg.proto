@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.msg;
+
+
+message ToolDataMsg {
+     int32 analog_input_range2 = 1;
+     int32 analog_input_range3 = 2;
+     double analog_input2 = 3;
+     double analog_input3 = 4;
+     float tool_voltage_48v = 5;
+     uint32 tool_output_voltage = 6;
+     float tool_current = 7;
+     float tool_temperature = 8;
+     uint32 tool_mode = 9;
+}

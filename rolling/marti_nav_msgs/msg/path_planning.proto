@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PathPlanning {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 segment_type = 2;
+     float length = 3;
+     float start_speed = 4;
+     float end_speed = 5;
+     float startx = 6;
+     float starty = 7;
+     float endx = 8;
+     float endy = 9;
+     float theta0 = 10;
+     float a1 = 11;
+     float a2 = 12;
+     float k0 = 13;
+     float c1 = 14;
+     float c2 = 15;
+     int32 behavior = 16;
+     int32 creep = 17;
+     int32 acc = 18;
+     int32 reverse = 19;
+     int32 vehicle_track = 20;
+     bool transmitted = 21;
+     bool aux_transmitted = 22;
+     float theta_end = 23;
+     float k_end = 24;
+     int32 seg_len = 25;
+     float speed_limit = 26;
+     float max_error = 27;
+     float max_smooth = 28;
+     float max_curv = 29;
+     int32 possible_points = 30;
+     bool exit_segment = 31;
+}

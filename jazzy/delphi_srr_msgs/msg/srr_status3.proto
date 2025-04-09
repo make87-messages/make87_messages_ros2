@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SrrStatus3 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_tx_alignment_state = 2;
+     uint32 can_tx_interface_ver_minor = 3;
+     uint32 can_tx_sw_version_arm = 4;
+     uint32 can_tx_hw_version = 5;
+     uint32 can_tx_interface_version = 6;
+     uint32 can_tx_serial_num = 7;
+}

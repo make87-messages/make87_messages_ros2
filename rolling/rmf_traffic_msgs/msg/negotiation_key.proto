@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+
+message NegotiationKey {
+     uint64 participant = 1;
+     uint64 version = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.controller_manager_msgs.srv;
+
+
+message ConfigureControllerRequest {
+     string name = 1;
+}
+
+message ConfigureControllerResponse {
+     bool ok = 1;
+}

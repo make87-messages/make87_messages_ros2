@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/region.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/shape_context.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/timespan.proto";
+
+message ScheduleQuerySpacetime {
+     uint32 type = 1;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.Region regions = 2;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ShapeContext shape_context = 3;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.Timespan timespan = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosbridge_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rosbridge_msgs/msg/connected_client.proto";
+
+message ConnectedClients {
+    repeated make87_messages_ros2.jazzy.rosbridge_msgs.msg.ConnectedClient clients = 1;
+}

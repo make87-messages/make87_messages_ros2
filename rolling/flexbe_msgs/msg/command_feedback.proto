@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.flexbe_msgs.msg;
+
+
+message CommandFeedback {
+     string command = 1;
+    repeated string args = 2;
+}

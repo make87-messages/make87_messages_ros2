@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.grasping_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/grasping_msgs/msg/object_property.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/plane.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/solid_primitive.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Object {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string name = 2;
+     string support_surface = 3;
+    repeated make87_messages_ros2.rolling.grasping_msgs.msg.ObjectProperty properties = 4;
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 point_cluster = 5;
+    repeated make87_messages_ros2.rolling.shape_msgs.msg.SolidPrimitive primitives = 6;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Pose primitive_poses = 7;
+    repeated make87_messages_ros2.rolling.shape_msgs.msg.Mesh meshes = 8;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Pose mesh_poses = 9;
+     make87_messages_ros2.rolling.shape_msgs.msg.Plane surface = 10;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message WaypointSetCurrentRequest {
+     uint32 wp_seq = 1;
+}
+
+message WaypointSetCurrentResponse {
+     bool success = 1;
+}

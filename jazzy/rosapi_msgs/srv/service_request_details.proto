@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosapi_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rosapi_msgs/msg/type_def.proto";
+
+message ServiceRequestDetailsRequest {
+     string type = 1;
+}
+
+message ServiceRequestDetailsResponse {
+    repeated make87_messages_ros2.jazzy.rosapi_msgs.msg.TypeDef typedefs = 1;
+}

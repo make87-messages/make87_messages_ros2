@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.msg;
+
+
+message RangeValue {
+     double min = 1;
+     double max = 2;
+     double mean = 3;
+}

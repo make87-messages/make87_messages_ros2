@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.webots_ros2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/webots_ros2_msgs/msg/urdf_robot.proto";
+
+message SpawnUrdfRobotRequest {
+     make87_messages_ros2.jazzy.webots_ros2_msgs.msg.UrdfRobot robot = 1;
+}
+
+message SpawnUrdfRobotResponse {
+     bool success = 1;
+}

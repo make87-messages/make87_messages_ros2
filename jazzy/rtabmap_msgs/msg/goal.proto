@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Goal {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 node_id = 2;
+     string node_label = 3;
+     string frame_id = 4;
+}

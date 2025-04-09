@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/blockade_checkpoint.proto";
+
+message BlockadeSet {
+     uint64 participant = 1;
+     uint64 reservation = 2;
+     double radius = 3;
+    repeated make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.BlockadeCheckpoint path = 4;
+}

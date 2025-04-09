@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/wrench.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message WorldState {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated string name = 2;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 3;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Twist twist = 4;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Wrench wrench = 5;
+}

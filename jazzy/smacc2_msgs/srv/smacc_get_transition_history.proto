@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smacc2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_transition_log_entry.proto";
+
+message SmaccGetTransitionHistoryRequest {
+}
+
+message SmaccGetTransitionHistoryResponse {
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccTransitionLogEntry history = 1;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.visualization_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ImageMarker {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string ns = 2;
+     int32 id = 3;
+     int32 type = 4;
+     int32 action = 5;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Point position = 6;
+     float scale = 7;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA outline_color = 8;
+     uint32 filled = 9;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA fill_color = 10;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration lifetime = 11;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point points = 12;
+    repeated make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA outline_colors = 13;
+}

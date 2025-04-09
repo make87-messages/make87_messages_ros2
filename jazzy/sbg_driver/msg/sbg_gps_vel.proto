@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_gps_vel_status.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgGpsVel {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgGpsVelStatus status = 3;
+     uint32 gps_tow = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity_accuracy = 6;
+     float course = 7;
+     float course_acc = 8;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgOdoVel {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     bool status = 3;
+     float vel = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosapi_msgs.srv;
+
+
+message ServiceProvidersRequest {
+     string service = 1;
+}
+
+message ServiceProvidersResponse {
+    repeated string providers = 1;
+}

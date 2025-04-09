@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+
+message BlockadeStatus {
+     uint64 participant = 1;
+     uint64 reservation = 2;
+     bool any_ready = 3;
+     uint64 last_ready = 4;
+     uint64 last_reached = 5;
+     uint64 assignment_begin = 6;
+     uint64 assignment_end = 7;
+}

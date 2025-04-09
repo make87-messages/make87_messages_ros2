@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/global_descriptor.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/key_point.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/point3f.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/camera_info.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/compressed_image.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RGBDImage {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CameraInfo rgb_camera_info = 2;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CameraInfo depth_camera_info = 3;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.Image rgb = 4;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.Image depth = 5;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CompressedImage rgb_compressed = 6;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CompressedImage depth_compressed = 7;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.KeyPoint key_points = 8;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point3f points = 9;
+    repeated uint32 descriptors = 10;
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.GlobalDescriptor global_descriptor = 11;
+}

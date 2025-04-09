@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_perception_msgs.msg;
+
+
+message ObjectClassification {
+     uint32 label = 1;
+     float probability = 2;
+}

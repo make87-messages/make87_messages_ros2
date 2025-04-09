@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message GimbalManagerPitchyawRequest {
+     float pitch = 1;
+     float yaw = 2;
+     float pitch_rate = 3;
+     float yaw_rate = 4;
+     uint32 flags = 5;
+     uint32 gimbal_device_id = 6;
+}
+
+message GimbalManagerPitchyawResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

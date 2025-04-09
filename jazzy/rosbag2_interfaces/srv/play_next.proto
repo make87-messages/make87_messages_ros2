@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosbag2_interfaces.srv;
+
+
+message PlayNextRequest {
+}
+
+message PlayNextResponse {
+     bool success = 1;
+}

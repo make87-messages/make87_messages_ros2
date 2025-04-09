@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/move_it_error_codes.proto";
+
+message GetGroupUrdfRequest {
+     string group_name = 1;
+}
+
+message GetGroupUrdfResponse {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.MoveItErrorCodes error_code = 1;
+     string urdf_string = 2;
+}

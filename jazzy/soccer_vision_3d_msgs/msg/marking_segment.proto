@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.soccer_vision_3d_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/soccer_vision_attribute_msgs/msg/confidence.proto";
+
+message MarkingSegment {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point start = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point end = 2;
+     make87_messages_ros2.jazzy.soccer_vision_attribute_msgs.msg.Confidence confidence = 3;
+}

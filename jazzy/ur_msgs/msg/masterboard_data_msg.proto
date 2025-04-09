@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ur_msgs.msg;
+
+
+message MasterboardDataMsg {
+     uint32 digital_input_bits = 1;
+     uint32 digital_output_bits = 2;
+     int32 analog_input_range0 = 3;
+     int32 analog_input_range1 = 4;
+     double analog_input0 = 5;
+     double analog_input1 = 6;
+     int32 analog_output_domain0 = 7;
+     int32 analog_output_domain1 = 8;
+     double analog_output0 = 9;
+     double analog_output1 = 10;
+     float masterboard_temperature = 11;
+     float robot_voltage_48v = 12;
+     float robot_current = 13;
+     float master_io_current = 14;
+     uint32 master_safety_state = 15;
+     uint32 master_onoff_state = 16;
+}

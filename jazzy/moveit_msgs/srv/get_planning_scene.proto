@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/planning_scene.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/planning_scene_components.proto";
+
+message GetPlanningSceneRequest {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.PlanningSceneComponents components = 1;
+}
+
+message GetPlanningSceneResponse {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.PlanningScene scene = 1;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/color_rgba.proto";
+
+message SetLightPropertiesRequest {
+     string light_name = 1;
+     make87_messages_ros2.jazzy.std_msgs.msg.ColorRGBA diffuse = 2;
+     double attenuation_constant = 3;
+     double attenuation_linear = 4;
+     double attenuation_quadratic = 5;
+}
+
+message SetLightPropertiesResponse {
+     bool success = 1;
+     string status_message = 2;
+}

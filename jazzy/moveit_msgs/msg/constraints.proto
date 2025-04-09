@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/joint_constraint.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/orientation_constraint.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/position_constraint.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/visibility_constraint.proto";
+
+message Constraints {
+     string name = 1;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.JointConstraint joint_constraints = 2;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.PositionConstraint position_constraints = 3;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.OrientationConstraint orientation_constraints = 4;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.VisibilityConstraint visibility_constraints = 5;
+}

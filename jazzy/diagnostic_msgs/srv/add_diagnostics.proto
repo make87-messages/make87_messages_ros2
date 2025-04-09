@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.diagnostic_msgs.srv;
+
+
+message AddDiagnosticsRequest {
+     string load_namespace = 1;
+}
+
+message AddDiagnosticsResponse {
+     bool success = 1;
+     string message = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.turtlebot3_msgs.srv;
+
+
+message SoundRequest {
+     uint32 value = 1;
+}
+
+message SoundResponse {
+     bool success = 1;
+     string message = 2;
+}

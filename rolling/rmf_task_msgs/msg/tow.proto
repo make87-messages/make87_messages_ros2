@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+
+message Tow {
+     string task_id = 1;
+     string object_type = 2;
+     bool is_object_id_known = 3;
+     string object_id = 4;
+     string pickup_place_name = 5;
+     bool is_dropoff_place_known = 6;
+     string dropoff_place_name = 7;
+}

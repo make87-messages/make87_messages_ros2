@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.srv;
+
+
+message LoadControllerRequest {
+     string name = 1;
+}
+
+message LoadControllerResponse {
+     bool ok = 1;
+}

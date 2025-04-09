@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+import "make87_messages_ros2/jazzy/sick_scan_xd/msg/lf_erec_field_msg.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LFErecMsg {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 fields_number = 2;
+    repeated make87_messages_ros2.jazzy.sick_scan_xd.msg.LFErecFieldMsg fields = 3;
+}

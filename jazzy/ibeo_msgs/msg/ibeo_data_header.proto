@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message IbeoDataHeader {
+     uint32 previous_message_size = 1;
+     uint32 message_size = 2;
+     uint32 device_id = 3;
+     uint32 data_type_id = 4;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 5;
+}

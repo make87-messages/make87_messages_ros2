@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GimbalDeviceInformation {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string vendor_name = 2;
+     string model_name = 3;
+     string custom_name = 4;
+     uint32 firmware_version = 5;
+     uint32 hardware_version = 6;
+     uint64 uid = 7;
+     uint32 cap_flags = 8;
+     uint32 custom_cap_flags = 9;
+     float roll_min = 10;
+     float roll_max = 11;
+     float pitch_min = 12;
+     float pitch_max = 13;
+     float yaw_min = 14;
+     float yaw_max = 15;
+}

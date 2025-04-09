@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+
+message HandEyeCalibrationTriggerRequest {
+}
+
+message HandEyeCalibrationTriggerResponse {
+     bool success = 1;
+     int32 status = 2;
+     string message = 3;
+}

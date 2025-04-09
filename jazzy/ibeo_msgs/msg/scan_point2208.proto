@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message ScanPoint2208 {
+     uint32 echo = 1;
+     uint32 layer = 2;
+     bool transparent_point = 3;
+     bool clutter_atmospheric = 4;
+     bool ground = 5;
+     bool dirt = 6;
+     int32 horizontal_angle = 7;
+     uint32 radial_distance = 8;
+     uint32 echo_pulse_width = 9;
+}

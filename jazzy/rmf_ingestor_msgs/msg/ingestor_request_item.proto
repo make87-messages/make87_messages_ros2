@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_ingestor_msgs.msg;
+
+
+message IngestorRequestItem {
+     string type_guid = 1;
+     int32 quantity = 2;
+     string compartment_name = 3;
+}

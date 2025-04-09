@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AhbcGradual {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float boundary_domain_bottom_non_glare_hlb = 2;
+     float boundary_domain_non_glare_left_hand_hlb = 3;
+     float boundary_domain_non_glare_right_hand_hlb = 4;
+     uint32 object_distance_hlb = 5;
+     uint32 status_boundary_domain_bottom_non_glare_hlb = 6;
+     uint32 status_boundary_domain_non_glare_left_hand_hlb = 7;
+     uint32 status_boundary_domain_non_glare_right_hand_hlb = 8;
+     uint32 status_object_distance_hlb = 9;
+     bool left_target_change = 10;
+     bool right_target_change = 11;
+     bool too_many_cars = 12;
+     bool busy_scene = 13;
+}

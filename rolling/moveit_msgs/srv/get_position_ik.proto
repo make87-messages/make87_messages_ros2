@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/position_ik_request.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+
+message GetPositionIKRequest {
+     make87_messages_ros2.rolling.moveit_msgs.msg.PositionIKRequest ik_request = 1;
+}
+
+message GetPositionIKResponse {
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState solution = 1;
+     make87_messages_ros2.rolling.moveit_msgs.msg.MoveItErrorCodes error_code = 2;
+}

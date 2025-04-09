@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ReassignCommandIdCmd {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool confirm = 2;
+     uint32 command_id_index = 3;
+     uint32 user_command_id = 4;
+     bool disable_default_command_id = 5;
+}

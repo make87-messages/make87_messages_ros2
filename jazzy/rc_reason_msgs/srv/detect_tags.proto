@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/detected_tag.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/tag.proto";
+
+message DetectTagsRequest {
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Tag tags = 1;
+     string pose_frame = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 3;
+}
+
+message DetectTagsResponse {
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.DetectedTag tags = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 2;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 3;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.neobotix_usboard_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AnsToCmdConnect {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 command = 2;
+     uint32 cmd_connect_ans_d7 = 3;
+     uint32 cmd_connect_ans_d6 = 4;
+     uint32 cmd_connect_ans_d5 = 5;
+     uint32 cmd_connect_ans_d4 = 6;
+     uint32 cmd_connect_ans_d3 = 7;
+     uint32 cmd_connect_ans_d2 = 8;
+     uint32 cmd_connect_ans_d1 = 9;
+}

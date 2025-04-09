@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.system_modes_msgs.srv;
+
+
+message GetAvailableModesRequest {
+}
+
+message GetAvailableModesResponse {
+    repeated string available_modes = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message NegotiationStatus {
+     uint64 conflict_version = 1;
+    repeated uint64 participants = 2;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time start_time = 3;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time last_response_time = 4;
+}

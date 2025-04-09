@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message ActionPerformerStatus {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time status_stamp = 1;
+     int32 state = 2;
+     string action = 3;
+    repeated string specialized_arguments = 4;
+     string node_name = 5;
+}

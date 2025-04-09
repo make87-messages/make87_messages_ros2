@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Lane {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double lane_curvature = 2;
+     double lane_heading = 3;
+     bool construction_area = 4;
+     double pitch_angle = 5;
+     double yaw_angle = 6;
+     bool right_ldw_availability = 7;
+     bool left_ldw_availability = 8;
+}

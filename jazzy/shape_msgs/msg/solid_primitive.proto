@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.shape_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/polygon.proto";
+
+message SolidPrimitive {
+     uint32 type = 1;
+    repeated double dimensions = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Polygon polygon = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/ros_gz_interfaces/msg/entity.proto";
+
+message SetEntityPoseRequest {
+     make87_messages_ros2.rolling.ros_gz_interfaces.msg.Entity entity = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 2;
+}
+
+message SetEntityPoseResponse {
+     bool success = 1;
+}

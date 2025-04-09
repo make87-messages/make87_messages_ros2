@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_map_msgs.msg;
+
+import "make87_messages_ros2/rolling/autoware_map_msgs/msg/point_cloud_map_cell_meta_data.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+
+message PointCloudMapCellWithID {
+     string cell_id = 1;
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 pointcloud = 2;
+     make87_messages_ros2.rolling.autoware_map_msgs.msg.PointCloudMapCellMetaData metadata = 3;
+}

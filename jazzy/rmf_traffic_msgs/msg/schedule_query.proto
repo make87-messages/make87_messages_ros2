@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_query_participants.proto";
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_query_spacetime.proto";
+
+message ScheduleQuery {
+     make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.ScheduleQuerySpacetime spacetime = 1;
+     make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.ScheduleQueryParticipants participants = 2;
+}

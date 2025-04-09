@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nicla_vision_ros2.msg;
+
+
+message AudioInfo {
+     uint32 channels = 1;
+     uint32 sample_rate = 2;
+     string sample_format = 3;
+     uint32 bitrate = 4;
+     string coding_format = 5;
+}

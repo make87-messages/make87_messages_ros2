@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.grasping_msgs.msg;
+
+import "make87_messages_ros2/rolling/grasping_msgs/msg/object.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/grasp.proto";
+
+message GraspableObject {
+     make87_messages_ros2.rolling.grasping_msgs.msg.Object object = 1;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.Grasp grasps = 2;
+}

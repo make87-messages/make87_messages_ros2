@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PVTGeodetic {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 mode = 3;
+     uint32 error = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double height = 7;
+     float undulation = 8;
+     float vn = 9;
+     float ve = 10;
+     float vu = 11;
+     float cog = 12;
+     double rx_clk_bias = 13;
+     float rx_clk_drift = 14;
+     uint32 time_system = 15;
+     uint32 datum = 16;
+     uint32 nr_sv = 17;
+     uint32 wa_corr_info = 18;
+     uint32 reference_id = 19;
+     uint32 mean_corr_age = 20;
+     uint32 signal_info = 21;
+     uint32 alert_flag = 22;
+     uint32 nr_bases = 23;
+     uint32 ppp_info = 24;
+     uint32 latency = 25;
+     uint32 h_accuracy = 26;
+     uint32 v_accuracy = 27;
+     uint32 misc = 28;
+}

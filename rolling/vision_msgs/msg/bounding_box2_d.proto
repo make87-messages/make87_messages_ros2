@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.vision_msgs.msg;
+
+import "make87_messages_ros2/rolling/vision_msgs/msg/pose2_d.proto";
+
+message BoundingBox2D {
+     make87_messages_ros2.rolling.vision_msgs.msg.Pose2D center = 1;
+     double size_x = 2;
+     double size_y = 3;
+}

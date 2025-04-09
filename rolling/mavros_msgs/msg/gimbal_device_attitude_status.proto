@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GimbalDeviceAttitudeStatus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 target_system = 2;
+     uint32 target_component = 3;
+     uint32 flags = 4;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Quaternion q = 5;
+     float angular_velocity_x = 6;
+     float angular_velocity_y = 7;
+     float angular_velocity_z = 8;
+     uint32 failure_flags = 9;
+}

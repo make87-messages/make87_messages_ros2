@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_vehicle_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VelocityReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float longitudinal_velocity = 2;
+     float lateral_velocity = 3;
+     float heading_rate = 4;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.realsense2_camera_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message IMUInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated double data = 2;
+    repeated double noise_variances = 3;
+    repeated double bias_variances = 4;
+}

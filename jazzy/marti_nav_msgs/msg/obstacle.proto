@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message Obstacle {
+     string id = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 2;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Point polygon = 3;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/constraints.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/generic_trajectory.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/trajectory_constraints.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/workspace_parameters.proto";
+
+message MotionPlanRequest {
+     make87_messages_ros2.rolling.moveit_msgs.msg.WorkspaceParameters workspace_parameters = 1;
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState start_state = 2;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.Constraints goal_constraints = 3;
+     make87_messages_ros2.rolling.moveit_msgs.msg.Constraints path_constraints = 4;
+     make87_messages_ros2.rolling.moveit_msgs.msg.TrajectoryConstraints trajectory_constraints = 5;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.GenericTrajectory reference_trajectories = 6;
+     string pipeline_id = 7;
+     string planner_id = 8;
+     string group_name = 9;
+     int32 num_planning_attempts = 10;
+     double allowed_planning_time = 11;
+     double max_velocity_scaling_factor = 12;
+     double max_acceleration_scaling_factor = 13;
+     string cartesian_speed_limited_link = 14;
+     double max_cartesian_speed = 15;
+}

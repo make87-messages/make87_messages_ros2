@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.urg_node_msgs.msg;
+
+
+message Status {
+     uint32 operating_mode = 1;
+     uint32 area_number = 2;
+     bool error_status = 3;
+     uint32 error_code = 4;
+     bool lockout_status = 5;
+     bool ossd_1 = 6;
+     bool ossd_2 = 7;
+     bool warning_1 = 8;
+     bool warning_2 = 9;
+     bool ossd_3 = 10;
+     bool ossd_4 = 11;
+     uint32 distance = 12;
+     float angle = 13;
+}

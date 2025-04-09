@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message GimbalManagerConfigureRequest {
+     int32 sysid_primary = 1;
+     int32 compid_primary = 2;
+     int32 sysid_secondary = 3;
+     int32 compid_secondary = 4;
+     uint32 gimbal_device_id = 5;
+}
+
+message GimbalManagerConfigureResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

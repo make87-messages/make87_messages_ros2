@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rclpy_message_converter_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rclpy_message_converter_msgs/msg/nested_uint8_array_test_message.proto";
+
+message NestedUint8ArrayTestServiceRequest {
+     make87_messages_ros2.jazzy.rclpy_message_converter_msgs.msg.NestedUint8ArrayTestMessage input = 1;
+}
+
+message NestedUint8ArrayTestServiceResponse {
+     make87_messages_ros2.jazzy.rclpy_message_converter_msgs.msg.NestedUint8ArrayTestMessage output = 1;
+}

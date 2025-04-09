@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message CfgGNSSBlock {
+     uint32 gnss_id = 1;
+     uint32 res_trk_ch = 2;
+     uint32 max_trk_ch = 3;
+     uint32 reserved1 = 4;
+     uint32 flags = 5;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosbag2_test_msgdefs.srv;
+
+import "make87_messages_ros2/jazzy/rosbag2_test_msgdefs/msg/basic_msg.proto";
+
+message ComplexSrvMsgRequest {
+     make87_messages_ros2.jazzy.rosbag2_test_msgdefs.msg.BasicMsg req = 1;
+}
+
+message ComplexSrvMsgResponse {
+     make87_messages_ros2.jazzy.rosbag2_test_msgdefs.msg.BasicMsg resp = 1;
+}

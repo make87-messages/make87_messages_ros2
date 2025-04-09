@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Light {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string name = 2;
+     uint32 type = 3;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 4;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA diffuse = 5;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA specular = 6;
+     float attenuation_constant = 7;
+     float attenuation_linear = 8;
+     float attenuation_quadratic = 9;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 direction = 10;
+     float range = 11;
+     bool cast_shadows = 12;
+     float spot_inner_angle = 13;
+     float spot_outer_angle = 14;
+     float spot_falloff = 15;
+     uint32 id = 16;
+     uint32 parent_id = 17;
+     float intensity = 18;
+}

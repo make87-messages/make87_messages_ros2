@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/clean.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/delivery.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/loop.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/priority.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/station.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/task_type.proto";
+
+message TaskDescription {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time start_time = 1;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Priority priority = 2;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.TaskType task_type = 3;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Station station = 4;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Loop loop = 5;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Delivery delivery = 6;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Clean clean = 7;
+}

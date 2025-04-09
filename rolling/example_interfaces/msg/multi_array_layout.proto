@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.example_interfaces.msg;
+
+import "make87_messages_ros2/rolling/example_interfaces/msg/multi_array_dimension.proto";
+
+message MultiArrayLayout {
+    repeated make87_messages_ros2.rolling.example_interfaces.msg.MultiArrayDimension dim = 1;
+     uint32 data_offset = 2;
+}

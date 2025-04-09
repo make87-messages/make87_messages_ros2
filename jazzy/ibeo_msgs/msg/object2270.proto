@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/point2_di.proto";
+
+message Object2270 {
+     uint32 id = 1;
+     uint32 age = 2;
+     uint32 prediction_age = 3;
+     uint32 relative_moment_of_measurement = 4;
+     uint32 reference_point_location = 5;
+     int32 reference_point_position_x = 6;
+     int32 reference_point_position_y = 7;
+     uint32 reference_point_position_sigma_x = 8;
+     uint32 reference_point_position_sigma_y = 9;
+     int32 contour_points_cog_x = 10;
+     int32 contour_points_cog_y = 11;
+     uint32 object_box_length = 12;
+     uint32 object_box_width = 13;
+     int32 object_box_orientation_angle = 14;
+     int32 object_box_orientation_angle_sigma = 15;
+     int32 absolute_velocity_x = 16;
+     int32 absolute_velocity_y = 17;
+     uint32 absolute_velocity_sigma_x = 18;
+     uint32 absolute_velocity_sigma_y = 19;
+     int32 relative_velocity_x = 20;
+     int32 relative_velocity_y = 21;
+     uint32 relative_velocity_sigma_x = 22;
+     uint32 relative_velocity_sigma_y = 23;
+     uint32 classification = 24;
+     uint32 tracking_model = 25;
+     bool mobile_detected = 26;
+     bool track_valid = 27;
+     uint32 classification_age = 28;
+     uint32 classification_confidence = 29;
+     uint32 number_of_contour_points = 30;
+    repeated make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di contour_point_list = 31;
+}

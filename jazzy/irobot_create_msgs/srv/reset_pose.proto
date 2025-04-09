@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.irobot_create_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message ResetPoseRequest {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 1;
+}
+
+message ResetPoseResponse {
+}

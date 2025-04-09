@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/nav2_msgs/msg/costmap.proto";
+import "make87_messages_ros2/jazzy/nav2_msgs/msg/costmap_meta_data.proto";
+
+message GetCostmapRequest {
+     make87_messages_ros2.jazzy.nav2_msgs.msg.CostmapMetaData specs = 1;
+}
+
+message GetCostmapResponse {
+     make87_messages_ros2.jazzy.nav2_msgs.msg.Costmap map = 1;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/utc_std.proto";
+
+message UBXNavTimeUTC {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     uint32 t_acc = 3;
+     int32 nano = 4;
+     int32 year = 5;
+     int32 month = 6;
+     int32 day = 7;
+     int32 hour = 8;
+     int32 min = 9;
+     int32 sec = 10;
+     bool valid_tow = 11;
+     bool valid_wkn = 12;
+     bool valid_utc = 13;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.UtcStd utc_std = 14;
+}

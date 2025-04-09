@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marine_acoustic_msgs.msg;
+
+
+message PingInfo {
+     float frequency = 1;
+     float sound_speed = 2;
+    repeated float tx_beamwidths = 3;
+    repeated float rx_beamwidths = 4;
+}

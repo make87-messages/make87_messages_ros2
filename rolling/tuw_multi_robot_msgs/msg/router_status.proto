@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg;
+
+
+message RouterStatus {
+     int32 id = 1;
+     bool success = 2;
+    repeated string missing_robots = 3;
+     int32 duration = 4;
+     int32 overall_path_length = 5;
+     int32 longest_path_length = 6;
+     int32 priority_scheduling_attemps = 7;
+     int32 speed_scheduling_attemps = 8;
+}

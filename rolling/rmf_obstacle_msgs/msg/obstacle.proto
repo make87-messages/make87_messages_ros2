@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_obstacle_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/rmf_obstacle_msgs/msg/bounding_box3_d.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Obstacle {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 id = 2;
+     string source = 3;
+     string level_name = 4;
+     string classification = 5;
+     make87_messages_ros2.rolling.rmf_obstacle_msgs.msg.BoundingBox3D bbox = 6;
+     double data_resolution = 7;
+    repeated int32 data = 8;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration lifetime = 9;
+     int32 action = 10;
+}

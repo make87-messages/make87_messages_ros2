@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+
+message GyroRate {
+     string name = 1;
+     float x = 2;
+     float y = 3;
+     float z = 4;
+}

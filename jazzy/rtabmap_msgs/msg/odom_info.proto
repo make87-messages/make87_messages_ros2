@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/camera_models.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/key_point.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/point2f.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/point3f.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message OdomInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool lost = 2;
+     int32 matches = 3;
+     int32 inliers = 4;
+     float icp_inliers_ratio = 5;
+     float icp_rotation = 6;
+     float icp_translation = 7;
+     float icp_structural_complexity = 8;
+     float icp_structural_distribution = 9;
+     int32 icp_correspondences = 10;
+    repeated double covariance = 11;
+     int32 features = 12;
+     int32 local_map_size = 13;
+     int32 local_scan_map_size = 14;
+     int32 local_key_frames = 15;
+     int32 local_bundle_outliers = 16;
+     int32 local_bundle_constraints = 17;
+     float local_bundle_time = 18;
+     bool key_frame_added = 19;
+     float time_estimation = 20;
+     float time_particle_filtering = 21;
+     float stamp = 22;
+     float interval = 23;
+     float distance_travelled = 24;
+     int32 memory_usage = 25;
+     float gravity_roll_error = 26;
+     float gravity_pitch_error = 27;
+    repeated int32 local_bundle_ids = 28;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.CameraModels local_bundle_models = 29;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose local_bundle_poses = 30;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform transform = 31;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform transform_filtered = 32;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform transform_ground_truth = 33;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform guess = 34;
+     int32 type = 35;
+    repeated int32 words_keys = 36;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.KeyPoint words_values = 37;
+    repeated int32 word_matches = 38;
+    repeated int32 word_inliers = 39;
+    repeated int32 local_map_keys = 40;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point3f local_map_values = 41;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.PointCloud2 local_scan_map = 42;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point2f ref_corners = 43;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point2f new_corners = 44;
+    repeated int32 corner_inliers = 45;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/ros_babel_fish_test_msgs/msg/test_sub_array.proto";
+
+message TestArray {
+    repeated bool bools = 1;
+    repeated uint32 uint8s = 2;
+    repeated uint32 uint16s = 3;
+    repeated uint32 uint32s = 4;
+    repeated uint64 uint64s = 5;
+    repeated int32 int8s = 6;
+    repeated int32 int16s = 7;
+    repeated int32 int32s = 8;
+    repeated int64 int64s = 9;
+    repeated float float32s = 10;
+    repeated double float64s = 11;
+    repeated make87_messages_ros2.jazzy.builtin_interfaces.msg.Time times = 12;
+    repeated make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration durations = 13;
+    repeated string strings = 14;
+    repeated make87_messages_ros2.jazzy.ros_babel_fish_test_msgs.msg.TestSubArray subarrays_fixed = 15;
+    repeated make87_messages_ros2.jazzy.ros_babel_fish_test_msgs.msg.TestSubArray subarrays = 16;
+}

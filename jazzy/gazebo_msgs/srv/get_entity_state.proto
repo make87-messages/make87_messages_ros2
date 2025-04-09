@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/entity_state.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GetEntityStateRequest {
+     string name = 1;
+     string reference_frame = 2;
+}
+
+message GetEntityStateResponse {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.gazebo_msgs.msg.EntityState state = 2;
+     bool success = 3;
+}

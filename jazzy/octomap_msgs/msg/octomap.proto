@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.octomap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Octomap {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool binary = 2;
+     string id = 3;
+     double resolution = 4;
+    repeated int32 data = 5;
+}

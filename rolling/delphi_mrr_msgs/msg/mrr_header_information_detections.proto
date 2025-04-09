@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MrrHeaderInformationDetections {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 can_align_updates_done = 2;
+     uint32 can_scan_index = 3;
+     uint32 can_number_of_det = 4;
+     uint32 can_look_id = 5;
+     uint32 can_look_index = 6;
+}

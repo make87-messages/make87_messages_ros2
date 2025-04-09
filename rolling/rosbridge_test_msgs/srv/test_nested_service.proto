@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbridge_test_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/float64.proto";
+
+message TestNestedServiceRequest {
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 1;
+}
+
+message TestNestedServiceResponse {
+     make87_messages_ros2.rolling.std_msgs.msg.Float64 data = 1;
+}

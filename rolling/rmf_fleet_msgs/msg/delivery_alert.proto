@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_fleet_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_fleet_msgs/msg/delivery_alert_action.proto";
+import "make87_messages_ros2/rolling/rmf_fleet_msgs/msg/delivery_alert_category.proto";
+import "make87_messages_ros2/rolling/rmf_fleet_msgs/msg/delivery_alert_tier.proto";
+
+message DeliveryAlert {
+     string id = 1;
+     make87_messages_ros2.rolling.rmf_fleet_msgs.msg.DeliveryAlertCategory category = 2;
+     make87_messages_ros2.rolling.rmf_fleet_msgs.msg.DeliveryAlertTier tier = 3;
+     string task_id = 4;
+     make87_messages_ros2.rolling.rmf_fleet_msgs.msg.DeliveryAlertAction action = 5;
+     string message = 6;
+}

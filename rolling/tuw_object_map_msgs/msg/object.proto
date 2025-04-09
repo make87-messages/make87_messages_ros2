@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_map_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/tuw_object_map_msgs/msg/geo_point.proto";
+
+message Object {
+     int64 id = 1;
+     uint32 type = 2;
+    repeated make87_messages_ros2.rolling.tuw_object_map_msgs.msg.GeoPoint geo_points = 3;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point map_points = 4;
+    repeated double enflation_radius = 5;
+    repeated double bondary_radius = 6;
+}

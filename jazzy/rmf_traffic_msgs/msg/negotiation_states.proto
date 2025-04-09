@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/negotiation_state.proto";
+
+message NegotiationStates {
+    repeated make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.NegotiationState negotiations = 1;
+}

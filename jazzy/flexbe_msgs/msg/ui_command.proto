@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+
+message UICommand {
+     string command = 1;
+     string key = 2;
+}

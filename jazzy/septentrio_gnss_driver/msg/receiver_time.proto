@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/jazzy/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ReceiverTime {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     int32 utc_year = 3;
+     int32 utc_month = 4;
+     int32 utc_day = 5;
+     int32 utc_hour = 6;
+     int32 utc_min = 7;
+     int32 utc_second = 8;
+     int32 delta_ls = 9;
+     uint32 sync_level = 10;
+}

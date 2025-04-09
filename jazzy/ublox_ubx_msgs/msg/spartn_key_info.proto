@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+
+message SpartnKeyInfo {
+     uint32 reserved1 = 1;
+     uint32 key_length_bytes = 2;
+     uint32 valid_from_wno = 3;
+     uint32 valid_from_tow = 4;
+}

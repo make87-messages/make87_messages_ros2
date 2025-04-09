@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message DioRealTimeData {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     double sample_frequency = 2;
+     uint64 latest_sample_time = 3;
+    repeated uint32 sample_states = 4;
+    repeated uint32 sample_times = 5;
+}

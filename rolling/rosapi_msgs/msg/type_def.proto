@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosapi_msgs.msg;
+
+
+message TypeDef {
+     string type = 1;
+    repeated string fieldnames = 2;
+    repeated string fieldtypes = 3;
+    repeated int32 fieldarraylen = 4;
+    repeated string examples = 5;
+    repeated string constnames = 6;
+    repeated string constvalues = 7;
+}

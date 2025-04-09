@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.msg;
+
+
+message SetLoggerLevelsResult {
+     bool successful = 1;
+     string reason = 2;
+}

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_status_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ChronyTrackingStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string reference = 2;
+     int32 stratum = 3;
+     double system_time_offset = 4;
+     double last_offset = 5;
+     double rms_offset = 6;
+     float frequency_offset = 7;
+     float residual_frequency = 8;
+     float skew = 9;
+     double root_delay = 10;
+     double root_dispersion = 11;
+     float update_interval = 12;
+     string leap_status = 13;
+}

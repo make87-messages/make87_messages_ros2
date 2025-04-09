@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.srv;
+
+
+message SetSpeedSliderFractionRequest {
+     double speed_slider_fraction = 1;
+}
+
+message SetSpeedSliderFractionResponse {
+     bool success = 1;
+}

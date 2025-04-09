@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geometry_msgs.msg;
+
+
+message Quaternion {
+     double x = 1;
+     double y = 2;
+     double z = 3;
+     double w = 4;
+}

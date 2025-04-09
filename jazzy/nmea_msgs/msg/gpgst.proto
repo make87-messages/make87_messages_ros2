@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nmea_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Gpgst {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     double utc_seconds = 3;
+     float rms = 4;
+     float semi_major_dev = 5;
+     float semi_minor_dev = 6;
+     float orientation = 7;
+     float lat_dev = 8;
+     float lon_dev = 9;
+     float alt_dev = 10;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/param.proto";
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/tree.proto";
+
+message Action {
+     string name = 1;
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Param parameters = 2;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree preconditions = 3;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree effects = 4;
+}

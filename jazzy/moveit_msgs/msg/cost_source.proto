@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+
+message CostSource {
+     double cost_density = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 aabb_min = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 aabb_max = 3;
+}

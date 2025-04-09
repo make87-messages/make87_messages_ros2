@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.srv;
+
+
+message FieldSetWriteSrvRequest {
+     int32 field_set_selection_method_in = 1;
+     int32 active_field_set_in = 2;
+}
+
+message FieldSetWriteSrvResponse {
+     int32 field_set_selection_method = 1;
+     int32 active_field_set = 2;
+     bool success = 3;
+}

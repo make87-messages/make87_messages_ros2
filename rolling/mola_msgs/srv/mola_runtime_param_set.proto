@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mola_msgs.srv;
+
+
+message MolaRuntimeParamSetRequest {
+     string parameters = 1;
+}
+
+message MolaRuntimeParamSetResponse {
+     bool success = 1;
+     string error_message = 2;
+}

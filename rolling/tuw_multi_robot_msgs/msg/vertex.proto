@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+
+message Vertex {
+     uint32 id = 1;
+     bool valid = 2;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point path = 3;
+     uint32 weight = 4;
+     float width = 5;
+    repeated uint32 successors = 6;
+    repeated uint32 predecessors = 7;
+}

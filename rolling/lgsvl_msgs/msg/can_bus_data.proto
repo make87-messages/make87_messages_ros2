@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message CanBusData {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float speed_mps = 2;
+     float throttle_pct = 3;
+     float brake_pct = 4;
+     float steer_pct = 5;
+     bool parking_brake_active = 6;
+     bool high_beams_active = 7;
+     bool low_beams_active = 8;
+     bool hazard_lights_active = 9;
+     bool fog_lights_active = 10;
+     bool left_turn_signal_active = 11;
+     bool right_turn_signal_active = 12;
+     bool wipers_active = 13;
+     bool reverse_gear_active = 14;
+     int32 selected_gear = 15;
+     bool engine_active = 16;
+     float engine_rpm = 17;
+     double gps_latitude = 18;
+     double gps_longitude = 19;
+     double gps_altitude = 20;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Quaternion orientation = 21;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 linear_velocities = 22;
+}

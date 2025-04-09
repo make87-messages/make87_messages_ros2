@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message StatusText {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 severity = 2;
+     string text = 3;
+}

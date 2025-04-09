@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Joy {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated float axes = 2;
+    repeated int32 buttons = 3;
+}

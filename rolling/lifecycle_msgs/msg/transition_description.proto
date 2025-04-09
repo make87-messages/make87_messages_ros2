@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lifecycle_msgs.msg;
+
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/state.proto";
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/transition.proto";
+
+message TransitionDescription {
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.Transition transition = 1;
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.State start_state = 2;
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.State goal_state = 3;
+}

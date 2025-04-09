@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/region_of_interest.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CameraInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 height = 2;
+     uint32 width = 3;
+     string distortion_model = 4;
+    repeated double d = 5;
+    repeated double k = 6;
+    repeated double r = 7;
+    repeated double p = 8;
+     uint32 binning_x = 9;
+     uint32 binning_y = 10;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.RegionOfInterest roi = 11;
+}

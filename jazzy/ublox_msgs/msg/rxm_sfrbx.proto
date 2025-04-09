@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message RxmSFRBX {
+     uint32 gnss_id = 1;
+     uint32 sv_id = 2;
+     uint32 reserved0 = 3;
+     uint32 freq_id = 4;
+     uint32 num_words = 5;
+     uint32 chn = 6;
+     uint32 version = 7;
+     uint32 reserved1 = 8;
+    repeated uint32 dwrd = 9;
+}

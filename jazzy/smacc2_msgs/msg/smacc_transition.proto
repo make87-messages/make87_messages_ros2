@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smacc2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_event.proto";
+
+message SmaccTransition {
+     int32 index = 1;
+     string transition_name = 2;
+     string transition_type = 3;
+     string destiny_state_name = 4;
+     string source_state_name = 5;
+     bool history_node = 6;
+     make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccEvent event = 7;
+}

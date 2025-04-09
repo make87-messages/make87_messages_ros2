@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/ros_gz_interfaces/msg/entity.proto";
+import "make87_messages_ros2/rolling/ros_gz_interfaces/msg/joint_wrench.proto";
+
+message Contact {
+     make87_messages_ros2.rolling.ros_gz_interfaces.msg.Entity collision1 = 1;
+     make87_messages_ros2.rolling.ros_gz_interfaces.msg.Entity collision2 = 2;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 positions = 3;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 normals = 4;
+    repeated double depths = 5;
+    repeated make87_messages_ros2.rolling.ros_gz_interfaces.msg.JointWrench wrenches = 6;
+}

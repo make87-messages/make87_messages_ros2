@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+
+message NovatelSignalMask {
+     uint32 original_mask = 1;
+     bool gps_l1_used_in_solution = 2;
+     bool gps_l2_used_in_solution = 3;
+     bool gps_l3_used_in_solution = 4;
+     bool glonass_l1_used_in_solution = 5;
+     bool glonass_l2_used_in_solution = 6;
+}

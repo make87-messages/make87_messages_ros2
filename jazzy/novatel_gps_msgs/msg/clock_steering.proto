@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+
+message ClockSteering {
+     string source = 1;
+     string steering_state = 2;
+     uint32 period = 3;
+     double pulse_width = 4;
+     double bandwidth = 5;
+     float slope = 6;
+     double offset = 7;
+     double drift_rate = 8;
+}

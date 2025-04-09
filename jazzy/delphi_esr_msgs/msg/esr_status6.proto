@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrStatus6 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 supply_1p8v_a2d = 3;
+     uint32 supply_n5v_a2d = 4;
+     uint32 wave_diff_a2d = 5;
+     uint32 sw_version_dsp_3rd_byte = 6;
+     bool vertical_align_updated = 7;
+     uint32 system_power_mode = 8;
+     bool found_target = 9;
+     bool recommend_unconverge = 10;
+     uint32 factory_align_status_1 = 11;
+     uint32 factory_align_status_2 = 12;
+     float factory_misalignment = 13;
+     uint32 serv_align_updates_done = 14;
+     float vertical_misalignment = 15;
+}

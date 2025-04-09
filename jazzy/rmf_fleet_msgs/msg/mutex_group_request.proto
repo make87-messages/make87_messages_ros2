@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message MutexGroupRequest {
+     string group = 1;
+     uint64 claimant = 2;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time claim_time = 3;
+     uint32 mode = 4;
+}

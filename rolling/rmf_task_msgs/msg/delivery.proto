@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_dispenser_msgs/msg/dispenser_request_item.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/behavior.proto";
+
+message Delivery {
+     string task_id = 1;
+    repeated make87_messages_ros2.rolling.rmf_dispenser_msgs.msg.DispenserRequestItem items = 2;
+     string pickup_place_name = 3;
+     string pickup_dispenser = 4;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Behavior pickup_behavior = 5;
+     string dropoff_place_name = 6;
+     string dropoff_ingestor = 7;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.Behavior dropoff_behavior = 8;
+}

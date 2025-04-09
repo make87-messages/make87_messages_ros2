@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PosCovCartesian {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 mode = 3;
+     uint32 error = 4;
+     float cov_xx = 5;
+     float cov_yy = 6;
+     float cov_zz = 7;
+     float cov_bb = 8;
+     float cov_xy = 9;
+     float cov_xz = 10;
+     float cov_xb = 11;
+     float cov_yz = 12;
+     float cov_yb = 13;
+     float cov_zb = 14;
+}

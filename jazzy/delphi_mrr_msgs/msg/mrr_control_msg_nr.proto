@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrControlMsgNR {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_stop_frequency_nrml = 2;
+     uint32 can_prp_factor_nrml = 3;
+     uint32 can_desired_sweep_bw_nrml = 4;
+     bool can_radiation_ctrl = 5;
+     uint32 can_stop_frequency_nrll = 6;
+     uint32 can_prp_factor_nrll = 7;
+     uint32 can_desired_sweep_bw_nrll = 8;
+}

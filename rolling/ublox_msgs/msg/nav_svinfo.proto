@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/nav_svinfosv.proto";
+
+message NavSVINFO {
+     uint32 i_tow = 1;
+     uint32 num_ch = 2;
+     uint32 global_flags = 3;
+     uint32 reserved2 = 4;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.NavSVINFOSV sv = 5;
+}

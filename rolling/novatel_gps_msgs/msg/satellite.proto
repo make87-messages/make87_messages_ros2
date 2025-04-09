@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+
+message Satellite {
+     uint32 prn = 1;
+     uint32 elevation = 2;
+     uint32 azimuth = 3;
+     int32 snr = 4;
+}

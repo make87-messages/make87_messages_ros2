@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.test_interface_files.msg;
+
+import "make87_messages_ros2/rolling/test_interface_files/msg/basic_types.proto";
+
+message Nested {
+     make87_messages_ros2.rolling.test_interface_files.msg.BasicTypes basic_types_value = 1;
+}

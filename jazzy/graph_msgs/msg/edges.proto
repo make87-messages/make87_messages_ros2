@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.graph_msgs.msg;
+
+
+message Edges {
+    repeated uint32 node_ids = 1;
+    repeated double weights = 2;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geographic_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geo_path.proto";
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geo_point.proto";
+import "make87_messages_ros2/jazzy/unique_identifier_msgs/msg/uuid.proto";
+
+message GetGeoPathRequest {
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPoint start = 1;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPoint goal = 2;
+}
+
+message GetGeoPathResponse {
+     bool success = 1;
+     string status = 2;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPath plan = 3;
+     make87_messages_ros2.jazzy.unique_identifier_msgs.msg.UUID network = 4;
+     make87_messages_ros2.jazzy.unique_identifier_msgs.msg.UUID start_seg = 5;
+     make87_messages_ros2.jazzy.unique_identifier_msgs.msg.UUID goal_seg = 6;
+     double distance = 7;
+}

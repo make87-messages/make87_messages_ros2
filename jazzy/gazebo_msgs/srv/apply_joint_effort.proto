@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message ApplyJointEffortRequest {
+     string joint_name = 1;
+     double effort = 2;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time start_time = 3;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration duration = 4;
+}
+
+message ApplyJointEffortResponse {
+     bool success = 1;
+     string status_message = 2;
+}

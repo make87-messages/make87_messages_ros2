@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+
+message RangeInformation {
+     uint32 prn_number = 1;
+     uint32 glofreq = 2;
+     double psr = 3;
+     float psr_std = 4;
+     double adr = 5;
+     float adr_std = 6;
+     float dopp = 7;
+     float noise_density_ratio = 8;
+     float locktime = 9;
+     uint32 tracking_status = 10;
+}

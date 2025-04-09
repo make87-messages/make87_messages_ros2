@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.realsense2_camera_msgs.msg;
+
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/camera_info.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RGBD {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CameraInfo rgb_camera_info = 2;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.CameraInfo depth_camera_info = 3;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.Image rgb = 4;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.Image depth = 5;
+}

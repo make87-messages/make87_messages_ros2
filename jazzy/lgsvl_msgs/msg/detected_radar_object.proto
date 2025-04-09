@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+
+message DetectedRadarObject {
+     int32 id = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 sensor_aim = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 sensor_right = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point sensor_position = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 sensor_velocity = 5;
+     double sensor_angle = 6;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point object_position = 7;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 object_velocity = 8;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point object_relative_position = 9;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 object_relative_velocity = 10;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 object_collider_size = 11;
+     uint32 object_state = 12;
+     bool new_detection = 13;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_perception_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message PredictedPath {
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose path = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration time_step = 2;
+     float confidence = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.turtlebot4_msgs.msg;
+
+
+message UserLed {
+     uint32 led = 1;
+     uint32 color = 2;
+     uint32 blink_period = 3;
+     double duty_cycle = 4;
+}

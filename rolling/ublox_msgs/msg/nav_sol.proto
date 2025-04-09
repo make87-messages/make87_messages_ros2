@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavSOL {
+     uint32 i_tow = 1;
+     int32 f_tow = 2;
+     int32 week = 3;
+     uint32 gps_fix = 4;
+     uint32 flags = 5;
+     int32 ecef_x = 6;
+     int32 ecef_y = 7;
+     int32 ecef_z = 8;
+     uint32 p_acc = 9;
+     int32 ecef_vx = 10;
+     int32 ecef_vy = 11;
+     int32 ecef_vz = 12;
+     uint32 s_acc = 13;
+     uint32 p_dop = 14;
+     uint32 reserved1 = 15;
+     uint32 num_sv = 16;
+     uint32 reserved2 = 17;
+}

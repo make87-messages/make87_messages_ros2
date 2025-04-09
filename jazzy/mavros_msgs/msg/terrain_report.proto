@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message TerrainReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     double latitude = 2;
+     double longitude = 3;
+     uint32 spacing = 4;
+     float terrain_height = 5;
+     float current_height = 6;
+     uint32 pending = 7;
+     uint32 loaded = 8;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_dashboard_msgs.srv;
+
+import "make87_messages_ros2/rolling/ur_dashboard_msgs/msg/program_state.proto";
+
+message GetProgramStateRequest {
+}
+
+message GetProgramStateResponse {
+     make87_messages_ros2.rolling.ur_dashboard_msgs.msg.ProgramState state = 1;
+     string program_name = 2;
+     string answer = 3;
+     bool success = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.control_toolbox.srv;
+
+
+message SetPidGainsRequest {
+     double p = 1;
+     double i = 2;
+     double d = 3;
+     double i_clamp = 4;
+     bool antiwindup = 5;
+}
+
+message SetPidGainsResponse {
+}

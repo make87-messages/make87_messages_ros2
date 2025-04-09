@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+
+message NAVOdomVelocity {
+     float vel_x = 1;
+     float vel_y = 2;
+     float omega = 3;
+     uint32 timestamp = 4;
+     uint32 coordbase = 5;
+}

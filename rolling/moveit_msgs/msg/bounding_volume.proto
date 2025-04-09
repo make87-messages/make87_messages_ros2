@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/solid_primitive.proto";
+
+message BoundingVolume {
+    repeated make87_messages_ros2.rolling.shape_msgs.msg.SolidPrimitive primitives = 1;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Pose primitive_poses = 2;
+    repeated make87_messages_ros2.rolling.shape_msgs.msg.Mesh meshes = 3;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Pose mesh_poses = 4;
+}

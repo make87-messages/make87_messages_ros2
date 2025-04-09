@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message TrkStat {
+     bool pr_valid = 1;
+     bool cp_valid = 2;
+     bool half_cyc = 3;
+     bool sub_half_cyc = 4;
+}

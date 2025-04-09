@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_graph_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+
+message Edge {
+     int64 id = 1;
+     bool valid = 2;
+     double weight = 3;
+    repeated uint32 flags = 4;
+     int64 start = 5;
+     int64 end = 6;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Pose path = 7;
+}

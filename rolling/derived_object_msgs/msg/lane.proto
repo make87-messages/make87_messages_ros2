@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.derived_object_msgs.msg;
+
+
+message Lane {
+     uint32 quality = 1;
+     uint32 marker_kind = 2;
+     uint32 curve_model_kind = 3;
+     double marker_offset = 4;
+     double heading_angle = 5;
+     double curvature = 6;
+     double curvature_derivative = 7;
+     double marker_width = 8;
+     double view_range = 9;
+}

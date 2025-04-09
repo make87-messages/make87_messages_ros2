@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbridge_test_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message TestTimeArray {
+    repeated make87_messages_ros2.rolling.builtin_interfaces.msg.Time times = 1;
+}

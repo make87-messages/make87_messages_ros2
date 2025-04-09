@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+
+message AddProblemRequest {
+     string problem = 1;
+}
+
+message AddProblemResponse {
+     bool success = 1;
+     string error_info = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.srv;
+
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/state.proto";
+
+message SetHardwareComponentStateRequest {
+     string name = 1;
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.State target_state = 2;
+}
+
+message SetHardwareComponentStateResponse {
+     bool ok = 1;
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.State state = 2;
+}

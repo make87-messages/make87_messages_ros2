@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_perception_msgs.msg;
+
+import "make87_messages_ros2/jazzy/autoware_perception_msgs/msg/traffic_signal.proto";
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message TrafficSignalArray {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+    repeated make87_messages_ros2.jazzy.autoware_perception_msgs.msg.TrafficSignal signals = 2;
+}

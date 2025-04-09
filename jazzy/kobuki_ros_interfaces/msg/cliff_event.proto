@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kobuki_ros_interfaces.msg;
+
+
+message CliffEvent {
+     uint32 sensor = 1;
+     uint32 state = 2;
+     uint32 bottom = 3;
+}

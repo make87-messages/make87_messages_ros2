@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/jazzy/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GALAuthStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 osnma_status = 3;
+     float trusted_time_delta = 4;
+     uint64 gal_active_mask = 5;
+     uint64 gal_authentic_mask = 6;
+     uint64 gps_active_mask = 7;
+     uint64 gps_authentic_mask = 8;
+}

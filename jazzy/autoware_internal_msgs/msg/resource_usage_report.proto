@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_internal_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ResourceUsageReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 pid = 2;
+     float cpu_cores_utilized = 3;
+     uint64 total_memory_bytes = 4;
+     uint64 free_memory_bytes = 5;
+     uint64 process_memory_bytes = 6;
+}

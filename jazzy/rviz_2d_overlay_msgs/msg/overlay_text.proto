@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rviz_2d_overlay_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/color_rgba.proto";
+
+message OverlayText {
+     uint32 action = 1;
+     int32 width = 2;
+     int32 height = 3;
+     int32 horizontal_distance = 4;
+     int32 vertical_distance = 5;
+     uint32 horizontal_alignment = 6;
+     uint32 vertical_alignment = 7;
+     make87_messages_ros2.jazzy.std_msgs.msg.ColorRGBA bg_color = 8;
+     int32 line_width = 9;
+     float text_size = 10;
+     string font = 11;
+     make87_messages_ros2.jazzy.std_msgs.msg.ColorRGBA fg_color = 12;
+     string text = 13;
+}

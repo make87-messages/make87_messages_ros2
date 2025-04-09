@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message UserInputMedia {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool btn_vol_up = 2;
+     bool btn_vol_down = 3;
+     bool btn_mute = 4;
+     bool btn_next = 5;
+     bool btn_prev = 6;
+     bool btn_next_hang_up = 7;
+     bool btn_prev_answer = 8;
+     bool btn_hang_up = 9;
+     bool btn_answer = 10;
+     bool btn_play = 11;
+     bool btn_pause = 12;
+     bool btn_play_pause = 13;
+     bool btn_mode = 14;
+}

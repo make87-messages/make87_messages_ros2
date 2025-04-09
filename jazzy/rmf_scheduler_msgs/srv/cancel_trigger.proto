@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_scheduler_msgs.srv;
+
+
+message CancelTriggerRequest {
+     string name = 1;
+}
+
+message CancelTriggerResponse {
+     bool success = 1;
+     string message = 2;
+}

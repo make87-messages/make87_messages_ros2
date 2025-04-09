@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/empty.proto";
+
+message ClearEntireCostmapRequest {
+     make87_messages_ros2.jazzy.std_msgs.msg.Empty request = 1;
+}
+
+message ClearEntireCostmapResponse {
+     make87_messages_ros2.jazzy.std_msgs.msg.Empty response = 1;
+}

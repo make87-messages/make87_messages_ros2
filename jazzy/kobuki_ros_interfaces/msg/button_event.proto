@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kobuki_ros_interfaces.msg;
+
+
+message ButtonEvent {
+     uint32 button = 1;
+     uint32 state = 2;
+}

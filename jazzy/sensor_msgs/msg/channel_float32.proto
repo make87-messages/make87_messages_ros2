@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+
+message ChannelFloat32 {
+     string name = 1;
+    repeated float values = 2;
+}

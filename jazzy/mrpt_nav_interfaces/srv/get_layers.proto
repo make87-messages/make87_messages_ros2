@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mrpt_nav_interfaces.srv;
+
+
+message GetLayersRequest {
+}
+
+message GetLayersResponse {
+    repeated string layers = 1;
+}

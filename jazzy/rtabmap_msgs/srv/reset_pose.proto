@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+
+message ResetPoseRequest {
+     float x = 1;
+     float y = 2;
+     float z = 3;
+     float roll = 4;
+     float pitch = 5;
+     float yaw = 6;
+}
+
+message ResetPoseResponse {
+}

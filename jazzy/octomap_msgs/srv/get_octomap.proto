@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.octomap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/octomap_msgs/msg/octomap.proto";
+
+message GetOctomapRequest {
+}
+
+message GetOctomapResponse {
+     make87_messages_ros2.jazzy.octomap_msgs.msg.Octomap map = 1;
+}

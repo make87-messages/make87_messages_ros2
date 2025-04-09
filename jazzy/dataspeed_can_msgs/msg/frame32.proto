@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.dataspeed_can_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Frame32 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     bool extended = 3;
+     bool fdf = 4;
+     bool brs = 5;
+     bool esi = 6;
+     bool rtr = 7;
+     uint32 size = 8;
+    repeated uint32 data = 9;
+}

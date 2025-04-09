@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marine_acoustic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/ping_info.proto";
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/sonar_image_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ProjectedSonarImage {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.PingInfo ping_info = 2;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 beam_directions = 3;
+    repeated float ranges = 4;
+     make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.SonarImageData image = 5;
+}

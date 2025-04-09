@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.robot_calibration_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point_stamped.proto";
+import "make87_messages_ros2/rolling/robot_calibration_msgs/msg/extended_camera_info.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+
+message Observation {
+     string sensor_name = 1;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.PointStamped features = 2;
+     make87_messages_ros2.rolling.robot_calibration_msgs.msg.ExtendedCameraInfo ext_camera_info = 3;
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 cloud = 4;
+     make87_messages_ros2.rolling.sensor_msgs.msg.Image image = 5;
+}

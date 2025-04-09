@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/transform.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/map_graph.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Info {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 ref_id = 2;
+     int32 loop_closure_id = 3;
+     int32 proximity_detection_id = 4;
+     int32 landmark_id = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Transform loop_closure_transform = 6;
+    repeated int32 wm_state = 7;
+    repeated int32 posterior_keys = 8;
+    repeated float posterior_values = 9;
+    repeated int32 likelihood_keys = 10;
+    repeated float likelihood_values = 11;
+    repeated int32 raw_likelihood_keys = 12;
+    repeated float raw_likelihood_values = 13;
+    repeated int32 weights_keys = 14;
+    repeated int32 weights_values = 15;
+    repeated int32 labels_keys = 16;
+    repeated string labels_values = 17;
+    repeated string stats_keys = 18;
+    repeated float stats_values = 19;
+    repeated int32 local_path = 20;
+     int32 current_goal_id = 21;
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.MapGraph odom_cache = 22;
+}

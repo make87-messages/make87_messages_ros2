@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CostmapUpdate {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 x = 2;
+     uint32 y = 3;
+     uint32 size_x = 4;
+     uint32 size_y = 5;
+    repeated uint32 data = 6;
+}

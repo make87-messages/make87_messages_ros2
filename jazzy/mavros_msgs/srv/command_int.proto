@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+
+message CommandIntRequest {
+     bool broadcast = 1;
+     uint32 frame = 2;
+     uint32 command = 3;
+     uint32 current = 4;
+     uint32 autocontinue = 5;
+     float param1 = 6;
+     float param2 = 7;
+     float param3 = 8;
+     float param4 = 9;
+     int32 x = 10;
+     int32 y = 11;
+     float z = 12;
+}
+
+message CommandIntResponse {
+     bool success = 1;
+}

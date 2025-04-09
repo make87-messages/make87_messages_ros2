@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosapi_msgs.srv;
+
+
+message GetParamRequest {
+     string name = 1;
+     string default_value = 2;
+}
+
+message GetParamResponse {
+     string value = 1;
+}

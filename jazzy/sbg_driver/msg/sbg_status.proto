@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_status_aiding.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_status_com.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_status_general.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgStatusGeneral status_general = 3;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgStatusCom status_com = 4;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgStatusAiding status_aiding = 5;
+}

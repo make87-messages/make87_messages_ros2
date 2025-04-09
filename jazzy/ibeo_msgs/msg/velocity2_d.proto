@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message Velocity2D {
+     int32 velocity_x = 1;
+     int32 velocity_y = 2;
+}

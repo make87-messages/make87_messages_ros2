@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+
+message LogRequestDataRequest {
+     uint32 id = 1;
+     uint32 offset = 2;
+     uint32 count = 3;
+}
+
+message LogRequestDataResponse {
+     bool success = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/jazzy/kartech_linear_actuator_msgs/msg/report_index.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ScheduledReportRatesReq {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool confirm = 2;
+     make87_messages_ros2.jazzy.kartech_linear_actuator_msgs.msg.ReportIndex index_1 = 3;
+     uint32 index_1_report_time = 4;
+     make87_messages_ros2.jazzy.kartech_linear_actuator_msgs.msg.ReportIndex index_2 = 5;
+     uint32 index_2_report_time = 6;
+}

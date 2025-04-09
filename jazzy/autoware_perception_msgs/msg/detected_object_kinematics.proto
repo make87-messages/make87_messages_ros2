@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_perception_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist_with_covariance.proto";
+
+message DetectedObjectKinematics {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance pose_with_covariance = 1;
+     bool has_position_covariance = 2;
+     uint32 orientation_availability = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.TwistWithCovariance twist_with_covariance = 4;
+     bool has_twist = 5;
+     bool has_twist_covariance = 6;
+}

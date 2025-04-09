@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message DiffDriveCmdVWVec {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated double v = 2;
+    repeated double w = 3;
+    repeated double delta_t = 4;
+    repeated double state0 = 5;
+}

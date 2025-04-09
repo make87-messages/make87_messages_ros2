@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_reservation_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_reservation_msgs/msg/flexible_time_reservation_alt.proto";
+import "make87_messages_ros2/rolling/rmf_reservation_msgs/msg/request_header.proto";
+
+message FlexibleTimeRequest {
+     make87_messages_ros2.rolling.rmf_reservation_msgs.msg.RequestHeader header = 1;
+    repeated make87_messages_ros2.rolling.rmf_reservation_msgs.msg.FlexibleTimeReservationAlt alternatives = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/sig_log_event.proto";
+
+message UBXSecSigLog {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 version = 2;
+     uint32 num_events = 3;
+    repeated make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SigLogEvent events = 4;
+}

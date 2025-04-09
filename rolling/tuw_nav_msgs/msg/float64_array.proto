@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+
+message Float64Array {
+    repeated double val = 1;
+}

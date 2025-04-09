@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_task_msgs.srv;
+
+
+message ReviveTaskRequest {
+     string requester = 1;
+     string task_id = 2;
+}
+
+message ReviveTaskResponse {
+     bool success = 1;
+}

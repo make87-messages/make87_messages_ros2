@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrStatus2 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 maximum_tracks_ack = 3;
+     uint32 rolling_count_2 = 4;
+     bool overheat_error = 5;
+     bool range_perf_error = 6;
+     bool internal_error = 7;
+     bool xcvr_operational = 8;
+     bool raw_data_mode = 9;
+     uint32 steering_angle_ack = 10;
+     int32 temperature = 11;
+     float veh_spd_comp_factor = 12;
+     uint32 grouping_mode = 13;
+     float yaw_rate_bias = 14;
+     string sw_version_dsp = 15;
+}

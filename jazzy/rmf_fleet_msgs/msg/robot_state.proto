@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_fleet_msgs/msg/location.proto";
+import "make87_messages_ros2/jazzy/rmf_fleet_msgs/msg/robot_mode.proto";
+
+message RobotState {
+     string name = 1;
+     string model = 2;
+     string task_id = 3;
+     uint64 seq = 4;
+     make87_messages_ros2.jazzy.rmf_fleet_msgs.msg.RobotMode mode = 5;
+     float battery_percent = 6;
+     make87_messages_ros2.jazzy.rmf_fleet_msgs.msg.Location location = 7;
+    repeated make87_messages_ros2.jazzy.rmf_fleet_msgs.msg.Location path = 8;
+}

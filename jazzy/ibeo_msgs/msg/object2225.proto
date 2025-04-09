@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/point2_df.proto";
+
+message Object2225 {
+     uint32 id = 1;
+     uint32 age = 2;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 3;
+     uint32 hidden_status_age = 4;
+     uint32 classification = 5;
+     uint32 classification_certainty = 6;
+     uint32 classification_age = 7;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df bounding_box_center = 8;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df bounding_box_size = 9;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df object_box_center = 10;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df object_box_center_sigma = 11;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df object_box_size = 12;
+     float yaw_angle = 13;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df relative_velocity = 14;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df relative_velocity_sigma = 15;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df absolute_velocity = 16;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df absolute_velocity_sigma = 17;
+     uint32 number_of_contour_points = 18;
+     uint32 closest_point_index = 19;
+    repeated make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Df contour_point_list = 20;
+}

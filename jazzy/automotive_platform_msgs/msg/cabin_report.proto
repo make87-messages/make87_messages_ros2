@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CabinReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool door_open_front_right = 2;
+     bool door_open_front_left = 3;
+     bool door_open_rear_right = 4;
+     bool door_open_rear_left = 5;
+     bool hood_open = 6;
+     bool trunk_open = 7;
+     bool passenger_present = 8;
+     bool passenger_airbag_enabled = 9;
+     bool seatbelt_engaged_driver = 10;
+     bool seatbelt_engaged_passenger = 11;
+}

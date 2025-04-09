@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message EsfINS {
+     uint32 bitfield0 = 1;
+    repeated uint32 reserved1 = 2;
+     uint32 i_tow = 3;
+     int32 x_ang_rate = 4;
+     int32 y_ang_rate = 5;
+     int32 z_ang_rate = 6;
+     int32 x_accel = 7;
+     int32 y_accel = 8;
+     int32 z_accel = 9;
+}

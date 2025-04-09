@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.type_description_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/type_description_interfaces/msg/individual_type_description.proto";
+
+message TypeDescription {
+     make87_messages_ros2.jazzy.type_description_interfaces.msg.IndividualTypeDescription type_description = 1;
+    repeated make87_messages_ros2.jazzy.type_description_interfaces.msg.IndividualTypeDescription referenced_type_descriptions = 2;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+import "make87_messages_ros2/jazzy/flexbe_msgs/msg/outcome_condition.proto";
+
+message StateInstantiation {
+     string state_path = 1;
+     string state_class = 2;
+     string initial_state_name = 3;
+    repeated string input_keys = 4;
+    repeated string output_keys = 5;
+    repeated string cond_outcome = 6;
+    repeated make87_messages_ros2.jazzy.flexbe_msgs.msg.OutcomeCondition cond_transition = 7;
+     string behavior_class = 8;
+    repeated string parameter_names = 9;
+    repeated string parameter_values = 10;
+    repeated float position = 11;
+    repeated string outcomes = 12;
+    repeated string transitions = 13;
+    repeated int32 autonomy = 14;
+    repeated string userdata_keys = 15;
+    repeated string userdata_remapping = 16;
+}

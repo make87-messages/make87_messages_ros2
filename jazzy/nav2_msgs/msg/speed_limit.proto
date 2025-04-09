@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SpeedLimit {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool percentage = 2;
+     double speed_limit = 3;
+}

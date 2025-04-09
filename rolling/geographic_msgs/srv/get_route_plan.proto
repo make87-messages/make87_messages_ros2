@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geographic_msgs.srv;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/route_path.proto";
+import "make87_messages_ros2/rolling/unique_identifier_msgs/msg/uuid.proto";
+
+message GetRoutePlanRequest {
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID network = 1;
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID start = 2;
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID goal = 3;
+}
+
+message GetRoutePlanResponse {
+     bool success = 1;
+     string status = 2;
+     make87_messages_ros2.rolling.geographic_msgs.msg.RoutePath plan = 3;
+}

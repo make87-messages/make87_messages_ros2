@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message OrientationConstraint {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Quaternion orientation = 2;
+     string link_name = 3;
+     double absolute_x_axis_tolerance = 4;
+     double absolute_y_axis_tolerance = 5;
+     double absolute_z_axis_tolerance = 6;
+     uint32 parameterization = 7;
+     double weight = 8;
+}

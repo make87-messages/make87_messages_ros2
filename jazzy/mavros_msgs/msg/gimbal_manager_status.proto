@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GimbalManagerStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 flags = 2;
+     uint32 gimbal_device_id = 3;
+     uint32 sysid_primary = 4;
+     uint32 compid_primary = 5;
+     uint32 sysid_secondary = 6;
+     uint32 compid_secondary = 7;
+}

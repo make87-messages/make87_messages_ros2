@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message ContourPointSigma {
+     int32 x = 1;
+     int32 y = 2;
+     uint32 x_sigma = 3;
+     uint32 y_sigma = 4;
+}

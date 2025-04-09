@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message CostmapMetaData {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time map_load_time = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time update_time = 2;
+     string layer = 3;
+     float resolution = 4;
+     uint32 size_x = 5;
+     uint32 size_y = 6;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose origin = 7;
+}

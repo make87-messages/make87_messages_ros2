@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_identity.proto";
+
+message RequestChangesRequest {
+     uint64 query_id = 1;
+     uint64 version = 2;
+     bool full_update = 3;
+}
+
+message RequestChangesResponse {
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleIdentity node_id = 1;
+     uint32 result = 2;
+     string error = 3;
+}

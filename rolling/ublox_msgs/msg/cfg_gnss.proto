@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/cfg_gnss_block.proto";
+
+message CfgGNSS {
+     uint32 msg_ver = 1;
+     uint32 num_trk_ch_hw = 2;
+     uint32 num_trk_ch_use = 3;
+     uint32 num_config_blocks = 4;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.CfgGNSSBlock blocks = 5;
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Inspva {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 2;
+     uint32 week = 3;
+     double seconds = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double height = 7;
+     double north_velocity = 8;
+     double east_velocity = 9;
+     double up_velocity = 10;
+     double roll = 11;
+     double pitch = 12;
+     double azimuth = 13;
+     string status = 14;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_dispenser_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message DispenserResult {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time time = 1;
+     string request_guid = 2;
+     string source_guid = 3;
+     uint32 status = 4;
+}

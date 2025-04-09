@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.irobot_create_msgs.srv;
+
+
+message RobotPowerRequest {
+}
+
+message RobotPowerResponse {
+     bool success = 1;
+     string message = 2;
+}

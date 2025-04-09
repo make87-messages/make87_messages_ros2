@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/motion_plan_request.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/motion_plan_response.proto";
+
+message PipelineState {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.MotionPlanRequest request = 1;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.MotionPlanResponse response = 2;
+     string pipeline_stage = 3;
+}

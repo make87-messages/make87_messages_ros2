@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/nav_msgs/msg/path.proto";
+
+message IsPathValidRequest {
+     make87_messages_ros2.jazzy.nav_msgs.msg.Path path = 1;
+}
+
+message IsPathValidResponse {
+     bool is_valid = 1;
+    repeated int32 invalid_pose_indices = 2;
+}

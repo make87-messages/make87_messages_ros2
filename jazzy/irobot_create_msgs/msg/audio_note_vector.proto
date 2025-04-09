@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/jazzy/irobot_create_msgs/msg/audio_note.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message AudioNoteVector {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.irobot_create_msgs.msg.AudioNote notes = 2;
+     bool append = 3;
+}

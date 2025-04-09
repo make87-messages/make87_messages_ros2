@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+
+message PathPoint {
+     double x = 1;
+     double y = 2;
+     float yaw = 3;
+     float speed = 4;
+}

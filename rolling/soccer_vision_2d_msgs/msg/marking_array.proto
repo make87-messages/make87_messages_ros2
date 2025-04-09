@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg;
+
+import "make87_messages_ros2/rolling/soccer_vision_2d_msgs/msg/marking_ellipse.proto";
+import "make87_messages_ros2/rolling/soccer_vision_2d_msgs/msg/marking_intersection.proto";
+import "make87_messages_ros2/rolling/soccer_vision_2d_msgs/msg/marking_segment.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MarkingArray {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg.MarkingEllipse ellipses = 2;
+    repeated make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg.MarkingIntersection intersections = 3;
+    repeated make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg.MarkingSegment segments = 4;
+}

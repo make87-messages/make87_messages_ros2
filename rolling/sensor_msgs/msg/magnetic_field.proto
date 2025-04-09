@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MagneticField {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 magnetic_field = 2;
+    repeated double magnetic_field_covariance = 3;
+}

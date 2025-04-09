@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/param.proto";
+
+message Node {
+     uint32 node_type = 1;
+     uint32 expression_type = 2;
+     uint32 modifier_type = 3;
+     uint32 node_id = 4;
+    repeated uint32 children = 5;
+     string name = 6;
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Param parameters = 7;
+     double value = 8;
+     bool negate = 9;
+}

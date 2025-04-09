@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message CommandTriggerIntervalRequest {
+     float cycle_time = 1;
+     float integration_time = 2;
+}
+
+message CommandTriggerIntervalResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

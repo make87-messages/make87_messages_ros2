@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/global_descriptor.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/laser_scan.proto";
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ScanDescriptor {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.LaserScan scan = 2;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.PointCloud2 scan_cloud = 3;
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.GlobalDescriptor global_descriptor = 4;
+}

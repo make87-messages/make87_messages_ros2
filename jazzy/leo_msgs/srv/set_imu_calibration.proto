@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.leo_msgs.srv;
+
+
+message SetImuCalibrationRequest {
+     double gyro_bias_x = 1;
+     double gyro_bias_y = 2;
+     double gyro_bias_z = 3;
+}
+
+message SetImuCalibrationResponse {
+     bool success = 1;
+}

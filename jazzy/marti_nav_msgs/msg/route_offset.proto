@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/marti_nav_msgs/msg/route_position.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RouteOffset {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose relative_pose = 2;
+     make87_messages_ros2.jazzy.marti_nav_msgs.msg.RoutePosition route_position = 3;
+}

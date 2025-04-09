@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+
+message PlanningSceneComponents {
+     uint32 components = 1;
+}

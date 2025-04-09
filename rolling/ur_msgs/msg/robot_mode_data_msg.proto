@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.msg;
+
+
+message RobotModeDataMsg {
+     uint64 timestamp = 1;
+     bool is_robot_connected = 2;
+     bool is_real_robot_enabled = 3;
+     bool is_power_on_robot = 4;
+     bool is_emergency_stopped = 5;
+     bool is_protective_stopped = 6;
+     bool is_program_running = 7;
+     bool is_program_paused = 8;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ibeo_msgs.msg;
+
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/scan_point2204.proto";
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/scanner_info2204.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ScanData2204 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 2;
+     uint64 scan_start_time = 3;
+     uint32 scan_end_time_offset = 4;
+     bool ground_labeled = 5;
+     bool dirt_labeled = 6;
+     bool rain_labeled = 7;
+     bool fused_scan = 8;
+     uint32 mirror_side = 9;
+     uint32 coordinate_system = 10;
+     uint32 scan_number = 11;
+     uint32 scan_points = 12;
+     uint32 number_of_scanner_infos = 13;
+    repeated make87_messages_ros2.rolling.ibeo_msgs.msg.ScannerInfo2204 scanner_info_list = 14;
+    repeated make87_messages_ros2.rolling.ibeo_msgs.msg.ScanPoint2204 scan_point_list = 15;
+}

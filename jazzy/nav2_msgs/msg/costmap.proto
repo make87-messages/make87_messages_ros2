@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/nav2_msgs/msg/costmap_meta_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Costmap {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.nav2_msgs.msg.CostmapMetaData metadata = 2;
+    repeated uint32 data = 3;
+}

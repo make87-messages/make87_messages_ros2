@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grasping_msgs.msg;
+
+
+message ObjectProperty {
+     string name = 1;
+     string value = 2;
+}

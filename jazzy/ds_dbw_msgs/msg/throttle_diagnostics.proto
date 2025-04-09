@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ThrottleDiagnostics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool degraded = 2;
+     bool degraded_cmd_type = 3;
+     bool degraded_comms = 4;
+     bool degraded_comms_dbw = 5;
+     bool degraded_comms_dbw_gateway = 6;
+     bool degraded_comms_dbw_steer = 7;
+     bool degraded_comms_dbw_brake = 8;
+     bool degraded_comms_dbw_gear = 9;
+     bool degraded_internal = 10;
+     bool degraded_control_performance = 11;
+     bool degraded_param_mismatch = 12;
+     bool degraded_vehicle = 13;
+     bool degraded_vehicle_speed = 14;
+     bool degraded_aped_feedback = 15;
+     bool degraded_actuator_pedal_sensor = 16;
+     bool degraded_sensor = 17;
+     bool degraded_calibration = 18;
+     bool fault = 19;
+     bool fault_power = 20;
+     bool fault_comms = 21;
+     bool fault_comms_dbw = 22;
+     bool fault_comms_dbw_gateway = 23;
+     bool fault_comms_dbw_steer = 24;
+     bool fault_comms_dbw_brake = 25;
+     bool fault_comms_dbw_gear = 26;
+     bool fault_internal = 27;
+     bool fault_vehicle = 28;
+     bool fault_vehicle_speed = 29;
+     bool fault_sensor = 30;
+     bool fault_aped_sensor_1 = 31;
+     bool fault_aped_sensor_2 = 32;
+     bool fault_aped_sensor_mismatch = 33;
+     bool fault_actuator_pedal_sensor = 34;
+     bool fault_control_performance = 35;
+     bool fault_param_mismatch = 36;
+     bool fault_param_limits = 37;
+     bool fault_calibration = 38;
+}

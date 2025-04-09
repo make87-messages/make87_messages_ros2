@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.vision_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/jazzy/vision_msgs/msg/object_hypothesis.proto";
+
+message ObjectHypothesisWithPose {
+     make87_messages_ros2.jazzy.vision_msgs.msg.ObjectHypothesis hypothesis = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance pose = 2;
+}

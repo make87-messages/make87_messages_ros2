@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.find_object_2d.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/float32_multi_array.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ObjectsStamped {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.std_msgs.msg.Float32MultiArray objects = 2;
+}

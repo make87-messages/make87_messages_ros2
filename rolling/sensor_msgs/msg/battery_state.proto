@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message BatteryState {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float voltage = 2;
+     float temperature = 3;
+     float current = 4;
+     float charge = 5;
+     float capacity = 6;
+     float design_capacity = 7;
+     float percentage = 8;
+     uint32 power_supply_status = 9;
+     uint32 power_supply_health = 10;
+     uint32 power_supply_technology = 11;
+     bool present = 12;
+    repeated float cell_voltage = 13;
+    repeated float cell_temperature = 14;
+     string location = 15;
+     string serial_number = 16;
+}

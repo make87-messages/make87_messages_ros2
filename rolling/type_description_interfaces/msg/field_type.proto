@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.type_description_interfaces.msg;
+
+
+message FieldType {
+     uint32 type_id = 1;
+     uint64 capacity = 2;
+     uint64 string_capacity = 3;
+     string nested_type_name = 4;
+}

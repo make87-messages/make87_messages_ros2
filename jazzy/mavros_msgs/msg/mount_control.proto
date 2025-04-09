@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MountControl {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 mode = 2;
+     float pitch = 3;
+     float roll = 4;
+     float yaw = 5;
+     float altitude = 6;
+     float latitude = 7;
+     float longitude = 8;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nmea_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Gpvtg {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     float track_t = 3;
+     string track_t_ref = 4;
+     float track_m = 5;
+     string track_m_ref = 6;
+     float speed_n = 7;
+     string speed_n_unit = 8;
+     float speed_k = 9;
+     string speed_k_unit = 10;
+     string mode_indicator = 11;
+}

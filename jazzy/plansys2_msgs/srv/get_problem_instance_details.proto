@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/param.proto";
+
+message GetProblemInstanceDetailsRequest {
+     string instance = 1;
+}
+
+message GetProblemInstanceDetailsResponse {
+     bool success = 1;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Param instance = 2;
+     string error_info = 3;
+}

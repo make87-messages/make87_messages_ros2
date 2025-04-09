@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/scan_point2208.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ScanData2208 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 2;
+     uint32 scan_number = 3;
+     uint32 scanner_type = 4;
+     bool motor_on = 5;
+     bool laser_on = 6;
+     bool frequency_locked = 7;
+     uint32 motor_rotating_direction = 8;
+     uint32 angle_ticks_per_rotation = 9;
+     uint32 scan_flags = 10;
+     int32 mounting_yaw_angle_ticks = 11;
+     int32 mounting_pitch_angle_ticks = 12;
+     int32 mounting_roll_angle_ticks = 13;
+     int32 mounting_position_x = 14;
+     int32 mounting_position_y = 15;
+     int32 mounting_position_z = 16;
+     uint32 device_id = 17;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_start_time = 18;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_end_time = 19;
+     int32 start_angle_ticks = 20;
+     int32 end_angle_ticks = 21;
+     uint32 mirror_side = 22;
+     int32 mirror_tilt = 23;
+    repeated make87_messages_ros2.jazzy.ibeo_msgs.msg.ScanPoint2208 scan_point_list = 24;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.srv;
+
+import "make87_messages_ros2/rolling/ros_gz_interfaces/msg/world_control.proto";
+
+message ControlWorldRequest {
+     make87_messages_ros2.rolling.ros_gz_interfaces.msg.WorldControl world_control = 1;
+}
+
+message ControlWorldResponse {
+     bool success = 1;
+}

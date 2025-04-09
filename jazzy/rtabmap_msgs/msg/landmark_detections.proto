@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/landmark_detection.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LandmarkDetections {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.LandmarkDetection landmarks = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message WheelStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 current_ma_left = 2;
+     int32 current_ma_right = 3;
+     int32 pwm_left = 4;
+     int32 pwm_right = 5;
+     bool wheels_enabled = 6;
+}

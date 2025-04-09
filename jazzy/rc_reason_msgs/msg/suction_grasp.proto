@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_stamped.proto";
+
+message SuctionGrasp {
+     string uuid = 1;
+     string item_uuid = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped pose = 3;
+     double quality = 4;
+     double max_suction_surface_length = 5;
+     double max_suction_surface_width = 6;
+}

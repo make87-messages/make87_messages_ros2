@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/mavros_msgs/msg/position_target.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Trajectory {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 type = 2;
+     make87_messages_ros2.rolling.mavros_msgs.msg.PositionTarget point_1 = 3;
+     make87_messages_ros2.rolling.mavros_msgs.msg.PositionTarget point_2 = 4;
+     make87_messages_ros2.rolling.mavros_msgs.msg.PositionTarget point_3 = 5;
+     make87_messages_ros2.rolling.mavros_msgs.msg.PositionTarget point_4 = 6;
+     make87_messages_ros2.rolling.mavros_msgs.msg.PositionTarget point_5 = 7;
+    repeated uint32 point_valid = 8;
+    repeated uint32 command = 9;
+    repeated float time_horizon = 10;
+}

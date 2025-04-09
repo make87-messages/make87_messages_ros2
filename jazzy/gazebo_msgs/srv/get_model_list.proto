@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GetModelListRequest {
+}
+
+message GetModelListResponse {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated string model_names = 2;
+     bool success = 3;
+}

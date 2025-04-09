@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_trajectory.proto";
+
+message MotionSequenceResponse {
+     make87_messages_ros2.rolling.moveit_msgs.msg.MoveItErrorCodes error_code = 1;
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState sequence_start = 2;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.RobotTrajectory planned_trajectories = 3;
+     double planning_time = 4;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message CfgPRT {
+     uint32 port_id = 1;
+     uint32 reserved0 = 2;
+     uint32 tx_ready = 3;
+     uint32 mode = 4;
+     uint32 baud_rate = 5;
+     uint32 in_proto_mask = 6;
+     uint32 out_proto_mask = 7;
+     uint32 flags = 8;
+     uint32 reserved1 = 9;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/accel.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/twist.proto";
+
+message CartesianPoint {
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Twist velocity = 2;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Accel acceleration = 3;
+}

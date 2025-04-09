@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+
+message UpdatePointcloudOctomapRequest {
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 cloud = 1;
+}
+
+message UpdatePointcloudOctomapResponse {
+     bool success = 1;
+}

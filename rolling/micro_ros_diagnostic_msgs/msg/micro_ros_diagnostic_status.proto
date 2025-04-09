@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.micro_ros_diagnostic_msgs.msg;
+
+import "make87_messages_ros2/rolling/micro_ros_diagnostic_msgs/msg/micro_ros_diagnostic_key_value.proto";
+
+message MicroROSDiagnosticStatus {
+     uint32 level = 1;
+     uint32 updater_id = 2;
+     uint32 hardware_id = 3;
+     uint32 number_of_values = 4;
+    repeated make87_messages_ros2.rolling.micro_ros_diagnostic_msgs.msg.MicroROSDiagnosticKeyValue values = 5;
+}

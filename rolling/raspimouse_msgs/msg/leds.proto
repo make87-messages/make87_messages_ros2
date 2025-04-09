@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.raspimouse_msgs.msg;
+
+
+message Leds {
+     bool led0 = 1;
+     bool led1 = 2;
+     bool led2 = 3;
+     bool led3 = 4;
+}

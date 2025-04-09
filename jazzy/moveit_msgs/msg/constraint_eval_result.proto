@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+
+message ConstraintEvalResult {
+     bool result = 1;
+     double distance = 2;
+}

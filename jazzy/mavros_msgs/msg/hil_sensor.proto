@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message HilSensor {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 acc = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 gyro = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 mag = 4;
+     float abs_pressure = 5;
+     float diff_pressure = 6;
+     float pressure_alt = 7;
+     float temperature = 8;
+     uint32 fields_updated = 9;
+}

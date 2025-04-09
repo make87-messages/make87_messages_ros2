@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nav_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/rolling/nav_msgs/msg/path.proto";
+
+message GetPlanRequest {
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseStamped start = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseStamped goal = 2;
+     float tolerance = 3;
+}
+
+message GetPlanResponse {
+     make87_messages_ros2.rolling.nav_msgs.msg.Path plan = 1;
+}

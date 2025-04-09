@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GlobalPositionTarget {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 coordinate_frame = 2;
+     uint32 type_mask = 3;
+     double latitude = 4;
+     double longitude = 5;
+     float altitude = 6;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 velocity = 7;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 acceleration_or_force = 8;
+     float yaw = 9;
+     float yaw_rate = 10;
+}

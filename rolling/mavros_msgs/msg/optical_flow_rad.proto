@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message OpticalFlowRad {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 integration_time_us = 2;
+     float integrated_x = 3;
+     float integrated_y = 4;
+     float integrated_xgyro = 5;
+     float integrated_ygyro = 6;
+     float integrated_zgyro = 7;
+     int32 temperature = 8;
+     uint32 quality = 9;
+     uint32 time_delta_distance_us = 10;
+     float distance = 11;
+}

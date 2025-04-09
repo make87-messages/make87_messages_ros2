@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smacc2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_event_generator.proto";
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_orthogonal.proto";
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_state_reactor.proto";
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_transition.proto";
+
+message SmaccState {
+     int32 index = 1;
+     string name = 2;
+    repeated string children_states = 3;
+     int32 level = 4;
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccTransition transitions = 5;
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccOrthogonal orthogonals = 6;
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccStateReactor state_reactors = 7;
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccEventGenerator event_generators = 8;
+}

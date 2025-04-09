@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/gripper_translation.proto";
+import "make87_messages_ros2/rolling/trajectory_msgs/msg/joint_trajectory.proto";
+
+message Grasp {
+     string id = 1;
+     make87_messages_ros2.rolling.trajectory_msgs.msg.JointTrajectory pre_grasp_posture = 2;
+     make87_messages_ros2.rolling.trajectory_msgs.msg.JointTrajectory grasp_posture = 3;
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseStamped grasp_pose = 4;
+     double grasp_quality = 5;
+     make87_messages_ros2.rolling.moveit_msgs.msg.GripperTranslation pre_grasp_approach = 6;
+     make87_messages_ros2.rolling.moveit_msgs.msg.GripperTranslation post_grasp_retreat = 7;
+     make87_messages_ros2.rolling.moveit_msgs.msg.GripperTranslation post_place_retreat = 8;
+     float max_contact_force = 9;
+    repeated string allowed_touch_objects = 10;
+}

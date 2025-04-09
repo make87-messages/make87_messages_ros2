@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_navigation_msgs.msg;
+
+import "make87_messages_ros2/jazzy/automotive_navigation_msgs/msg/point_of_interest.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message PointOfInterestArray {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 update_num = 2;
+    repeated make87_messages_ros2.jazzy.automotive_navigation_msgs.msg.PointOfInterest point_list = 3;
+}

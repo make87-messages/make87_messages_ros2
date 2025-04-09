@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/collision_detection.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/compartment.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/grasp.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/load_carrier.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/match.proto";
+
+message CadMatchDetectObjectRequest {
+     string template_id = 1;
+     string pose_frame = 2;
+     string region_of_interest_id = 3;
+     string load_carrier_id = 4;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Compartment load_carrier_compartment = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 6;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.CollisionDetection collision_detection = 7;
+    repeated string pose_prior_ids = 8;
+     string data_acquisition_mode = 9;
+}
+
+message CadMatchDetectObjectResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 1;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Match matches = 2;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Grasp grasps = 3;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.LoadCarrier load_carriers = 4;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 5;
+}

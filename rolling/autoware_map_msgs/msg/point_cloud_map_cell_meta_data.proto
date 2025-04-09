@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_map_msgs.msg;
+
+
+message PointCloudMapCellMetaData {
+     float min_x = 1;
+     float min_y = 2;
+     float max_x = 3;
+     float max_y = 4;
+}

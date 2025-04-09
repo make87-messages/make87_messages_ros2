@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/tuw_multi_robot_msgs/msg/station.proto";
+
+message Order {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 order_id = 2;
+     string order_name = 3;
+    repeated make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg.Station stations = 4;
+}

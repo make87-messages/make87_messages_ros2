@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message VehicleControl {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 engine = 2;
+     int32 gear = 3;
+     double steering = 4;
+     double throttle = 5;
+     double brake = 6;
+     int32 steering_position = 7;
+     int32 gb_position = 8;
+}

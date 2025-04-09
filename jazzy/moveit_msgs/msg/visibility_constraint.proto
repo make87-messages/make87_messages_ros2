@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_stamped.proto";
+
+message VisibilityConstraint {
+     double target_radius = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped target_pose = 2;
+     int32 cone_sides = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped sensor_pose = 4;
+     double max_view_angle = 5;
+     double max_range_angle = 6;
+     uint32 sensor_view_direction = 7;
+     double weight = 8;
+}

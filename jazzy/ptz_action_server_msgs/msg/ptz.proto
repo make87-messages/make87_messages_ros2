@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ptz_action_server_msgs.msg;
+
+
+message Ptz {
+     float pan = 1;
+     float tilt = 2;
+     float zoom = 3;
+}

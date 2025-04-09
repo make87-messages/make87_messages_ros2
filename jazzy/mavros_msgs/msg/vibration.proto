@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Vibration {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 vibration = 2;
+    repeated float clipping = 3;
+}

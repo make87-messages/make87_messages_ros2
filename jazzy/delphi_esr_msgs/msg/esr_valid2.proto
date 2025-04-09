@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrValid2 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 mr_sn = 3;
+     float mr_range = 4;
+     float mr_range_rate = 5;
+     float mr_angle = 6;
+     int32 mr_power = 7;
+}

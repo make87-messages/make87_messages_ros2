@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.object_recognition_msgs.srv;
+
+import "make87_messages_ros2/rolling/object_recognition_msgs/msg/object_information.proto";
+import "make87_messages_ros2/rolling/object_recognition_msgs/msg/object_type.proto";
+
+message GetObjectInformationRequest {
+     make87_messages_ros2.rolling.object_recognition_msgs.msg.ObjectType type = 1;
+}
+
+message GetObjectInformationResponse {
+     make87_messages_ros2.rolling.object_recognition_msgs.msg.ObjectInformation information = 1;
+}

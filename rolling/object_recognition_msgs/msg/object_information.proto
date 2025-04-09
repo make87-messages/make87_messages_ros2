@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.object_recognition_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/rolling/shape_msgs/msg/mesh.proto";
+
+message ObjectInformation {
+     string name = 1;
+     make87_messages_ros2.rolling.shape_msgs.msg.Mesh ground_truth_mesh = 2;
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 ground_truth_point_cloud = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.wiimote_msgs.msg;
+
+
+message IrSourceInfo {
+     double x = 1;
+     double y = 2;
+     int64 ir_size = 3;
+}

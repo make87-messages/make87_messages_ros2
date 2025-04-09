@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/blockade_status.proto";
+
+message BlockadeHeartbeat {
+    repeated make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.BlockadeStatus statuses = 1;
+     bool has_gridlock = 2;
+}

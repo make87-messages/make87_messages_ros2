@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.visualization_msgs.msg;
+
+import "make87_messages_ros2/jazzy/visualization_msgs/msg/interactive_marker.proto";
+import "make87_messages_ros2/jazzy/visualization_msgs/msg/interactive_marker_pose.proto";
+
+message InteractiveMarkerUpdate {
+     string server_id = 1;
+     uint64 seq_num = 2;
+     uint32 type = 3;
+    repeated make87_messages_ros2.jazzy.visualization_msgs.msg.InteractiveMarker markers = 4;
+    repeated make87_messages_ros2.jazzy.visualization_msgs.msg.InteractiveMarkerPose poses = 5;
+    repeated string erases = 6;
+}

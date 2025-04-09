@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_msgs.srv;
+
+import "make87_messages_ros2/rolling/tuw_object_msgs/msg/shape_array.proto";
+
+message GetShapeArrayRequest {
+}
+
+message GetShapeArrayResponse {
+     make87_messages_ros2.rolling.tuw_object_msgs.msg.ShapeArray shapes = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mqtt_client_interfaces.srv;
+
+
+message NewMqtt2RosBridgeRequest {
+     string ros_topic = 1;
+     string mqtt_topic = 2;
+     bool primitive = 3;
+     uint32 mqtt_qos = 4;
+     uint32 ros_queue_size = 5;
+     bool ros_latched = 6;
+}
+
+message NewMqtt2RosBridgeResponse {
+     bool success = 1;
+}

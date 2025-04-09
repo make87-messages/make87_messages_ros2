@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_scheduler_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rmf_scheduler_msgs/msg/schedule.proto";
+
+message CreateScheduleRequest {
+     make87_messages_ros2.jazzy.rmf_scheduler_msgs.msg.Schedule schedule = 1;
+}
+
+message CreateScheduleResponse {
+     bool success = 1;
+     string message = 2;
+}

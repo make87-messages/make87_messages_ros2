@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message WaypointPullRequest {
+}
+
+message WaypointPullResponse {
+     bool success = 1;
+     uint32 wp_received = 2;
+}

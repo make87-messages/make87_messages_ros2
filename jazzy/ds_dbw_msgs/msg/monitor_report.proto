@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MonitorReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool fault = 2;
+     bool shutoff = 3;
+     bool shutoff_on_motion = 4;
+     bool stationary = 5;
+     uint32 fault_test = 6;
+     uint32 fault_system = 7;
+     uint32 fault_steer = 8;
+     uint32 fault_brake = 9;
+     uint32 fault_thrtl = 10;
+     uint32 fault_gear = 11;
+     uint32 fault_ulc = 12;
+     uint32 fault_vehicle_velocity = 13;
+     uint32 fault_steer_feedback = 14;
+     uint32 fault_steer_input = 15;
+     uint32 fault_steer_param = 16;
+     uint32 fault_steer_limit = 17;
+     uint32 fault_steer_override = 18;
+     uint32 fault_steer_cmd = 19;
+     uint32 fault_steer_cmd_rate = 20;
+     uint32 fault_steer_cmd_en = 21;
+     uint32 fault_steer_cmd_sys = 22;
+     uint32 fault_steer_cmd_ovr = 23;
+     uint32 fault_brake_feedback = 24;
+     uint32 fault_brake_input = 25;
+     uint32 fault_brake_param = 26;
+     uint32 fault_brake_limit = 27;
+     uint32 fault_brake_override = 28;
+     uint32 fault_brake_cmd = 29;
+     uint32 fault_brake_cmd_ulc = 30;
+     uint32 fault_brake_cmd_en = 31;
+     uint32 fault_brake_cmd_sys = 32;
+     uint32 fault_brake_cmd_ovr = 33;
+     uint32 fault_thrtl_feedback = 34;
+     uint32 fault_thrtl_input = 35;
+     uint32 fault_thrtl_param = 36;
+     uint32 fault_thrtl_limit = 37;
+     uint32 fault_thrtl_override = 38;
+     uint32 fault_thrtl_cmd = 39;
+     uint32 fault_thrtl_cmd_ulc = 40;
+     uint32 fault_thrtl_cmd_en = 41;
+     uint32 fault_thrtl_cmd_sys = 42;
+     uint32 fault_thrtl_cmd_ovr = 43;
+     uint32 fault_gear_feedback = 44;
+     uint32 fault_gear_input = 45;
+     uint32 fault_gear_param = 46;
+     uint32 fault_gear_override = 47;
+     uint32 fault_gear_cmd = 48;
+     uint32 fault_gear_cmd_ulc = 49;
+     uint32 fault_system_param = 50;
+     bool steer_cmd_match_oem = 51;
+     bool steer_cmd_match_dbw = 52;
+     bool brake_cmd_match_oem = 53;
+     bool brake_cmd_match_dbw = 54;
+     bool thrtl_cmd_match_oem = 55;
+     bool thrtl_cmd_match_dbw = 56;
+     bool gear_cmd_match_oem = 57;
+     bool gear_cmd_match_dbw = 58;
+}

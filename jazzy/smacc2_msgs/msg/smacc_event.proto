@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smacc2_msgs.msg;
+
+
+message SmaccEvent {
+     string event_type = 1;
+     string event_object_tag = 2;
+     string event_source = 3;
+     string label = 4;
+}

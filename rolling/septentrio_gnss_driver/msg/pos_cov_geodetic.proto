@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PosCovGeodetic {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 mode = 3;
+     uint32 error = 4;
+     float cov_latlat = 5;
+     float cov_lonlon = 6;
+     float cov_hgthgt = 7;
+     float cov_bb = 8;
+     float cov_latlon = 9;
+     float cov_lathgt = 10;
+     float cov_latb = 11;
+     float cov_lonhgt = 12;
+     float cov_lonb = 13;
+     float cov_hb = 14;
+}

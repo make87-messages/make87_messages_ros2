@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message FileRenameRequest {
+     string old_path = 1;
+     string new_path = 2;
+}
+
+message FileRenameResponse {
+     bool success = 1;
+     int32 r_errno = 2;
+}

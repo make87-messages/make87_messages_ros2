@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/esf_meas_data_item.proto";
+
+message UBXEsfMeas {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_tag = 2;
+     uint32 time_mark_sent = 3;
+     bool time_mark_edge = 4;
+     bool calib_ttag_valid = 5;
+     uint32 num_meas = 6;
+     uint32 id = 7;
+    repeated make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.ESFMeasDataItem data = 8;
+     uint32 calib_ttag = 9;
+}

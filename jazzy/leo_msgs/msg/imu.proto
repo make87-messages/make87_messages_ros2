@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.leo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message Imu {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     float temperature = 2;
+     float gyro_x = 3;
+     float gyro_y = 4;
+     float gyro_z = 5;
+     float accel_x = 6;
+     float accel_y = 7;
+     float accel_z = 8;
+}

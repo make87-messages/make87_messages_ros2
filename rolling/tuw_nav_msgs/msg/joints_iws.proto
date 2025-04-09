@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message JointsIWS {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string type_steering = 2;
+     string type_revolute = 3;
+    repeated double steering = 4;
+    repeated double revolute = 5;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros2cli_test_interfaces.srv;
+
+import "make87_messages_ros2/rolling/ros2cli_test_interfaces/msg/short_varied_nested.proto";
+
+message ShortVariedMultiNestedRequest {
+     make87_messages_ros2.rolling.ros2cli_test_interfaces.msg.ShortVariedNested short_varied_nested = 1;
+}
+
+message ShortVariedMultiNestedResponse {
+     bool bool_value = 1;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+import "make87_messages_ros2/jazzy/mavros_msgs/msg/vehicle_info.proto";
+
+message VehicleInfoGetRequest {
+     uint32 sysid = 1;
+     uint32 compid = 2;
+     bool get_all = 3;
+}
+
+message VehicleInfoGetResponse {
+     bool success = 1;
+    repeated make87_messages_ros2.jazzy.mavros_msgs.msg.VehicleInfo vehicles = 2;
+}

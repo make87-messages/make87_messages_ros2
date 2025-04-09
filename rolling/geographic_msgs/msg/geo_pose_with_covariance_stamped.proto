@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geographic_msgs.msg;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/geo_pose_with_covariance.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GeoPoseWithCovarianceStamped {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.geographic_msgs.msg.GeoPoseWithCovariance pose = 2;
+}

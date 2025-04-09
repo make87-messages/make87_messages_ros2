@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/tuw_multi_robot_msgs/msg/route_precondition.proto";
+
+message RouteSegment {
+     int32 segment_id = 1;
+    repeated make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg.RoutePrecondition preconditions = 2;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose start = 3;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose end = 4;
+     float width = 5;
+}

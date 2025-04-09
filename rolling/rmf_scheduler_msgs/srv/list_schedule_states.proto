@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_scheduler_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_scheduler_msgs/msg/schedule_state.proto";
+
+message ListScheduleStatesRequest {
+     int64 modified_after = 1;
+}
+
+message ListScheduleStatesResponse {
+     bool success = 1;
+     string message = 2;
+    repeated make87_messages_ros2.rolling.rmf_scheduler_msgs.msg.ScheduleState schedules = 3;
+}

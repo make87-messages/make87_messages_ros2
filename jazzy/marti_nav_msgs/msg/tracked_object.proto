@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message TrackedObject {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance pose = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.TwistWithCovariance velocity = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 linear_acceleration = 5;
+    repeated double linear_acceleration_covariance = 6;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Point polygon = 7;
+     float length = 8;
+     float length_quality = 9;
+     float width = 10;
+     float width_quality = 11;
+     uint32 classification = 12;
+     float classification_quality = 13;
+     float existence_probability = 14;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration age_duration = 15;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration prediction_duration = 16;
+     bool active = 17;
+}

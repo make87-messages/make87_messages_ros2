@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/planner_params.proto";
+
+message GetPlannerParamsRequest {
+     string pipeline_id = 1;
+     string planner_config = 2;
+     string group = 3;
+}
+
+message GetPlannerParamsResponse {
+     make87_messages_ros2.rolling.moveit_msgs.msg.PlannerParams params = 1;
+}

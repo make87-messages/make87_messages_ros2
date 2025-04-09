@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.game_controller_spl_interfaces.msg;
+
+import "make87_messages_ros2/rolling/game_controller_spl_interfaces/msg/robot_info15.proto";
+
+message TeamInfo15 {
+     uint32 team_number = 1;
+     uint32 field_player_colour = 2;
+     uint32 goalkeeper_colour = 3;
+     uint32 goalkeeper = 4;
+     uint32 team_colour = 5;
+     uint32 score = 6;
+     uint32 penalty_shot = 7;
+     uint32 single_shots = 8;
+     uint32 message_budget = 9;
+    repeated make87_messages_ros2.rolling.game_controller_spl_interfaces.msg.RobotInfo15 players = 10;
+}

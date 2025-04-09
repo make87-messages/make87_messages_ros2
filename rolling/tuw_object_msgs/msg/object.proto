@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/twist.proto";
+
+message Object {
+    repeated int32 ids = 1;
+     int32 shape = 2;
+    repeated double shape_variables = 3;
+    repeated double ids_confidence = 4;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 5;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Twist twist = 6;
+}

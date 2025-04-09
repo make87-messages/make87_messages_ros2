@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.msg;
+
+
+message ParameterValue {
+     uint32 type = 1;
+     bool bool_value = 2;
+     int64 integer_value = 3;
+     double double_value = 4;
+     string string_value = 5;
+    repeated uint32 byte_array_value = 6;
+    repeated bool bool_array_value = 7;
+    repeated int64 integer_array_value = 8;
+    repeated double double_array_value = 9;
+    repeated string string_array_value = 10;
+}

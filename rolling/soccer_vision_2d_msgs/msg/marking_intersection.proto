@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg;
+
+import "make87_messages_ros2/rolling/soccer_vision_attribute_msgs/msg/confidence.proto";
+import "make87_messages_ros2/rolling/vision_msgs/msg/point2_d.proto";
+
+message MarkingIntersection {
+     make87_messages_ros2.rolling.vision_msgs.msg.Point2D center = 1;
+     int32 num_rays = 2;
+    repeated double heading_rays = 3;
+     make87_messages_ros2.rolling.soccer_vision_attribute_msgs.msg.Confidence confidence = 4;
+}

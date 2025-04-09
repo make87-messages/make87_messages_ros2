@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/cartesian_point.proto";
+
+message CartesianTrajectoryPoint {
+     make87_messages_ros2.rolling.moveit_msgs.msg.CartesianPoint point = 1;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration time_from_start = 2;
+}

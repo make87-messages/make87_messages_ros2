@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbridge_test_msgs.srv;
+
+
+message TestResponseOnlyRequest {
+}
+
+message TestResponseOnlyResponse {
+     int32 data = 1;
+}

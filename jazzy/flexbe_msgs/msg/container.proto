@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+
+message Container {
+     int32 state_id = 1;
+     string path = 2;
+    repeated string children = 3;
+    repeated string outcomes = 4;
+    repeated string transitions = 5;
+     int32 type = 6;
+    repeated int32 autonomy = 7;
+}

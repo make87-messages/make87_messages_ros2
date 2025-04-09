@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geographic_msgs.msg;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/geo_point.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/quaternion.proto";
+
+message GeoPose {
+     make87_messages_ros2.rolling.geographic_msgs.msg.GeoPoint position = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Quaternion orientation = 2;
+}

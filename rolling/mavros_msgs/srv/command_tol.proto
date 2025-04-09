@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message CommandTOLRequest {
+     float min_pitch = 1;
+     float yaw = 2;
+     float latitude = 3;
+     float longitude = 4;
+     float altitude = 5;
+}
+
+message CommandTOLResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

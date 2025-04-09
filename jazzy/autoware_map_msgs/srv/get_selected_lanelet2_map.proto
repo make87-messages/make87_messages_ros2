@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_map_msgs.srv;
+
+import "make87_messages_ros2/jazzy/autoware_map_msgs/msg/lanelet_map_bin.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GetSelectedLanelet2MapRequest {
+    repeated string cell_ids = 1;
+}
+
+message GetSelectedLanelet2MapResponse {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.autoware_map_msgs.msg.LaneletMapBin lanelet2_cells = 2;
+}

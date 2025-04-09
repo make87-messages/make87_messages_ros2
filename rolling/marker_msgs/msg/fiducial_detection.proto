@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marker_msgs.msg;
+
+import "make87_messages_ros2/rolling/marker_msgs/msg/fiducial.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message FiducialDetection {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated double camera_d = 2;
+    repeated double camera_k = 3;
+     string type = 4;
+    repeated make87_messages_ros2.rolling.marker_msgs.msg.Fiducial fiducial = 5;
+}

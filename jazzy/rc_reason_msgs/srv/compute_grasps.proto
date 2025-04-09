@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/collision_detection.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/compartment.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/item.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/item_model.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/load_carrier.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/suction_grasp.proto";
+
+message ComputeGraspsRequest {
+     string pose_frame = 1;
+     string region_of_interest_id = 2;
+     string load_carrier_id = 3;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Compartment load_carrier_compartment = 4;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.ItemModel item_models = 5;
+     double suction_surface_length = 6;
+     double suction_surface_width = 7;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 8;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.CollisionDetection collision_detection = 9;
+}
+
+message ComputeGraspsResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 1;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Item items = 2;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.LoadCarrier load_carriers = 3;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.SuctionGrasp grasps = 4;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 5;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.yasmin_msgs.msg;
+
+import "make87_messages_ros2/rolling/yasmin_msgs/msg/transition.proto";
+
+message State {
+     int32 id = 1;
+     int32 parent = 2;
+     string name = 3;
+    repeated make87_messages_ros2.rolling.yasmin_msgs.msg.Transition transitions = 4;
+    repeated string outcomes = 5;
+     bool is_fsm = 6;
+     int32 current_state = 7;
+}

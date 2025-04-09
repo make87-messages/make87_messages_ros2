@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavDGPSSV {
+     uint32 svid = 1;
+     uint32 flags = 2;
+     uint32 age_c = 3;
+     float prc = 4;
+     float prrc = 5;
+}

@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ibeo_msgs.msg;
+
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/point2_di.proto";
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/size2_d.proto";
+
+message Object2221 {
+     uint32 id = 1;
+     uint32 age = 2;
+     uint32 prediction_age = 3;
+     uint32 relative_timestamp = 4;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di reference_point = 5;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di reference_point_sigma = 6;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di closest_point = 7;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di bounding_box_center = 8;
+     uint32 bounding_box_width = 9;
+     uint32 bounding_box_length = 10;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di object_box_center = 11;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Size2D object_box_size = 12;
+     int32 object_box_orientation = 13;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di absolute_velocity = 14;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Size2D absolute_velocity_sigma = 15;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di relative_velocity = 16;
+     uint32 classification = 17;
+     uint32 classification_age = 18;
+     uint32 classification_certainty = 19;
+     uint32 number_of_contour_points = 20;
+    repeated make87_messages_ros2.rolling.ibeo_msgs.msg.Point2Di contour_point_list = 21;
+}

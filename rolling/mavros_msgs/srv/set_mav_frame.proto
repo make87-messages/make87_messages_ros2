@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message SetMavFrameRequest {
+     uint32 mav_frame = 1;
+}
+
+message SetMavFrameResponse {
+     bool success = 1;
+}

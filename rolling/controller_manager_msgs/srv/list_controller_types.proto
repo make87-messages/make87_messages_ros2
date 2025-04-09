@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.srv;
+
+
+message ListControllerTypesRequest {
+}
+
+message ListControllerTypesResponse {
+    repeated string types = 1;
+    repeated string base_classes = 2;
+}

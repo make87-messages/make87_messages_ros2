@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.std_srvs.srv;
+
+
+message TriggerRequest {
+}
+
+message TriggerResponse {
+     bool success = 1;
+     string message = 2;
+}

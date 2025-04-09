@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.type_description_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/type_description_interfaces/msg/field_type.proto";
+
+message Field {
+     string name = 1;
+     make87_messages_ros2.jazzy.type_description_interfaces.msg.FieldType type = 2;
+     string default_value = 3;
+}

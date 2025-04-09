@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+
+message Waypoint {
+     uint32 frame = 1;
+     uint32 command = 2;
+     bool is_current = 3;
+     bool autocontinue = 4;
+     float param1 = 5;
+     float param2 = 6;
+     float param3 = 7;
+     float param4 = 8;
+     double x_lat = 9;
+     double y_long = 10;
+     double z_alt = 11;
+}

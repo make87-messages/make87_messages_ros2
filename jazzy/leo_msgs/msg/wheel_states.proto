@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.leo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message WheelStates {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+    repeated float position = 2;
+    repeated float velocity = 3;
+    repeated float torque = 4;
+    repeated float pwm_duty_cycle = 5;
+}

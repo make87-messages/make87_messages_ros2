@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message TimesyncStatus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint64 remote_timestamp_ns = 2;
+     int64 observed_offset_ns = 3;
+     int64 estimated_offset_ns = 4;
+     float round_trip_time_ms = 5;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.neobotix_usboard_msgs.msg;
+
+
+message SensorData {
+     uint32 distance = 1;
+     bool warn = 2;
+     bool alarm = 3;
+     bool active = 4;
+}

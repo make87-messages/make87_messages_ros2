@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message TeleopState {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated int32 teleop_signals = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.robot_localization.srv;
+
+
+message SetUTMZoneRequest {
+     string utm_zone = 1;
+}
+
+message SetUTMZoneResponse {
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geographic_msgs.msg;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/geo_point.proto";
+
+message BoundingBox {
+     make87_messages_ros2.rolling.geographic_msgs.msg.GeoPoint min_pt = 1;
+     make87_messages_ros2.rolling.geographic_msgs.msg.GeoPoint max_pt = 2;
+}

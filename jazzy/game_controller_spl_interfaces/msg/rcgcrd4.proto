@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.game_controller_spl_interfaces.msg;
+
+
+message RCGCRD4 {
+     uint32 player_num = 1;
+     uint32 team_num = 2;
+     uint32 fallen = 3;
+    repeated float pose = 4;
+     float ball_age = 5;
+    repeated float ball = 6;
+}

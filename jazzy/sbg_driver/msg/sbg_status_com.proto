@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgStatusCom {
+     bool port_a = 1;
+     bool port_b = 2;
+     bool port_c = 3;
+     bool port_d = 4;
+     bool port_e = 5;
+     bool port_a_rx = 6;
+     bool port_a_tx = 7;
+     bool port_b_rx = 8;
+     bool port_b_tx = 9;
+     bool port_c_rx = 10;
+     bool port_c_tx = 11;
+     bool port_d_rx = 12;
+     bool port_d_tx = 13;
+     bool port_e_rx = 14;
+     bool port_e_tx = 15;
+     bool eth_0 = 16;
+     bool eth_1 = 17;
+     bool eth_2 = 18;
+     bool eth_3 = 19;
+     bool eth_4 = 20;
+     bool eth_0_rx = 21;
+     bool eth_0_tx = 22;
+     bool eth_1_rx = 23;
+     bool eth_1_tx = 24;
+     bool eth_2_rx = 25;
+     bool eth_2_tx = 26;
+     bool eth_3_rx = 27;
+     bool eth_3_tx = 28;
+     bool eth_4_rx = 29;
+     bool eth_4_tx = 30;
+     bool can_rx = 31;
+     bool can_tx = 32;
+     uint32 can_status = 33;
+}

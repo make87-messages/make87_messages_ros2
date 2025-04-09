@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/ros_gz_interfaces/msg/world_reset.proto";
+
+message WorldControl {
+     bool pause = 1;
+     bool step = 2;
+     uint32 multi_step = 3;
+     make87_messages_ros2.rolling.ros_gz_interfaces.msg.WorldReset reset = 4;
+     uint32 seed = 5;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time run_to_sim_time = 6;
+}

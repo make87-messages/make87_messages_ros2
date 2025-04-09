@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.pcl_msgs.msg;
+
+
+message Vertices {
+    repeated uint32 vertices = 1;
+}

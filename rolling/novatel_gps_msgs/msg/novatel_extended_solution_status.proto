@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+
+message NovatelExtendedSolutionStatus {
+     uint32 original_mask = 1;
+     bool advance_rtk_verified = 2;
+     string psuedorange_iono_correction = 3;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/esf_raw_block.proto";
+
+message EsfRAW {
+    repeated uint32 reserved0 = 1;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.EsfRAWBlock blocks = 2;
+}

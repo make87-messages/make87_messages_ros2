@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrDetection {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 detection_id = 2;
+     uint32 confid_azimuth = 3;
+     bool super_res_target = 4;
+     bool nd_target = 5;
+     bool host_veh_clutter = 6;
+     bool valid_level = 7;
+     float azimuth = 8;
+     float range = 9;
+     float range_rate = 10;
+     int32 amplitude = 11;
+     uint32 index_2lsb = 12;
+}

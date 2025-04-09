@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.srv;
+
+
+message NovatelFRESETRequest {
+     string target = 1;
+}
+
+message NovatelFRESETResponse {
+     bool success = 1;
+}

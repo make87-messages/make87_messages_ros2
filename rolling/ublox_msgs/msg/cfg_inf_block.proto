@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message CfgINFBlock {
+     uint32 protocol_id = 1;
+    repeated uint32 reserved1 = 2;
+    repeated uint32 inf_msg_mask = 3;
+}

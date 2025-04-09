@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrStatus4 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     bool truck_target_det = 3;
+     bool lr_only_grating_lobe_det = 4;
+     bool sidelobe_blockage = 5;
+     bool partial_blockage = 6;
+     uint32 mr_lr_mode = 7;
+     uint32 rolling_count_3 = 8;
+     uint32 path_id_acc = 9;
+     uint32 path_id_cmbb_move = 10;
+     uint32 path_id_cmbb_stat = 11;
+     uint32 path_id_fcw_move = 12;
+     uint32 path_id_fcw_stat = 13;
+     float auto_align_angle = 14;
+     uint32 path_id_acc_stat = 15;
+}

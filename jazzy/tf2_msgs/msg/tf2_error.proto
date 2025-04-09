@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.tf2_msgs.msg;
+
+
+message TF2Error {
+     uint32 error = 1;
+     string error_string = 2;
+}

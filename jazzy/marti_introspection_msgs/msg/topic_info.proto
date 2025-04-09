@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_introspection_msgs.msg;
+
+
+message TopicInfo {
+     string name = 1;
+     string resolved_name = 2;
+     string description = 3;
+     string group = 4;
+     string message_type = 5;
+     bool advertised = 6;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Ultrasonic {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float minimum_distance = 2;
+}

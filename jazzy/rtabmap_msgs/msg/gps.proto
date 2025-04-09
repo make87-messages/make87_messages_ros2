@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+
+message GPS {
+     double stamp = 1;
+     double longitude = 2;
+     double latitude = 3;
+     double altitude = 4;
+     double error = 5;
+     double bearing = 6;
+}

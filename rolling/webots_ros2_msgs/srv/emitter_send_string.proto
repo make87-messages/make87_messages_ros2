@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.webots_ros2_msgs.srv;
+
+
+message EmitterSendStringRequest {
+     string value = 1;
+}
+
+message EmitterSendStringResponse {
+     int64 result = 1;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_navigation_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message CommandWithHandshake {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 msg_counter = 2;
+     int32 command = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.srv;
+
+
+message UnregisterParticipantRequest {
+     uint64 participant_id = 1;
+}
+
+message UnregisterParticipantResponse {
+     bool confirmation = 1;
+     string error = 2;
+}

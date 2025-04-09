@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marine_acoustic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Dvl {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 velocity_mode = 2;
+     uint32 dvl_type = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity = 4;
+    repeated double velocity_covar = 5;
+     double altitude = 6;
+     double course_gnd = 7;
+     double speed_gnd = 8;
+     uint32 num_good_beams = 9;
+     float sound_speed = 10;
+     bool beam_ranges_valid = 11;
+     bool beam_velocities_valid = 12;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 beam_unit_vec = 13;
+    repeated double range = 14;
+    repeated float range_covar = 15;
+    repeated float beam_quality = 16;
+    repeated float beam_velocity = 17;
+    repeated float beam_velocity_covar = 18;
+}

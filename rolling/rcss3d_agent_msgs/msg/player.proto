@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/spherical.proto";
+
+message Player {
+     string team = 1;
+     int32 id = 2;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical head = 3;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical rlowerarm = 4;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical llowerarm = 5;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical rfoot = 6;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Spherical lfoot = 7;
+}

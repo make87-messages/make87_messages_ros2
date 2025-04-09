@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message ScannerInfo2204 {
+     uint32 device_id = 1;
+     uint32 scanner_type = 2;
+     uint32 scan_number = 3;
+     float start_angle = 4;
+     float end_angle = 5;
+     float yaw_angle = 6;
+     float pitch_angle = 7;
+     float roll_angle = 8;
+     float offset_x = 9;
+     float offset_y = 10;
+     float offset_z = 11;
+}

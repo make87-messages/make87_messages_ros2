@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ublox_msgs/msg/nav_sbassv.proto";
+
+message NavSBAS {
+     uint32 i_tow = 1;
+     uint32 geo = 2;
+     uint32 mode = 3;
+     int32 sys = 4;
+     uint32 service = 5;
+     uint32 cnt = 6;
+    repeated uint32 reserved0 = 7;
+    repeated make87_messages_ros2.jazzy.ublox_msgs.msg.NavSBASSV sv = 8;
+}

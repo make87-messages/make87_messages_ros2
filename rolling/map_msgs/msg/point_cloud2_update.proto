@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.map_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/point_cloud2.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PointCloud2Update {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 type = 2;
+     make87_messages_ros2.rolling.sensor_msgs.msg.PointCloud2 points = 3;
+}

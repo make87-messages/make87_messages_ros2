@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.visualization_msgs.msg;
+
+
+message MeshFile {
+     string filename = 1;
+    repeated uint32 data = 2;
+}

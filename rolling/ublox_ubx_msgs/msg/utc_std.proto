@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message UtcStd {
+     uint32 id = 1;
+}

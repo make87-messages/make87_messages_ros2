@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nmea_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Gprmc {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     double utc_seconds = 3;
+     string position_status = 4;
+     double lat = 5;
+     double lon = 6;
+     string lat_dir = 7;
+     string lon_dir = 8;
+     float speed = 9;
+     float track = 10;
+     string date = 11;
+     float mag_var = 12;
+     string mag_var_direction = 13;
+     string mode_indicator = 14;
+}

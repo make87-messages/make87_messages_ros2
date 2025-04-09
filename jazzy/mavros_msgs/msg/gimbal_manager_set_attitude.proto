@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/quaternion.proto";
+
+message GimbalManagerSetAttitude {
+     uint32 target_system = 1;
+     uint32 target_component = 2;
+     uint32 flags = 3;
+     uint32 gimbal_device_id = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Quaternion q = 5;
+     float angular_velocity_x = 6;
+     float angular_velocity_y = 7;
+     float angular_velocity_z = 8;
+}

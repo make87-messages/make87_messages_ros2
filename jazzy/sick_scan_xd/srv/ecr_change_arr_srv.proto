@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.srv;
+
+
+message ECRChangeArrSrvRequest {
+     bool active = 1;
+}
+
+message ECRChangeArrSrvResponse {
+     bool success = 1;
+}

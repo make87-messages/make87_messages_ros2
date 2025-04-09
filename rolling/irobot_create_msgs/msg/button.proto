@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Button {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool is_pressed = 2;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time last_start_pressed_time = 3;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration last_pressed_duration = 4;
+}

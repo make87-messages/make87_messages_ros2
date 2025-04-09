@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.usb_cam.msg;
+
+
+message Format {
+     string pixel_format = 1;
+     uint32 width = 2;
+     uint32 height = 3;
+     float fps = 4;
+}

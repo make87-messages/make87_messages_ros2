@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_ekf_status.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgEkfNav {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity_accuracy = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double altitude = 7;
+     float undulation = 8;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 position_accuracy = 9;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgEkfStatus status = 10;
+}

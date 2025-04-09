@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrStatus9 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 avg_pwr_cwblkg = 3;
+     float sideslip_angle = 4;
+     uint32 serial_num_3rd_byte = 5;
+     uint32 water_spray_target_id = 6;
+     float filtered_xohp_acc_cipv = 7;
+     uint32 path_id_acc_2 = 8;
+     uint32 path_id_acc_3 = 9;
+}

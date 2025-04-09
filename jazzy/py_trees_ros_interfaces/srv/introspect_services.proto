@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.py_trees_ros_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/py_trees_ros_interfaces/msg/service_details.proto";
+
+message IntrospectServicesRequest {
+}
+
+message IntrospectServicesResponse {
+    repeated make87_messages_ros2.jazzy.py_trees_ros_interfaces.msg.ServiceDetails service_details = 1;
+}

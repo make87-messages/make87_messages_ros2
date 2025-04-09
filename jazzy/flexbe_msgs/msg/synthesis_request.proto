@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+
+message SynthesisRequest {
+     string name = 1;
+     string system = 2;
+     string goal = 3;
+     string initial_condition = 4;
+    repeated string sm_outcomes = 5;
+}

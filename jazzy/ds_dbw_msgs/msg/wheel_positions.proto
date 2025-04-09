@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message WheelPositions {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 front_left = 2;
+     int32 front_right = 3;
+     int32 rear_left = 4;
+     int32 rear_right = 5;
+}

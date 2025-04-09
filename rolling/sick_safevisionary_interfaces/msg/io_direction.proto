@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg;
+
+
+message IODirection {
+     uint32 pin_5 = 1;
+     uint32 pin_6 = 2;
+     uint32 pin_7 = 3;
+     uint32 pin_8 = 4;
+}

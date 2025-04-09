@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbag2_test_msgdefs.srv;
+
+
+message BasicSrvRequest {
+     string req = 1;
+}
+
+message BasicSrvResponse {
+     string resp = 1;
+}

@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/jazzy/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ExtSensorMeas {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 n = 3;
+     uint32 sb_length = 4;
+    repeated uint32 source = 5;
+    repeated uint32 sensor_model = 6;
+    repeated uint32 type = 7;
+    repeated uint32 obs_info = 8;
+     double acceleration_x = 9;
+     double acceleration_y = 10;
+     double acceleration_z = 11;
+     double angular_rate_x = 12;
+     double angular_rate_y = 13;
+     double angular_rate_z = 14;
+     float velocity_x = 15;
+     float velocity_y = 16;
+     float velocity_z = 17;
+     float std_dev_x = 18;
+     float std_dev_y = 19;
+     float std_dev_z = 20;
+     float sensor_temperature = 21;
+     double zero_velocity_flag = 22;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LeadVehicle {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float headway_distance = 2;
+     float speed = 3;
+     float heading = 4;
+     float x_pos = 5;
+     float y_pos = 6;
+     int32 classification = 7;
+     int32 type = 8;
+}

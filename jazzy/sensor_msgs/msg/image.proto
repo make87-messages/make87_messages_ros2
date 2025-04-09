@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Image {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 height = 2;
+     uint32 width = 3;
+     string encoding = 4;
+     uint32 is_bigendian = 5;
+     uint32 step = 6;
+    repeated uint32 data = 7;
+}

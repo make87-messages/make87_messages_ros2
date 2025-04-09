@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/constraints.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/robot_trajectory.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GetCartesianPathRequest {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotState start_state = 2;
+     string group_name = 3;
+     string link_name = 4;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose waypoints = 5;
+     double max_step = 6;
+     double jump_threshold = 7;
+     double prismatic_jump_threshold = 8;
+     double revolute_jump_threshold = 9;
+     bool avoid_collisions = 10;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.Constraints path_constraints = 11;
+     double max_velocity_scaling_factor = 12;
+     double max_acceleration_scaling_factor = 13;
+     string cartesian_speed_limited_link = 14;
+     double max_cartesian_speed = 15;
+}
+
+message GetCartesianPathResponse {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotState start_state = 1;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotTrajectory solution = 2;
+     double fraction = 3;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.MoveItErrorCodes error_code = 4;
+}

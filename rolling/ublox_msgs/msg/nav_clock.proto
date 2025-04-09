@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavCLOCK {
+     uint32 i_tow = 1;
+     int32 clk_b = 2;
+     int32 clk_d = 3;
+     uint32 t_acc = 4;
+     uint32 f_acc = 5;
+}

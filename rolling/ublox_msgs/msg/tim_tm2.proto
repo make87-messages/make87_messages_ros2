@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message TimTM2 {
+     uint32 ch = 1;
+     uint32 flags = 2;
+     uint32 rising_edge_count = 3;
+     uint32 wn_r = 4;
+     uint32 wn_f = 5;
+     uint32 tow_ms_r = 6;
+     uint32 tow_sub_ms_r = 7;
+     uint32 tow_ms_f = 8;
+     uint32 tow_sub_ms_f = 9;
+     uint32 acc_est = 10;
+}

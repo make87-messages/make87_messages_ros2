@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AttEuler {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 nr_sv = 3;
+     uint32 error = 4;
+     uint32 mode = 5;
+     float heading = 6;
+     float pitch = 7;
+     float roll = 8;
+     float pitch_dot = 9;
+     float roll_dot = 10;
+     float heading_dot = 11;
+}

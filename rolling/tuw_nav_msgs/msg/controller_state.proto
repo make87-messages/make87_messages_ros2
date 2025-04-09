@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ControllerState {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 state = 2;
+     uint32 progress = 3;
+     uint32 progress_in_relation_to = 4;
+     string info = 5;
+}

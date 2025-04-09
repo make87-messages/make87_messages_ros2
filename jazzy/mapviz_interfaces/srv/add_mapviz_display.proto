@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mapviz_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/marti_common_msgs/msg/key_value.proto";
+
+message AddMapvizDisplayRequest {
+     string name = 1;
+     string type = 2;
+     int32 draw_order = 3;
+     bool visible = 4;
+    repeated make87_messages_ros2.jazzy.marti_common_msgs.msg.KeyValue properties = 5;
+}
+
+message AddMapvizDisplayResponse {
+     bool success = 1;
+     string message = 2;
+}

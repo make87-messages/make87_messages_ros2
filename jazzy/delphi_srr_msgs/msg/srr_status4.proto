@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SrrStatus4 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_tx_sw_version_host = 2;
+     uint32 can_tx_path_id_blis_ignore = 3;
+     uint32 can_tx_path_id_blis = 4;
+     float can_tx_angle_misalignment = 5;
+     float can_tx_auto_align_angle = 6;
+}

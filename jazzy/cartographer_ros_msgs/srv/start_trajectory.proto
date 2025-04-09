@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.cartographer_ros_msgs.srv;
+
+import "make87_messages_ros2/jazzy/cartographer_ros_msgs/msg/status_response.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message StartTrajectoryRequest {
+     string configuration_directory = 1;
+     string configuration_basename = 2;
+     bool use_initial_pose = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose initial_pose = 4;
+     int32 relative_to_trajectory_id = 5;
+}
+
+message StartTrajectoryResponse {
+     make87_messages_ros2.jazzy.cartographer_ros_msgs.msg.StatusResponse status = 1;
+     int32 trajectory_id = 2;
+}

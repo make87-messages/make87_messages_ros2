@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+
+message SpeedLimitedLane {
+     uint64 lane_index = 1;
+     double speed_limit = 2;
+}

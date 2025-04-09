@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrStatusTempVolt {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float can_batt_volts = 2;
+     float can_1_25_v = 3;
+     float can_5_v = 4;
+     float can_3_3_v_raw = 5;
+     float can_3_3_v_dac = 6;
+     int32 can_mmic_temp1 = 7;
+     int32 can_processor_thermistor = 8;
+     int32 can_processor_temp1 = 9;
+}

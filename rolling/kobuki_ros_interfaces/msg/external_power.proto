@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.kobuki_ros_interfaces.msg;
+
+
+message ExternalPower {
+     uint32 source = 1;
+     uint32 state = 2;
+}

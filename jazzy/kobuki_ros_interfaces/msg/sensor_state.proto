@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kobuki_ros_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SensorState {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     uint32 bumper = 3;
+     uint32 wheel_drop = 4;
+     uint32 cliff = 5;
+     uint32 left_encoder = 6;
+     uint32 right_encoder = 7;
+     int32 left_pwm = 8;
+     int32 right_pwm = 9;
+     uint32 buttons = 10;
+     uint32 charger = 11;
+     uint32 battery = 12;
+    repeated uint32 bottom = 13;
+    repeated uint32 current = 14;
+     uint32 over_current = 15;
+     uint32 digital_input = 16;
+    repeated uint32 analog_input = 17;
+}

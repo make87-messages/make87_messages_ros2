@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point32.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message OrientedBoundingBox {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point32 extents = 2;
+}

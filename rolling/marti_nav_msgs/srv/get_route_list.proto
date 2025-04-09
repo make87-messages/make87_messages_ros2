@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.srv;
+
+import "make87_messages_ros2/rolling/marti_nav_msgs/msg/route.proto";
+
+message GetRouteListRequest {
+}
+
+message GetRouteListResponse {
+    repeated make87_messages_ros2.rolling.marti_nav_msgs.msg.Route routes = 1;
+     bool success = 2;
+     string message = 3;
+}

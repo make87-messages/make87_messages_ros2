@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+
+message SBASStatusFlags {
+     uint32 integrity_used = 1;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+
+message EntityFactory {
+     string name = 1;
+     bool allow_renaming = 2;
+     string sdf = 3;
+     string sdf_filename = 4;
+     string clone_name = 5;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 6;
+     string relative_to = 7;
+}

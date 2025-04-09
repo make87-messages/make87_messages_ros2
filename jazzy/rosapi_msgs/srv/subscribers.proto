@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosapi_msgs.srv;
+
+
+message SubscribersRequest {
+     string topic = 1;
+}
+
+message SubscribersResponse {
+    repeated string subscribers = 1;
+}

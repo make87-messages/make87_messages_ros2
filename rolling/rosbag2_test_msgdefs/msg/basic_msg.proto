@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbag2_test_msgdefs.msg;
+
+
+message BasicMsg {
+     float c = 1;
+}

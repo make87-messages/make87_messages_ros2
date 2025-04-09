@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.raspimouse_msgs.msg;
+
+
+message Switches {
+     bool switch0 = 1;
+     bool switch1 = 2;
+     bool switch2 = 3;
+}

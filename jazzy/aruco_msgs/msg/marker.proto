@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.aruco_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Marker {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance pose = 3;
+     double confidence = 4;
+}

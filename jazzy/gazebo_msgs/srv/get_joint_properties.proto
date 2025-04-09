@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+
+message GetJointPropertiesRequest {
+     string joint_name = 1;
+}
+
+message GetJointPropertiesResponse {
+     uint32 type = 1;
+    repeated double damping = 2;
+    repeated double position = 3;
+    repeated double rate = 4;
+     bool success = 5;
+     string status_message = 6;
+}

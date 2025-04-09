@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RouteSpeed {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string id = 2;
+     float distance = 3;
+     float speed = 4;
+}

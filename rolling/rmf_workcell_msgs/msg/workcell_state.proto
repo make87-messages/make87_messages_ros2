@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_workcell_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message WorkcellState {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time time = 1;
+     string guid = 2;
+     int32 mode = 3;
+    repeated string request_guid_queue = 4;
+}

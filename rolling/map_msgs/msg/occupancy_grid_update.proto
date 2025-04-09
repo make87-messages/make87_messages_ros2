@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.map_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message OccupancyGridUpdate {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 x = 2;
+     int32 y = 3;
+     uint32 width = 4;
+     uint32 height = 5;
+    repeated int32 data = 6;
+}

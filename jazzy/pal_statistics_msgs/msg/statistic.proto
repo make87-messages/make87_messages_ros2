@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.pal_statistics_msgs.msg;
+
+
+message Statistic {
+     string name = 1;
+     double value = 2;
+}

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/mounting_position_f.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/resolution_info.proto";
+
+message ScannerInfo2205 {
+     uint32 device_id = 1;
+     uint32 scanner_type = 2;
+     uint32 scan_number = 3;
+     float start_angle = 4;
+     float end_angle = 5;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_start_time = 6;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_end_time = 7;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_start_time_from_device = 8;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time scan_end_time_from_device = 9;
+     float scan_frequency = 10;
+     float beam_tilt = 11;
+     uint32 scan_flags = 12;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.MountingPositionF mounting_position = 13;
+    repeated make87_messages_ros2.jazzy.ibeo_msgs.msg.ResolutionInfo resolutions = 14;
+}

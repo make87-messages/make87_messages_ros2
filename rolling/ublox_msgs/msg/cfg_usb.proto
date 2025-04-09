@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message CfgUSB {
+     uint32 vendor_id = 1;
+     uint32 product_id = 2;
+    repeated uint32 reserved1 = 3;
+    repeated uint32 reserved2 = 4;
+     uint32 power_consumption = 5;
+     uint32 flags = 6;
+    repeated int32 vendor_string = 7;
+    repeated int32 product_string = 8;
+    repeated int32 serial_number = 9;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/dispatch_states.proto";
+
+message GetDispatchStatesRequest {
+    repeated string task_ids = 1;
+}
+
+message GetDispatchStatesResponse {
+     bool success = 1;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.DispatchStates states = 2;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message CfgRATE {
+     uint32 meas_rate = 1;
+     uint32 nav_rate = 2;
+     uint32 time_ref = 3;
+}

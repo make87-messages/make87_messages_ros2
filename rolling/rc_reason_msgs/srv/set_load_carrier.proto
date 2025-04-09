@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/rolling/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/rolling/rc_reason_msgs/msg/load_carrier_model.proto";
+
+message SetLoadCarrierRequest {
+     make87_messages_ros2.rolling.rc_reason_msgs.msg.LoadCarrierModel load_carrier = 1;
+}
+
+message SetLoadCarrierResponse {
+     make87_messages_ros2.rolling.rc_common_msgs.msg.ReturnCode return_code = 1;
+}

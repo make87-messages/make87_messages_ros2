@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgUtcTimeStatus {
+     bool clock_stable = 1;
+     uint32 clock_status = 2;
+     bool clock_utc_sync = 3;
+     uint32 clock_utc_status = 4;
+}

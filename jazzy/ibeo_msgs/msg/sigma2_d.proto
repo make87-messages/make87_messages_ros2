@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message Sigma2D {
+     uint32 sigma_x = 1;
+     uint32 sigma_y = 2;
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message DebugValue {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 index = 2;
+     int32 array_id = 3;
+     string name = 4;
+     float value_float = 5;
+     int32 value_int = 6;
+    repeated float data = 7;
+     uint32 type = 8;
+}

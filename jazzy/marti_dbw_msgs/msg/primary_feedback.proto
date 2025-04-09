@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message PrimaryFeedback {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool present = 2;
+     bool robotic_mode = 3;
+     float steering_command = 4;
+     float steering_measure = 5;
+     float throttle_command = 6;
+     float throttle_measure = 7;
+     float brake_command = 8;
+     float brake_measure = 9;
+     bool estop_command = 10;
+     bool estop_measure = 11;
+     bool error_steering = 12;
+     bool error_throttle = 13;
+     bool error_brake = 14;
+     bool error_other = 15;
+}

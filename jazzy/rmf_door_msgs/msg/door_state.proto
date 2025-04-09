@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_door_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/rmf_door_msgs/msg/door_mode.proto";
+
+message DoorState {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time door_time = 1;
+     string door_name = 2;
+     make87_messages_ros2.jazzy.rmf_door_msgs.msg.DoorMode current_mode = 3;
+}

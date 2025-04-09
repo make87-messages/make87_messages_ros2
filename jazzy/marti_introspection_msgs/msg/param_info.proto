@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_introspection_msgs.msg;
+
+
+message ParamInfo {
+     string name = 1;
+     string resolved_name = 2;
+     string description = 3;
+     string group = 4;
+     uint32 type = 5;
+     bool dynamic = 6;
+     int32 default_int = 7;
+     float default_float = 8;
+     double default_double = 9;
+     string default_string = 10;
+     bool default_bool = 11;
+     double max_value = 12;
+     double min_value = 13;
+}

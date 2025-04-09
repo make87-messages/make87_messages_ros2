@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/marti_common_msgs/msg/key_value.proto";
+
+message RoutePoint {
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 1;
+     string id = 2;
+    repeated make87_messages_ros2.rolling.marti_common_msgs.msg.KeyValue properties = 3;
+}

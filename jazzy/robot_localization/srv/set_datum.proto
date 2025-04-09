@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.robot_localization.srv;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geo_pose.proto";
+
+message SetDatumRequest {
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPose geo_pose = 1;
+}
+
+message SetDatumResponse {
+}

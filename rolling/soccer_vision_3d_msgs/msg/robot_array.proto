@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_3d_msgs.msg;
+
+import "make87_messages_ros2/rolling/soccer_vision_3d_msgs/msg/robot.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RobotArray {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.soccer_vision_3d_msgs.msg.Robot robots = 2;
+}

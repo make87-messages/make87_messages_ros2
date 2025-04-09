@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_vehicle_msgs.srv;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message ControlModeCommandRequest {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time stamp = 1;
+     uint32 mode = 2;
+}
+
+message ControlModeCommandResponse {
+     bool success = 1;
+}

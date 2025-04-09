@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosapi_msgs.srv;
+
+
+message NodesRequest {
+}
+
+message NodesResponse {
+    repeated string nodes = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.diagnostic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/diagnostic_msgs/msg/key_value.proto";
+
+message DiagnosticStatus {
+     uint32 level = 1;
+     string name = 2;
+     string message = 3;
+     string hardware_id = 4;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.KeyValue values = 5;
+}

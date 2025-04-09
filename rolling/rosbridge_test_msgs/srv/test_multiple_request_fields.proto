@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbridge_test_msgs.srv;
+
+
+message TestMultipleRequestFieldsRequest {
+     int32 int_value = 1;
+     float float_value = 2;
+     string string = 3;
+     bool bool_value = 4;
+}
+
+message TestMultipleRequestFieldsResponse {
+}

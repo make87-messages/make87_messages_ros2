@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ConfigureOutputsPwmFreqCmd {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool confirm = 2;
+     uint32 min_pwm_pct = 3;
+     uint32 max_pwm_pct = 4;
+     uint32 pwm_freq = 5;
+}

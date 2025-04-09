@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nao_lola_sensor_msgs.msg;
+
+
+message JointTemperatures {
+    repeated float temperatures = 1;
+}

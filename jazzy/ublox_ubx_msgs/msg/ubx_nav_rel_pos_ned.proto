@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/carr_soln.proto";
+
+message UBXNavRelPosNED {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 version = 2;
+     uint32 ref_station_id = 3;
+     uint32 itow = 4;
+     int32 rel_pos_n = 5;
+     int32 rel_pos_e = 6;
+     int32 rel_pos_d = 7;
+     int32 rel_pos_length = 8;
+     int32 rel_pos_heading = 9;
+     int32 rel_pos_hp_n = 10;
+     int32 rel_pos_hp_e = 11;
+     int32 rel_pos_hp_d = 12;
+     int32 rel_pos_hp_length = 13;
+     uint32 acc_n = 14;
+     uint32 acc_e = 15;
+     uint32 acc_d = 16;
+     uint32 acc_length = 17;
+     uint32 acc_heading = 18;
+     bool gnss_fix_ok = 19;
+     bool diff_soln = 20;
+     bool rel_pos_valid = 21;
+     make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.CarrSoln carr_soln = 22;
+     bool is_moving = 23;
+     bool ref_pos_miss = 24;
+     bool ref_obs_miss = 25;
+     bool rel_pos_heading_valid = 26;
+     bool rel_pos_normalized = 27;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.neobotix_usboard_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AnalogIn {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 command = 2;
+     uint32 analog_data_ch4_low_byte = 3;
+     uint32 analog_data_ch4_high_bits = 4;
+     uint32 analog_data_ch3_low_byte = 5;
+     uint32 analog_data_ch3_high_bits = 6;
+     uint32 analog_data_ch2_low_byte = 7;
+     uint32 analog_data_ch2_high_bits = 8;
+     uint32 analog_data_ch1_low_byte = 9;
+     uint32 analog_data_ch1_high_bits = 10;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+
+message RadarPreHeaderDeviceBlock {
+     uint32 uiident = 1;
+     uint32 udiserialno = 2;
+     bool bdeviceerror = 3;
+     bool bcontaminationwarning = 4;
+     bool bcontaminationerror = 5;
+}

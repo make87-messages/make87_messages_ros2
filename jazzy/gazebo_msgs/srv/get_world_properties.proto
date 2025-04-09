@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+
+message GetWorldPropertiesRequest {
+}
+
+message GetWorldPropertiesResponse {
+     double sim_time = 1;
+    repeated string model_names = 2;
+     bool rendering_enabled = 3;
+     bool success = 4;
+     string status_message = 5;
+}

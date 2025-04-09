@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_msgs.msg;
+
+import "make87_messages_ros2/rolling/tuw_object_msgs/msg/object.proto";
+
+message ObjectWithCovariance {
+     make87_messages_ros2.rolling.tuw_object_msgs.msg.Object object = 1;
+    repeated double covariance_pose = 2;
+    repeated double covariance_twist = 3;
+    repeated double correlation = 4;
+}

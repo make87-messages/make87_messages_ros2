@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grid_map_msgs.srv;
+
+import "make87_messages_ros2/jazzy/grid_map_msgs/msg/grid_map.proto";
+
+message GetGridMapRequest {
+     string frame_id = 1;
+     double position_x = 2;
+     double position_y = 3;
+     double length_x = 4;
+     double length_y = 5;
+    repeated string layers = 6;
+}
+
+message GetGridMapResponse {
+     make87_messages_ros2.jazzy.grid_map_msgs.msg.GridMap map = 1;
+}

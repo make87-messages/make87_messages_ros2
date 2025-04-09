@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.test_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message Builtins {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration duration_value = 1;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time time_value = 2;
+}

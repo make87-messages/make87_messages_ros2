@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_map_msgs.msg;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/geo_point.proto";
+
+message MapProjectorInfo {
+     string projector_type = 1;
+     string vertical_datum = 2;
+     string mgrs_grid = 3;
+     make87_messages_ros2.rolling.geographic_msgs.msg.GeoPoint map_origin = 4;
+}

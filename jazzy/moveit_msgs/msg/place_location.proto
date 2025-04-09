@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/gripper_translation.proto";
+import "make87_messages_ros2/jazzy/trajectory_msgs/msg/joint_trajectory.proto";
+
+message PlaceLocation {
+     string id = 1;
+     make87_messages_ros2.jazzy.trajectory_msgs.msg.JointTrajectory post_place_posture = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped place_pose = 3;
+     double quality = 4;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.GripperTranslation pre_place_approach = 5;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.GripperTranslation post_place_retreat = 6;
+    repeated string allowed_touch_objects = 7;
+}

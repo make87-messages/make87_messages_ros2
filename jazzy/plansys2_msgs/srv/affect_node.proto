@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/node.proto";
+
+message AffectNodeRequest {
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Node node = 1;
+}
+
+message AffectNodeResponse {
+     bool success = 1;
+     string error_info = 2;
+}

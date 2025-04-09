@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ZeroingMessageRpt {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 chip_1_voltage = 2;
+     uint32 chip_2_voltage = 3;
+     uint32 chip_error_1 = 4;
+     uint32 chip_error_2 = 5;
+}

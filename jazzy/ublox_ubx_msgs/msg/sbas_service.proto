@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+
+message SBASService {
+     bool ranging = 1;
+     bool corrections = 2;
+     bool integrity = 3;
+     bool test_mode = 4;
+     bool bad = 5;
+}

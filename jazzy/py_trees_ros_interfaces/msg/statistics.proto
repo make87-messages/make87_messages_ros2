@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.py_trees_ros_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message Statistics {
+     int64 count = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 2;
+     float tick_duration = 3;
+     float tick_duration_average = 4;
+     float tick_duration_variance = 5;
+     float tick_interval = 6;
+     float tick_interval_average = 7;
+     float tick_interval_variance = 8;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+
+message ApplicationInputs {
+    repeated bool unsafe_inputs_input_sources = 1;
+    repeated bool unsafe_inputs_flags = 2;
+    repeated uint32 monitoring_case_number_inputs = 3;
+    repeated bool monitoring_case_number_inputs_flags = 4;
+     int32 linear_velocity_inputs_velocity_0 = 5;
+     bool linear_velocity_inputs_velocity_0_valid = 6;
+     bool linear_velocity_inputs_velocity_0_transmitted_safely = 7;
+     int32 linear_velocity_inputs_velocity_1 = 8;
+     bool linear_velocity_inputs_velocity_1_valid = 9;
+     bool linear_velocity_inputs_velocity_1_transmitted_safely = 10;
+     uint32 sleep_mode_input = 11;
+}

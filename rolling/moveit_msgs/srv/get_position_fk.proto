@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/move_it_error_codes.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GetPositionFKRequest {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated string fk_link_names = 2;
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState robot_state = 3;
+}
+
+message GetPositionFKResponse {
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.PoseStamped pose_stamped = 1;
+    repeated string fk_link_names = 2;
+     make87_messages_ros2.rolling.moveit_msgs.msg.MoveItErrorCodes error_code = 3;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nao_lola_command_msgs.msg;
+
+
+message JointStiffnesses {
+    repeated uint32 indexes = 1;
+    repeated float stiffnesses = 2;
+}

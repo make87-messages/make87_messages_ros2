@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message EsfSTATUSSens {
+     uint32 sens_status1 = 1;
+     uint32 sens_status2 = 2;
+     uint32 freq = 3;
+     uint32 faults = 4;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message OrbAlmInfo {
+     uint32 alm_usability = 1;
+     uint32 alm_source = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.example_interfaces.srv;
+
+
+message SetBoolRequest {
+     bool data = 1;
+}
+
+message SetBoolResponse {
+     bool success = 1;
+     string message = 2;
+}

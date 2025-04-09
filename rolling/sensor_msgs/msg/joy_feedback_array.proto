@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/joy_feedback.proto";
+
+message JoyFeedbackArray {
+    repeated make87_messages_ros2.rolling.sensor_msgs.msg.JoyFeedback array = 1;
+}

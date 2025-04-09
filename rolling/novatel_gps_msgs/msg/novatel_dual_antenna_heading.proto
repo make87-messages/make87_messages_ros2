@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_extended_solution_status.proto";
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_signal_mask.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message NovatelDualAntennaHeading {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 2;
+     string solution_status = 3;
+     string position_type = 4;
+     float baseline_length = 5;
+     float heading = 6;
+     float pitch = 7;
+     float heading_sigma = 8;
+     float pitch_sigma = 9;
+     string station_id = 10;
+     uint32 num_satellites_tracked = 11;
+     uint32 num_satellites_used_in_solution = 12;
+     uint32 num_satellites_above_elevation_mask_angle = 13;
+     uint32 num_satellites_above_elevation_mask_angle_l2 = 14;
+     uint32 solution_source = 15;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelExtendedSolutionStatus extended_solution_status = 16;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelSignalMask signal_mask = 17;
+}

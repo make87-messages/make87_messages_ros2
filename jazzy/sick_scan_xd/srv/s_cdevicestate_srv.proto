@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.srv;
+
+
+message SCdevicestateSrvRequest {
+}
+
+message SCdevicestateSrvResponse {
+     int32 state = 1;
+     bool success = 2;
+}

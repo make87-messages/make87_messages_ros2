@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/alert_parameter.proto";
+
+message Alert {
+     string id = 1;
+     string title = 2;
+     string subtitle = 3;
+     string message = 4;
+     bool display = 5;
+     uint32 tier = 6;
+    repeated string responses_available = 7;
+    repeated make87_messages_ros2.rolling.rmf_task_msgs.msg.AlertParameter alert_parameters = 8;
+     string task_id = 9;
+}

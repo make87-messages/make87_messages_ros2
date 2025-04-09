@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+
+message SetModelConfigurationRequest {
+     string model_name = 1;
+     string urdf_param_name = 2;
+    repeated string joint_names = 3;
+    repeated double joint_positions = 4;
+}
+
+message SetModelConfigurationResponse {
+     bool success = 1;
+     string status_message = 2;
+}

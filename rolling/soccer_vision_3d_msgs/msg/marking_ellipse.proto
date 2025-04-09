@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_3d_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/soccer_vision_attribute_msgs/msg/confidence.proto";
+
+message MarkingEllipse {
+     double diameter = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose center = 2;
+     make87_messages_ros2.rolling.soccer_vision_attribute_msgs.msg.Confidence confidence = 3;
+}

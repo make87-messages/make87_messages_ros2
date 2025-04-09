@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VehicleStateMsg3 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool yaw_rate_reference_valid = 2;
+     float yaw_rate_reference = 3;
+     uint32 can_veh_long_accel_qf = 4;
+     float can_veh_long_accel = 5;
+}

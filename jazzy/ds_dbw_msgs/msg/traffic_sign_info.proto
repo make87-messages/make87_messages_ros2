@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message TrafficSignInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 status = 2;
+     bool camera_used = 3;
+     bool navigation_used = 4;
+     uint32 speed_units = 5;
+     float speed_limit = 6;
+}

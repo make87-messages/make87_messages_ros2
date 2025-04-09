@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Time {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string clock_status = 2;
+     double offset = 3;
+     double offset_std = 4;
+     double utc_offset = 5;
+     uint32 utc_year = 6;
+     uint32 utc_month = 7;
+     uint32 utc_day = 8;
+     uint32 utc_hour = 9;
+     uint32 utc_minute = 10;
+     uint32 utc_millisecond = 11;
+     string utc_status = 12;
+}

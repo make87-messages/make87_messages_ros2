@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.pal_statistics_msgs.msg;
+
+import "make87_messages_ros2/jazzy/pal_statistics_msgs/msg/statistic.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Statistics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.pal_statistics_msgs.msg.Statistic statistics = 2;
+}

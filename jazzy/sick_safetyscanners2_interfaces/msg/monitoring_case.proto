@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+
+message MonitoringCase {
+     int32 monitoring_case_number = 1;
+    repeated int32 fields = 2;
+    repeated bool fields_valid = 3;
+}

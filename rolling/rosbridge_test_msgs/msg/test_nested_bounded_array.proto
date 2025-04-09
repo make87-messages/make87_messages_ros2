@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbridge_test_msgs.msg;
+
+import "make87_messages_ros2/rolling/rosbridge_test_msgs/msg/test_float32_bounded_array.proto";
+
+message TestNestedBoundedArray {
+     make87_messages_ros2.rolling.rosbridge_test_msgs.msg.TestFloat32BoundedArray data = 1;
+}

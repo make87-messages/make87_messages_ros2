@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ffmpeg_image_transport_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message FFMPEGPacket {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     int32 width = 2;
+     int32 height = 3;
+     string encoding = 4;
+     uint64 pts = 5;
+     uint32 flags = 6;
+     bool is_bigendian = 7;
+    repeated uint32 data = 8;
+}

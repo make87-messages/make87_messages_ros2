@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/ode_physics.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+
+message GetPhysicsPropertiesRequest {
+}
+
+message GetPhysicsPropertiesResponse {
+     double time_step = 1;
+     bool pause = 2;
+     double max_update_rate = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 gravity = 4;
+     make87_messages_ros2.jazzy.gazebo_msgs.msg.ODEPhysics ode_config = 5;
+     bool success = 6;
+     string status_message = 7;
+}

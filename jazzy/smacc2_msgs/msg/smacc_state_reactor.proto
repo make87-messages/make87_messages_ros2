@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smacc2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/smacc2_msgs/msg/smacc_event.proto";
+
+message SmaccStateReactor {
+     int32 index = 1;
+     string type_name = 2;
+     string object_tag = 3;
+    repeated make87_messages_ros2.jazzy.smacc2_msgs.msg.SmaccEvent event_sources = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_scheduler_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_scheduler_msgs/msg/trigger_state.proto";
+
+message ListTriggerStatesRequest {
+     int64 modified_after = 1;
+}
+
+message ListTriggerStatesResponse {
+     bool success = 1;
+     string message = 2;
+    repeated make87_messages_ros2.rolling.rmf_scheduler_msgs.msg.TriggerState triggers = 3;
+}

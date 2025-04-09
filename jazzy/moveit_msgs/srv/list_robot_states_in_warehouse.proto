@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+
+message ListRobotStatesInWarehouseRequest {
+     string regex = 1;
+     string robot = 2;
+}
+
+message ListRobotStatesInWarehouseResponse {
+    repeated string states = 1;
+}

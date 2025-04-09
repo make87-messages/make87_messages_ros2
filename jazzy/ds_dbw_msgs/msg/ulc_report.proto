@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message UlcReport {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 cmd_type = 2;
+     float vel_ref = 3;
+     float vel_meas = 4;
+     float accel_ref = 5;
+     float accel_meas = 6;
+     bool coast_decel = 7;
+     bool ready = 8;
+     bool enabled = 9;
+     bool override_active = 10;
+     bool override_latched = 11;
+     bool preempted = 12;
+     bool timeout = 13;
+     bool bad_crc = 14;
+     bool bad_rc = 15;
+}

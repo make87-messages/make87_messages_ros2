@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.test_interface_files.msg;
+
+import "make87_messages_ros2/jazzy/test_interface_files/msg/arrays.proto";
+import "make87_messages_ros2/jazzy/test_interface_files/msg/bounded_sequences.proto";
+import "make87_messages_ros2/jazzy/test_interface_files/msg/unbounded_sequences.proto";
+
+message MultiNested {
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.Arrays array_of_arrays = 1;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.BoundedSequences array_of_bounded_sequences = 2;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.UnboundedSequences array_of_unbounded_sequences = 3;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.Arrays bounded_sequence_of_arrays = 4;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.BoundedSequences bounded_sequence_of_bounded_sequences = 5;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.UnboundedSequences bounded_sequence_of_unbounded_sequences = 6;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.Arrays unbounded_sequence_of_arrays = 7;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.BoundedSequences unbounded_sequence_of_bounded_sequences = 8;
+    repeated make87_messages_ros2.jazzy.test_interface_files.msg.UnboundedSequences unbounded_sequence_of_unbounded_sequences = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/object_color.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+
+message DisplayRobotState {
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState state = 1;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.ObjectColor highlight_links = 2;
+     bool hide = 3;
+}

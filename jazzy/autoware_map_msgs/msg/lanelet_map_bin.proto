@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_map_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LaneletMapBin {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string version_map_format = 2;
+     string version_map = 3;
+     string name_map = 4;
+    repeated uint32 data = 5;
+}

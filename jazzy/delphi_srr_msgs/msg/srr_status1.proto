@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SrrStatus1 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool can_tx_look_type = 2;
+     uint32 can_tx_dsp_timestamp = 3;
+     float can_tx_yaw_rate_calc = 4;
+     float can_tx_vehicle_speed_calc = 5;
+     uint32 can_tx_scan_index = 6;
+     float can_tx_curvature = 7;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosapi_msgs.srv;
+
+
+message TopicsAndRawTypesRequest {
+}
+
+message TopicsAndRawTypesResponse {
+    repeated string topics = 1;
+    repeated string types = 2;
+    repeated string typedefs_full_text = 3;
+}

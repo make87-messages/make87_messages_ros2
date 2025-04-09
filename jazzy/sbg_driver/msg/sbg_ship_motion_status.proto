@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgShipMotionStatus {
+     bool heave_valid = 1;
+     bool heave_vel_aided = 2;
+     bool surge_sway_included = 3;
+     bool period_available = 4;
+     bool period_valid = 5;
+     bool swell_mode = 6;
+}

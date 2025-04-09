@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Range {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 radiation_type = 2;
+     float field_of_view = 3;
+     float min_range = 4;
+     float max_range = 5;
+     float range = 6;
+     float variance = 7;
+}

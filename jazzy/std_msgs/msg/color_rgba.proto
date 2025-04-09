@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.std_msgs.msg;
+
+
+message ColorRGBA {
+     float r = 1;
+     float g = 2;
+     float b = 3;
+     float a = 4;
+}

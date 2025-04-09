@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_navigation_msgs.msg;
+
+import "make87_messages_ros2/jazzy/automotive_navigation_msgs/msg/lane_boundary.proto";
+
+message LaneBoundaryArray {
+    repeated make87_messages_ros2.jazzy.automotive_navigation_msgs.msg.LaneBoundary boundaries = 1;
+}

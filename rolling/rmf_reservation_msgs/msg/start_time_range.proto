@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_reservation_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message StartTimeRange {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time earliest_start_time = 1;
+     bool has_earliest_start_time = 2;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time latest_start_time = 3;
+     bool has_latest_start_time = 4;
+}

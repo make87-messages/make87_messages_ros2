@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message UlcCmd {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float cmd = 2;
+     float limit_accel = 3;
+     float limit_decel = 4;
+     float limit_jerk_throttle = 5;
+     float limit_jerk_brake = 6;
+     uint32 cmd_type = 7;
+     bool enable = 8;
+     bool clear = 9;
+     bool enable_shift = 10;
+     bool enable_shift_park = 11;
+     bool coast_decel = 12;
+}

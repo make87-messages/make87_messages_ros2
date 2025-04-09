@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+
+message Knowledge {
+    repeated string instances = 1;
+    repeated string predicates = 2;
+    repeated string functions = 3;
+     string goal = 4;
+}

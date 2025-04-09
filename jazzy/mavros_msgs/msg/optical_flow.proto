@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message OpticalFlow {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 flow = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 flow_comp_m = 3;
+     uint32 quality = 4;
+     float ground_distance = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 flow_rate = 6;
+}

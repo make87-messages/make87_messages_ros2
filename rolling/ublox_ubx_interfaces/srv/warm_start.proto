@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_interfaces.srv;
+
+
+message WarmStartRequest {
+     uint32 reset_type = 1;
+}
+
+message WarmStartResponse {
+}

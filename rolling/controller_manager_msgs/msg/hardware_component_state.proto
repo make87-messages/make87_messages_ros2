@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.msg;
+
+import "make87_messages_ros2/rolling/controller_manager_msgs/msg/hardware_interface.proto";
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/state.proto";
+
+message HardwareComponentState {
+     string name = 1;
+     string type = 2;
+     string class_type = 3;
+     string plugin_name = 4;
+     make87_messages_ros2.rolling.lifecycle_msgs.msg.State state = 5;
+    repeated make87_messages_ros2.rolling.controller_manager_msgs.msg.HardwareInterface command_interfaces = 6;
+    repeated make87_messages_ros2.rolling.controller_manager_msgs.msg.HardwareInterface state_interfaces = 7;
+}

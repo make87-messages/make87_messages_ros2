@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/collision_detection.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/grasp.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/load_carrier.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/match.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/silhouette_match_object.proto";
+
+message SilhouetteMatchDetectObjectRequest {
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.SilhouetteMatchObject object_to_detect = 1;
+     double offset = 2;
+     string pose_frame = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 4;
+     string load_carrier_id = 5;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.CollisionDetection collision_detection = 6;
+     bool object_plane_detection = 7;
+}
+
+message SilhouetteMatchDetectObjectResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 1;
+     string object_id = 2;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Match matches = 3;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.Grasp grasps = 4;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.LoadCarrier load_carriers = 5;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 6;
+}

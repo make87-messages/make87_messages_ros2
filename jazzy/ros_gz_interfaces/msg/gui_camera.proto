@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/ros_gz_interfaces/msg/track_visual.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GuiCamera {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string name = 2;
+     string view_controller = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 4;
+     make87_messages_ros2.jazzy.ros_gz_interfaces.msg.TrackVisual track = 5;
+     string projection_type = 6;
+}

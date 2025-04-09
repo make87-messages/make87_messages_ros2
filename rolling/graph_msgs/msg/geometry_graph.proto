@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.graph_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/graph_msgs/msg/edges.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GeometryGraph {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point nodes = 2;
+    repeated make87_messages_ros2.rolling.graph_msgs.msg.Edges edges = 3;
+}

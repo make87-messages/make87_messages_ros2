@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosbag2_test_msgdefs.msg;
+
+import "make87_messages_ros2/rolling/rosbag2_test_msgdefs/msg/basic_msg.proto";
+
+message ComplexMsg {
+     make87_messages_ros2.rolling.rosbag2_test_msgdefs.msg.BasicMsg b = 1;
+}

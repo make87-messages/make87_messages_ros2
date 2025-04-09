@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.srv;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/camera_info.proto";
+
+message SetCameraInfoRequest {
+     make87_messages_ros2.rolling.sensor_msgs.msg.CameraInfo camera_info = 1;
+}
+
+message SetCameraInfoResponse {
+     bool success = 1;
+     string status_message = 2;
+}

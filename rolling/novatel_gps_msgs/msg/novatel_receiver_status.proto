@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+
+message NovatelReceiverStatus {
+     uint32 original_status_code = 1;
+     bool error_flag = 2;
+     bool temperature_flag = 3;
+     bool voltage_supply_flag = 4;
+     bool antenna_powered = 5;
+     bool antenna_is_open = 6;
+     bool antenna_is_shorted = 7;
+     bool cpu_overload_flag = 8;
+     bool com1_buffer_overrun = 9;
+     bool com2_buffer_overrun = 10;
+     bool com3_buffer_overrun = 11;
+     bool usb_buffer_overrun = 12;
+     bool rf1_agc_flag = 13;
+     bool rf2_agc_flag = 14;
+     bool almanac_flag = 15;
+     bool position_solution_flag = 16;
+     bool position_fixed_flag = 17;
+     bool clock_steering_status_enabled = 18;
+     bool clock_model_flag = 19;
+     bool oemv_external_oscillator_flag = 20;
+     bool software_resource_flag = 21;
+     bool aux1_status_event_flag = 22;
+     bool aux2_status_event_flag = 23;
+     bool aux3_status_event_flag = 24;
+}

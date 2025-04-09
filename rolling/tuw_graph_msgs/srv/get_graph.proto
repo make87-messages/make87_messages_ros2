@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_graph_msgs.srv;
+
+import "make87_messages_ros2/rolling/tuw_graph_msgs/msg/graph.proto";
+
+message GetGraphRequest {
+}
+
+message GetGraphResponse {
+     make87_messages_ros2.rolling.tuw_graph_msgs.msg.Graph graph = 1;
+}

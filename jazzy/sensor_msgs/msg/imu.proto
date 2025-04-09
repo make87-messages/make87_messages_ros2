@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Imu {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Quaternion orientation = 2;
+    repeated double orientation_covariance = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 angular_velocity = 4;
+    repeated double angular_velocity_covariance = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 linear_acceleration = 6;
+    repeated double linear_acceleration_covariance = 7;
+}

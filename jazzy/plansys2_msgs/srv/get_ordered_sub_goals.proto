@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/tree.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/empty.proto";
+
+message GetOrderedSubGoalsRequest {
+     make87_messages_ros2.jazzy.std_msgs.msg.Empty request = 1;
+}
+
+message GetOrderedSubGoalsResponse {
+     bool success = 1;
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree sub_goals = 2;
+     string error_info = 3;
+}

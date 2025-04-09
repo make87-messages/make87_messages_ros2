@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/tuw_object_msgs/msg/object_with_covariance.proto";
+
+message ObjectDetection {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float distance_min = 2;
+     float distance_max = 3;
+     float distance_max_id = 4;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Quaternion view_direction = 5;
+     float fov_horizontal = 6;
+     float fov_vertical = 7;
+     string type = 8;
+    repeated make87_messages_ros2.rolling.tuw_object_msgs.msg.ObjectWithCovariance objects = 9;
+     string sensor_type = 10;
+}

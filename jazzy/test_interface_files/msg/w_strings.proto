@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.test_interface_files.msg;
+
+
+message WStrings {
+     string wstring_value = 1;
+     string wstring_value_default1 = 2;
+     string wstring_value_default2 = 3;
+     string wstring_value_default3 = 4;
+    repeated string array_of_wstrings = 5;
+    repeated string bounded_sequence_of_wstrings = 6;
+    repeated string unbounded_sequence_of_wstrings = 7;
+}

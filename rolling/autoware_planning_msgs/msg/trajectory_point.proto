@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_planning_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+
+message TrajectoryPoint {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration time_from_start = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 2;
+     float longitudinal_velocity_mps = 3;
+     float lateral_velocity_mps = 4;
+     float acceleration_mps2 = 5;
+     float heading_rate_rps = 6;
+     float front_wheel_angle_rad = 7;
+     float rear_wheel_angle_rad = 8;
+}

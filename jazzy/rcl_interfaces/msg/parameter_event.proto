@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/parameter.proto";
+
+message ParameterEvent {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     string node = 2;
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.Parameter new_parameters = 3;
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.Parameter changed_parameters = 4;
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.Parameter deleted_parameters = 5;
+}

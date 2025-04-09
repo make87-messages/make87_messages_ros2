@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rosapi_msgs.srv;
+
+
+message TopicsRequest {
+}
+
+message TopicsResponse {
+    repeated string topics = 1;
+    repeated string types = 2;
+}

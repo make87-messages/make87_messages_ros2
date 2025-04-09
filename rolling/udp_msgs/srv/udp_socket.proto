@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.udp_msgs.srv;
+
+
+message UdpSocketRequest {
+     string local_address = 1;
+     uint32 local_port = 2;
+     string remote_address = 3;
+     uint32 remote_port = 4;
+     bool is_broadcast = 5;
+}
+
+message UdpSocketResponse {
+     bool socket_created = 1;
+}

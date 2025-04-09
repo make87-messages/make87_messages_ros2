@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/param.proto";
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/tree.proto";
+
+message DurativeAction {
+     string name = 1;
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Param parameters = 2;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree at_start_requirements = 3;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree over_all_requirements = 4;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree at_end_requirements = 5;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree at_start_effects = 6;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.Tree at_end_effects = 7;
+}

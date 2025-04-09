@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_navigation_msgs.msg;
+
+import "make87_messages_ros2/rolling/automotive_navigation_msgs/msg/point_of_interest_status.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PointOfInterestResponse {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string name = 2;
+     string module_name = 3;
+     uint32 request_id = 4;
+     uint32 update_num = 5;
+    repeated make87_messages_ros2.rolling.automotive_navigation_msgs.msg.PointOfInterestStatus point_statuses = 6;
+}

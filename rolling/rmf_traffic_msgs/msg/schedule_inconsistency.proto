@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_inconsistency_range.proto";
+
+message ScheduleInconsistency {
+     uint64 participant = 1;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleInconsistencyRange ranges = 2;
+     uint64 last_known_itinerary = 3;
+     uint64 last_known_progress = 4;
+}

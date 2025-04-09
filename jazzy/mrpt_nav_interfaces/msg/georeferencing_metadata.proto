@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mrpt_nav_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+
+message GeoreferencingMetadata {
+     bool valid = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance t_enu_to_map = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose t_enu_to_utm = 3;
+     double latitude = 4;
+     double longitude = 5;
+     double height = 6;
+     int32 utm_zone = 7;
+     string utm_band = 8;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_2d_msgs.msg;
+
+import "make87_messages_ros2/rolling/soccer_vision_attribute_msgs/msg/confidence.proto";
+import "make87_messages_ros2/rolling/vision_msgs/msg/bounding_box2_d.proto";
+import "make87_messages_ros2/rolling/vision_msgs/msg/point2_d.proto";
+
+message MarkingEllipse {
+     make87_messages_ros2.rolling.vision_msgs.msg.BoundingBox2D bb = 1;
+     make87_messages_ros2.rolling.vision_msgs.msg.Point2D center = 2;
+     make87_messages_ros2.rolling.soccer_vision_attribute_msgs.msg.Confidence confidence = 3;
+}

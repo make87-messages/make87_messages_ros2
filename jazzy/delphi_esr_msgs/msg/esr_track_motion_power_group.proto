@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/delphi_esr_msgs/msg/esr_track_motion_power_track.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrTrackMotionPowerGroup {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 rolling_count_2 = 3;
+     uint32 can_id_group = 4;
+    repeated make87_messages_ros2.jazzy.delphi_esr_msgs.msg.EsrTrackMotionPowerTrack tracks = 5;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros2_socketcan_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message FdFrame {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     bool is_extended = 3;
+     bool is_error = 4;
+     uint32 len = 5;
+    repeated uint32 data = 6;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.srv;
+
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/logger_level.proto";
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/set_logger_levels_result.proto";
+
+message SetLoggerLevelsRequest {
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.LoggerLevel levels = 1;
+}
+
+message SetLoggerLevelsResponse {
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.SetLoggerLevelsResult results = 1;
+}

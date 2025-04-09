@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nmea_msgs.msg;
+
+import "make87_messages_ros2/rolling/nmea_msgs/msg/gpgsv_satellite.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Gpgsv {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     uint32 n_msgs = 3;
+     uint32 msg_number = 4;
+     uint32 n_satellites = 5;
+    repeated make87_messages_ros2.rolling.nmea_msgs.msg.GpgsvSatellite satellites = 6;
+}

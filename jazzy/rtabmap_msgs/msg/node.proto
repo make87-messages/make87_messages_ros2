@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/key_point.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/point3f.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/sensor_data.proto";
+
+message Node {
+     int32 id = 1;
+     int32 map_id = 2;
+     int32 weight = 3;
+     double stamp = 4;
+     string label = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 6;
+    repeated int32 word_id_keys = 7;
+    repeated int32 word_id_values = 8;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.KeyPoint word_kpts = 9;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point3f word_pts = 10;
+    repeated uint32 word_descriptors = 11;
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.SensorData data = 12;
+}

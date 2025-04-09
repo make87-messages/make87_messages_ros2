@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrHeaderSensorPosition {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool can_sensor_polarity = 2;
+     float can_sensor_lat_offset = 3;
+     float can_sensor_long_offset = 4;
+     float can_sensor_hangle_offset = 5;
+}

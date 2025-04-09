@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_gps_pos_status.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgGpsPos {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgGpsPosStatus status = 3;
+     uint32 gps_tow = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double altitude = 7;
+     float undulation = 8;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 position_accuracy = 9;
+     uint32 num_sv_tracked = 10;
+     uint32 num_sv_used = 11;
+     uint32 base_station_id = 12;
+     uint32 diff_age = 13;
+}

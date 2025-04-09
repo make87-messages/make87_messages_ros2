@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.automotive_platform_msgs.msg;
+
+
+message DriverCommands {
+     uint32 msg_counter = 1;
+     uint32 engage = 2;
+     uint32 disengage = 3;
+     uint32 speed_up = 4;
+     uint32 slow_down = 5;
+     uint32 further = 6;
+     uint32 closer = 7;
+     uint32 right_turn = 8;
+     uint32 left_turn = 9;
+}

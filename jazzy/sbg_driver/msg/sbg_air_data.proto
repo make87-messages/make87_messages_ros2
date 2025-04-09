@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_air_data_status.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgAirData {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgAirDataStatus status = 3;
+     double pressure_abs = 4;
+     double altitude = 5;
+     double pressure_diff = 6;
+     double true_air_speed = 7;
+     double air_temperature = 8;
+}

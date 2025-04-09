@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/trackstat_channel.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Trackstat {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string solution_status = 2;
+     string position_type = 3;
+     float cutoff = 4;
+    repeated make87_messages_ros2.rolling.novatel_gps_msgs.msg.TrackstatChannel channels = 5;
+}

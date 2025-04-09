@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nmea_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Gpgsa {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     string auto_manual_mode = 3;
+     uint32 fix_mode = 4;
+    repeated uint32 sv_ids = 5;
+     float pdop = 6;
+     float hdop = 7;
+     float vdop = 8;
+}

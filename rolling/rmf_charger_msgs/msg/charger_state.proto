@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_charger_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message ChargerState {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time charger_time = 1;
+     uint32 state = 2;
+     string charger_name = 3;
+     string error_message = 4;
+     string request_id = 5;
+     string robot_fleet = 6;
+     string robot_name = 7;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration time_to_fully_charged = 8;
+}

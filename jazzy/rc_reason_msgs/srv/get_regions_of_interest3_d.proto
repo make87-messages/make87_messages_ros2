@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/region_of_interest3_d.proto";
+
+message GetRegionsOfInterest3DRequest {
+    repeated string region_of_interest_ids = 1;
+}
+
+message GetRegionsOfInterest3DResponse {
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.RegionOfInterest3D regions_of_interest = 1;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 2;
+}

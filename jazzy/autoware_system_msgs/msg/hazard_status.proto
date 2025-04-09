@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_system_msgs.msg;
+
+import "make87_messages_ros2/jazzy/diagnostic_msgs/msg/diagnostic_status.proto";
+
+message HazardStatus {
+     uint32 level = 1;
+     bool emergency = 2;
+     bool emergency_holding = 3;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.DiagnosticStatus diag_no_fault = 4;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.DiagnosticStatus diag_safe_fault = 5;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.DiagnosticStatus diag_latent_fault = 6;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.DiagnosticStatus diag_single_point_fault = 7;
+}

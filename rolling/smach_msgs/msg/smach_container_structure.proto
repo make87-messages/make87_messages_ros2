@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.smach_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message SmachContainerStructure {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string path = 2;
+    repeated string children = 3;
+    repeated string internal_outcomes = 4;
+    repeated string outcomes_from = 5;
+    repeated string outcomes_to = 6;
+    repeated string container_outcomes = 7;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_perception_msgs.msg;
+
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/detected_object_kinematics.proto";
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/object_classification.proto";
+import "make87_messages_ros2/rolling/autoware_perception_msgs/msg/shape.proto";
+
+message DetectedObject {
+     float existence_probability = 1;
+    repeated make87_messages_ros2.rolling.autoware_perception_msgs.msg.ObjectClassification classification = 2;
+     make87_messages_ros2.rolling.autoware_perception_msgs.msg.DetectedObjectKinematics kinematics = 3;
+     make87_messages_ros2.rolling.autoware_perception_msgs.msg.Shape shape = 4;
+}

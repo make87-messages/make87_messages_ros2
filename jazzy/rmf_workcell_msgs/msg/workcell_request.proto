@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_workcell_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message WorkcellRequest {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time time = 1;
+     string request_guid = 2;
+     string target_guid = 3;
+}

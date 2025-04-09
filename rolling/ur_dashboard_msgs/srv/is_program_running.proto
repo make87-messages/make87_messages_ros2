@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_dashboard_msgs.srv;
+
+
+message IsProgramRunningRequest {
+}
+
+message IsProgramRunningResponse {
+     string answer = 1;
+     bool program_running = 2;
+     bool success = 3;
+}

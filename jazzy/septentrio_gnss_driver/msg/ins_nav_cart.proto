@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/jazzy/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message INSNavCart {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 gnss_mode = 3;
+     uint32 error = 4;
+     uint32 info = 5;
+     uint32 gnss_age = 6;
+     double x = 7;
+     double y = 8;
+     double z = 9;
+     uint32 accuracy = 10;
+     uint32 latency = 11;
+     uint32 datum = 12;
+     uint32 sb_list = 13;
+     float x_std_dev = 14;
+     float y_std_dev = 15;
+     float z_std_dev = 16;
+     float xy_cov = 17;
+     float xz_cov = 18;
+     float yz_cov = 19;
+     float heading = 20;
+     float pitch = 21;
+     float roll = 22;
+     float heading_std_dev = 23;
+     float pitch_std_dev = 24;
+     float roll_std_dev = 25;
+     float heading_pitch_cov = 26;
+     float heading_roll_cov = 27;
+     float pitch_roll_cov = 28;
+     float vx = 29;
+     float vy = 30;
+     float vz = 31;
+     float vx_std_dev = 32;
+     float vy_std_dev = 33;
+     float vz_std_dev = 34;
+     float vx_vy_cov = 35;
+     float vx_vz_cov = 36;
+     float vy_vz_cov = 37;
+}

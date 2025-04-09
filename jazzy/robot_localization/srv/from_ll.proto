@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.robot_localization.srv;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geo_point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+
+message FromLLRequest {
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPoint ll_point = 1;
+}
+
+message FromLLResponse {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point map_point = 1;
+}

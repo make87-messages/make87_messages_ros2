@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ublox_msgs/msg/esf_status_sens.proto";
+
+message EsfSTATUS {
+     uint32 i_tow = 1;
+     uint32 version = 2;
+    repeated uint32 reserved1 = 3;
+     uint32 fusion_mode = 4;
+    repeated uint32 reserved2 = 5;
+     uint32 num_sens = 6;
+    repeated make87_messages_ros2.jazzy.ublox_msgs.msg.EsfSTATUSSens sens = 7;
+}

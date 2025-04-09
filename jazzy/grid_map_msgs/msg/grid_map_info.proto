@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grid_map_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message GridMapInfo {
+     double resolution = 1;
+     double length_x = 2;
+     double length_y = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 4;
+}

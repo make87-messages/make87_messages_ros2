@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+
+message Field {
+    repeated float ranges = 1;
+     float start_angle = 2;
+     float angular_resolution = 3;
+     bool protective_field = 4;
+}

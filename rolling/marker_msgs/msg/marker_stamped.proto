@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marker_msgs.msg;
+
+import "make87_messages_ros2/rolling/marker_msgs/msg/marker.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MarkerStamped {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.marker_msgs.msg.Marker marker = 2;
+}

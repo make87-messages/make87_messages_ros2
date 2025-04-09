@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.srv;
+
+import "make87_messages_ros2/rolling/controller_manager_msgs/msg/hardware_interface.proto";
+
+message ListHardwareInterfacesRequest {
+}
+
+message ListHardwareInterfacesResponse {
+    repeated make87_messages_ros2.rolling.controller_manager_msgs.msg.HardwareInterface command_interfaces = 1;
+    repeated make87_messages_ros2.rolling.controller_manager_msgs.msg.HardwareInterface state_interfaces = 2;
+}

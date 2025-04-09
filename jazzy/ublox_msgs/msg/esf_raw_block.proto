@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message EsfRAWBlock {
+     uint32 data = 1;
+     uint32 s_t_tag = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message JointState {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated string name = 2;
+    repeated double position = 3;
+    repeated double velocity = 4;
+    repeated double effort = 5;
+}

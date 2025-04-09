@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.udp_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message UdpPacket {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string address = 2;
+     uint32 src_port = 3;
+    repeated uint32 data = 4;
+}

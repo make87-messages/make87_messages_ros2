@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RoutePosition {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string route_id = 2;
+     string id = 3;
+     float distance = 4;
+}

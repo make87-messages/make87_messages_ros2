@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.robot_calibration_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/joint_state.proto";
+
+message CaptureConfig {
+     make87_messages_ros2.rolling.sensor_msgs.msg.JointState joint_states = 1;
+    repeated string features = 2;
+}

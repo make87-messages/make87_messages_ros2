@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.service_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message ServiceEventInfo {
+     uint32 event_type = 1;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time stamp = 2;
+    repeated int32 client_gid = 3;
+     int64 sequence_number = 4;
+}

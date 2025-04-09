@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Altimeter {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double vertical_position = 2;
+     double vertical_velocity = 3;
+     double vertical_reference = 4;
+}

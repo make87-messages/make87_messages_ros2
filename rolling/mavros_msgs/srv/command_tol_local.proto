@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+
+message CommandTOLLocalRequest {
+     float min_pitch = 1;
+     float offset = 2;
+     float rate = 3;
+     float yaw = 4;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 position = 5;
+}
+
+message CommandTOLLocalResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

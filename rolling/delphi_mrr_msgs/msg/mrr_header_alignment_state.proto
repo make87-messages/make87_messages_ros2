@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MrrHeaderAlignmentState {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 can_auto_align_hangle_qf = 2;
+     uint32 can_alignment_status = 3;
+     uint32 can_alignment_state = 4;
+     float can_auto_align_hangle_ref = 5;
+     float can_auto_align_hangle = 6;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/parameter.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ParamVec {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.Parameter params = 2;
+}

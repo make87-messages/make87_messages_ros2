@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safevisionary_interfaces.msg;
+
+
+message ROIObservationSafetyData {
+     uint32 invalid_due_to_invalid_pixels = 1;
+     uint32 invalid_due_to_variance = 2;
+     uint32 invalid_due_to_overexposure = 3;
+     uint32 invalid_due_to_underexposure = 4;
+     uint32 invalid_due_to_temporal_variance = 5;
+     uint32 invalid_due_to_outside_of_measurement_range = 6;
+     uint32 invalid_due_to_retro_reflector_interference = 7;
+     uint32 contamination_error = 8;
+     uint32 quality_class = 9;
+     uint32 slot_active = 10;
+}

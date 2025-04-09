@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosapi_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message GetTimeRequest {
+}
+
+message GetTimeResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time time = 1;
+}

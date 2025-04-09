@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_task_msgs/msg/dispatch_state.proto";
+
+message DispatchStates {
+    repeated make87_messages_ros2.jazzy.rmf_task_msgs.msg.DispatchState active = 1;
+    repeated make87_messages_ros2.jazzy.rmf_task_msgs.msg.DispatchState finished = 2;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lifecycle_msgs.srv;
+
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/state.proto";
+
+message GetAvailableStatesRequest {
+}
+
+message GetAvailableStatesResponse {
+    repeated make87_messages_ros2.rolling.lifecycle_msgs.msg.State available_states = 1;
+}

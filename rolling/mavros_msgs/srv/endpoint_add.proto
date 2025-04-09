@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message EndpointAddRequest {
+     string url = 1;
+     uint32 type = 2;
+}
+
+message EndpointAddResponse {
+     bool successful = 1;
+     string reason = 2;
+     uint32 id = 3;
+}

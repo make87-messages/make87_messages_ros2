@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/model_state.proto";
+
+message SetModelStateRequest {
+     make87_messages_ros2.jazzy.gazebo_msgs.msg.ModelState model_state = 1;
+}
+
+message SetModelStateResponse {
+     bool success = 1;
+     string status_message = 2;
+}

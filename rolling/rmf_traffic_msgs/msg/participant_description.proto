@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/profile.proto";
+
+message ParticipantDescription {
+     string name = 1;
+     string owner = 2;
+     uint32 responsiveness = 3;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.Profile profile = 4;
+}

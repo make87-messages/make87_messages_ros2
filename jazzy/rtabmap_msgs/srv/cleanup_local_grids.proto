@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+
+message CleanupLocalGridsRequest {
+     int32 radius = 1;
+     bool filter_scans = 2;
+}
+
+message CleanupLocalGridsResponse {
+     int32 modified = 1;
+}

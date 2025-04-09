@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/box.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/rectangle.proto";
+
+message LoadCarrier {
+     string id = 1;
+     string type = 2;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Box outer_dimensions = 3;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Box inner_dimensions = 4;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Rectangle rim_thickness = 5;
+     double rim_step_height = 6;
+     make87_messages_ros2.jazzy.rc_reason_msgs.msg.Rectangle rim_ledge = 7;
+     double height_open_side = 8;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseStamped pose = 9;
+     bool overfilled = 10;
+}

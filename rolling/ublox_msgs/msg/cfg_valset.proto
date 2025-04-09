@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/cfg_valset_cfgdata.proto";
+
+message CfgVALSET {
+     uint32 version = 1;
+     uint32 layers = 2;
+    repeated uint32 reserved0 = 3;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.CfgVALSETCfgdata cfgdata = 4;
+}

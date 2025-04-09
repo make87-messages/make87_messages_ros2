@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ur_dashboard_msgs.srv;
+
+
+message IsProgramSavedRequest {
+}
+
+message IsProgramSavedResponse {
+     string answer = 1;
+     string program_name = 2;
+     bool program_saved = 3;
+     bool success = 4;
+}

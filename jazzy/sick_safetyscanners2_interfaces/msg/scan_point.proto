@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+
+message ScanPoint {
+     float angle = 1;
+     uint32 distance = 2;
+     uint32 reflectivity = 3;
+     bool valid = 4;
+     bool infinite = 5;
+     bool glare = 6;
+     bool reflector = 7;
+     bool contamination = 8;
+     bool contamination_warning = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_sensing_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/quaternion.proto";
+
+message GnssInsOrientation {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Quaternion orientation = 1;
+     float rmse_rotation_x = 2;
+     float rmse_rotation_y = 3;
+     float rmse_rotation_z = 4;
+}

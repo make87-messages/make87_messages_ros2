@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message BrakeCmd {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float cmd = 2;
+     float rate_inc = 3;
+     float rate_dec = 4;
+     uint32 cmd_type = 5;
+     bool enable = 6;
+     bool clear = 7;
+     bool ignore = 8;
+}

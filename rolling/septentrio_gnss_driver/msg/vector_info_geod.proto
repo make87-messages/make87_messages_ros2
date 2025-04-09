@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+
+message VectorInfoGeod {
+     uint32 nr_sv = 1;
+     uint32 error = 2;
+     uint32 mode = 3;
+     uint32 misc = 4;
+     double delta_east = 5;
+     double delta_north = 6;
+     double delta_up = 7;
+     float delta_ve = 8;
+     float delta_vn = 9;
+     float delta_vu = 10;
+     uint32 azimuth = 11;
+     int32 elevation = 12;
+     uint32 reference_id = 13;
+     uint32 corr_age = 14;
+     uint32 signal_info = 15;
+}

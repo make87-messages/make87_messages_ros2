@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgStatusAiding {
+     bool gps1_pos_recv = 1;
+     bool gps1_vel_recv = 2;
+     bool gps1_hdt_recv = 3;
+     bool gps1_utc_recv = 4;
+     bool gps2_pos_recv = 5;
+     bool gps2_vel_recv = 6;
+     bool gps2_hdt_recv = 7;
+     bool gps2_utc_recv = 8;
+     bool mag_recv = 9;
+     bool odo_recv = 10;
+     bool dvl_recv = 11;
+     bool usbl_recv = 12;
+     bool depth_recv = 13;
+     bool air_data_recv = 14;
+     bool user_pos_recv = 15;
+     bool user_vel_recv = 16;
+     bool user_heading_recv = 17;
+}

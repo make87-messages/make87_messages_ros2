@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.polygon_msgs.msg;
+
+import "make87_messages_ros2/jazzy/polygon_msgs/msg/polygon2_d.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Polygon2DStamped {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.polygon_msgs.msg.Polygon2D polygon = 2;
+}

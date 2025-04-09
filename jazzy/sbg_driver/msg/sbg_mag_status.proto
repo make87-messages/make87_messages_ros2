@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgMagStatus {
+     bool mag_x = 1;
+     bool mag_y = 2;
+     bool mag_z = 3;
+     bool accel_x = 4;
+     bool accel_y = 5;
+     bool accel_z = 6;
+     bool mags_in_range = 7;
+     bool accels_in_range = 8;
+     bool calibration = 9;
+}

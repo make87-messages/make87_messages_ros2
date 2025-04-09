@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg;
+
+
+message ROIObservationResultData {
+     uint32 task_result = 1;
+     uint32 result_safe = 2;
+     uint32 result_valid = 3;
+     uint32 distance_valid = 4;
+     uint32 distance_safe = 5;
+}

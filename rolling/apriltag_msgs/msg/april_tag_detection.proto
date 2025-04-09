@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.apriltag_msgs.msg;
+
+import "make87_messages_ros2/rolling/apriltag_msgs/msg/point.proto";
+
+message AprilTagDetection {
+     string family = 1;
+     int32 id = 2;
+     int32 hamming = 3;
+     float goodness = 4;
+     float decision_margin = 5;
+     make87_messages_ros2.rolling.apriltag_msgs.msg.Point centre = 6;
+    repeated make87_messages_ros2.rolling.apriltag_msgs.msg.Point corners = 7;
+    repeated double homography = 8;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grid_map_msgs.srv;
+
+
+message ProcessFileRequest {
+     string file_path = 1;
+     string topic_name = 2;
+}
+
+message ProcessFileResponse {
+     bool success = 1;
+}

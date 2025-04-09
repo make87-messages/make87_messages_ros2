@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.pendulum_msgs.msg;
+
+
+message JointCommand {
+     double position = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message TsrVisionOnly {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 vision_only_sign_type_display1 = 2;
+     uint32 vision_only_supplementary_sign_type_display1 = 3;
+     uint32 vision_only_sign_type_display2 = 4;
+     uint32 vision_only_supplementary_sign_type_display2 = 5;
+     uint32 vision_only_sign_type_display3 = 6;
+     uint32 vision_only_supplementary_sign_type_display3 = 7;
+     uint32 vision_only_sign_type_display4 = 8;
+     uint32 vision_only_supplementary_sign_type_display4 = 9;
+}

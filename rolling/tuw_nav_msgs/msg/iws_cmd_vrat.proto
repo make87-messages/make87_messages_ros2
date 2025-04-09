@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message IwsCmdVRAT {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double v = 2;
+     double rho = 3;
+     double phi = 4;
+     double delta_t = 5;
+}

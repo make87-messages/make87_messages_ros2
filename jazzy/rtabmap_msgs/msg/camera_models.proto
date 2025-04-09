@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/camera_model.proto";
+
+message CameraModels {
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.CameraModel models = 1;
+}

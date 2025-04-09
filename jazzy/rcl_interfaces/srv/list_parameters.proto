@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/list_parameters_result.proto";
+
+message ListParametersRequest {
+    repeated string prefixes = 1;
+     uint64 depth = 2;
+}
+
+message ListParametersResponse {
+     make87_messages_ros2.jazzy.rcl_interfaces.msg.ListParametersResult result = 1;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.soccer_vision_3d_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/soccer_vision_attribute_msgs/msg/confidence.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message FieldBoundary {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point points = 2;
+     make87_messages_ros2.rolling.soccer_vision_attribute_msgs.msg.Confidence confidence = 3;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/wrench.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/string.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/u_int32.proto";
+
+message JointWrench {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.std_msgs.msg.String body_1_name = 2;
+     make87_messages_ros2.rolling.std_msgs.msg.UInt32 body_1_id = 3;
+     make87_messages_ros2.rolling.std_msgs.msg.String body_2_name = 4;
+     make87_messages_ros2.rolling.std_msgs.msg.UInt32 body_2_id = 5;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Wrench body_1_wrench = 6;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Wrench body_2_wrench = 7;
+}

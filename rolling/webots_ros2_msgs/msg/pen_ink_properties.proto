@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.webots_ros2_msgs.msg;
+
+
+message PenInkProperties {
+     int32 color = 1;
+     float density = 2;
+}

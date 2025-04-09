@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/ublox_ubx_msgs/msg/esf_sensor_status.proto";
+
+message UBXEsfStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     uint32 version = 3;
+     uint32 wt_init_status = 4;
+     uint32 mnt_alg_status = 5;
+     uint32 ins_init_status = 6;
+     uint32 imu_init_status = 7;
+     uint32 fusion_mode = 8;
+     uint32 num_sens = 9;
+    repeated make87_messages_ros2.jazzy.ublox_ubx_msgs.msg.ESFSensorStatus sensor_statuses = 10;
+}

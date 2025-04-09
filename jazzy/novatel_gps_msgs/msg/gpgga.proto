@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Gpgga {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string message_id = 2;
+     double utc_seconds = 3;
+     double lat = 4;
+     double lon = 5;
+     string lat_dir = 6;
+     string lon_dir = 7;
+     uint32 gps_qual = 8;
+     uint32 num_sats = 9;
+     float hdop = 10;
+     float alt = 11;
+     string altitude_units = 12;
+     float undulation = 13;
+     string undulation_units = 14;
+     uint32 diff_age = 15;
+     string station_id = 16;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/rawx_data.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/rec_stat.proto";
+
+message UBXRxmRawx {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double rcv_tow = 2;
+     uint32 week = 3;
+     int32 leap_s = 4;
+     uint32 num_meas = 5;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.RecStat rec_stat = 6;
+     uint32 version = 7;
+    repeated make87_messages_ros2.rolling.ublox_ubx_msgs.msg.RawxData rawx_data = 8;
+}

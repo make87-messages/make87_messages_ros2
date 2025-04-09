@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/ode_joint_properties.proto";
+
+message SetJointPropertiesRequest {
+     string joint_name = 1;
+     make87_messages_ros2.jazzy.gazebo_msgs.msg.ODEJointProperties ode_joint_config = 2;
+}
+
+message SetJointPropertiesResponse {
+     bool success = 1;
+     string status_message = 2;
+}

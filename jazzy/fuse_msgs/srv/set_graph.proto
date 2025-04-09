@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.fuse_msgs.srv;
+
+import "make87_messages_ros2/jazzy/fuse_msgs/msg/serialized_graph.proto";
+
+message SetGraphRequest {
+     make87_messages_ros2.jazzy.fuse_msgs.msg.SerializedGraph graph = 1;
+}
+
+message SetGraphResponse {
+     bool success = 1;
+     string message = 2;
+}

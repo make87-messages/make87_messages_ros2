@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+
+message BeaconState {
+     string id = 1;
+     bool online = 2;
+     string category = 3;
+     bool activated = 4;
+     string level = 5;
+}

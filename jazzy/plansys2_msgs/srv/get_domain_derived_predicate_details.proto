@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/derived.proto";
+
+message GetDomainDerivedPredicateDetailsRequest {
+     string predicate = 1;
+}
+
+message GetDomainDerivedPredicateDetailsResponse {
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Derived predicates = 1;
+     bool success = 2;
+     string error_info = 3;
+}

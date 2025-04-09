@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+
+message CellularStatus {
+     uint32 status = 1;
+     uint32 failure_reason = 2;
+     uint32 type = 3;
+     uint32 quality = 4;
+     uint32 mcc = 5;
+     uint32 mnc = 6;
+     uint32 lac = 7;
+}

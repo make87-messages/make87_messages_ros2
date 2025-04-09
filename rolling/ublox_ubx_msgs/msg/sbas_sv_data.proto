@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message SBASSvData {
+     uint32 svid = 1;
+     uint32 reserved_1 = 2;
+     uint32 udre = 3;
+     uint32 sv_sys = 4;
+     uint32 sv_service = 5;
+     uint32 reserved_2 = 6;
+     int32 prc = 7;
+    repeated uint32 reserved_3 = 8;
+     int32 ic = 9;
+}

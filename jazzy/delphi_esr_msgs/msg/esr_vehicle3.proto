@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EsrVehicle3 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool long_accel_validity = 2;
+     bool lat_accel_validity = 3;
+     float lat_accel = 4;
+     float long_accel = 5;
+     uint32 radar_fov_lr = 6;
+     uint32 radar_fov_mr = 7;
+     bool auto_align_disable = 8;
+     uint32 radar_height = 9;
+     bool serv_align_type = 10;
+     bool serv_align_enable = 11;
+     uint32 aalign_avg_ctr_total = 12;
+     bool auto_align_converged = 13;
+     uint32 wheel_slip = 14;
+     uint32 serv_align_updates_need = 15;
+     int32 angle_mounting_offset = 16;
+}

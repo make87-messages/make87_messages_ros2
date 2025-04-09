@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message SrrFeatureAlert {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 lcma_blis_ignored_track_id = 2;
+     uint32 lcma_blis_track_id = 3;
+     float lcma_cvw_ttc = 4;
+     bool cta_ttc_alert = 5;
+     float cta_selected_track_ttc = 6;
+     uint32 cta_selected_track = 7;
+     uint32 cta_alert = 8;
+     bool cta_active = 9;
+     uint32 lcma_cvw_cipv = 10;
+     uint32 lcma_cvw_alert_state = 11;
+     uint32 lcma_blis_alert_state = 12;
+     bool lcma_active = 13;
+}

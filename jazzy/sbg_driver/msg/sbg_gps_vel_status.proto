@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgGpsVelStatus {
+     uint32 vel_status = 1;
+     uint32 vel_type = 2;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LandingTarget {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 target_num = 2;
+     uint32 frame = 3;
+    repeated float angle = 4;
+     float distance = 5;
+    repeated float size = 6;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 7;
+     uint32 type = 8;
+}

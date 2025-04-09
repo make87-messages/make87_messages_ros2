@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_navigation_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PointOfInterestRequest {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string name = 2;
+     string module_name = 3;
+     uint32 request_id = 4;
+     uint32 cancel = 5;
+     uint32 update_num = 6;
+     uint32 guid_valid = 7;
+     uint64 guid = 8;
+     float tolerance = 9;
+}

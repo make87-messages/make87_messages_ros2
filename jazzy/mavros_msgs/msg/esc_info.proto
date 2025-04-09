@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/mavros_msgs/msg/esc_info_item.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ESCInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 counter = 2;
+     uint32 count = 3;
+     uint32 connection_type = 4;
+     uint32 info = 5;
+    repeated make87_messages_ros2.jazzy.mavros_msgs.msg.ESCInfoItem esc_info = 6;
+}

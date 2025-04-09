@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.srv;
+
+
+message ManageLifecycleNodesRequest {
+     uint32 command = 1;
+}
+
+message ManageLifecycleNodesResponse {
+     bool success = 1;
+}

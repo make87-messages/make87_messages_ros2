@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sick_safetyscanners2_interfaces.msg;
+
+
+message OutputPaths {
+    repeated bool status = 1;
+    repeated bool is_safe = 2;
+    repeated bool is_valid = 3;
+     int32 active_monitoring_case = 4;
+}

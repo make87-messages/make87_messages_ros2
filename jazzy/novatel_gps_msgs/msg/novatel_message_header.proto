@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/jazzy/novatel_gps_msgs/msg/novatel_receiver_status.proto";
+
+message NovatelMessageHeader {
+     string message_name = 1;
+     string port = 2;
+     uint32 sequence_num = 3;
+     float percent_idle_time = 4;
+     string gps_time_status = 5;
+     uint32 gps_week_num = 6;
+     double gps_seconds = 7;
+     make87_messages_ros2.jazzy.novatel_gps_msgs.msg.NovatelReceiverStatus receiver_status = 8;
+     uint32 receiver_software_version = 9;
+}

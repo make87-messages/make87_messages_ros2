@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.phidgets_msgs.srv;
+
+
+message SetAnalogOutputRequest {
+     uint32 index = 1;
+     double voltage = 2;
+}
+
+message SetAnalogOutputResponse {
+     bool success = 1;
+}

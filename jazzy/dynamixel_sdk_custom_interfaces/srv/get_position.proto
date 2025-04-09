@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.dynamixel_sdk_custom_interfaces.srv;
+
+
+message GetPositionRequest {
+     uint32 id = 1;
+}
+
+message GetPositionResponse {
+     int32 position = 1;
+}

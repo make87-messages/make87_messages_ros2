@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/contour_point_sigma.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/point2_di.proto";
+import "make87_messages_ros2/jazzy/ibeo_msgs/msg/point2_dui.proto";
+
+message TrackedProperties {
+     uint32 object_age = 1;
+     uint32 hidden_status_age = 2;
+     uint32 object_phase = 3;
+     uint32 dynamic_property = 4;
+     uint32 relative_time_of_measure = 5;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di position_closest_point = 6;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di relative_velocity = 7;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Dui relative_velocity_sigma = 8;
+     uint32 classification = 9;
+     uint32 classification_age = 10;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di object_box_size = 11;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Dui object_box_size_sigma = 12;
+     int32 object_box_orientation = 13;
+     uint32 object_box_orientation_sigma = 14;
+     uint32 tracking_point_location = 15;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di tracking_point_coordinate = 16;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Dui tracking_point_coordinate_sigma = 17;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di velocity = 18;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Dui velocity_sigma = 19;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Di acceleration = 20;
+     make87_messages_ros2.jazzy.ibeo_msgs.msg.Point2Dui acceleration_sigma = 21;
+     int32 yaw_rate = 22;
+     uint32 yaw_rate_sigma = 23;
+     uint32 number_of_contour_points = 24;
+    repeated make87_messages_ros2.jazzy.ibeo_msgs.msg.ContourPointSigma contour_point_list = 25;
+}

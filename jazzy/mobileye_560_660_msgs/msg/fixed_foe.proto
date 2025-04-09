@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message FixedFoe {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     double fixed_yaw = 2;
+     double fixed_horizon = 3;
+}

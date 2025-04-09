@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.srv;
+
+
+message SaveMapRequest {
+     string map_topic = 1;
+     string map_url = 2;
+     string image_format = 3;
+     string map_mode = 4;
+     float free_thresh = 5;
+     float occupied_thresh = 6;
+}
+
+message SaveMapResponse {
+     bool result = 1;
+}

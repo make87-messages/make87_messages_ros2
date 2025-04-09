@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.turtlebot3_msgs.srv;
+
+
+message DqnRequest {
+     uint32 action = 1;
+     bool init = 2;
+}
+
+message DqnResponse {
+    repeated float state = 1;
+     float reward = 2;
+     bool done = 3;
+}

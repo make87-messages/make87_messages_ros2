@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/map_data.proto";
+
+message GetMapRequest {
+     bool global_map = 1;
+     bool optimized = 2;
+     bool graph_only = 3;
+}
+
+message GetMapResponse {
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.MapData data = 1;
+}

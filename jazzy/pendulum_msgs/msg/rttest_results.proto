@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.pendulum_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/pendulum_msgs/msg/joint_command.proto";
+import "make87_messages_ros2/jazzy/pendulum_msgs/msg/joint_state.proto";
+
+message RttestResults {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     make87_messages_ros2.jazzy.pendulum_msgs.msg.JointCommand command = 2;
+     make87_messages_ros2.jazzy.pendulum_msgs.msg.JointState state = 3;
+     uint64 cur_latency = 4;
+     double mean_latency = 5;
+     uint64 min_latency = 6;
+     uint64 max_latency = 7;
+     uint64 minor_pagefaults = 8;
+     uint64 major_pagefaults = 9;
+}

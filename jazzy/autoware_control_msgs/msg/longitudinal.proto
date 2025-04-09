@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_control_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message Longitudinal {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time control_time = 2;
+     float velocity = 3;
+     float acceleration = 4;
+     float jerk = 5;
+     bool is_defined_acceleration = 6;
+     bool is_defined_jerk = 7;
+}

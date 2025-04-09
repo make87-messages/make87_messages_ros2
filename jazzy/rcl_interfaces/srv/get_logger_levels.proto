@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/logger_level.proto";
+
+message GetLoggerLevelsRequest {
+    repeated string names = 1;
+}
+
+message GetLoggerLevelsResponse {
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.LoggerLevel levels = 1;
+}

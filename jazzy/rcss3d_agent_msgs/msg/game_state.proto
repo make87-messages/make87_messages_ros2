@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg;
+
+
+message GameState {
+     float time = 1;
+     string playmode = 2;
+     int32 score_left = 3;
+     int32 score_right = 4;
+}

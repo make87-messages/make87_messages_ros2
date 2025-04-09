@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_map_msgs.msg;
+
+
+message LaneletMapCellMetaData {
+     string cell_id = 1;
+     double min_x = 2;
+     double max_x = 3;
+     double min_y = 4;
+     double max_y = 5;
+}

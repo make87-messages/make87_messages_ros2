@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Mavlink {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 framing_status = 2;
+     uint32 magic = 3;
+     uint32 len = 4;
+     uint32 incompat_flags = 5;
+     uint32 compat_flags = 6;
+     uint32 seq = 7;
+     uint32 sysid = 8;
+     uint32 compid = 9;
+     uint32 msgid = 10;
+     uint32 checksum = 11;
+    repeated uint64 payload64 = 12;
+    repeated uint32 signature = 13;
+}

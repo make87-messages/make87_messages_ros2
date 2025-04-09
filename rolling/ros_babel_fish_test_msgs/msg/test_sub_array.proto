@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+
+message TestSubArray {
+    repeated int32 ints = 1;
+    repeated string strings = 2;
+    repeated make87_messages_ros2.rolling.builtin_interfaces.msg.Time times = 3;
+}

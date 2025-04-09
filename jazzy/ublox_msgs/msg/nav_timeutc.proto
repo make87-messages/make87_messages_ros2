@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message NavTIMEUTC {
+     uint32 i_tow = 1;
+     uint32 t_acc = 2;
+     int32 nano = 3;
+     uint32 year = 4;
+     uint32 month = 5;
+     uint32 day = 6;
+     uint32 hour = 7;
+     uint32 min = 8;
+     uint32 sec = 9;
+     uint32 valid = 10;
+}

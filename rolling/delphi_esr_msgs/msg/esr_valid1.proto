@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrValid1 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 lr_sn = 3;
+     float lr_range = 4;
+     float lr_range_rate = 5;
+     float lr_angle = 6;
+     int32 lr_power = 7;
+}

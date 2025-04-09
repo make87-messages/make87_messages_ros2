@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.derived_object_msgs.msg;
+
+import "make87_messages_ros2/jazzy/derived_object_msgs/msg/solid_primitive_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/accel_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/polygon.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose_with_covariance.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist_with_covariance.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ObjectWithCovariance {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 id = 2;
+     uint32 detection_level = 3;
+     bool object_classified = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.PoseWithCovariance pose = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.TwistWithCovariance twist = 6;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.AccelWithCovariance accel = 7;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Polygon polygon = 8;
+     make87_messages_ros2.jazzy.derived_object_msgs.msg.SolidPrimitiveWithCovariance shape = 9;
+     uint32 classification = 10;
+     uint32 classification_certainty = 11;
+     uint32 classification_age = 12;
+}

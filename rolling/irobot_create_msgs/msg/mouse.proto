@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Mouse {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float integrated_x = 2;
+     float integrated_y = 3;
+     uint32 frame_id = 4;
+     uint32 last_squal = 5;
+}

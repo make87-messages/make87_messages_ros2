@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+
+message GetModelPropertiesRequest {
+     string model_name = 1;
+}
+
+message GetModelPropertiesResponse {
+     string parent_model_name = 1;
+     string canonical_body_name = 2;
+    repeated string body_names = 3;
+    repeated string geom_names = 4;
+    repeated string joint_names = 5;
+    repeated string child_model_names = 6;
+     bool is_static = 7;
+     bool success = 8;
+     string status_message = 9;
+}

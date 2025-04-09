@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg;
+
+
+message RoutePrecondition {
+     string robot_id = 1;
+     int32 current_route_segment = 2;
+}

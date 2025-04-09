@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RTKBaseline {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_last_baseline_ms = 2;
+     uint32 rtk_receiver_id = 3;
+     uint32 wn = 4;
+     uint32 tow = 5;
+     uint32 rtk_health = 6;
+     uint32 rtk_rate = 7;
+     uint32 nsats = 8;
+     uint32 baseline_coords_type = 9;
+     int32 baseline_a_mm = 10;
+     int32 baseline_b_mm = 11;
+     int32 baseline_c_mm = 12;
+     uint32 accuracy = 13;
+     int32 iar_num_hypotheses = 14;
+}

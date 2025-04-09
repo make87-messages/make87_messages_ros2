@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_planning_msgs.msg;
+
+import "make87_messages_ros2/rolling/autoware_planning_msgs/msg/lanelet_segment.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/unique_identifier_msgs/msg/uuid.proto";
+
+message LaneletRoute {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose start_pose = 2;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose goal_pose = 3;
+    repeated make87_messages_ros2.rolling.autoware_planning_msgs.msg.LaneletSegment segments = 4;
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID uuid = 5;
+     bool allow_modification = 6;
+}

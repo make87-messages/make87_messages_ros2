@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LkaLane {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 lane_type = 2;
+     uint32 quality = 3;
+     uint32 model_degree = 4;
+     double position_parameter_c0 = 5;
+     double curvature_parameter_c2 = 6;
+     double curvature_derivative_parameter_c3 = 7;
+     float marking_width = 8;
+     double heading_angle_parameter_c1 = 9;
+     float view_range = 10;
+     bool view_range_availability = 11;
+}

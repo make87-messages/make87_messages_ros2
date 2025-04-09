@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.webots_ros2_msgs.srv;
+
+
+message SpawnNodeFromStringRequest {
+     string data = 1;
+}
+
+message SpawnNodeFromStringResponse {
+     bool success = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.py_trees_ros_interfaces.msg;
+
+
+message ServiceDetails {
+     string service_name = 1;
+     string service_type = 2;
+}

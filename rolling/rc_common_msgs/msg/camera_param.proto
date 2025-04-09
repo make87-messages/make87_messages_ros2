@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rc_common_msgs.msg;
+
+import "make87_messages_ros2/rolling/rc_common_msgs/msg/key_value.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message CameraParam {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool is_color_camera = 2;
+     float exposure_time = 3;
+     float gain = 4;
+     uint32 line_status_all = 5;
+    repeated make87_messages_ros2.rolling.rc_common_msgs.msg.KeyValue line_source = 6;
+    repeated make87_messages_ros2.rolling.rc_common_msgs.msg.KeyValue extra_data = 7;
+}

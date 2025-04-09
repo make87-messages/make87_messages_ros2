@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geometry_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+
+message Inertia {
+     double m = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 com = 2;
+     double ixx = 3;
+     double ixy = 4;
+     double ixz = 5;
+     double iyy = 6;
+     double iyz = 7;
+     double izz = 8;
+}

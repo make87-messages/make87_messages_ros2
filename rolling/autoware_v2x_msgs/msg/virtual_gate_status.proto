@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.autoware_v2x_msgs.msg;
+
+import "make87_messages_ros2/rolling/autoware_v2x_msgs/msg/virtual_gate_area_status.proto";
+
+message VirtualGateStatus {
+    repeated make87_messages_ros2.rolling.autoware_v2x_msgs.msg.VirtualGateAreaStatus areas = 1;
+}

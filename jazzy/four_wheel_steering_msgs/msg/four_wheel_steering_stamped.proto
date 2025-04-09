@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.four_wheel_steering_msgs.msg;
+
+import "make87_messages_ros2/jazzy/four_wheel_steering_msgs/msg/four_wheel_steering.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message FourWheelSteeringStamped {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.four_wheel_steering_msgs.msg.FourWheelSteering data = 2;
+}

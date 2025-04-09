@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_reservation_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_reservation_msgs/msg/ticket.proto";
+
+message ReservationAllocation {
+     make87_messages_ros2.rolling.rmf_reservation_msgs.msg.Ticket ticket = 1;
+     uint32 instruction_type = 2;
+     uint64 chosen_alternative = 3;
+     string resource = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UBXNavVelNED {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     int32 vel_n = 3;
+     int32 vel_e = 4;
+     int32 vel_d = 5;
+     uint32 speed = 6;
+     uint32 g_speed = 7;
+     int32 heading = 8;
+     uint32 s_acc = 9;
+     uint32 c_acc = 10;
+}

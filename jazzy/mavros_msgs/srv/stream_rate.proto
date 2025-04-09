@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+
+message StreamRateRequest {
+     uint32 stream_id = 1;
+     uint32 message_rate = 2;
+     bool on_off = 3;
+}
+
+message StreamRateResponse {
+}

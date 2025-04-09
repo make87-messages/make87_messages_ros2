@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/gazebo_msgs/msg/link_state.proto";
+
+message SetLinkStateRequest {
+     make87_messages_ros2.jazzy.gazebo_msgs.msg.LinkState link_state = 1;
+}
+
+message SetLinkStateResponse {
+     bool success = 1;
+     string status_message = 2;
+}

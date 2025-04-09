@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MrrHeaderSensorCoverage {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 can_sensor_fov_hor = 2;
+     int32 can_doppler_coverage = 3;
+     uint32 can_range_coverage = 4;
+}

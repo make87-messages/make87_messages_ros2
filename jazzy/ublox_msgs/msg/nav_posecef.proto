@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message NavPOSECEF {
+     uint32 i_tow = 1;
+     int32 ecef_x = 2;
+     int32 ecef_y = 3;
+     int32 ecef_z = 4;
+     uint32 p_acc = 5;
+}

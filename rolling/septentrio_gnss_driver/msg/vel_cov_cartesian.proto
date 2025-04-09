@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message VelCovCartesian {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 mode = 3;
+     uint32 error = 4;
+     float cov_vxvx = 5;
+     float cov_vyvy = 6;
+     float cov_vzvz = 7;
+     float cov_dtdt = 8;
+     float cov_vxvy = 9;
+     float cov_vxvz = 10;
+     float cov_vxdt = 11;
+     float cov_vyvz = 12;
+     float cov_vydt = 13;
+     float cov_vzdt = 14;
+}

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_stamped.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/wrench.proto";
+
+message SetForceModeRequest {
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseStamped task_frame = 1;
+     bool selection_vector_x = 2;
+     bool selection_vector_y = 3;
+     bool selection_vector_z = 4;
+     bool selection_vector_rx = 5;
+     bool selection_vector_ry = 6;
+     bool selection_vector_rz = 7;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Wrench wrench = 8;
+     uint32 type = 9;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Twist speed_limits = 10;
+    repeated float deviation_limits = 11;
+     float damping_factor = 12;
+     float gain_scaling = 13;
+}
+
+message SetForceModeResponse {
+     bool success = 1;
+}

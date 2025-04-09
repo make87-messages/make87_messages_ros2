@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.srv;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MountConfigureRequest {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 mode = 2;
+     bool stabilize_roll = 3;
+     bool stabilize_pitch = 4;
+     bool stabilize_yaw = 5;
+     uint32 roll_input = 6;
+     uint32 pitch_input = 7;
+     uint32 yaw_input = 8;
+}
+
+message MountConfigureResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

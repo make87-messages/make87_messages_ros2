@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_object_map_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/tuw_object_map_msgs/msg/geo_json_feature.proto";
+
+message GeoJSON {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string type = 2;
+    repeated make87_messages_ros2.rolling.tuw_object_map_msgs.msg.GeoJSONFeature features = 3;
+}

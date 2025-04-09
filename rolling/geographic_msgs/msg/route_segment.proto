@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.geographic_msgs.msg;
+
+import "make87_messages_ros2/rolling/geographic_msgs/msg/key_value.proto";
+import "make87_messages_ros2/rolling/unique_identifier_msgs/msg/uuid.proto";
+
+message RouteSegment {
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID id = 1;
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID start = 2;
+     make87_messages_ros2.rolling.unique_identifier_msgs.msg.UUID end = 3;
+    repeated make87_messages_ros2.rolling.geographic_msgs.msg.KeyValue props = 4;
+}

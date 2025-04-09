@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message BaseConstr {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double v_max = 2;
+     double av_max = 3;
+     double w_max = 4;
+     double aw_max = 5;
+     double omg_wh_max = 6;
+}

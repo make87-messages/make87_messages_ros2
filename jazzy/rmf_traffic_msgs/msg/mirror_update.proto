@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_identity.proto";
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_patch.proto";
+
+message MirrorUpdate {
+     make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.ScheduleIdentity node_id = 1;
+     uint64 database_version = 2;
+     make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.SchedulePatch patch = 3;
+     bool is_remedial_update = 4;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.smach_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SmachContainerStatus {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string path = 2;
+    repeated string initial_states = 3;
+    repeated string active_states = 4;
+    repeated uint32 local_data = 5;
+     string info = 6;
+}

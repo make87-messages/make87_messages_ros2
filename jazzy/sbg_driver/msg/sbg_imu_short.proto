@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/sbg_driver/msg/sbg_imu_status.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SbgImuShort {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 time_stamp = 2;
+     make87_messages_ros2.jazzy.sbg_driver.msg.SbgImuStatus imu_status = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 delta_velocity = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 delta_angle = 5;
+     int32 temperature = 6;
+}

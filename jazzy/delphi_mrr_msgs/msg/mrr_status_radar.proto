@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MrrStatusRadar {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_interference_type = 2;
+     bool can_recommend_unconverge = 3;
+     uint32 can_blockage_sidelobe_filter_val = 4;
+     bool can_radar_align_incomplete = 5;
+     bool can_blockage_sidelobe = 6;
+     bool can_blockage_mnr = 7;
+     bool can_radar_ext_cond_nok = 8;
+     bool can_radar_align_out_range = 9;
+     bool can_radar_align_not_start = 10;
+     bool can_radar_overheat_error = 11;
+     bool can_radar_not_op = 12;
+     bool can_xcvr_operational = 13;
+}

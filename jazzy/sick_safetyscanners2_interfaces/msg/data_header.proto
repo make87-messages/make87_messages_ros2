@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safetyscanners2_interfaces.msg;
+
+
+message DataHeader {
+     uint32 version_version = 1;
+     uint32 version_major_version = 2;
+     uint32 version_minor_version = 3;
+     uint32 version_release = 4;
+     uint32 serial_number_of_device = 5;
+     uint32 serial_number_of_channel_plug = 6;
+     uint32 channel_number = 7;
+     uint32 sequence_number = 8;
+     uint32 scan_number = 9;
+     uint32 timestamp_date = 10;
+     uint32 timestamp_time = 11;
+}

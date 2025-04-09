@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.msg;
+
+
+message ChainConnection {
+     string name = 1;
+    repeated string reference_interfaces = 2;
+}

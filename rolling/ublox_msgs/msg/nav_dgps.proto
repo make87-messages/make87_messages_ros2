@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/nav_dgpssv.proto";
+
+message NavDGPS {
+     uint32 i_tow = 1;
+     int32 age = 2;
+     int32 base_id = 3;
+     int32 base_health = 4;
+     int32 num_ch = 5;
+     uint32 status = 6;
+     uint32 reserved1 = 7;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.NavDGPSSV sv = 8;
+}

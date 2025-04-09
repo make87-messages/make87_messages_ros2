@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.robot_localization.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message GetStateRequest {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time time_stamp = 1;
+     string frame_id = 2;
+}
+
+message GetStateResponse {
+    repeated double state = 1;
+    repeated double covariance = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.statistics_msgs.msg;
+
+
+message StatisticDataPoint {
+     uint32 data_type = 1;
+     double data = 2;
+}

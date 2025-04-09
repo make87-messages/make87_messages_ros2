@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+
+message SigFlags {
+     uint32 health = 1;
+     bool pr_smoothed = 2;
+     bool pr_used = 3;
+     bool cr_used = 4;
+     bool do_used = 5;
+     bool pr_corr_used = 6;
+     bool cr_corr_used = 7;
+     bool do_corr_used = 8;
+}

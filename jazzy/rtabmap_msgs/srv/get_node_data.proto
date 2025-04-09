@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/node.proto";
+
+message GetNodeDataRequest {
+    repeated int32 ids = 1;
+     bool images = 2;
+     bool scan = 3;
+     bool grid = 4;
+     bool user_data = 5;
+}
+
+message GetNodeDataResponse {
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Node data = 1;
+}

@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/shape_msgs/msg/plane.proto";
+
+message CalibrateBasePlaneRequest {
+     string pose_frame = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 2;
+     string plane_estimation_method = 3;
+     string stereo_plane_preference = 4;
+     string region_of_interest_2d_id = 5;
+     double offset = 6;
+     make87_messages_ros2.jazzy.shape_msgs.msg.Plane plane = 7;
+}
+
+message CalibrateBasePlaneResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 1;
+     string pose_frame = 2;
+     make87_messages_ros2.jazzy.shape_msgs.msg.Plane plane = 3;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ESCTelemetryItem {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float temperature = 2;
+     float voltage = 3;
+     float current = 4;
+     float totalcurrent = 5;
+     int32 rpm = 6;
+     uint32 count = 7;
+}

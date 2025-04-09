@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.robot_localization.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_with_covariance_stamped.proto";
+
+message SetPoseRequest {
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseWithCovarianceStamped pose = 1;
+}
+
+message SetPoseResponse {
+}

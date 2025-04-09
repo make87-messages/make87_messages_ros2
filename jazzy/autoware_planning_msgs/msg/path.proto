@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_planning_msgs.msg;
+
+import "make87_messages_ros2/jazzy/autoware_planning_msgs/msg/path_point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Path {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.autoware_planning_msgs.msg.PathPoint points = 2;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Point left_bound = 3;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Point right_bound = 4;
+}

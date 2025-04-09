@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Ahbc {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 high_low_beam_decision = 2;
+     uint32 reasons_for_switch_to_low_beam = 3;
+}

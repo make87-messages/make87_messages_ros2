@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/negotiation_key.proto";
+
+message NegotiationForfeit {
+     uint64 conflict_version = 1;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.NegotiationKey table = 2;
+}

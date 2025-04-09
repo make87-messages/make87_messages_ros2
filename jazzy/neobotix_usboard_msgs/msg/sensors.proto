@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.neobotix_usboard_msgs.msg;
+
+import "make87_messages_ros2/jazzy/neobotix_usboard_msgs/msg/sensor_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Sensors {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.neobotix_usboard_msgs.msg.SensorData sensors = 2;
+}

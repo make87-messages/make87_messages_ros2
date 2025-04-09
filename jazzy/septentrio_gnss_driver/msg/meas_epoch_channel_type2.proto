@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.septentrio_gnss_driver.msg;
+
+
+message MeasEpochChannelType2 {
+     uint32 type = 1;
+     uint32 lock_time = 2;
+     uint32 cn0 = 3;
+     uint32 offsets_msb = 4;
+     int32 carrier_msb = 5;
+     uint32 obs_info = 6;
+     uint32 code_offset_lsb = 7;
+     uint32 carrier_lsb = 8;
+     uint32 doppler_offset_lsb = 9;
+}

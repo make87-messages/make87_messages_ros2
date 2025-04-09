@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AftermarketLane {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 lane_confidence_left = 2;
+     bool ldw_available_left = 3;
+     uint32 lane_type_left = 4;
+     float distance_to_left_lane = 5;
+     uint32 lane_confidence_right = 6;
+     bool ldw_available_right = 7;
+     uint32 lane_type_right = 8;
+     float distance_to_right_lane = 9;
+}

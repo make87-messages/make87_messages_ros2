@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.action_msgs.srv;
+
+import "make87_messages_ros2/jazzy/action_msgs/msg/goal_info.proto";
+
+message CancelGoalRequest {
+     make87_messages_ros2.jazzy.action_msgs.msg.GoalInfo goal_info = 1;
+}
+
+message CancelGoalResponse {
+     int32 return_code = 1;
+    repeated make87_messages_ros2.jazzy.action_msgs.msg.GoalInfo goals_canceling = 2;
+}

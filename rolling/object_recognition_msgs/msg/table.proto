@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.object_recognition_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Table {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 2;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point convex_hull = 3;
+}

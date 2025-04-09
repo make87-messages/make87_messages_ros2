@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message CfgHNR {
+     uint32 high_nav_rate = 1;
+    repeated uint32 reserved0 = 2;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SrrStatus2 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_tx_alignment_status = 2;
+     bool can_tx_comm_error = 3;
+     bool can_tx_steering_angle_sign = 4;
+     float can_tx_yaw_rate_bias = 5;
+     float can_tx_veh_spd_comp_factor = 6;
+     uint32 can_tx_sw_version_dsp = 7;
+     int32 can_tx_temperature = 8;
+     bool can_tx_range_perf_error = 9;
+     bool can_tx_overheat_error = 10;
+     bool can_tx_internal_error = 11;
+     bool can_tx_xcvr_operational = 12;
+     uint32 can_tx_steering_angle = 13;
+     uint32 can_tx_rolling_count_2 = 14;
+}

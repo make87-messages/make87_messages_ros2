@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_internal_msgs.msg;
+
+
+message MissionRemainingDistanceTime {
+     double remaining_distance = 1;
+     double remaining_time = 2;
+}

@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/carr_soln.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/gps_fix.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/map_matching.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/psm_status.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/spoof_det.proto";
+
+message UBXNavStatus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.GpsFix gps_fix = 3;
+     bool gps_fix_ok = 4;
+     bool diff_soln = 5;
+     bool wkn_set = 6;
+     bool tow_set = 7;
+     bool diff_corr = 8;
+     bool carr_soln_valid = 9;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.MapMatching map_matching = 10;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.PSMStatus psm = 11;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SpoofDet spoof_det = 12;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.CarrSoln carr_soln = 13;
+     uint32 ttff = 14;
+     uint32 msss = 15;
+}

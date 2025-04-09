@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.srv;
+
+
+message GetParameterTypesRequest {
+    repeated string names = 1;
+}
+
+message GetParameterTypesResponse {
+    repeated uint32 types = 1;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/wrench.proto";
+
+message ContactState {
+     string info = 1;
+     string collision1_name = 2;
+     string collision2_name = 3;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Wrench wrenches = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Wrench total_wrench = 5;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 contact_positions = 6;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 contact_normals = 7;
+    repeated double depths = 8;
+}

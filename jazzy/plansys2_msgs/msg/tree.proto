@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/node.proto";
+
+message Tree {
+    repeated make87_messages_ros2.jazzy.plansys2_msgs.msg.Node nodes = 1;
+}

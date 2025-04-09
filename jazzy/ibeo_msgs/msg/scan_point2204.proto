@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ibeo_msgs.msg;
+
+
+message ScanPoint2204 {
+     float x_position = 1;
+     float y_position = 2;
+     float z_position = 3;
+     float echo_width = 4;
+     uint32 device_id = 5;
+     uint32 layer = 6;
+     uint32 echo = 7;
+     uint32 time_offset = 8;
+     bool ground = 9;
+     bool dirt = 10;
+     bool precipitation = 11;
+}

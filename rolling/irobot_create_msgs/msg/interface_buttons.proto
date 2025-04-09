@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/rolling/irobot_create_msgs/msg/button.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message InterfaceButtons {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.irobot_create_msgs.msg.Button button_1 = 2;
+     make87_messages_ros2.rolling.irobot_create_msgs.msg.Button button_power = 3;
+     make87_messages_ros2.rolling.irobot_create_msgs.msg.Button button_2 = 4;
+}

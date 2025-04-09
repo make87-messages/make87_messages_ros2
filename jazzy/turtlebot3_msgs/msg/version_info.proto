@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.turtlebot3_msgs.msg;
+
+
+message VersionInfo {
+     string hardware = 1;
+     string firmware = 2;
+     string software = 3;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_dashboard_msgs.srv;
+
+
+message AddToLogRequest {
+     string message = 1;
+}
+
+message AddToLogResponse {
+     string answer = 1;
+     bool success = 2;
+}

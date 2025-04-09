@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_map_msgs.srv;
+
+import "make87_messages_ros2/jazzy/autoware_map_msgs/msg/area_info.proto";
+import "make87_messages_ros2/jazzy/autoware_map_msgs/msg/point_cloud_map_cell_with_id.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GetPartialPointCloudMapRequest {
+     make87_messages_ros2.jazzy.autoware_map_msgs.msg.AreaInfo area = 1;
+}
+
+message GetPartialPointCloudMapResponse {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.autoware_map_msgs.msg.PointCloudMapCellWithID new_pointcloud_with_ids = 2;
+}

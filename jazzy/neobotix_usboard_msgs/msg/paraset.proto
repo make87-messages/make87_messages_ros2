@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.neobotix_usboard_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Paraset {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 command = 2;
+     uint32 set_num = 3;
+     uint32 paraset_byte54 = 4;
+     uint32 paraset_byte53 = 5;
+     uint32 paraset_byte52 = 6;
+     uint32 paraset_byte51 = 7;
+     uint32 paraset_byte50 = 8;
+     uint32 paraset_byte49 = 9;
+     uint32 paraset_byte48 = 10;
+     uint32 paraset_byte47 = 11;
+     uint32 paraset_byte46 = 12;
+     uint32 paraset_byte45 = 13;
+     uint32 paraset_byte44 = 14;
+     uint32 paraset_byte43 = 15;
+     uint32 paraset_byte42 = 16;
+     uint32 paraset_byte41 = 17;
+     uint32 paraset_byte40 = 18;
+     uint32 paraset_byte39 = 19;
+     uint32 paraset_byte38 = 20;
+     uint32 paraset_byte37 = 21;
+     uint32 paraset_byte36 = 22;
+     uint32 paraset_byte35 = 23;
+     uint32 paraset_byte34 = 24;
+     uint32 paraset_byte33 = 25;
+     uint32 paraset_byte32 = 26;
+     uint32 paraset_byte31 = 27;
+     uint32 paraset_byte30 = 28;
+     uint32 paraset_byte29 = 29;
+     uint32 paraset_byte28 = 30;
+     uint32 paraset_byte27 = 31;
+     uint32 paraset_byte26 = 32;
+     uint32 paraset_byte25 = 33;
+     uint32 paraset_byte24 = 34;
+     uint32 paraset_byte23 = 35;
+     uint32 paraset_byte22 = 36;
+     uint32 paraset_byte21 = 37;
+     uint32 paraset_byte20 = 38;
+     uint32 paraset_byte19 = 39;
+     uint32 paraset_byte18 = 40;
+     uint32 paraset_byte17 = 41;
+     uint32 paraset_byte16 = 42;
+     uint32 paraset_byte15 = 43;
+     uint32 paraset_byte14 = 44;
+     uint32 paraset_byte13 = 45;
+     uint32 paraset_byte12 = 46;
+     uint32 paraset_byte11 = 47;
+     uint32 paraset_byte10 = 48;
+     uint32 paraset_byte9 = 49;
+     uint32 paraset_byte8 = 50;
+     uint32 paraset_byte7 = 51;
+     uint32 paraset_byte6 = 52;
+     uint32 paraset_byte5 = 53;
+     uint32 paraset_byte4 = 54;
+     uint32 paraset_byte3 = 55;
+     uint32 paraset_byte2 = 56;
+     uint32 paraset_byte1 = 57;
+}

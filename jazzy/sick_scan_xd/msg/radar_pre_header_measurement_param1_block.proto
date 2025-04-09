@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+
+message RadarPreHeaderMeasurementParam1Block {
+     uint32 uicycleduration = 1;
+     uint32 uinoiselevel = 2;
+}

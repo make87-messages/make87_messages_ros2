@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message NavControllerOutput {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float nav_roll = 2;
+     float nav_pitch = 3;
+     int32 nav_bearing = 4;
+     int32 target_bearing = 5;
+     uint32 wp_dist = 6;
+     float alt_error = 7;
+     float aspd_error = 8;
+     float xtrack_error = 9;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nav_msgs.srv;
+
+import "make87_messages_ros2/rolling/nav_msgs/msg/occupancy_grid.proto";
+
+message GetMapRequest {
+}
+
+message GetMapResponse {
+     make87_messages_ros2.rolling.nav_msgs.msg.OccupancyGrid map = 1;
+}

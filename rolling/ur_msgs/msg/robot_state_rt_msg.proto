@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.msg;
+
+
+message RobotStateRTMsg {
+     double time = 1;
+    repeated double q_target = 2;
+    repeated double qd_target = 3;
+    repeated double qdd_target = 4;
+    repeated double i_target = 5;
+    repeated double m_target = 6;
+    repeated double q_actual = 7;
+    repeated double qd_actual = 8;
+    repeated double i_actual = 9;
+    repeated double tool_acc_values = 10;
+    repeated double tcp_force = 11;
+    repeated double tool_vector = 12;
+    repeated double tcp_speed = 13;
+     double digital_input_bits = 14;
+    repeated double motor_temperatures = 15;
+     double controller_timer = 16;
+     double test_value = 17;
+     double robot_mode = 18;
+    repeated double joint_modes = 19;
+}

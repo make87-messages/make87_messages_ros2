@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.polygon_msgs.msg;
+
+import "make87_messages_ros2/rolling/polygon_msgs/msg/polygon2_d.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Polygon2DCollection {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.polygon_msgs.msg.Polygon2D polygons = 2;
+    repeated make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA colors = 3;
+}

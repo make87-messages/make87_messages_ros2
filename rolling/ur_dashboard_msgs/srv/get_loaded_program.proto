@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_dashboard_msgs.srv;
+
+
+message GetLoadedProgramRequest {
+}
+
+message GetLoadedProgramResponse {
+     string answer = 1;
+     string program_name = 2;
+     bool success = 3;
+}

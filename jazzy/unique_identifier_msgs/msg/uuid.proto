@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.unique_identifier_msgs.msg;
+
+
+message UUID {
+    repeated uint32 uuid = 1;
+}

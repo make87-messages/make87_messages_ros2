@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+
+message CollisionDetectorState {
+    repeated string polygons = 1;
+    repeated bool detections = 2;
+}

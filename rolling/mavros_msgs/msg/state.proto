@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message State {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool connected = 2;
+     bool armed = 3;
+     bool guided = 4;
+     bool manual_input = 5;
+     string mode = 6;
+     uint32 system_status = 7;
+}

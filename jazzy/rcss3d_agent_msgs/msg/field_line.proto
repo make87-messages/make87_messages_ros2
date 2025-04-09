@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rcss3d_agent_msgs/msg/spherical.proto";
+
+message FieldLine {
+     make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Spherical start = 1;
+     make87_messages_ros2.jazzy.rcss3d_agent_msgs.msg.Spherical end = 2;
+}

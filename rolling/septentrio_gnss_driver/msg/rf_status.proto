@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/block_header.proto";
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/rf_band.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message RFStatus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.septentrio_gnss_driver.msg.BlockHeader block_header = 2;
+     uint32 n = 3;
+     uint32 sb_length = 4;
+     uint32 flags = 5;
+    repeated make87_messages_ros2.rolling.septentrio_gnss_driver.msg.RFBand rfband = 6;
+}

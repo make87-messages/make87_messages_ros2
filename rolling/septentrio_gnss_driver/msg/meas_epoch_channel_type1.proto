@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.septentrio_gnss_driver.msg;
+
+import "make87_messages_ros2/rolling/septentrio_gnss_driver/msg/meas_epoch_channel_type2.proto";
+
+message MeasEpochChannelType1 {
+     uint32 rx_channel = 1;
+     uint32 type = 2;
+     uint32 sv_id = 3;
+     uint32 misc = 4;
+     uint32 code_lsb = 5;
+     int32 doppler = 6;
+     uint32 carrier_lsb = 7;
+     int32 carrier_msb = 8;
+     uint32 cn0 = 9;
+     uint32 lock_time = 10;
+     uint32 obs_info = 11;
+     uint32 n2 = 12;
+    repeated make87_messages_ros2.rolling.septentrio_gnss_driver.msg.MeasEpochChannelType2 type2 = 13;
+}

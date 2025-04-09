@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.data_tamer_msgs.msg;
+
+
+message Snapshot {
+     uint64 timestamp_nsec = 1;
+     uint64 schema_hash = 2;
+    repeated uint32 active_mask = 3;
+    repeated uint32 payload = 4;
+}

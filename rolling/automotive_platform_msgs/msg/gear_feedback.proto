@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/rolling/automotive_platform_msgs/msg/gear.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GearFeedback {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.automotive_platform_msgs.msg.Gear current_gear = 2;
+}

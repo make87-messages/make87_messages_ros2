@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_ubx_msgs.msg;
+
+
+message RecStat {
+     bool leap_sec = 1;
+     bool clk_reset = 2;
+}

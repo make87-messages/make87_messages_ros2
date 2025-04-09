@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_fleet_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_fleet_msgs/msg/dock.proto";
+
+message DockSummary {
+    repeated make87_messages_ros2.rolling.rmf_fleet_msgs.msg.Dock docks = 1;
+}

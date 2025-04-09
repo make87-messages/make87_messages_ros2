@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rc_reason_msgs.msg;
+
+import "make87_messages_ros2/rolling/rc_reason_msgs/msg/range_box.proto";
+import "make87_messages_ros2/rolling/rc_reason_msgs/msg/range_rectangle.proto";
+
+message ItemModel {
+     string type = 1;
+     make87_messages_ros2.rolling.rc_reason_msgs.msg.RangeBox unknown = 2;
+     make87_messages_ros2.rolling.rc_reason_msgs.msg.RangeRectangle rectangle = 3;
+}

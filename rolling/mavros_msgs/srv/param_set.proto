@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+import "make87_messages_ros2/rolling/mavros_msgs/msg/param_value.proto";
+
+message ParamSetRequest {
+     string param_id = 1;
+     make87_messages_ros2.rolling.mavros_msgs.msg.ParamValue value = 2;
+}
+
+message ParamSetResponse {
+     bool success = 1;
+     make87_messages_ros2.rolling.mavros_msgs.msg.ParamValue value = 2;
+}

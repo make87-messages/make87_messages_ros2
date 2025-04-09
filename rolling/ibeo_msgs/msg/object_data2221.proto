@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ibeo_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/ibeo_data_header.proto";
+import "make87_messages_ros2/rolling/ibeo_msgs/msg/object2221.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ObjectData2221 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.ibeo_msgs.msg.IbeoDataHeader ibeo_header = 2;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time scan_start_timestamp = 3;
+     uint32 number_of_objects = 4;
+    repeated make87_messages_ros2.rolling.ibeo_msgs.msg.Object2221 object_list = 5;
+}

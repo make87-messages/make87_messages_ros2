@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.bond.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Status {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string id = 2;
+     string instance_id = 3;
+     bool active = 4;
+     float heartbeat_timeout = 5;
+     float heartbeat_period = 6;
+}

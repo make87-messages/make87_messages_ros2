@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/robot_state.proto";
+
+message SaveRobotStateToWarehouseRequest {
+     string name = 1;
+     string robot = 2;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotState state = 3;
+}
+
+message SaveRobotStateToWarehouseResponse {
+     bool success = 1;
+}

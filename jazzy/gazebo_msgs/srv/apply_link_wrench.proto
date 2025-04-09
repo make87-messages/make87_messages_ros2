@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/wrench.proto";
+
+message ApplyLinkWrenchRequest {
+     string link_name = 1;
+     string reference_frame = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point reference_point = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Wrench wrench = 4;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time start_time = 5;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration duration = 6;
+}
+
+message ApplyLinkWrenchResponse {
+     bool success = 1;
+     string status_message = 2;
+}

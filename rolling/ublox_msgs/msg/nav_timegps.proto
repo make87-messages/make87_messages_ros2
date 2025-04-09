@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavTIMEGPS {
+     uint32 i_tow = 1;
+     int32 f_tow = 2;
+     int32 week = 3;
+     int32 leap_s = 4;
+     uint32 valid = 5;
+     uint32 t_acc = 6;
+}

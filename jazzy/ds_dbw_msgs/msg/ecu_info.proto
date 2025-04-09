@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message EcuInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string name = 2;
+     string version = 3;
+     string mac_addr = 4;
+     string config_hash = 5;
+     uint32 config_count_modified = 6;
+     uint32 config_count_configured = 7;
+     bool config_nvm_blank = 8;
+     bool config_nvm_write_pending = 9;
+     string build_date = 10;
+     string license_date = 11;
+     bool control_licensed = 12;
+     string log_filename = 13;
+     bool log_filesystem_present = 14;
+     bool log_fault = 15;
+}

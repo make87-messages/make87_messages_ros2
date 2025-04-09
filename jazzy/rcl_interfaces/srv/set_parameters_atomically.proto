@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/parameter.proto";
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/set_parameters_result.proto";
+
+message SetParametersAtomicallyRequest {
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.Parameter parameters = 1;
+}
+
+message SetParametersAtomicallyResponse {
+     make87_messages_ros2.jazzy.rcl_interfaces.msg.SetParametersResult result = 1;
+}

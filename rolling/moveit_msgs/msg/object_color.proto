@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+
+message ObjectColor {
+     string id = 1;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA color = 2;
+}

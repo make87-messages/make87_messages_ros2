@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/laser_echo.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MultiEchoLaserScan {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float angle_min = 2;
+     float angle_max = 3;
+     float angle_increment = 4;
+     float time_increment = 5;
+     float scan_time = 6;
+     float range_min = 7;
+     float range_max = 8;
+    repeated make87_messages_ros2.rolling.sensor_msgs.msg.LaserEcho ranges = 9;
+    repeated make87_messages_ros2.rolling.sensor_msgs.msg.LaserEcho intensities = 10;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_geometry_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/tuw_geometry_msgs/msg/line_segment.proto";
+
+message LineSegments {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.tuw_geometry_msgs.msg.LineSegment segments = 2;
+}

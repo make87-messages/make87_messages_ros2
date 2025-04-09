@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/task_profile.proto";
+
+message TaskSummary {
+     string fleet_name = 1;
+     string task_id = 2;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.TaskProfile task_profile = 3;
+     uint32 state = 4;
+     string status = 5;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time submission_time = 6;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time start_time = 7;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time end_time = 8;
+     string robot_name = 9;
+}

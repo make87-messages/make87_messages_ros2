@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VehicleStateMsg1 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 can_fcw_sensitivity_level = 2;
+     bool can_vehicle_stationary = 3;
+     uint32 can_intf_minor_version = 4;
+     uint32 can_intf_major_version = 5;
+     uint32 can_brake_pedal = 6;
+     bool can_high_wheel_slip = 7;
+     uint32 can_turn_signal_status = 8;
+     bool can_washer_front_cmd = 9;
+     bool can_wiper_front_cmd = 10;
+     uint32 can_wiper_speed_info = 11;
+     bool can_reverse_gear = 12;
+     uint32 can_beam_shape_actual_right = 13;
+     uint32 can_beam_shape_actual_left = 14;
+     bool can_main_beam_indication = 15;
+     uint32 can_vehicle_index = 16;
+}

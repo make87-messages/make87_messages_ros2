@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.srv;
+
+import "make87_messages_ros2/rolling/rmf_task_msgs/msg/task_description.proto";
+
+message SubmitTaskRequest {
+     string requester = 1;
+     make87_messages_ros2.rolling.rmf_task_msgs.msg.TaskDescription description = 2;
+}
+
+message SubmitTaskResponse {
+     bool success = 1;
+     string task_id = 2;
+     string message = 3;
+}

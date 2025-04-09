@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geo_point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/quaternion.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CameraImageCaptured {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Quaternion orientation = 2;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeoPoint geo = 3;
+     float relative_alt = 4;
+     int32 image_index = 5;
+     int32 capture_result = 6;
+     string file_url = 7;
+}

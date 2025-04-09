@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrVehicle5 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     int32 oversteer_understeer = 2;
+     bool yaw_rate_bias_shift = 3;
+     float beamwidth_vert = 4;
+     float funnel_offset_left = 5;
+     float funnel_offset_right = 6;
+     float cw_blockage_threshold = 7;
+     uint32 distance_rear_axle = 8;
+     uint32 wheelbase = 9;
+     float steering_gear_ratio = 10;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message CommandHomeRequest {
+     bool current_gps = 1;
+     float yaw = 2;
+     float latitude = 3;
+     float longitude = 4;
+     float altitude = 5;
+}
+
+message CommandHomeResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

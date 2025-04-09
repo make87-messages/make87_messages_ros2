@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavVELNED {
+     uint32 i_tow = 1;
+     int32 vel_n = 2;
+     int32 vel_e = 3;
+     int32 vel_d = 4;
+     uint32 speed = 5;
+     uint32 g_speed = 6;
+     int32 heading = 7;
+     uint32 s_acc = 8;
+     uint32 c_acc = 9;
+}

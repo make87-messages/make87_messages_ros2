@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_safevisionary_interfaces.msg;
+
+
+message GeneralStatus {
+     uint32 run_mode_active = 1;
+     uint32 device_error = 2;
+     uint32 application_error = 3;
+     uint32 sleep_mode = 4;
+     uint32 wait_for_input = 5;
+     uint32 wait_for_cluster = 6;
+     uint32 contamination_warning = 7;
+     uint32 contamination_error = 8;
+     uint32 dead_zone_detection = 9;
+     uint32 temperature_warning = 10;
+}

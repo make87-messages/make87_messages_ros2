@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ds_dbw_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message BrakeDiagnostics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool degraded = 2;
+     bool degraded_cmd_type = 3;
+     bool degraded_comms = 4;
+     bool degraded_comms_dbw = 5;
+     bool degraded_comms_dbw_gateway = 6;
+     bool degraded_comms_dbw_steer = 7;
+     bool degraded_comms_dbw_thrtl = 8;
+     bool degraded_comms_dbw_gear = 9;
+     bool degraded_comms_vehicle = 10;
+     bool degraded_comms_actuator = 11;
+     bool degraded_comms_actuator_1 = 12;
+     bool degraded_comms_actuator_2 = 13;
+     bool degraded_internal = 14;
+     bool degraded_control_performance = 15;
+     bool degraded_param_mismatch = 16;
+     bool degraded_btsi_stuck_low = 17;
+     bool degraded_btsi_stuck_high = 18;
+     bool degraded_vehicle = 19;
+     bool degraded_vehicle_speed = 20;
+     bool degraded_bped_feedback = 21;
+     bool degraded_actuator = 22;
+     bool degraded_actuator_1 = 23;
+     bool degraded_actuator_2 = 24;
+     bool degraded_actuator_aeb_deny = 25;
+     bool degraded_actuator_warm = 26;
+     bool degraded_calibration = 27;
+     bool fault = 28;
+     bool fault_power = 29;
+     bool fault_comms = 30;
+     bool fault_internal = 31;
+     bool fault_vehicle = 32;
+     bool fault_actuator = 33;
+     bool fault_comms_dbw = 34;
+     bool fault_comms_dbw_gateway = 35;
+     bool fault_comms_dbw_steer = 36;
+     bool fault_comms_dbw_thrtl = 37;
+     bool fault_comms_dbw_gear = 38;
+     bool fault_comms_vehicle = 39;
+     bool fault_comms_actuator = 40;
+     bool fault_comms_actuator_1 = 41;
+     bool fault_comms_actuator_2 = 42;
+     bool fault_vehicle_speed = 43;
+     bool fault_actuator_acc_deny = 44;
+     bool fault_actuator_pedal_sensor = 45;
+     bool fault_bped_sensor_1 = 46;
+     bool fault_bped_sensor_2 = 47;
+     bool fault_bped_sensor_mismatch = 48;
+     bool fault_actuator_1 = 49;
+     bool fault_actuator_2 = 50;
+     bool fault_control_performance = 51;
+     bool fault_param_mismatch = 52;
+     bool fault_param_limits = 53;
+     bool fault_calibration = 54;
+}

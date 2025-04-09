@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_mrr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message MrrStatusCanVersion {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 can_usc_section_compatibility = 2;
+     uint32 can_pcan_minor_mrr = 3;
+     uint32 can_pcan_major_mrr = 4;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message TrackVisual {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string name = 2;
+     uint32 id = 3;
+     bool inherit_orientation = 4;
+     double min_dist = 5;
+     double max_dist = 6;
+     bool is_static = 7;
+     bool use_model_frame = 8;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 xyz = 9;
+     bool inherit_yaw = 10;
+}

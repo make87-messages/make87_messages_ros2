@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gc_spl_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/gc_spl_interfaces/msg/team_info14.proto";
+
+message RCGCD14 {
+     uint32 packet_number = 1;
+     uint32 players_per_team = 2;
+     uint32 competition_phase = 3;
+     uint32 competition_type = 4;
+     uint32 game_phase = 5;
+     uint32 state = 6;
+     uint32 set_play = 7;
+     uint32 first_half = 8;
+     uint32 kicking_team = 9;
+     int32 secs_remaining = 10;
+     int32 secondary_time = 11;
+    repeated make87_messages_ros2.jazzy.gc_spl_interfaces.msg.TeamInfo14 teams = 12;
+}

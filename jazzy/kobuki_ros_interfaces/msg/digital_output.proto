@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kobuki_ros_interfaces.msg;
+
+
+message DigitalOutput {
+    repeated bool values = 1;
+    repeated bool mask = 2;
+}

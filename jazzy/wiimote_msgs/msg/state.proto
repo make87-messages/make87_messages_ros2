@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.wiimote_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/wiimote_msgs/msg/ir_source_info.proto";
+
+message State {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 angular_velocity_zeroed = 2;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 angular_velocity_raw = 3;
+    repeated double angular_velocity_covariance = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 linear_acceleration_zeroed = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 linear_acceleration_raw = 6;
+    repeated double linear_acceleration_covariance = 7;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 nunchuk_acceleration_zeroed = 8;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 nunchuk_acceleration_raw = 9;
+    repeated float nunchuk_joystick_zeroed = 10;
+    repeated float nunchuk_joystick_raw = 11;
+    repeated bool buttons = 12;
+    repeated bool nunchuk_buttons = 13;
+    repeated bool leds = 14;
+     bool rumble = 15;
+    repeated make87_messages_ros2.jazzy.wiimote_msgs.msg.IrSourceInfo ir_tracking = 16;
+     float raw_battery = 17;
+     float percent_battery = 18;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time zeroing_time = 19;
+     uint64 errors = 20;
+}

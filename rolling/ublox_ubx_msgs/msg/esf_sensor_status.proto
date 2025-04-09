@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+
+message ESFSensorStatus {
+     uint32 sensor_data_type = 1;
+     bool used = 2;
+     bool ready = 3;
+     uint32 calib_status = 4;
+     uint32 time_status = 5;
+     uint32 freq = 6;
+     bool fault_bad_meas = 7;
+     bool fault_bad_ttag = 8;
+     bool fault_missing_meas = 9;
+     bool fault_noisy_meas = 10;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nav_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+
+message MapMetaData {
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Time map_load_time = 1;
+     float resolution = 2;
+     uint32 width = 3;
+     uint32 height = 4;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose origin = 5;
+}

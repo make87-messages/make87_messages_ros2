@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nao_sensor_msgs.msg;
+
+
+message Buttons {
+     bool chest = 1;
+     bool l_foot_bumper_left = 2;
+     bool l_foot_bumper_right = 3;
+     bool r_foot_bumper_left = 4;
+     bool r_foot_bumper_right = 5;
+}

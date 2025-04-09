@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+
+message PointField {
+     string name = 1;
+     uint32 offset = 2;
+     uint32 datatype = 3;
+     uint32 count = 4;
+}

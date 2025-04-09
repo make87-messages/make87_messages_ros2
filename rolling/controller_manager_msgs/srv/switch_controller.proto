@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.controller_manager_msgs.srv;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+
+message SwitchControllerRequest {
+    repeated string activate_controllers = 1;
+    repeated string deactivate_controllers = 2;
+     int32 strictness = 3;
+     bool activate_asap = 4;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration timeout = 5;
+}
+
+message SwitchControllerResponse {
+     bool ok = 1;
+}

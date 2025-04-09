@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geographic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/bounding_box.proto";
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/key_value.proto";
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/route_segment.proto";
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/way_point.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/unique_identifier_msgs/msg/uuid.proto";
+
+message RouteNetwork {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.unique_identifier_msgs.msg.UUID id = 2;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.BoundingBox bounds = 3;
+    repeated make87_messages_ros2.jazzy.geographic_msgs.msg.WayPoint points = 4;
+    repeated make87_messages_ros2.jazzy.geographic_msgs.msg.RouteSegment segments = 5;
+    repeated make87_messages_ros2.jazzy.geographic_msgs.msg.KeyValue props = 6;
+}

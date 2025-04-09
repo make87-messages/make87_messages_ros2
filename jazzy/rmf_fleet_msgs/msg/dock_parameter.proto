@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_fleet_msgs/msg/location.proto";
+
+message DockParameter {
+     string start = 1;
+     string finish = 2;
+    repeated make87_messages_ros2.jazzy.rmf_fleet_msgs.msg.Location path = 3;
+}

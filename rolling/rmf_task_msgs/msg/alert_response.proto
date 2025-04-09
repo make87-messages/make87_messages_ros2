@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+
+message AlertResponse {
+     string id = 1;
+     string response = 2;
+}

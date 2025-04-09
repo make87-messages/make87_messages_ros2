@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UBXNavPosLLH {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     int32 lon = 3;
+     int32 lat = 4;
+     int32 height = 5;
+     int32 hmsl = 6;
+     uint32 h_acc = 7;
+     uint32 v_acc = 8;
+}

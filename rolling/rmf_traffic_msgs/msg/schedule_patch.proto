@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_change_cull.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_participant_patch.proto";
+
+message SchedulePatch {
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleParticipantPatch participants = 1;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleChangeCull cull = 2;
+     bool has_base_version = 3;
+     uint64 base_version = 4;
+     uint64 latest_version = 5;
+}

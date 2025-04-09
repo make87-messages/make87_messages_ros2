@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrTrack {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 id = 3;
+     float lat_rate = 4;
+     bool grouping_changed = 5;
+     bool oncoming = 6;
+     uint32 status = 7;
+     float angle = 8;
+     float range = 9;
+     bool bridge_object = 10;
+     bool rolling_count = 11;
+     float width = 12;
+     float range_accel = 13;
+     uint32 med_range_mode = 14;
+     float range_rate = 15;
+}

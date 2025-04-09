@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message VehicleStateData {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 blinker_state = 2;
+     uint32 headlight_state = 3;
+     uint32 wiper_state = 4;
+     uint32 current_gear = 5;
+     uint32 vehicle_mode = 6;
+     bool hand_brake_active = 7;
+     bool horn_active = 8;
+     bool autonomous_mode_active = 9;
+}

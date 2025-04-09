@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_babel_fish_test_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message TestMessage {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool b = 2;
+     uint32 ui8 = 3;
+     uint32 ui16 = 4;
+     uint32 ui32 = 5;
+     uint64 ui64 = 6;
+     int32 i8 = 7;
+     int32 i16 = 8;
+     int32 i32 = 9;
+     int64 i64 = 10;
+     float f32 = 11;
+     double f64 = 12;
+     string str = 13;
+     string bounded_str = 14;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time t = 15;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration d = 16;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Point point_arr = 17;
+}

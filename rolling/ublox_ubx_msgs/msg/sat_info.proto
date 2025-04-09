@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/sat_flags.proto";
+
+message SatInfo {
+     uint32 gnss_id = 1;
+     uint32 sv_id = 2;
+     uint32 cno = 3;
+     int32 elev = 4;
+     int32 azim = 5;
+     int32 pr_res = 6;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SatFlags flags = 7;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.turtlesim_msgs.srv;
+
+
+message TeleportAbsoluteRequest {
+     float x = 1;
+     float y = 2;
+     float theta = 3;
+}
+
+message TeleportAbsoluteResponse {
+}

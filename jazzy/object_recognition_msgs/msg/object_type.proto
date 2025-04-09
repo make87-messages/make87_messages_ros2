@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.object_recognition_msgs.msg;
+
+
+message ObjectType {
+     string key = 1;
+     string db = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geometry_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/twist.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VelocityStamped {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string body_frame_id = 2;
+     string reference_frame_id = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Twist velocity = 4;
+}

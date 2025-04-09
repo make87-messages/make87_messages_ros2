@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrStatus3 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string canmsg = 2;
+     uint32 interface_version = 3;
+     uint32 hw_version = 4;
+     string sw_version_host = 5;
+     string serial_num = 6;
+     uint32 sw_version_pld = 7;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message VideoRecord {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool start = 2;
+     bool stop = 3;
+     string format = 4;
+     string save_filename = 5;
+}

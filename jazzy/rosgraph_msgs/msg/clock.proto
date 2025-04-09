@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rosgraph_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message Clock {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time clock = 1;
+}

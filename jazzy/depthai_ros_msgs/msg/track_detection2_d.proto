@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.depthai_ros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/vision_msgs/msg/bounding_box2_d.proto";
+import "make87_messages_ros2/jazzy/vision_msgs/msg/object_hypothesis_with_pose.proto";
+
+message TrackDetection2D {
+    repeated make87_messages_ros2.jazzy.vision_msgs.msg.ObjectHypothesisWithPose results = 1;
+     make87_messages_ros2.jazzy.vision_msgs.msg.BoundingBox2D bbox = 2;
+     bool is_tracking = 3;
+     string tracking_id = 4;
+     int32 tracking_age = 5;
+     int32 tracking_status = 6;
+}

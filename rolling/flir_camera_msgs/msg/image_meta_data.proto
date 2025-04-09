@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.flir_camera_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ImageMetaData {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint64 camera_time = 2;
+     int32 brightness = 3;
+     uint32 exposure_time = 4;
+     uint32 max_exposure_time = 5;
+     float gain = 6;
+}

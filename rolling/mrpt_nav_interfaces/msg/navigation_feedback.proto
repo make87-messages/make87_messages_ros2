@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mrpt_nav_interfaces.msg;
+
+
+message NavigationFeedback {
+     int32 total_waypoints = 1;
+     int32 reached_waypoints = 2;
+}

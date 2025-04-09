@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sick_safetyscanners2_interfaces.srv;
+
+import "make87_messages_ros2/rolling/sick_safetyscanners2_interfaces/msg/field.proto";
+import "make87_messages_ros2/rolling/sick_safetyscanners2_interfaces/msg/monitoring_case.proto";
+
+message FieldDataRequest {
+}
+
+message FieldDataResponse {
+    repeated make87_messages_ros2.rolling.sick_safetyscanners2_interfaces.msg.Field fields = 1;
+     string device_name = 2;
+    repeated make87_messages_ros2.rolling.sick_safetyscanners2_interfaces.msg.MonitoringCase monitoring_cases = 3;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+
+message ServoCommandTypeRequest {
+     int32 command_type = 1;
+}
+
+message ServoCommandTypeResponse {
+     bool success = 1;
+}

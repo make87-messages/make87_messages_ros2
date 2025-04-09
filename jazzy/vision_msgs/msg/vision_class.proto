@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.vision_msgs.msg;
+
+
+message VisionClass {
+     uint32 class_id = 1;
+     string class_name = 2;
+}

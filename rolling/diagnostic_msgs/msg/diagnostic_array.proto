@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.diagnostic_msgs.msg;
+
+import "make87_messages_ros2/rolling/diagnostic_msgs/msg/diagnostic_status.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message DiagnosticArray {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.diagnostic_msgs.msg.DiagnosticStatus status = 2;
+}

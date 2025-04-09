@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/planning_scene.proto";
+
+message PlanningOptions {
+     make87_messages_ros2.jazzy.moveit_msgs.msg.PlanningScene planning_scene_diff = 1;
+     bool plan_only = 2;
+     bool look_around = 3;
+     int32 look_around_attempts = 4;
+     double max_safe_execution_cost = 5;
+     bool replan = 6;
+     int32 replan_attempts = 7;
+     double replan_delay = 8;
+}

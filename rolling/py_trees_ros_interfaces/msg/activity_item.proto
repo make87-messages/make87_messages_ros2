@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.py_trees_ros_interfaces.msg;
+
+
+message ActivityItem {
+     string key = 1;
+     string client_name = 2;
+     string activity_type = 3;
+     string previous_value = 4;
+     string current_value = 5;
+}

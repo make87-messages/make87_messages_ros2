@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.srv;
+
+import "make87_messages_ros2/rolling/marti_nav_msgs/msg/route_point.proto";
+
+message UpdateRouteMetadataRequest {
+     string route_guid = 1;
+    repeated make87_messages_ros2.rolling.marti_nav_msgs.msg.RoutePoint metadata_points = 2;
+}
+
+message UpdateRouteMetadataResponse {
+     bool success = 1;
+     string message = 2;
+}

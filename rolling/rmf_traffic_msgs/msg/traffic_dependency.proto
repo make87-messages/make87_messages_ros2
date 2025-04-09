@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+
+message TrafficDependency {
+     uint64 dependent_checkpoint = 1;
+     uint64 on_participant = 2;
+     uint64 on_plan = 3;
+     uint64 on_route = 4;
+     uint64 on_checkpoint = 5;
+}

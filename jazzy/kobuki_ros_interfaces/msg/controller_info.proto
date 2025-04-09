@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.kobuki_ros_interfaces.msg;
+
+
+message ControllerInfo {
+     uint32 type = 1;
+     double p_gain = 2;
+     double i_gain = 3;
+     double d_gain = 4;
+}

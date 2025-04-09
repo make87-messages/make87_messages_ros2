@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/object_recognition_msgs/msg/object_type.proto";
+import "make87_messages_ros2/jazzy/shape_msgs/msg/mesh.proto";
+import "make87_messages_ros2/jazzy/shape_msgs/msg/plane.proto";
+import "make87_messages_ros2/jazzy/shape_msgs/msg/solid_primitive.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CollisionObject {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 2;
+     string id = 3;
+     make87_messages_ros2.jazzy.object_recognition_msgs.msg.ObjectType type = 4;
+    repeated make87_messages_ros2.jazzy.shape_msgs.msg.SolidPrimitive primitives = 5;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose primitive_poses = 6;
+    repeated make87_messages_ros2.jazzy.shape_msgs.msg.Mesh meshes = 7;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose mesh_poses = 8;
+    repeated make87_messages_ros2.jazzy.shape_msgs.msg.Plane planes = 9;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose plane_poses = 10;
+    repeated string subframe_names = 11;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.Pose subframe_poses = 12;
+     uint32 operation = 13;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.delphi_esr_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message EsrVehicle2 {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 scan_index_ack = 2;
+     bool use_angle_misalignment = 3;
+     bool clear_faults = 4;
+     int32 high_yaw_angle = 5;
+     bool mr_only_transmit = 6;
+     bool lr_only_transmit = 7;
+     float angle_misalignment = 8;
+     float lateral_mounting_offset = 9;
+     bool radar_cmd_radiate = 10;
+     bool blockage_disable = 11;
+     uint32 maximum_tracks = 12;
+     uint32 turn_signal_status = 13;
+     bool vehicle_speed_validity = 14;
+     bool mmr_upside_down = 15;
+     uint32 grouping_mode = 16;
+     bool wiper_status = 17;
+     bool raw_data_enable = 18;
+}

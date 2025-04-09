@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+
+message ForceResistance {
+     string name = 1;
+     float px = 2;
+     float py = 3;
+     float pz = 4;
+     float fx = 5;
+     float fy = 6;
+     float fz = 7;
+}

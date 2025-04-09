@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.delphi_srr_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SrrStatus5 {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool disable_auto_align = 2;
+     uint32 can_tx_yaw_rate_ref_qf = 3;
+     uint32 can_tx_yaw_rate_raw_qf = 4;
+     float can_tx_yaw_rate_reference = 5;
+     float can_tx_yaw_rate_raw = 6;
+     uint32 can_tx_system_status = 7;
+     int32 can_tx_outside_temperature = 8;
+     bool can_blockage_mnr_blocked = 9;
+     bool can_blockage_bb_blocked = 10;
+     bool can_blockage_radar_blocked = 11;
+     bool can_td_blocked = 12;
+     bool radar_tx_power_error = 13;
+     bool radar_lo_power_error = 14;
+     bool radar_data_sync_error = 15;
+     bool linearizer_spi_transfer_error = 16;
+     bool saturated_tuning_freq_error = 17;
+     bool rtn_spi_transfer_error = 18;
+     bool rrn_spi_transfer_error = 19;
+     bool video_port_capture_error = 20;
+     bool vertical_misalignment_error = 21;
+     bool tx_temperature_fault = 22;
+     bool transmitter_id_error = 23;
+     bool dsp_unit_cal_checksum_error = 24;
+     bool dsp_unit_cal_block_chcksm_error = 25;
+     bool dsp_tuning_sensitivity_error = 26;
+     bool dsp_loop_overrun_error = 27;
+     bool adc_spi_transfer_error = 28;
+}

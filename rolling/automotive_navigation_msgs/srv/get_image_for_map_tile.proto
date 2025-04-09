@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_navigation_msgs.srv;
+
+
+message GetImageForMapTileRequest {
+     string tile_id = 1;
+}
+
+message GetImageForMapTileResponse {
+     bool success = 1;
+     string message = 2;
+}

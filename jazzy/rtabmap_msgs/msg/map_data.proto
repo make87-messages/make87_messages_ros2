@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/map_graph.proto";
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/node.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message MapData {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.MapGraph graph = 2;
+    repeated make87_messages_ros2.jazzy.rtabmap_msgs.msg.Node nodes = 3;
+}

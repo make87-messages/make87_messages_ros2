@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.type_description_interfaces.msg;
+
+import "make87_messages_ros2/rolling/type_description_interfaces/msg/field.proto";
+
+message IndividualTypeDescription {
+     string type_name = 1;
+    repeated make87_messages_ros2.rolling.type_description_interfaces.msg.Field fields = 2;
+}

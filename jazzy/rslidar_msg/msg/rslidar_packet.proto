@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rslidar_msg.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RslidarPacket {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 is_difop = 2;
+     uint32 is_frame_begin = 3;
+    repeated uint32 data = 4;
+}

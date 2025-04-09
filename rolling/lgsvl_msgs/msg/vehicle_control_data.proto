@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lgsvl_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message VehicleControlData {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     float acceleration_pct = 2;
+     float braking_pct = 3;
+     float target_wheel_angle = 4;
+     float target_wheel_angular_rate = 5;
+     uint32 target_gear = 6;
+}

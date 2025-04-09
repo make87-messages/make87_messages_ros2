@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.novatel_gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_extended_solution_status.proto";
+import "make87_messages_ros2/rolling/novatel_gps_msgs/msg/novatel_message_header.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Inspvax {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelMessageHeader novatel_msg_header = 2;
+     string ins_status = 3;
+     string position_type = 4;
+     double latitude = 5;
+     double longitude = 6;
+     double altitude = 7;
+     float undulation = 8;
+     double north_velocity = 9;
+     double east_velocity = 10;
+     double up_velocity = 11;
+     double roll = 12;
+     double pitch = 13;
+     double azimuth = 14;
+     float latitude_std = 15;
+     float longitude_std = 16;
+     float altitude_std = 17;
+     float north_velocity_std = 18;
+     float east_velocity_std = 19;
+     float up_velocity_std = 20;
+     float roll_std = 21;
+     float pitch_std = 22;
+     float azimuth_std = 23;
+     make87_messages_ros2.rolling.novatel_gps_msgs.msg.NovatelExtendedSolutionStatus extended_status = 24;
+     uint32 seconds_since_update = 25;
+}

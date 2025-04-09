@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.gps_msgs.msg;
+
+import "make87_messages_ros2/rolling/gps_msgs/msg/gps_status.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message GPSFix {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.gps_msgs.msg.GPSStatus status = 2;
+     double latitude = 3;
+     double longitude = 4;
+     double altitude = 5;
+     double track = 6;
+     double speed = 7;
+     double climb = 8;
+     double pitch = 9;
+     double roll = 10;
+     double dip = 11;
+     double time = 12;
+     double gdop = 13;
+     double pdop = 14;
+     double hdop = 15;
+     double vdop = 16;
+     double tdop = 17;
+     double err = 18;
+     double err_horz = 19;
+     double err_vert = 20;
+     double err_track = 21;
+     double err_speed = 22;
+     double err_climb = 23;
+     double err_time = 24;
+     double err_pitch = 25;
+     double err_roll = 26;
+     double err_dip = 27;
+    repeated double position_covariance = 28;
+     uint32 position_covariance_type = 29;
+}

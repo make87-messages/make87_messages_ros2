@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UBXNavHPPosECEF {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 version = 2;
+     uint32 itow = 3;
+     int32 ecef_x = 4;
+     int32 ecef_y = 5;
+     int32 ecef_z = 6;
+     int32 ecef_x_hp = 7;
+     int32 ecef_y_hp = 8;
+     int32 ecef_z_hp = 9;
+     bool invalid_ecef_x = 10;
+     bool invalid_ecef_y = 11;
+     bool invalid_ecef_z = 12;
+     bool invalid_ecef_x_hp = 13;
+     bool invalid_ecef_y_hp = 14;
+     bool invalid_ecef_z_hp = 15;
+     uint32 p_acc = 16;
+}

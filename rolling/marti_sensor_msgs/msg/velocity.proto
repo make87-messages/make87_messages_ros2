@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_sensor_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Velocity {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     double velocity = 2;
+     double variance = 3;
+}

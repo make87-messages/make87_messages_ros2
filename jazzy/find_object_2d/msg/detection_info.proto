@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.find_object_2d.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/float32_multi_array.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/int32.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/string.proto";
+
+message DetectionInfo {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Int32 ids = 2;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Int32 widths = 3;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Int32 heights = 4;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.String file_paths = 5;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Int32 inliers = 6;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Int32 outliers = 7;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Float32MultiArray homographies = 8;
+}

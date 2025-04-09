@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ManualControl {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float x = 2;
+     float y = 3;
+     float z = 4;
+     float r = 5;
+     uint32 buttons = 6;
+     uint32 buttons2 = 7;
+     uint32 enabled_extensions = 8;
+     float s = 9;
+     float t = 10;
+     float aux1 = 11;
+     float aux2 = 12;
+     float aux3 = 13;
+     float aux4 = 14;
+     float aux5 = 15;
+     float aux6 = 16;
+}

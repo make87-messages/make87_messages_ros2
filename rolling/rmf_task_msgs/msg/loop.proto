@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.msg;
+
+
+message Loop {
+     string task_id = 1;
+     string robot_type = 2;
+     uint32 num_loops = 3;
+     string start_name = 4;
+     string finish_name = 5;
+}

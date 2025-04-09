@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mola_msgs.srv;
+
+
+message MapLoadRequest {
+     string map_path = 1;
+}
+
+message MapLoadResponse {
+     bool success = 1;
+     string error_message = 2;
+}

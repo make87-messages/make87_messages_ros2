@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_common_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message ServiceHeader {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     uint32 sequence = 2;
+     string sender = 3;
+     bool result = 4;
+}

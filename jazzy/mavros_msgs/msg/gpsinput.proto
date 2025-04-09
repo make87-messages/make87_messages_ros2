@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GPSINPUT {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 fix_type = 2;
+     uint32 gps_id = 3;
+     uint32 ignore_flags = 4;
+     uint32 time_week_ms = 5;
+     uint32 time_week = 6;
+     int32 lat = 7;
+     int32 lon = 8;
+     float alt = 9;
+     float hdop = 10;
+     float vdop = 11;
+     float vn = 12;
+     float ve = 13;
+     float vd = 14;
+     float speed_accuracy = 15;
+     float horiz_accuracy = 16;
+     float vert_accuracy = 17;
+     uint32 satellites_visible = 18;
+     uint32 yaw = 19;
+}

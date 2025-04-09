@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/transform_stamped.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/allowed_collision_matrix.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/link_padding.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/link_scale.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/object_color.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/planning_scene_world.proto";
+import "make87_messages_ros2/jazzy/moveit_msgs/msg/robot_state.proto";
+
+message PlanningScene {
+     string name = 1;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.RobotState robot_state = 2;
+     string robot_model_name = 3;
+    repeated make87_messages_ros2.jazzy.geometry_msgs.msg.TransformStamped fixed_frame_transforms = 4;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.AllowedCollisionMatrix allowed_collision_matrix = 5;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.LinkPadding link_padding = 6;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.LinkScale link_scale = 7;
+    repeated make87_messages_ros2.jazzy.moveit_msgs.msg.ObjectColor object_colors = 8;
+     make87_messages_ros2.jazzy.moveit_msgs.msg.PlanningSceneWorld world = 9;
+     bool is_diff = 10;
+}

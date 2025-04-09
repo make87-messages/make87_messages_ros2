@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UserInputADAS {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool btn_cc_on = 2;
+     bool btn_cc_off = 3;
+     bool btn_cc_on_off = 4;
+     bool btn_cc_set_inc = 5;
+     bool btn_cc_set_dec = 6;
+     bool btn_cc_res = 7;
+     bool btn_cc_cncl = 8;
+     bool btn_cc_res_cncl = 9;
+     bool btn_acc_gap_inc = 10;
+     bool btn_acc_gap_dec = 11;
+     bool btn_lka_on = 12;
+     bool btn_lka_off = 13;
+     bool btn_lka_on_off = 14;
+}

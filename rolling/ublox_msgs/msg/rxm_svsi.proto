@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+import "make87_messages_ros2/rolling/ublox_msgs/msg/rxm_svsisv.proto";
+
+message RxmSVSI {
+     int32 i_tow = 1;
+     int32 week = 2;
+     uint32 num_vis = 3;
+     uint32 num_sv = 4;
+    repeated make87_messages_ros2.rolling.ublox_msgs.msg.RxmSVSISV sv = 5;
+}

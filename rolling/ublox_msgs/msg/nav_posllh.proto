@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavPOSLLH {
+     uint32 i_tow = 1;
+     int32 lon = 2;
+     int32 lat = 3;
+     int32 height = 4;
+     int32 h_msl = 5;
+     uint32 h_acc = 6;
+     uint32 v_acc = 7;
+}

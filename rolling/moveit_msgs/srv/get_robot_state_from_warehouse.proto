@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.srv;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+
+message GetRobotStateFromWarehouseRequest {
+     string name = 1;
+     string robot = 2;
+}
+
+message GetRobotStateFromWarehouseResponse {
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState state = 1;
+}

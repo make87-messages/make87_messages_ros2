@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tf2_msgs.msg;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/transform_stamped.proto";
+
+message TFMessage {
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.TransformStamped transforms = 1;
+}

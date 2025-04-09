@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.flexbe_msgs.srv;
+
+import "make87_messages_ros2/rolling/flexbe_msgs/msg/userdata_info.proto";
+
+message GetUserdataRequest {
+     string userdata_key = 1;
+}
+
+message GetUserdataResponse {
+     bool success = 1;
+     string message = 2;
+    repeated make87_messages_ros2.rolling.flexbe_msgs.msg.UserdataInfo userdata = 3;
+}

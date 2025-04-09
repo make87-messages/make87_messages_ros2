@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.novatel_gps_msgs.msg;
+
+
+message TrackstatChannel {
+     int32 prn = 1;
+     int32 glofreq = 2;
+     uint32 ch_tr_status = 3;
+     double psr = 4;
+     float doppler = 5;
+     float c_no = 6;
+     float locktime = 7;
+     float psr_res = 8;
+     string reject = 9;
+     float psr_weight = 10;
+}

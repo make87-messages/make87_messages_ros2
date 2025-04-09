@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_identity.proto";
+import "make87_messages_ros2/jazzy/rmf_traffic_msgs/msg/schedule_query.proto";
+
+message ScheduleQueries {
+     make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.ScheduleIdentity node_id = 1;
+    repeated make87_messages_ros2.jazzy.rmf_traffic_msgs.msg.ScheduleQuery queries = 2;
+    repeated uint64 query_ids = 3;
+}

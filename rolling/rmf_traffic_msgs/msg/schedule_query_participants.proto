@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+
+message ScheduleQueryParticipants {
+     uint32 type = 1;
+    repeated uint64 ids = 2;
+}

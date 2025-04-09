@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/jazzy/rc_reason_msgs/msg/load_carrier.proto";
+
+message DetectLoadCarriersRequest {
+     string pose_frame = 1;
+     string region_of_interest_id = 2;
+     string region_of_interest_2d_id = 3;
+    repeated string load_carrier_ids = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose robot_pose = 5;
+}
+
+message DetectLoadCarriersResponse {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time timestamp = 1;
+    repeated make87_messages_ros2.jazzy.rc_reason_msgs.msg.LoadCarrier load_carriers = 2;
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 3;
+}

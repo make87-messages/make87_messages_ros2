@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.stereo_msgs.msg;
+
+import "make87_messages_ros2/rolling/sensor_msgs/msg/image.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/region_of_interest.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message DisparityImage {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.sensor_msgs.msg.Image image = 2;
+     float f = 3;
+     float t = 4;
+     make87_messages_ros2.rolling.sensor_msgs.msg.RegionOfInterest valid_window = 5;
+     float min_disparity = 6;
+     float max_disparity = 7;
+     float delta_d = 8;
+}

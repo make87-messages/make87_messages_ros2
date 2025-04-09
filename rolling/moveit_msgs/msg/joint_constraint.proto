@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+
+message JointConstraint {
+     string joint_name = 1;
+     double position = 2;
+     double tolerance_above = 3;
+     double tolerance_below = 4;
+     double weight = 5;
+}

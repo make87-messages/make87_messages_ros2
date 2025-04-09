@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.srv;
+
+
+message SetIORequest {
+     int32 fun = 1;
+     int32 pin = 2;
+     float state = 3;
+}
+
+message SetIOResponse {
+     bool success = 1;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.polygon_msgs.msg;
+
+
+message Point2D {
+     double x = 1;
+     double y = 2;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.controller_manager_msgs.msg;
+
+import "make87_messages_ros2/jazzy/controller_manager_msgs/msg/chain_connection.proto";
+
+message ControllerState {
+     string name = 1;
+     string state = 2;
+     string type = 3;
+    repeated string claimed_interfaces = 4;
+    repeated string required_command_interfaces = 5;
+    repeated string required_state_interfaces = 6;
+     bool is_chainable = 7;
+     bool is_chained = 8;
+    repeated string exported_state_interfaces = 9;
+    repeated string reference_interfaces = 10;
+    repeated make87_messages_ros2.jazzy.controller_manager_msgs.msg.ChainConnection chain_connections = 11;
+}

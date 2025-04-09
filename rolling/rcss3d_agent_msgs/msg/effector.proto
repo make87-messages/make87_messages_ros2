@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcss3d_agent_msgs.msg;
+
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/beam.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/hinge_joint_vel.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/say.proto";
+import "make87_messages_ros2/rolling/rcss3d_agent_msgs/msg/universal_joint_vel.proto";
+
+message Effector {
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.HingeJointVel hinge_joint_vels = 1;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.UniversalJointVel universal_joint_vels = 2;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Beam beams = 3;
+    repeated make87_messages_ros2.rolling.rcss3d_agent_msgs.msg.Say says = 4;
+}

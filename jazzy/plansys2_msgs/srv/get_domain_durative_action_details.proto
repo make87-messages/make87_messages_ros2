@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.plansys2_msgs.srv;
+
+import "make87_messages_ros2/jazzy/plansys2_msgs/msg/durative_action.proto";
+
+message GetDomainDurativeActionDetailsRequest {
+     string durative_action = 1;
+    repeated string parameters = 2;
+}
+
+message GetDomainDurativeActionDetailsResponse {
+     bool success = 1;
+     make87_messages_ros2.jazzy.plansys2_msgs.msg.DurativeAction durative_action = 2;
+     string error_info = 3;
+}

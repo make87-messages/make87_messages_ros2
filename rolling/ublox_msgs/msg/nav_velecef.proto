@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message NavVELECEF {
+     uint32 i_tow = 1;
+     int32 ecef_vx = 2;
+     int32 ecef_vy = 3;
+     int32 ecef_vz = 4;
+     uint32 s_acc = 5;
+}

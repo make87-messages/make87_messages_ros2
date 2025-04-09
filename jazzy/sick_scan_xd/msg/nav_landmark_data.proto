@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+import "make87_messages_ros2/jazzy/sick_scan_xd/msg/nav_reflector_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message NAVLandmarkData {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 landmark_filter = 2;
+     uint32 num_reflectors = 3;
+    repeated make87_messages_ros2.jazzy.sick_scan_xd.msg.NAVReflectorData reflectors = 4;
+}

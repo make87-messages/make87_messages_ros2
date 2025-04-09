@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.aruco_opencv_msgs.msg;
+
+import "make87_messages_ros2/rolling/aruco_opencv_msgs/msg/board_pose.proto";
+import "make87_messages_ros2/rolling/aruco_opencv_msgs/msg/marker_pose.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message ArucoDetection {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.aruco_opencv_msgs.msg.MarkerPose markers = 2;
+    repeated make87_messages_ros2.rolling.aruco_opencv_msgs.msg.BoardPose boards = 3;
+}

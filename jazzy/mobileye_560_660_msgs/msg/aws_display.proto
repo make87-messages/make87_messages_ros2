@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mobileye_560_660_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message AwsDisplay {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     bool suppress_sound = 2;
+     bool night_time = 3;
+     bool dusk_time = 4;
+     uint32 sound_type = 5;
+     bool headway_valid = 6;
+     float headway_measurement = 7;
+     bool lanes_on = 8;
+     bool left_ldw_on = 9;
+     bool right_ldw_on = 10;
+     bool fcw_on = 11;
+     bool left_crossing = 12;
+     bool right_crossing = 13;
+     bool maintenance = 14;
+     bool failsafe = 15;
+     bool ped_fcw = 16;
+     bool ped_in_dz = 17;
+     uint32 headway_warning_level = 18;
+}

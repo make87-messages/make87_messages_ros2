@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.polygon_msgs.msg;
+
+import "make87_messages_ros2/jazzy/polygon_msgs/msg/polygon2_d.proto";
+
+message ComplexPolygon2D {
+     make87_messages_ros2.jazzy.polygon_msgs.msg.Polygon2D outer = 1;
+    repeated make87_messages_ros2.jazzy.polygon_msgs.msg.Polygon2D inner = 2;
+}

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grbl_msgs.srv;
+
+
+message StopRequest {
+     string machine_id = 1;
+     string command = 2;
+}
+
+message StopResponse {
+     bool success = 1;
+}

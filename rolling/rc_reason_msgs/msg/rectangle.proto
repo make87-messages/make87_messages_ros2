@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rc_reason_msgs.msg;
+
+
+message Rectangle {
+     double x = 1;
+     double y = 2;
+}

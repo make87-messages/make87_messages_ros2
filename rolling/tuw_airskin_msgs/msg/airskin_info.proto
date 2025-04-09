@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_airskin_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message AirskinInfo {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated uint32 ids = 2;
+    repeated string names = 3;
+    repeated uint32 min = 4;
+    repeated uint32 max = 5;
+}

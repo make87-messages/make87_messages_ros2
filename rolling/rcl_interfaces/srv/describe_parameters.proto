@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.srv;
+
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/parameter_descriptor.proto";
+
+message DescribeParametersRequest {
+    repeated string names = 1;
+}
+
+message DescribeParametersResponse {
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.ParameterDescriptor descriptors = 1;
+}

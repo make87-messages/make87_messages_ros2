@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rtabmap_msgs.msg;
+
+import "make87_messages_ros2/jazzy/rtabmap_msgs/msg/point2f.proto";
+
+message KeyPoint {
+     make87_messages_ros2.jazzy.rtabmap_msgs.msg.Point2f pt = 1;
+     float size = 2;
+     float angle = 3;
+     float response = 4;
+     int32 octave = 5;
+     int32 class_id = 6;
+}

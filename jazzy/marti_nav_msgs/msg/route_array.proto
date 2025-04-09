@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marti_nav_msgs.msg;
+
+import "make87_messages_ros2/jazzy/marti_common_msgs/msg/key_value.proto";
+import "make87_messages_ros2/jazzy/marti_nav_msgs/msg/route.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RouteArray {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.marti_nav_msgs.msg.Route routes = 2;
+    repeated make87_messages_ros2.jazzy.marti_common_msgs.msg.KeyValue properties = 3;
+}

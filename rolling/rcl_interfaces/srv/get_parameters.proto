@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.srv;
+
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/parameter_value.proto";
+
+message GetParametersRequest {
+    repeated string names = 1;
+}
+
+message GetParametersResponse {
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.ParameterValue values = 1;
+}

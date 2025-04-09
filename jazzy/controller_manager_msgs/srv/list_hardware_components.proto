@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.controller_manager_msgs.srv;
+
+import "make87_messages_ros2/jazzy/controller_manager_msgs/msg/hardware_component_state.proto";
+
+message ListHardwareComponentsRequest {
+}
+
+message ListHardwareComponentsResponse {
+    repeated make87_messages_ros2.jazzy.controller_manager_msgs.msg.HardwareComponentState component = 1;
+}

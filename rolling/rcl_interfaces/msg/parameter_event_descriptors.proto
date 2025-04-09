@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rcl_interfaces.msg;
+
+import "make87_messages_ros2/rolling/rcl_interfaces/msg/parameter_descriptor.proto";
+
+message ParameterEventDescriptors {
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.ParameterDescriptor new_parameters = 1;
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.ParameterDescriptor changed_parameters = 2;
+    repeated make87_messages_ros2.rolling.rcl_interfaces.msg.ParameterDescriptor deleted_parameters = 3;
+}

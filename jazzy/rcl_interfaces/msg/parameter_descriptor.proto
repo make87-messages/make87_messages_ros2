@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/floating_point_range.proto";
+import "make87_messages_ros2/jazzy/rcl_interfaces/msg/integer_range.proto";
+
+message ParameterDescriptor {
+     string name = 1;
+     uint32 type = 2;
+     string description = 3;
+     string additional_constraints = 4;
+     bool read_only = 5;
+     bool dynamic_typing = 6;
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.FloatingPointRange floating_point_range = 7;
+    repeated make87_messages_ros2.jazzy.rcl_interfaces.msg.IntegerRange integer_range = 8;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_nav_msgs.srv;
+
+
+message SetRouteRequest {
+     string guid = 1;
+     bool repeat = 2;
+}
+
+message SetRouteResponse {
+     bool success = 1;
+     string message = 2;
+}

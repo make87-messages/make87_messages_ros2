@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.msg;
+
+
+message ODEJointProperties {
+    repeated double damping = 1;
+    repeated double hi_stop = 2;
+    repeated double lo_stop = 3;
+    repeated double erp = 4;
+    repeated double cfm = 5;
+    repeated double stop_erp = 6;
+    repeated double stop_cfm = 7;
+    repeated double fudge_factor = 8;
+    repeated double fmax = 9;
+    repeated double vel = 10;
+}

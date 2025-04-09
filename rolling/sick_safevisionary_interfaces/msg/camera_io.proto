@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg;
+
+import "make87_messages_ros2/rolling/sick_safevisionary_interfaces/msg/io_configured.proto";
+import "make87_messages_ros2/rolling/sick_safevisionary_interfaces/msg/io_direction.proto";
+import "make87_messages_ros2/rolling/sick_safevisionary_interfaces/msg/io_input_values.proto";
+import "make87_messages_ros2/rolling/sick_safevisionary_interfaces/msg/io_output_values.proto";
+import "make87_messages_ros2/rolling/sick_safevisionary_interfaces/msg/ioossds_state.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message CameraIO {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg.IOConfigured configured = 2;
+     make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg.IODirection direction = 3;
+     make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg.IOInputValues input_values = 4;
+     make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg.IOOutputValues output_values = 5;
+     make87_messages_ros2.rolling.sick_safevisionary_interfaces.msg.IOOSSDSState ossds_state = 6;
+     uint32 ossds_dyn_count = 7;
+     uint32 ossds_crc = 8;
+     uint32 ossds_io_status = 9;
+     uint32 dynamic_speed_a = 10;
+     uint32 dynamic_speed_b = 11;
+     uint32 dynamic_valid_flags = 12;
+}

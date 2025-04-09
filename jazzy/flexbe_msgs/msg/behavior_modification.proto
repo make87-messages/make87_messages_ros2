@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+
+message BehaviorModification {
+     int32 index_begin = 1;
+     int32 index_end = 2;
+     string new_content = 3;
+}

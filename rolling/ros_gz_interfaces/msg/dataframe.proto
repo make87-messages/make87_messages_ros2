@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message Dataframe {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string src_address = 2;
+     string dst_address = 3;
+    repeated uint32 data = 4;
+     double rssi = 5;
+}

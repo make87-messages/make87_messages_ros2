@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_state.proto";
+import "make87_messages_ros2/rolling/moveit_msgs/msg/robot_trajectory.proto";
+
+message DisplayTrajectory {
+     string model_id = 1;
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.RobotTrajectory trajectory = 2;
+     make87_messages_ros2.rolling.moveit_msgs.msg.RobotState trajectory_start = 3;
+}

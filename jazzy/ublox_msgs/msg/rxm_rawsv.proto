@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message RxmRAWSV {
+     double cp_mes = 1;
+     double pr_mes = 2;
+     float do_mes = 3;
+     uint32 sv = 4;
+     int32 mes_qi = 5;
+     int32 cno = 6;
+     uint32 lli = 7;
+}

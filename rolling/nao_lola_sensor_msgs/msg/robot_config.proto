@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.nao_lola_sensor_msgs.msg;
+
+
+message RobotConfig {
+     string body_id = 1;
+     string body_version = 2;
+     string head_id = 3;
+     string head_version = 4;
+}

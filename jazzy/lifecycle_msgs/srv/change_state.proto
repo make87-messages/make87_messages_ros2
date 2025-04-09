@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.lifecycle_msgs.srv;
+
+import "make87_messages_ros2/jazzy/lifecycle_msgs/msg/transition.proto";
+
+message ChangeStateRequest {
+     make87_messages_ros2.jazzy.lifecycle_msgs.msg.Transition transition = 1;
+}
+
+message ChangeStateResponse {
+     bool success = 1;
+}

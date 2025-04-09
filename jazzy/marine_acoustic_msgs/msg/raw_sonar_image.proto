@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.marine_acoustic_msgs.msg;
+
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/ping_info.proto";
+import "make87_messages_ros2/jazzy/marine_acoustic_msgs/msg/sonar_image_data.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message RawSonarImage {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.PingInfo ping_info = 2;
+     float sample_rate = 3;
+     uint32 samples_per_beam = 4;
+     uint32 sample0 = 5;
+    repeated float tx_delays = 6;
+    repeated float tx_angles = 7;
+    repeated float rx_angles = 8;
+     make87_messages_ros2.jazzy.marine_acoustic_msgs.msg.SonarImageData image = 9;
+}

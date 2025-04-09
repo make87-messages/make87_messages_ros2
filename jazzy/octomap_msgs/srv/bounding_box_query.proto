@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.octomap_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+
+message BoundingBoxQueryRequest {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point min = 1;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point max = 2;
+}
+
+message BoundingBoxQueryResponse {
+}

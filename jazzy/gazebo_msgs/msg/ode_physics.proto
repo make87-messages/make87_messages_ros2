@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.gazebo_msgs.msg;
+
+
+message ODEPhysics {
+     bool auto_disable_bodies = 1;
+     uint32 sor_pgs_precon_iters = 2;
+     uint32 sor_pgs_iters = 3;
+     double sor_pgs_w = 4;
+     double sor_pgs_rms_error_tol = 5;
+     double contact_surface_layer = 6;
+     double contact_max_correcting_vel = 7;
+     double cfm = 8;
+     double erp = 9;
+     uint32 max_contacts = 10;
+}

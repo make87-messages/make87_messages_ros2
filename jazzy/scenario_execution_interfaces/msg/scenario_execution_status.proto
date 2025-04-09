@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.scenario_execution_interfaces.msg;
+
+
+message ScenarioExecutionStatus {
+     uint32 status = 1;
+}

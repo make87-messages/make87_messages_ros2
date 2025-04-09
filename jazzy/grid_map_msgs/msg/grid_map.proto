@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.grid_map_msgs.msg;
+
+import "make87_messages_ros2/jazzy/grid_map_msgs/msg/grid_map_info.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/float32_multi_array.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message GridMap {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.grid_map_msgs.msg.GridMapInfo info = 2;
+    repeated string layers = 3;
+    repeated string basic_layers = 4;
+    repeated make87_messages_ros2.jazzy.std_msgs.msg.Float32MultiArray data = 5;
+     uint32 outer_start_index = 6;
+     uint32 inner_start_index = 7;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_common_msgs.msg;
+
+import "make87_messages_ros2/rolling/marti_common_msgs/msg/key_value.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message KeyValueArray {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.rolling.marti_common_msgs.msg.KeyValue items = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_task_msgs.srv;
+
+
+message CancelTaskRequest {
+     string requester = 1;
+     string task_id = 2;
+}
+
+message CancelTaskResponse {
+     bool success = 1;
+     string message = 2;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.moveit_msgs.msg;
+
+import "make87_messages_ros2/rolling/moveit_msgs/msg/collision_object.proto";
+import "make87_messages_ros2/rolling/octomap_msgs/msg/octomap_with_pose.proto";
+
+message PlanningSceneWorld {
+    repeated make87_messages_ros2.rolling.moveit_msgs.msg.CollisionObject collision_objects = 1;
+     make87_messages_ros2.rolling.octomap_msgs.msg.OctomapWithPose octomap = 2;
+}

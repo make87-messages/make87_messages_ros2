@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.four_wheel_steering_msgs.msg;
+
+
+message FourWheelSteering {
+     float front_steering_angle = 1;
+     float rear_steering_angle = 2;
+     float front_steering_angle_velocity = 3;
+     float rear_steering_angle_velocity = 4;
+     float speed = 5;
+     float acceleration = 6;
+     float jerk = 7;
+}

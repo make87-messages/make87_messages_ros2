@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgStatusGeneral {
+     bool main_power = 1;
+     bool imu_power = 2;
+     bool gps_power = 3;
+     bool settings = 4;
+     bool temperature = 5;
+     bool datalogger = 6;
+     bool cpu = 7;
+}

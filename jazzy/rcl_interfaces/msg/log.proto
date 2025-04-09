@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rcl_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message Log {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     uint32 level = 2;
+     string name = 3;
+     string msg = 4;
+     string file = 5;
+     string function = 6;
+     uint32 line = 7;
+}

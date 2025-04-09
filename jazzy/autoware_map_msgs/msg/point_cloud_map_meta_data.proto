@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_map_msgs.msg;
+
+import "make87_messages_ros2/jazzy/autoware_map_msgs/msg/point_cloud_map_cell_meta_data_with_id.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message PointCloudMapMetaData {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.autoware_map_msgs.msg.PointCloudMapCellMetaDataWithID metadata_list = 2;
+}

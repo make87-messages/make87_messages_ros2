@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3_stamped.proto";
+
+message GripperTranslation {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3Stamped direction = 1;
+     float desired_distance = 2;
+     float min_distance = 3;
+}

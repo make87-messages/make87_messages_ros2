@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.geographic_msgs.srv;
+
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/bounding_box.proto";
+import "make87_messages_ros2/jazzy/geographic_msgs/msg/geographic_map.proto";
+
+message GetGeographicMapRequest {
+     string url = 1;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.BoundingBox bounds = 2;
+}
+
+message GetGeographicMapResponse {
+     bool success = 1;
+     string status = 2;
+     make87_messages_ros2.jazzy.geographic_msgs.msg.GeographicMap map = 3;
+}

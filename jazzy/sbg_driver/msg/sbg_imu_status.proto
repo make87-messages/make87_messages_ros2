@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sbg_driver.msg;
+
+
+message SbgImuStatus {
+     bool imu_com = 1;
+     bool imu_status = 2;
+     bool imu_accel_x = 3;
+     bool imu_accel_y = 4;
+     bool imu_accel_z = 5;
+     bool imu_gyro_x = 6;
+     bool imu_gyro_y = 7;
+     bool imu_gyro_z = 8;
+     bool imu_accels_in_range = 9;
+     bool imu_gyros_in_range = 10;
+}

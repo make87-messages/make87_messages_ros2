@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.flexbe_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message BEStatus {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     int32 behavior_id = 2;
+     uint32 code = 3;
+    repeated string args = 4;
+}

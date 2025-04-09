@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.automotive_platform_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message UserInputMenus {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool str_whl_left_btn_left = 2;
+     bool str_whl_left_btn_down = 3;
+     bool str_whl_left_btn_right = 4;
+     bool str_whl_left_btn_up = 5;
+     bool str_whl_left_btn_ok = 6;
+     bool str_whl_right_btn_left = 7;
+     bool str_whl_right_btn_down = 8;
+     bool str_whl_right_btn_right = 9;
+     bool str_whl_right_btn_up = 10;
+     bool str_whl_right_btn_ok = 11;
+     bool cntr_cons_btn_left = 12;
+     bool cntr_cons_btn_down = 13;
+     bool cntr_cons_btn_right = 14;
+     bool cntr_cons_btn_up = 15;
+     bool cntr_cons_btn_ok = 16;
+}

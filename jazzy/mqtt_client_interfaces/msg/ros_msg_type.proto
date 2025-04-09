@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mqtt_client_interfaces.msg;
+
+
+message RosMsgType {
+     string md5 = 1;
+     string name = 2;
+     string definition = 3;
+     bool stamped = 4;
+}

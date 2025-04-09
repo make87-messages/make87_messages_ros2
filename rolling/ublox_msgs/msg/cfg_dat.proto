@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_msgs.msg;
+
+
+message CfgDAT {
+     uint32 datum_num = 1;
+    repeated uint32 datum_name = 2;
+     double maj_a = 3;
+     double flat = 4;
+     float d_x = 5;
+     float d_y = 6;
+     float d_z = 7;
+     float rot_x = 8;
+     float rot_y = 9;
+     float rot_z = 10;
+     float scale = 11;
+}

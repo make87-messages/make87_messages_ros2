@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.topic_tools_interfaces.srv;
+
+
+message DemuxDeleteRequest {
+     string topic = 1;
+}
+
+message DemuxDeleteResponse {
+     bool success = 1;
+}

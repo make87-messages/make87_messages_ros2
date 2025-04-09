@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.sensor_msgs.msg;
+
+
+message JoyFeedback {
+     uint32 type = 1;
+     uint32 id = 2;
+     float intensity = 3;
+}

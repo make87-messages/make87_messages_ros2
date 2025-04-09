@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message PositionCmd {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     bool confirm = 2;
+     bool auto_reply = 3;
+     double position = 4;
+     bool clutch_enable = 5;
+     bool motor_enable = 6;
+}

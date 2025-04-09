@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ur_dashboard_msgs.srv;
+
+
+message LoadRequest {
+     string filename = 1;
+}
+
+message LoadResponse {
+     string answer = 1;
+     bool success = 2;
+}

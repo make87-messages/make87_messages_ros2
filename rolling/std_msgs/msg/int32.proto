@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.std_msgs.msg;
+
+
+message Int32 {
+     int32 data = 1;
+}

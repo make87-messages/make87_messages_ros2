@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message CommandLongRequest {
+     bool broadcast = 1;
+     uint32 command = 2;
+     uint32 confirmation = 3;
+     float param1 = 4;
+     float param2 = 5;
+     float param3 = 6;
+     float param4 = 7;
+     float param5 = 8;
+     float param6 = 9;
+     float param7 = 10;
+}
+
+message CommandLongResponse {
+     bool success = 1;
+     uint32 result = 2;
+}

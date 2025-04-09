@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/traffic_dependency.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/trajectory.proto";
+
+message Route {
+     string map = 1;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.Trajectory trajectory = 2;
+    repeated uint64 checkpoints = 3;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.TrafficDependency dependencies = 4;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sensor_msgs.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message LaserScan {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     float angle_min = 2;
+     float angle_max = 3;
+     float angle_increment = 4;
+     float time_increment = 5;
+     float scan_time = 6;
+     float range_min = 7;
+     float range_max = 8;
+    repeated float ranges = 9;
+    repeated float intensities = 10;
+}

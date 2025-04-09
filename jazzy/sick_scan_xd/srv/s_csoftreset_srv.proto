@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.srv;
+
+
+message SCsoftresetSrvRequest {
+}
+
+message SCsoftresetSrvResponse {
+     bool success = 1;
+}

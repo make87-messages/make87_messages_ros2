@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message PositionTarget {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 coordinate_frame = 2;
+     uint32 type_mask = 3;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Point position = 4;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 velocity = 5;
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Vector3 acceleration_or_force = 6;
+     float yaw = 7;
+     float yaw_rate = 8;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.autoware_v2x_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/time.proto";
+
+message VirtualGateAreaStatus {
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Time stamp = 1;
+     uint32 status = 2;
+     uint32 sequence_id = 3;
+     string area_id = 4;
+    repeated string gate_ids = 5;
+    repeated make87_messages_ros2.jazzy.builtin_interfaces.msg.Time expected_time_arrival = 6;
+}

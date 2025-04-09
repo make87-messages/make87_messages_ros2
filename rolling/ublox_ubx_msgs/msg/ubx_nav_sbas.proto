@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ublox_ubx_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/sbas_service.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/sbas_status_flags.proto";
+import "make87_messages_ros2/rolling/ublox_ubx_msgs/msg/sbas_sv_data.proto";
+
+message UBXNavSBAS {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 itow = 2;
+     uint32 geo = 3;
+     uint32 mode = 4;
+     int32 sys = 5;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SBASService service = 6;
+     uint32 cnt = 7;
+     make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SBASStatusFlags status_flags = 8;
+    repeated uint32 reserved_0 = 9;
+    repeated make87_messages_ros2.rolling.ublox_ubx_msgs.msg.SBASSvData sv_data = 10;
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.nav2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/geometry_msgs/msg/pose.proto";
+
+message Particle {
+     make87_messages_ros2.jazzy.geometry_msgs.msg.Pose pose = 1;
+     double weight = 2;
+}

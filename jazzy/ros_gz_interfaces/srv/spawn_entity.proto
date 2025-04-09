@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_gz_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/ros_gz_interfaces/msg/entity_factory.proto";
+
+message SpawnEntityRequest {
+     make87_messages_ros2.jazzy.ros_gz_interfaces.msg.EntityFactory entity_factory = 1;
+}
+
+message SpawnEntityResponse {
+     bool success = 1;
+}

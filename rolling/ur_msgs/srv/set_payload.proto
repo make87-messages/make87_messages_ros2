@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.ur_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+
+message SetPayloadRequest {
+     float mass = 1;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 center_of_gravity = 2;
+}
+
+message SetPayloadResponse {
+     bool success = 1;
+}

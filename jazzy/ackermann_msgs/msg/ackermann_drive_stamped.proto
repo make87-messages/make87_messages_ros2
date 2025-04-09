@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ackermann_msgs.msg;
+
+import "make87_messages_ros2/jazzy/ackermann_msgs/msg/ackermann_drive.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message AckermannDriveStamped {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.ackermann_msgs.msg.AckermannDrive drive = 2;
+}

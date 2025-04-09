@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/rolling/rc_common_msgs/msg/return_code.proto";
+import "make87_messages_ros2/rolling/rc_reason_msgs/msg/region_of_interest2_d.proto";
+
+message GetRegionsOfInterest2DRequest {
+    repeated string region_of_interest_2d_ids = 1;
+}
+
+message GetRegionsOfInterest2DResponse {
+    repeated make87_messages_ros2.rolling.rc_reason_msgs.msg.RegionOfInterest2D regions_of_interest = 1;
+     make87_messages_ros2.rolling.rc_common_msgs.msg.ReturnCode return_code = 2;
+}

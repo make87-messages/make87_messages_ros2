@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.camera_aravis2_msgs.msg;
+
+import "make87_messages_ros2/jazzy/diagnostic_msgs/msg/key_value.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message CameraDiagnostics {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+    repeated make87_messages_ros2.jazzy.diagnostic_msgs.msg.KeyValue data = 2;
+}

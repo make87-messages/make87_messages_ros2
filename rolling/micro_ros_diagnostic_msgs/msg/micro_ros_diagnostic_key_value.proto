@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.micro_ros_diagnostic_msgs.msg;
+
+
+message MicroROSDiagnosticKeyValue {
+     uint32 level = 1;
+     uint32 key = 2;
+     uint32 value_type = 3;
+     bool bool_value = 4;
+     int32 int_value = 5;
+     float double_value = 6;
+     uint32 value_id = 7;
+}

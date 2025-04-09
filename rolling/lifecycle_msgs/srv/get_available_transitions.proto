@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.lifecycle_msgs.srv;
+
+import "make87_messages_ros2/rolling/lifecycle_msgs/msg/transition_description.proto";
+
+message GetAvailableTransitionsRequest {
+}
+
+message GetAvailableTransitionsResponse {
+    repeated make87_messages_ros2.rolling.lifecycle_msgs.msg.TransitionDescription available_transitions = 1;
+}

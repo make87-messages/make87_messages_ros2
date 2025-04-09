@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.mavros_msgs.msg;
+
+import "make87_messages_ros2/jazzy/mavros_msgs/msg/param_value.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message Param {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     string param_id = 2;
+     make87_messages_ros2.jazzy.mavros_msgs.msg.ParamValue value = 3;
+     uint32 param_index = 4;
+     uint32 param_count = 5;
+}

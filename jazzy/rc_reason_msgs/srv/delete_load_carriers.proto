@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.srv;
+
+import "make87_messages_ros2/jazzy/rc_common_msgs/msg/return_code.proto";
+
+message DeleteLoadCarriersRequest {
+    repeated string load_carrier_ids = 1;
+}
+
+message DeleteLoadCarriersResponse {
+     make87_messages_ros2.jazzy.rc_common_msgs.msg.ReturnCode return_code = 1;
+}

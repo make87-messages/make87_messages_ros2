@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.zbar_ros_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/vision_msgs/msg/point2_d.proto";
+
+message Symbol {
+     string data = 1;
+    repeated make87_messages_ros2.jazzy.vision_msgs.msg.Point2D points = 2;
+}

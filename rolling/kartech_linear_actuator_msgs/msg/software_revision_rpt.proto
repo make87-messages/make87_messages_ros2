@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.kartech_linear_actuator_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message SoftwareRevisionRpt {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 software_version_0 = 2;
+     uint32 software_version_1 = 3;
+     uint32 software_version_2 = 4;
+     uint32 software_day = 5;
+     uint32 software_month_year = 6;
+}

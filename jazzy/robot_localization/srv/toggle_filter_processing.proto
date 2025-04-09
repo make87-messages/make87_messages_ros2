@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.robot_localization.srv;
+
+
+message ToggleFilterProcessingRequest {
+     bool on = 1;
+}
+
+message ToggleFilterProcessingResponse {
+     bool status = 1;
+}

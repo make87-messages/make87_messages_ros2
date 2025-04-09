@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.webots_ros2_msgs.msg;
+
+
+message UrdfRobot {
+     string name = 1;
+     string urdf_path = 2;
+     string robot_description = 3;
+     string relative_path_prefix = 4;
+     string translation = 5;
+     string rotation = 6;
+     bool normal = 7;
+     bool box_collision = 8;
+     string init_pos = 9;
+}

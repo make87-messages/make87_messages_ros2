@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.visualization_msgs.msg;
+
+
+message UVCoordinate {
+     float u = 1;
+     float v = 2;
+}

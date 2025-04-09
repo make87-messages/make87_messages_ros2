@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.scenario_execution_interfaces.srv;
+
+import "make87_messages_ros2/jazzy/scenario_execution_interfaces/msg/scenario.proto";
+
+message ExecuteScenarioRequest {
+     make87_messages_ros2.jazzy.scenario_execution_interfaces.msg.Scenario scenario = 1;
+}
+
+message ExecuteScenarioResponse {
+     bool result = 1;
+}

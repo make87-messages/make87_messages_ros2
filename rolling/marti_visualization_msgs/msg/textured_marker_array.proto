@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.marti_visualization_msgs.msg;
+
+import "make87_messages_ros2/rolling/marti_visualization_msgs/msg/textured_marker.proto";
+
+message TexturedMarkerArray {
+    repeated make87_messages_ros2.rolling.marti_visualization_msgs.msg.TexturedMarker markers = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ublox_msgs.msg;
+
+
+message CfgSBAS {
+     uint32 mode = 1;
+     uint32 usage = 2;
+     uint32 max_sbas = 3;
+     uint32 scanmode2 = 4;
+     uint32 scanmode1 = 5;
+}

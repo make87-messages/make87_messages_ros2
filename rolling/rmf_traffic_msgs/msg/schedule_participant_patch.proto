@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.rmf_traffic_msgs.msg;
+
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_change_add.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_change_delay.proto";
+import "make87_messages_ros2/rolling/rmf_traffic_msgs/msg/schedule_change_progress.proto";
+
+message ScheduleParticipantPatch {
+     uint64 participant_id = 1;
+     uint64 itinerary_version = 2;
+    repeated uint64 erasures = 3;
+    repeated make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleChangeDelay delays = 4;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleChangeAdd additions = 5;
+     make87_messages_ros2.rolling.rmf_traffic_msgs.msg.ScheduleChangeProgress progress = 6;
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.ros_gz_interfaces.msg;
+
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message SensorNoise {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     uint32 type = 2;
+     double mean = 3;
+     double stddev = 4;
+     double bias_mean = 5;
+     double bias_stddev = 6;
+     double precision = 7;
+     double dynamic_bias_stddev = 8;
+     double dynamic_bias_correlation_time = 9;
+}

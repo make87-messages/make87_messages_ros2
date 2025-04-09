@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.radar_msgs.msg;
+
+
+message RadarReturn {
+     float range = 1;
+     float azimuth = 2;
+     float elevation = 3;
+     float doppler_velocity = 4;
+     float amplitude = 5;
+}

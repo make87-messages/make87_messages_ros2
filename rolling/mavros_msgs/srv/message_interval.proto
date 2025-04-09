@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mavros_msgs.srv;
+
+
+message MessageIntervalRequest {
+     uint32 message_id = 1;
+     float message_rate = 2;
+}
+
+message MessageIntervalResponse {
+     bool success = 1;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.turtlebot3_msgs.msg;
+
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+
+message SensorState {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     uint32 bumper = 2;
+     float cliff = 3;
+     float sonar = 4;
+     float illumination = 5;
+     uint32 led = 6;
+     uint32 button = 7;
+     bool torque = 8;
+     int32 left_encoder = 9;
+     int32 right_encoder = 10;
+     float battery = 11;
+}

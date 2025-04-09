@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.moveit_msgs.srv;
+
+
+message CheckIfRobotStateExistsInWarehouseRequest {
+     string name = 1;
+     string robot = 2;
+}
+
+message CheckIfRobotStateExistsInWarehouseResponse {
+     bool exists = 1;
+}

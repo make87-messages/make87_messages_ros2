@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rmf_fleet_msgs.msg;
+
+
+message RobotMode {
+     uint32 mode = 1;
+     uint64 mode_request_id = 2;
+}

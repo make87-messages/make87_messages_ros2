@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.visualization_msgs.msg;
+
+import "make87_messages_ros2/rolling/builtin_interfaces/msg/duration.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/point.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose.proto";
+import "make87_messages_ros2/rolling/geometry_msgs/msg/vector3.proto";
+import "make87_messages_ros2/rolling/sensor_msgs/msg/compressed_image.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/color_rgba.proto";
+import "make87_messages_ros2/rolling/std_msgs/msg/header.proto";
+import "make87_messages_ros2/rolling/visualization_msgs/msg/mesh_file.proto";
+import "make87_messages_ros2/rolling/visualization_msgs/msg/uv_coordinate.proto";
+
+message Marker {
+     make87_messages_ros2.rolling.std_msgs.msg.Header header = 1;
+     string ns = 2;
+     int32 id = 3;
+     int32 type = 4;
+     int32 action = 5;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Pose pose = 6;
+     make87_messages_ros2.rolling.geometry_msgs.msg.Vector3 scale = 7;
+     make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA color = 8;
+     make87_messages_ros2.rolling.builtin_interfaces.msg.Duration lifetime = 9;
+     bool frame_locked = 10;
+    repeated make87_messages_ros2.rolling.geometry_msgs.msg.Point points = 11;
+    repeated make87_messages_ros2.rolling.std_msgs.msg.ColorRGBA colors = 12;
+     string texture_resource = 13;
+     make87_messages_ros2.rolling.sensor_msgs.msg.CompressedImage texture = 14;
+    repeated make87_messages_ros2.rolling.visualization_msgs.msg.UVCoordinate uv_coordinates = 15;
+     string text = 16;
+     string mesh_resource = 17;
+     make87_messages_ros2.rolling.visualization_msgs.msg.MeshFile mesh_file = 18;
+     bool mesh_use_embedded_materials = 19;
+}

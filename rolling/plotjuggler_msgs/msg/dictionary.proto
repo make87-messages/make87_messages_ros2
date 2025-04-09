@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.plotjuggler_msgs.msg;
+
+
+message Dictionary {
+     uint32 dictionary_uuid = 1;
+    repeated string names = 2;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.tuw_multi_robot_msgs.srv;
+
+import "make87_messages_ros2/rolling/tuw_multi_robot_msgs/msg/station.proto";
+
+message StationManagerStationProtocolRequest {
+     string request = 1;
+     make87_messages_ros2.rolling.tuw_multi_robot_msgs.msg.Station station = 2;
+}
+
+message StationManagerStationProtocolResponse {
+     string response = 1;
+}

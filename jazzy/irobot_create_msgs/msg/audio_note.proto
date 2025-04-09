@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.irobot_create_msgs.msg;
+
+import "make87_messages_ros2/jazzy/builtin_interfaces/msg/duration.proto";
+
+message AudioNote {
+     uint32 frequency = 1;
+     make87_messages_ros2.jazzy.builtin_interfaces.msg.Duration max_runtime = 2;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.rc_reason_msgs.msg;
+
+
+message Tag {
+     string id = 1;
+     double size = 2;
+}

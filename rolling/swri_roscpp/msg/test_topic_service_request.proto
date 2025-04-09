@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.swri_roscpp.msg;
+
+import "make87_messages_ros2/rolling/marti_common_msgs/msg/service_header.proto";
+
+message TestTopicServiceRequest {
+     make87_messages_ros2.rolling.marti_common_msgs.msg.ServiceHeader srv_header = 1;
+     int32 request_value = 2;
+}

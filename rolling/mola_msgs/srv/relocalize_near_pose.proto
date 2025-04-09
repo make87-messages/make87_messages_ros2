@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package make87_messages_ros2.rolling.mola_msgs.srv;
+
+import "make87_messages_ros2/rolling/geometry_msgs/msg/pose_with_covariance_stamped.proto";
+
+message RelocalizeNearPoseRequest {
+     make87_messages_ros2.rolling.geometry_msgs.msg.PoseWithCovarianceStamped pose = 1;
+}
+
+message RelocalizeNearPoseResponse {
+     bool accepted = 1;
+}

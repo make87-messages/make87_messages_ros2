@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package make87_messages_ros2.jazzy.sick_scan_xd.msg;
+
+import "make87_messages_ros2/jazzy/sensor_msgs/msg/imu.proto";
+import "make87_messages_ros2/jazzy/std_msgs/msg/header.proto";
+
+message ImuExtended {
+     make87_messages_ros2.jazzy.std_msgs.msg.Header header = 1;
+     make87_messages_ros2.jazzy.sensor_msgs.msg.Imu imu = 2;
+     uint32 ticks = 3;
+     float quaternion_accuracy = 4;
+     uint32 angular_velocity_reliability = 5;
+     uint32 linear_acceleration_reliability = 6;
+}
